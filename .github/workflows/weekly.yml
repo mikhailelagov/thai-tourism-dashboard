@@ -4,6 +4,10 @@ on:
   schedule:
     # Monday 02:00 UTC = 09:00 in Bangkok
     - cron: "0 2 * * 1"
+  # Touching .run-weekly publishes an issue on demand, so a run can be
+  # triggered from git rather than only from the Actions tab.
+  push:
+    paths: [".run-weekly"]
   workflow_dispatch: {}
 
 permissions:
