@@ -51,6 +51,16 @@ def get_token():
     token = os.environ.get("TELEGRAM_BOT_TOKEN")
     if token:
         return token.strip()
+    # Prompting only works with a real terminal. Run from a click-to-run button
+    # there is nowhere to show the prompt, so say so instead of hanging.
+    if not sys.stdin.isatty():
+        print("""
+Запустите этот скрипт в приложении «Терминал» — здесь ему негде спросить токен.
+
+    cd ~/thai-tourism-dashboard
+    python3 scripts/find_chat_id.py
+""".strip(), file=sys.stderr)
+        return ""
     print("Вставьте токен от @BotFather (при вводе он не отображается):")
     return getpass.getpass("токен: ").strip()
 

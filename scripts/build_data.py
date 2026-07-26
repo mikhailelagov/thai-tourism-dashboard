@@ -105,8 +105,45 @@ def fetch_fx():
     return {k: v for k, v in data["rates"].items() if k in keep}
 
 
+# The iCal feeds only carry English names, so Thai holidays need translating
+# before they reach the Russian chart and briefing. Matched on a substring, so
+# feed wording like "(substitute day)" still resolves.
+HOLIDAY_RU = [
+    ("vajiralongkorn", "День рождения короля"),
+    ("king's birthday", "День рождения короля"),
+    ("queen's birthday", "День рождения королевы"),
+    ("queen suthida", "День рождения королевы Сутиды"),
+    ("queen mother", "День рождения королевы-матери"),
+    ("asalha", "Асалха Буча"),
+    ("visakha", "Висакха Буча"),
+    ("makha", "Макха Буча"),
+    ("khao phansa", "Начало буддийского поста"),
+    ("buddhist lent", "Буддийский пост"),
+    ("songkran", "Сонгкран"),
+    ("chakri", "День династии Чакри"),
+    ("coronation", "День коронации"),
+    ("labour day", "День труда"),
+    ("labor day", "День труда"),
+    ("chulalongkorn", "День Чулалонгкорна"),
+    ("constitution day", "День конституции"),
+    ("new year", "Новый год"),
+    ("mother's day", "День матери"),
+    ("father's day", "День отца"),
+    ("national day", "Национальный день"),
+    ("royal ploughing", "Праздник первой борозды"),
+]
+
+
+def holiday_ru(name):
+    low = name.lower()
+    for key, ru in HOLIDAY_RU:
+        if key in low:
+            return ru
+    return name
+
+
 def parse_ics(raw):
-    """Yield (iso_date, summary) from an iCal feed. Enough for all-day holidays."""
+    """Yield (iso_date, summary) from an iCal feed. Enough for all-day holidays."""  # noqa: E501
     # unfold continuation lines, which iCal wraps at 75 octets
     raw = raw.replace("\r\n ", "").replace("\n ", "").replace("\r\n", "\n")
     for block in re.findall(r"BEGIN:VEVENT(.*?)END:VEVENT", raw, re.S):
@@ -187,7 +224,8 @@ def build():
             if th_holiday:
                 score += 6
                 if event is None:
-                    event = {"en": th_holiday[0]["name"], "ru": th_holiday[0]["name"]}
+                    name = th_holiday[0]["name"]
+                    event = {"en": name, "ru": holiday_ru(name)}
 
             # holidays abroad matter less per country but add up
             abroad = [h for h in holidays.get(iso, []) if h["country"] != "TH"]
