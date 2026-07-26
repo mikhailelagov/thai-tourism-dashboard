@@ -10,15 +10,13 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 concurrency:
   group: daily-summary
   cancel-in-progress: false
 
 jobs:
-  build:
+  summary:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -26,6 +24,18 @@ jobs:
       - name: Build data.json
         run: python3 scripts/build_data.py
 
+      # Sending comes before anything else that could fail, so a problem
+      # with the site can never swallow the daily summary.
+      - name: Send Telegram summary
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SUMMARY_LANG: ${{ vars.SUMMARY_LANG }}
+          DASHBOARD_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+        run: python3 scripts/send_telegram.py
+
+      # Pages serves this branch directly, so committing the fresh data
+      # is all the deployment the site needs.
       - name: Commit refreshed data
         run: |
           git config user.name  "github-actions[bot]"
@@ -37,32 +47,3 @@ jobs:
             git commit -m "data: refresh $(date -u +%Y-%m-%d)"
             git push
           fi
-
-      # turns Pages on by itself the first time this runs
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-        with:
-          enablement: true
-
-      - name: Package the site
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: .
-
-      - name: Send Telegram summary
-        env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          SUMMARY_LANG: ${{ vars.SUMMARY_LANG }}
-          DASHBOARD_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
-        run: python3 scripts/send_telegram.py
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
