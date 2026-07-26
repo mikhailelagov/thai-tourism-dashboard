@@ -29,6 +29,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = ROOT / "data.json"
 POST = ROOT / "post.txt"
 CHART = ROOT / "chart.png"
+POST_ERR = ROOT / "post_error.txt"
 
 API = "https://api.telegram.org/bot{token}/{method}"
 CAPTION_LIMIT = 1024
@@ -80,8 +81,12 @@ def fallback_post(payload):
     fx = payload.get("fx") or {}
     if fx.get("THB"):
         lines += ["", f"Бат за доллар: <b>{fx['THB']:.2f}</b>"]
-    lines += ["", "<i>Развёрнутая сводка на этой неделе недоступна — "
-                  "показаны расчётные показатели.</i>"]
+    note = "Развёрнутая сводка на этой неделе недоступна — показаны расчётные показатели."
+    if POST_ERR.exists():
+        reason = POST_ERR.read_text(encoding="utf-8").strip()
+        if reason:
+            note += f"\nПричина: {esc(reason)}"
+    lines += ["", f"<i>{note}</i>"]
     return "\n".join(lines)
 
 

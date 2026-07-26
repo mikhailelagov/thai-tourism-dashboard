@@ -120,6 +120,16 @@ def main():
         return 1
 
     chats = collect_chats(upd.get("result", []))
+
+    if "--json" in args:
+        # Only id and type - this lands in a public repo, so no titles or names.
+        out = pathlib.Path(__file__).resolve().parent.parent / "chats.json"
+        out.write_text(json.dumps(
+            [{"id": c["id"], "type": c["type"]} for c in chats],
+            ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        print(f"wrote {out.name} - {len(chats)} chats")
+        return 0 if chats else 1
+
     if not chats:
         print("""
 Telegram пока не показал ни одного чата.

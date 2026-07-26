@@ -17,6 +17,7 @@ from datetime import date
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = ROOT / "data.json"
 OUT = ROOT / "post.txt"
+ERR = ROOT / "post_error.txt"
 
 MODEL = "claude-opus-5"
 DOW = ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"]
@@ -129,9 +130,11 @@ def generate(digest):
         f"курс бата, крупные события. Затем напиши пост."
     )
 
+    # Thinking is on by default on this model and shares the max_tokens budget
+    # with the response text, so a tight limit truncates the post mid-sentence.
     kwargs = dict(
         model=MODEL,
-        max_tokens=8000,
+        max_tokens=16000,
         system=SYSTEM,
         thinking={"type": "adaptive"},
         output_config={"effort": "high"},
@@ -171,21 +174,30 @@ def generate(digest):
     return text
 
 
+def fail(reason):
+    """Record why the briefing is missing so Telegram can say so.
+
+    The workflow step is non-blocking, which makes it green even when it
+    fails - without this the only symptom is a short summary and no clue why.
+    """
+    print(reason, file=sys.stderr)
+    ERR.write_text(reason, encoding="utf-8")
+    return 1
+
+
 def main():
+    ERR.unlink(missing_ok=True)
+
     if not os.environ.get("ANTHROPIC_API_KEY"):
-        print("ANTHROPIC_API_KEY is not set - cannot write the briefing.",
-              file=sys.stderr)
-        return 1
+        return fail("ключ ANTHROPIC_API_KEY не задан в секретах репозитория")
     if not DATA.exists():
-        print("data.json is missing - run build_data.py first.", file=sys.stderr)
-        return 1
+        return fail("нет data.json — сборщик данных не отработал")
 
     digest = summarize(json.loads(DATA.read_text(encoding="utf-8")))
     try:
         post = generate(digest)
     except Exception as e:
-        print(f"could not generate the briefing: {e}", file=sys.stderr)
-        return 1
+        return fail(f"{type(e).__name__}: {e}"[:300])
 
     OUT.write_text(post, encoding="utf-8")
     print(f"wrote {OUT.relative_to(ROOT)} - {len(post)} characters")
