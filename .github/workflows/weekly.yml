@@ -50,7 +50,10 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          DASHBOARD_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+          # The Pages address is built from the repository owner, so publishing
+          # it would put the account name in every post. Set DASHBOARD_URL to a
+          # neutral address once the site has one.
+          DASHBOARD_URL: ${{ vars.DASHBOARD_URL }}
         run: python3 scripts/send_telegram.py
 
       - name: Commit refreshed data
