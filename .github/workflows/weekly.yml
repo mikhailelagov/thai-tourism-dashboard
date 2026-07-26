@@ -1,0 +1,62 @@
+name: Weekly briefing
+
+on:
+  schedule:
+    # Monday 02:00 UTC = 09:00 in Bangkok
+    - cron: "0 2 * * 1"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-briefing
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Build data.json
+        run: python3 scripts/build_data.py
+
+      - name: Render the chart
+        run: python3 scripts/make_chart.py
+        continue-on-error: true
+
+      # Writes the briefing with Claude, searching the web for current context.
+      # Allowed to fail: send_telegram.py falls back to a computed summary
+      # rather than letting the week pass in silence.
+      - name: Write the briefing
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python3 scripts/write_post.py
+        continue-on-error: true
+
+      - name: Publish to Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          DASHBOARD_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+        run: python3 scripts/send_telegram.py
+
+      - name: Commit refreshed data
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- data.json; then
+            echo "data.json unchanged, nothing to commit"
+          else
+            git add data.json
+            git commit -m "data: refresh $(date -u +%Y-%m-%d)"
+            git push
+          fi

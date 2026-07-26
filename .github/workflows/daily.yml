@@ -1,8 +1,8 @@
-name: Daily tourism summary
+name: Daily data refresh
 
 on:
   schedule:
-    # 01:00 UTC = 08:00 in Bangkok, so the summary lands in the morning
+    # 01:00 UTC = 08:00 in Bangkok
     - cron: "0 1 * * *"
   push:
     branches: [main]
@@ -12,11 +12,11 @@ permissions:
   contents: write
 
 concurrency:
-  group: daily-summary
+  group: data-refresh
   cancel-in-progress: false
 
 jobs:
-  summary:
+  refresh:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -24,18 +24,6 @@ jobs:
       - name: Build data.json
         run: python3 scripts/build_data.py
 
-      # Sending comes before anything else that could fail, so a problem
-      # with the site can never swallow the daily summary.
-      - name: Send Telegram summary
-        env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          SUMMARY_LANG: ${{ vars.SUMMARY_LANG }}
-          DASHBOARD_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
-        run: python3 scripts/send_telegram.py
-
-      # Pages serves this branch directly, so committing the fresh data
-      # is all the deployment the site needs.
       - name: Commit refreshed data
         run: |
           git config user.name  "github-actions[bot]"
