@@ -1,0 +1,10 @@
+[
+ {"from":"2026-07-30","to":"2026-08-02","scope":"pattaya","boost":18,
+  "en":"Fireworks Festival","ru":"Фестиваль фейерверков"},
+ {"from":"2026-11-07","to":"2026-11-07","scope":"pattaya","boost":10,
+  "en":"Cruise call: Royal Princess (4,272 pax)","ru":"Круиз: Royal Princess (4 272 чел.)"},
+ {"from":"2026-11-22","to":"2026-11-22","scope":"pattaya","boost":8,
+  "en":"Cruise call: Celebrity Millennium (2,590 pax)","ru":"Круиз: Celebrity Millennium (2 590 чел.)"},
+ {"from":"2026-11-13","to":"2026-11-14","scope":"pattaya","boost":5,
+  "en":"Cruise call: Viking Orion","ru":"Круиз: Viking Orion"}
+]

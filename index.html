@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Thailand Tourism Demand — Live Dashboard</title>
+<style>
+  :root{
+    --bg:#F5F2EB; --card:#FFFFFF; --soft:#FAF8F2; --inset:#F0ECE2;
+    --ink:#1C282A; --muted:#5B6A6C; --faint:#8F9C9D;
+    --line:#E4DED1; --line2:#D4CDBC;
+    --teal:#11838A; --teal-d:#0A6469; --teal-w:#E2F0F0;
+    --coral:#C25139; --amber:#BE8420; --green:#357F5A; --grey:#717E84;
+    --sh:0 1px 2px rgba(28,40,42,.05),0 8px 24px rgba(28,40,42,.055);
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+    --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --bg:#0F1617; --card:#192324; --soft:#151E1F; --inset:#121A1B;
+      --ink:#E7EEED; --muted:#93A3A3; --faint:#6C7C7C;
+      --line:#253334; --line2:#324142; --teal-w:#12292B;
+      --teal:#2DAFB4; --teal-d:#8CDDE0;
+      --coral:#DE6C52; --amber:#DAA441; --green:#4AA976; --grey:#849199;
+      --sh:0 1px 2px rgba(0,0,0,.35),0 10px 30px rgba(0,0,0,.36);
+    }
+  }
+  :root[data-theme="light"]{
+    --bg:#F5F2EB; --card:#FFFFFF; --soft:#FAF8F2; --inset:#F0ECE2;
+    --ink:#1C282A; --muted:#5B6A6C; --faint:#8F9C9D;
+    --line:#E4DED1; --line2:#D4CDBC; --teal-w:#E2F0F0;
+    --teal:#11838A; --teal-d:#0A6469;
+    --coral:#C25139; --amber:#BE8420; --green:#357F5A; --grey:#717E84;
+    --sh:0 1px 2px rgba(28,40,42,.05),0 8px 24px rgba(28,40,42,.055);
+  }
+  :root[data-theme="dark"]{
+    --bg:#0F1617; --card:#192324; --soft:#151E1F; --inset:#121A1B;
+    --ink:#E7EEED; --muted:#93A3A3; --faint:#6C7C7C;
+    --line:#253334; --line2:#324142; --teal-w:#12292B;
+    --teal:#2DAFB4; --teal-d:#8CDDE0;
+    --coral:#DE6C52; --amber:#DAA441; --green:#4AA976; --grey:#849199;
+    --sh:0 1px 2px rgba(0,0,0,.35),0 10px 30px rgba(0,0,0,.36);
+  }
+
+  *{box-sizing:border-box}
+  html,body{max-width:100%;overflow-x:hidden;}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size:15.5px;line-height:1.58;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:940px;margin:0 auto;padding:26px 22px 56px;}
+  .n{font-variant-numeric:tabular-nums;}
+
+  /* topbar */
+  .topbar{display:flex;justify-content:flex-end;gap:6px;margin-bottom:14px;}
+  .lang{appearance:none;border:1px solid var(--line);background:var(--soft);color:var(--muted);
+    font:inherit;font-size:12.5px;font-weight:700;padding:5px 12px;border-radius:8px;cursor:pointer;transition:.14s;}
+  .lang:hover{color:var(--ink);}
+  .lang[aria-pressed="true"]{background:var(--teal);border-color:var(--teal);color:#fff;}
+  .lang:focus-visible{outline:2px solid var(--teal);outline-offset:2px;}
+
+  header.top{margin-bottom:22px;}
+  .kicker{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--teal);font-weight:700;}
+  h1{font-family:var(--serif);font-size:32px;line-height:1.13;margin:8px 0 9px;font-weight:600;
+    letter-spacing:-.015em;text-wrap:balance;}
+  .lede{font-size:16px;color:var(--muted);max-width:64ch;margin:0;}
+  .dateline{font-size:12.5px;color:var(--faint);margin-top:13px;display:flex;align-items:center;gap:7px;flex-wrap:wrap;}
+  .dot{width:7px;height:7px;border-radius:50%;background:var(--grey);flex-shrink:0;}
+  .dot.live{background:var(--green);animation:pulse 2.4s ease-in-out infinite;}
+  .dot.err{background:var(--coral);}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+  @media (prefers-reduced-motion:reduce){.dot.live{animation:none}}
+
+  .summary{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:20px 22px;
+    box-shadow:var(--sh);margin-bottom:18px;border-left:3px solid var(--teal);}
+  .summary h2{font-size:17.5px;margin:0 0 9px;font-weight:700;letter-spacing:-.01em;text-wrap:balance;}
+  .summary p{margin:0 0 10px;color:var(--muted);font-size:15px;max-width:66ch;}
+  .summary p:last-child{margin-bottom:0;}
+  .summary b{color:var(--ink);font-weight:600;}
+
+  .facts{display:grid;grid-template-columns:repeat(4,1fr);gap:11px;margin-bottom:14px;}
+  .fact{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:14px 15px;box-shadow:var(--sh);}
+  .fact .big{font-size:24px;font-weight:700;letter-spacing:-.02em;line-height:1.05;}
+  .fact .lb{font-size:12px;color:var(--muted);margin-top:4px;line-height:1.4;}
+  .fact .tagl{font-size:9px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;
+    color:var(--green);margin-top:6px;}
+
+  h3.sec{font-family:var(--serif);font-size:21px;font-weight:600;margin:34px 0 5px;letter-spacing:-.01em;}
+  p.sub{font-size:14px;color:var(--faint);margin:0 0 14px;max-width:64ch;}
+
+  .tabs{display:flex;gap:5px;flex-wrap:wrap;}
+  .tab{appearance:none;border:1px solid var(--line);background:var(--soft);color:var(--muted);
+    font:inherit;font-weight:600;font-size:13.5px;padding:8px 15px;border-radius:9px 9px 0 0;
+    cursor:pointer;transition:.14s;border-bottom-color:transparent;}
+  .tab:hover{color:var(--ink);background:var(--card);}
+  .tab[aria-selected="true"]{background:var(--card);color:var(--teal-d);border-color:var(--line);
+    border-bottom-color:var(--card);position:relative;z-index:2;box-shadow:0 -2px 0 var(--teal) inset;}
+  .tab:focus-visible{outline:2px solid var(--teal);outline-offset:-2px;}
+  .tab i{font-style:normal;font-size:10.5px;color:var(--faint);font-family:var(--mono);margin-left:5px;}
+
+  .panel{background:var(--card);border:1px solid var(--line);border-radius:0 11px 11px 11px;
+    padding:20px 22px;box-shadow:var(--sh);margin-top:-1px;}
+  .verdict{display:flex;align-items:flex-start;gap:17px;padding-bottom:16px;margin-bottom:16px;border-bottom:1px solid var(--line);}
+  .vs{flex-shrink:0;text-align:center;min-width:82px;}
+  .vs .num{font-size:34px;font-weight:700;line-height:1;letter-spacing:-.03em;}
+  .vs .rail{height:5px;border-radius:3px;background:var(--inset);margin-top:8px;overflow:hidden;}
+  .vs .rail>i{display:block;height:100%;border-radius:3px;transition:width .5s cubic-bezier(.2,.8,.3,1);}
+  .vs .cap{font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);font-weight:700;margin-top:6px;}
+  .vt .st{font-size:16.5px;font-weight:700;margin-bottom:5px;letter-spacing:-.01em;}
+  .vt p{margin:0;font-size:14.3px;color:var(--muted);max-width:62ch;}
+
+  .rows{display:grid;grid-template-columns:1fr 1fr;gap:0 28px;margin-bottom:16px;}
+  .r{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:baseline;
+    padding:8px 0;border-bottom:1px dotted var(--line2);}
+  .r .k{font-size:13.5px;color:var(--muted);}
+  .r .v{font-size:13.5px;font-weight:700;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums;}
+  .r .v small{display:block;font-size:10.5px;color:var(--faint);font-weight:500;}
+
+  .subh{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);font-weight:700;margin-bottom:9px;
+    display:flex;align-items:center;gap:8px;}
+  .subh .live-tag{font-size:9px;font-weight:800;letter-spacing:.06em;padding:2px 6px;border-radius:5px;
+    background:color-mix(in srgb,var(--green) 15%,transparent);color:var(--green);}
+
+  /* week forecast */
+  .week{display:grid;grid-template-columns:repeat(8,1fr);gap:6px;}
+  .dy{background:var(--soft);border:1px solid var(--line);border-radius:9px;padding:9px 6px;text-align:center;}
+  .dy .dw{font-size:11px;font-weight:700;}
+  .dy .dd{font-size:9px;color:var(--faint);font-family:var(--mono);}
+  .dy .tp{font-size:14.5px;font-weight:700;margin:4px 0 1px;}
+  .dy .rn{font-size:9.5px;color:var(--muted);font-family:var(--mono);}
+  .dy .mtr{height:4px;border-radius:3px;background:var(--inset);margin:6px 0 4px;overflow:hidden;}
+  .dy .mtr>i{display:block;height:100%;border-radius:3px;}
+  .dy .sc{font-size:10.5px;font-weight:700;}
+  .dy.best{border-color:var(--teal);background:var(--teal-w);}
+  .dy.ev{border-color:var(--amber);}
+  .dy .evd{font-size:8.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--amber);font-weight:800;margin-top:3px;line-height:1.2;}
+
+  .outlook{background:var(--soft);border:1px solid var(--line);border-radius:11px;padding:16px 18px;margin-top:14px;}
+  .outlook h4{font-size:14px;margin:0 0 8px;font-weight:700;}
+  .outlook p{font-size:13.8px;color:var(--muted);margin:0 0 9px;max-width:70ch;}
+  .outlook p:last-child{margin-bottom:0;}
+  .outlook b{color:var(--ink);font-weight:600;}
+  .ol-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px;}
+  .ol{background:var(--card);border:1px solid var(--line);border-radius:9px;padding:11px 12px;}
+  .ol .t{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);font-weight:800;}
+  .ol .v{font-size:15px;font-weight:700;margin-top:3px;}
+  .ol .s{font-size:11.5px;color:var(--muted);line-height:1.35;margin-top:2px;}
+
+  footer{margin-top:28px;padding-top:15px;border-top:1px solid var(--line);font-size:11.8px;color:var(--faint);line-height:1.7;}
+  footer a{color:var(--teal-d);text-decoration:none;}
+  footer a:hover{text-decoration:underline;}
+
+  .skel{color:var(--faint);}
+
+  @media (max-width:820px){ .week{grid-template-columns:repeat(4,1fr);} }
+  @media (max-width:720px){
+    .facts{grid-template-columns:repeat(2,1fr);}
+    .rows{grid-template-columns:1fr;}
+    .verdict{flex-direction:column;gap:12px;}
+    .ol-grid{grid-template-columns:1fr;}
+    h1{font-size:26px;}
+    .tab{font-size:12.5px;padding:7px 11px;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <button class="lang" id="btnEn" aria-pressed="true">EN</button>
+    <button class="lang" id="btnRu" aria-pressed="false">RU</button>
+  </div>
+
+  <header class="top">
+    <div class="kicker" id="kicker"></div>
+    <h1 id="h1"></h1>
+    <p class="lede" id="lede"></p>
+    <div class="dateline"><span class="dot" id="statusDot"></span><span id="statusTxt"></span></div>
+  </header>
+
+  <section class="summary">
+    <h2 id="sumH"></h2>
+    <p id="sumP1"></p>
+    <p id="sumP2"></p>
+  </section>
+
+  <div class="facts" id="facts"></div>
+
+  <h3 class="sec" id="secRegions"></h3>
+  <p class="sub" id="subRegions"></p>
+  <div class="tabs" role="tablist" id="tabs"></div>
+  <div class="panel">
+    <div class="verdict">
+      <div class="vs">
+        <div class="num" id="vNum">—</div>
+        <div class="rail"><i id="vRail"></i></div>
+        <div class="cap" id="vCap"></div>
+      </div>
+      <div class="vt"><div class="st" id="vSt"></div><p id="vTx"></p></div>
+    </div>
+    <div class="rows" id="rows"></div>
+    <div class="subh"><span id="wkH"></span><span class="live-tag" id="wkLive"></span></div>
+    <div class="week" id="week"></div>
+    <div class="outlook">
+      <h4 id="olH"></h4>
+      <p id="olP"></p>
+      <div class="ol-grid" id="olGrid"></div>
+    </div>
+  </div>
+
+  <footer>
+    <span id="ftSrc"></span>
+    <p style="margin:9px 0 0" id="ftDis"></p>
+  </footer>
+</div>
+
+<script>
+/* ---------------- config ---------------- */
+const REGIONS=[
+ {id:'bangkok',  en:'Bangkok',    ru:'Бангкок',   ap:'BKK·DMK', lat:13.69, lon:100.75, base:48, wsens:.15},
+ {id:'pattaya',  en:'Pattaya',    ru:'Паттайя',   ap:'UTP·BKK', lat:12.93, lon:100.88, base:30, wsens:.45},
+ {id:'phuket',   en:'Phuket',     ru:'Пхукет',    ap:'HKT',     lat:7.88,  lon:98.39,  base:42, wsens:.42},
+ {id:'krabi',    en:'Krabi',      ru:'Краби',     ap:'KBV',     lat:8.09,  lon:98.91,  base:44, wsens:.44},
+ {id:'samui',    en:'Samui',      ru:'Самуи',     ap:'USM',     lat:9.51,  lon:100.06, base:45, wsens:.42},
+ {id:'chiangmai',en:'Chiang Mai', ru:'Чиангмай',  ap:'CNX',     lat:18.79, lon:98.98,  base:38, wsens:.30}
+];
+
+/* known-date events; boost is additive to the demand score */
+const EVENTS=[
+ {from:'2026-07-28',to:'2026-07-28',scope:'all',      boost:6,  en:'King’s Birthday',        ru:'День рождения короля'},
+ {from:'2026-07-30',to:'2026-08-02',scope:'pattaya',  boost:18, en:'Fireworks Festival',     ru:'Фестиваль фейерверков'},
+ {from:'2026-08-12',to:'2026-08-12',scope:'all',      boost:5,  en:'Mother’s Day',           ru:'День матери'}
+];
+
+/* structural context — refreshed manually, changes monthly not daily */
+const CTX_DATE={en:'26 July 2026', ru:'26 июля 2026'};
+const ROWS={
+ pattaya:[['Hotel occupancy','Загрузка отелей','15–20%','break-even from 40–50%','окупаемость от 40–50%','coral'],
+  ['Low-season norm','Норма низкого сезона','60–70%','deviation is severe','отклонение сильное','grey'],
+  ['City arrivals','Приезды по городу','−20–30%','industry estimate','оценка ассоциаций','coral'],
+  ['Forward bookings','Брони на будущее','−10–15%','y/y, eastern region','г/г, восточный регион','coral'],
+  ['Corporate seminars','Корпоративные семинары','collapsed','обвал','remote work + frozen budgets','удалёнка и бюджеты','coral'],
+  ['Air capacity','Авиапровозка','cut','срезана','~50 routes trimmed','~50 маршрутов','coral']],
+ phuket:[['Seasonal driver','Сезонный фактор','monsoon','муссон','waves, red flags','волны, красные флаги','coral'],
+  ['Israeli market','Израильский рынок','lost','потерян','notable share of the south','заметная доля юга','coral'],
+  ['Fares to the south','Билеты на юг','up to +200%','до +200%','closed airspace','из-за закрытого неба','coral'],
+  ['Seminar dependence','Зависимость от семинаров','low','низкая','adds resilience','плюс к устойчивости','green'],
+  ['Long-haul flights','Дальние рейсы','reduced','сокращены','detours raise cost','облёты удорожают','coral'],
+  ['Chinese inflow','Китайский поток','growing','растёт','+28% nationally','+28% по стране','green']],
+ bangkok:[['Seasonal dependence','Сезонная зависимость','low','низкая','runs all year','работает круглый год','green'],
+  ['Immigration','Паспортный контроль','queues','очереди','up to two hours at peak','до двух часов в пик','amber'],
+  ['China routes','Рейсы в Китай','partly cut','частично сняты','Beijing, Guangzhou','Пекин, Гуанчжоу','coral'],
+  ['National occupancy outlook','Прогноз загрузки','72–73%','for coming years','на ближайшие годы','green'],
+  ['Songkran bookings','Брони на Сонгкран','below last year','ниже прошлого','softening signal','сигнал ослабления','amber'],
+  ['Demand mix','Диверсификация','high','высокая','three sources at once','три источника сразу','green']],
+ krabi:[['Early week','Начало недели','driest','самое сухое','among southern resorts','среди южных курортов','green'],
+  ['Weather dependence','Зависимость от погоды','high','высокая','beach-led demand','пляжный формат','amber'],
+  ['Long-haul fares','Дальние перелёты','pricier','дороже','hits long routes','бьёт по длинному плечу','coral'],
+  ['Long-haul interest','Интерес дальних рынков','steady','стабильный','south holds up','юг держится','green'],
+  ['Direct flights','Прямые рейсы','few','немного','exposed to cuts','уязвим к сокращениям','amber'],
+  ['Air capacity','Авиапровозка','cut','срезана','national trend','общий тренд','coral']],
+ samui:[['Season','Сезон','offset from Phuket','не совпадает с Пхукетом','gulf vs Andaman','залив против Андаманы','green'],
+  ['Occupancy','Загрузка','above average','выше среднего','resort segment','по курортному сегменту','green'],
+  ['Direct flights','Прямые рейсы','few','мало','exposed to cuts','уязвим к сокращениям','coral'],
+  ['Airfare','Стоимость перелёта','high','высокая','limited competition','ограниченная конкуренция','amber'],
+  ['Weather dependence','Зависимость от погоды','high','высокая','beach-led demand','пляжный формат','amber'],
+  ['Air capacity','Авиапровозка','cut','срезана','national trend','общий тренд','coral']],
+ chiangmai:[['Songkran bookings','Брони на Сонгкран','50–60%','weakest nationally','худший показатель страны','coral'],
+  ['Spring haze','Смог весной','hurt the season','подорвал сезон','reputational effect','репутационный эффект','coral'],
+  ['Cultural demand','Культурный спрос','resilient','устойчив','not beach-dependent','не зависит от пляжа','green'],
+  ['Israeli market','Израильский рынок','lost','потерян','was a notable share','был заметной долей','coral'],
+  ['AOT network airport','Аэропорт в сети AOT','yes','да','stats are public','статистика открыта','green'],
+  ['Weather dependence','Зависимость от погоды','moderate','средняя','indoor options exist','есть крытые форматы','amber']]
+};
+const VERDICT={
+ pattaya:{en:['Weakest of the six','Two independent hits landed at once: fewer seats because of costlier fuel, and the collapse of the corporate segment that normally carries the low season.'],
+          ru:['Слабее всех из шести','Наложились два независимых удара: нехватка кресел из-за подорожавшего топлива и обвал корпоративного сегмента, который обычно держит низкий сезон.']},
+ phuket:{en:['Below average, but a broader base','Monsoon on the Andaman coast plus the loss of the Israeli market. Unlike Pattaya it barely depends on corporate demand, which adds resilience.'],
+         ru:['Ниже среднего, но база шире','Сезон дождей на андаманском побережье плюс потеря израильского рынка. В отличие от Паттайи почти не зависит от корпоративного спроса — это добавляет устойчивости.']},
+ bangkok:{en:['The most resilient of the six','The city runs year-round on a mixed demand base — business, transit and leisure at once. Weather barely matters; the hit lands on the transit leg.'],
+          ru:['Самый устойчивый из шести','Город живёт круглый год, спрос смешанный — бизнес, транзит и туризм сразу. Погода почти не влияет, удар приходится на транзитное плечо.']},
+ krabi:{en:['Moderate, driven by the monsoon rhythm','Lives on the same monsoon cycle as Phuket. The early part of the week is the driest among southern destinations, then heavy rain arrives.'],
+        ru:['Умеренно, в муссонном ритме','Живёт в том же муссонном цикле, что и Пхукет. Первая половина недели самая сухая среди южных направлений, дальше приходят сильные дожди.']},
+ samui:{en:['Its own seasonal rhythm','The gulf runs on a different calendar than the Andaman coast — when Phuket is soaked, Samui can still be workable. Direct-flight scarcity is the weak spot.'],
+        ru:['Свой сезонный ритм','Залив живёт по другому календарю, чем андаманское побережье — когда на Пхукете льёт, здесь может быть сносно. Слабое место — мало прямых рейсов.']},
+ chiangmai:{en:['Weak — rain plus a reputational hit','Rainy season is in full swing. The market was already hurt in spring by haze and the loss of Israeli traffic, and recovery is slow.'],
+            ru:['Слабо — дожди и репутационный удар','Сезон дождей в разгаре. Весной рынок уже пострадал от смога и потери израильского потока, восстановление идёт медленно.']}
+};
+
+/* ---------------- i18n ---------------- */
+const T={
+ en:{kicker:'Thailand · tourism demand',h1:'How many tourists are coming, and where',
+  lede:'Demand by destination, a week-ahead outlook, and the indirect indicators that reveal footfall before official statistics do.',
+  live:'Live data loaded',loading:'Loading live data…',failed:'Live data unavailable — showing cached context only',
+  ctxNote:'market context as of',
+  sumH:'The bottleneck right now is aircraft, not the season',
+  sumP1:'Escalation around Iran pushed jet fuel to <b>$149 a barrel (+18% in a week)</b> and carriers began pulling flights. Asia lost roughly <b>10% of its seats</b>, fares rose <b>15–26%</b>, and about <b>50 routes</b> serving Thailand were trimmed. This is <b>not a demand collapse</b> — people still want to fly, there are simply fewer seats.',
+  sumP2:'Nationally the flow holds up, but individual resorts have dropped sharply. <b>Pattaya</b> is worst hit, because a second cause piled on: remote work and frozen budgets wiped out the corporate seminars that normally carry the low season.',
+  facts:[['16.2M','arrived Jan 1 – Jul 4',''],['33M','2026 forecast (TAT)',''],['−10%','seats in Asia — flights pulled',''],['','THB per USD','live']],
+  secRegions:'Destinations',subRegions:'Demand index from 0 to 100 — a composite of structural conditions, live weather and the event calendar.',
+  vCap:'demand index',wkH:'Week ahead',wkLive:'live',
+  olH:'What to expect next week',
+  olBest:'Best day',olWorst:'Weakest day',olAvg:'Week average',
+  ftSrc:'Sources: TAT arrivals forecast · Forbes on jet fuel · AeroRoutes route cuts · Bangkok Post on Pattaya hotels · AOT passenger traffic · weather by Open-Meteo · rates by ExchangeRate-API.',
+  ftDis:'Weather and currency update automatically on every visit. Market context is a manual snapshot and carries its own date. The demand index is a composite estimate — an orientation tool, not a measurement.',
+  days:['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],
+  tones:['Low','Below average','Moderate','Good'],
+  noEvent:'no notable events',rain:'mm'},
+ ru:{kicker:'Таиланд · спрос на туризм',h1:'Сколько туристов едет и куда',
+  lede:'Спрос по направлениям, прогноз на неделю вперёд и косвенные индикаторы, по которым загруженность видна раньше официальной статистики.',
+  live:'Живые данные загружены',loading:'Загружаю живые данные…',failed:'Живые данные недоступны — показан только сохранённый контекст',
+  ctxNote:'рыночный контекст на',
+  sumH:'Узкое место сейчас — самолёты, а не сезон',
+  sumP1:'Обострение вокруг Ирана подняло авиатопливо до <b>$149 за баррель (+18% за неделю)</b>, и перевозчики начали снимать рейсы. Кресел в Азии стало меньше примерно на <b>10%</b>, билеты подорожали на <b>15–26%</b>, по Таиланду сокращено около <b>50 маршрутов</b>. Это <b>не падение спроса</b> — лететь хотят, но мест физически меньше.',
+  sumP2:'По стране поток держится, а отдельные курорты просели заметно. Сильнее всех <b>Паттайя</b>: там добавилась вторая причина — удалёнка и заморозка бюджетов убили корпоративные семинары, кормившие низкий сезон.',
+  facts:[['16,2 млн','приехало с 1 января по 4 июля',''],['33 млн','прогноз на 2026 год (TAT)',''],['−10%','кресел в Азии — рейсы сняты',''],['','бат за доллар','живое']],
+  secRegions:'Направления',subRegions:'Индекс спроса от 0 до 100 — сводная оценка: структурная ситуация, живая погода и календарь событий.',
+  vCap:'индекс спроса',wkH:'Неделя вперёд',wkLive:'живое',
+  olH:'Чего ждать на следующей неделе',
+  olBest:'Лучший день',olWorst:'Слабейший день',olAvg:'Среднее за неделю',
+  ftSrc:'Источники: прогноз приездов TAT · Forbes о цене авиатоплива · AeroRoutes о сокращении маршрутов · Bangkok Post об отелях Паттайи · пассажиропоток AOT · погода Open-Meteo · курсы ExchangeRate-API.',
+  ftDis:'Погода и валюта обновляются автоматически при каждом заходе. Рыночный контекст — ручной снимок, у него своя дата. Индекс спроса — сводная оценка, инструмент ориентации, а не измерение.',
+  days:['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+  tones:['Низкий','Ниже среднего','Умеренный','Хороший'],
+  noEvent:'без заметных событий',rain:'мм'}
+};
+
+/* ---------------- state ---------------- */
+let LANG='en', CUR=0, DATA=null, FX=null, BUILT=null, STATUS='loading';
+const $=s=>document.querySelector(s);
+const CL={coral:'var(--coral)',amber:'var(--amber)',green:'var(--green)',grey:'var(--grey)'};
+
+/* ---------------- data loading ----------------
+   Primary source is data.json, rebuilt by the daily job.
+   If it is missing or stale, the page falls back to calling
+   the open APIs directly so it is never blank.            */
+function fromOpenMeteo(w){
+  const arr=Array.isArray(w)?w:[w], out={};
+  REGIONS.forEach((r,i)=>{
+    const d=arr[i].daily;
+    out[r.id]=d.time.map((iso,j)=>({iso,
+      tmax:Math.round(d.temperature_2m_max[j]),
+      mm:d.precipitation_sum[j]??0,
+      pop:d.precipitation_probability_max[j]??0}));
+  });
+  return out;
+}
+async function fetchDirect(){
+  const lat=REGIONS.map(r=>r.lat).join(','), lon=REGIONS.map(r=>r.lon).join(',');
+  const wxUrl=`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}`+
+    `&daily=temperature_2m_max,precipitation_sum,precipitation_probability_max`+
+    `&timezone=Asia%2FBangkok&forecast_days=8`;
+  const [w,f]=await Promise.all([
+    fetch(wxUrl).then(r=>{if(!r.ok)throw 0;return r.json()}),
+    fetch('https://open.er-api.com/v6/latest/USD').then(r=>r.ok?r.json():null).catch(()=>null)
+  ]);
+  DATA=fromOpenMeteo(w);
+  FX=f&&f.rates?f.rates:null;
+  BUILT=null;
+}
+async function loadLive(){
+  try{
+    const d=await fetch('data.json?_='+Date.now(),{cache:'no-store'})
+      .then(r=>r.ok?r.json():null);
+    if(d&&d.regions&&Object.keys(d.regions).length){
+      DATA=d.regions; FX=d.fx||null; BUILT=d.built_at||null;
+      STATUS='live'; render(); return;
+    }
+  }catch(e){/* fall through to direct fetch */}
+  try{ await fetchDirect(); STATUS='live'; }
+  catch(e){ STATUS='failed'; }
+  render();
+}
+
+/* ---------------- scoring ---------------- */
+function eventsFor(regionId,iso){
+  return EVENTS.filter(e=>(e.scope==='all'||e.scope===regionId)&&iso>=e.from&&iso<=e.to);
+}
+function scoreFor(region,iso,mm,pop){
+  const rain=Math.min(1,(mm/28)*0.75+(pop/100)*0.25);
+  let s=region.base*(1-rain*region.wsens);
+  eventsFor(region.id,iso).forEach(e=>s+=e.boost);
+  return Math.max(0,Math.min(100,Math.round(s)));
+}
+function tone(s){const t=T[LANG].tones;
+  return s<24?[CL.coral,t[0]]:s<30?[CL.amber,t[1]]:s<45?[CL.grey,t[2]]:[CL.green,t[3]];}
+
+/* ---------------- render ---------------- */
+function render(){
+  const t=T[LANG];
+  document.documentElement.lang=LANG;
+  document.title=LANG==='en'?'Thailand Tourism Demand — Live Dashboard':'Спрос на туризм в Таиланде — живая сводка';
+  $('#btnEn').setAttribute('aria-pressed',LANG==='en');
+  $('#btnRu').setAttribute('aria-pressed',LANG==='ru');
+
+  $('#kicker').textContent=t.kicker; $('#h1').textContent=t.h1; $('#lede').textContent=t.lede;
+  const dot=$('#statusDot');
+  dot.className='dot'+(STATUS==='live'?' live':STATUS==='failed'?' err':'');
+  $('#statusTxt').textContent=
+    (STATUS==='live'?t.live:STATUS==='failed'?t.failed:t.loading)+' · '+t.ctxNote+' '+CTX_DATE[LANG];
+
+  $('#sumH').textContent=t.sumH; $('#sumP1').innerHTML=t.sumP1; $('#sumP2').innerHTML=t.sumP2;
+
+  const thb=FX&&FX.THB?FX.THB.toFixed(2):'—';
+  $('#facts').innerHTML=t.facts.map((f,i)=>{
+    const val=i===3?thb:f[0];
+    const col=i===0?'color:var(--teal-d)':i===2?'color:var(--coral)':'';
+    return `<div class="fact"><div class="big n" style="${col}">${val}</div>
+      <div class="lb">${f[1]}</div>${f[2]?`<div class="tagl">${f[2]}</div>`:''}</div>`;}).join('');
+
+  $('#secRegions').textContent=t.secRegions; $('#subRegions').textContent=t.subRegions;
+  $('#vCap').textContent=t.vCap; $('#wkH').textContent=t.wkH;
+  $('#wkLive').textContent=STATUS==='live'?t.wkLive:'';
+  $('#wkLive').style.display=STATUS==='live'?'':'none';
+  $('#ftSrc').innerHTML=t.ftSrc; $('#ftDis').textContent=t.ftDis;
+  $('#olH').textContent=t.olH;
+
+  $('#tabs').innerHTML=REGIONS.map((r,i)=>
+    `<button class="tab" role="tab" data-i="${i}" aria-selected="${i===CUR}">${r[LANG]}<i>${r.ap}</i></button>`).join('');
+  document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{CUR=+b.dataset.i;render();}));
+
+  renderRegion();
+}
+
+function renderRegion(){
+  const t=T[LANG], r=REGIONS[CUR], v=VERDICT[r.id][LANG];
+  const rows=ROWS[r.id];
+
+  $('#rows').innerHTML=rows.map(row=>{
+    const k=LANG==='en'?row[0]:row[1];
+    let val,sub,c;
+    if(row.length===6){ val=row[2]; sub=LANG==='en'?row[3]:row[4]; c=row[5]; }
+    else { val=LANG==='en'?row[2]:row[3]; sub=LANG==='en'?row[4]:row[5]; c=row[6]; }
+    return `<div class="r"><span class="k">${k}</span>
+      <span class="v" style="color:${CL[c]}">${val}<small>${sub}</small></span></div>`;}).join('');
+
+  if(!DATA||!DATA[r.id]){
+    $('#vNum').textContent='—'; $('#vSt').textContent=v[0]; $('#vTx').textContent=v[1];
+    $('#week').innerHTML=`<p class="skel" style="grid-column:1/-1;margin:0">${t.loading}</p>`;
+    $('#olP').textContent=''; $('#olGrid').innerHTML=''; return;
+  }
+
+  const days=DATA[r.id].map(x=>{
+    const evs=eventsFor(r.id,x.iso);
+    const ev=x.event?(x.event[LANG]||null):(evs.length?evs[0][LANG]:null);
+    return {iso:x.iso,dow:new Date(x.iso+'T00:00:00').getDay(),
+      dd:x.iso.slice(8)+'.'+x.iso.slice(5,7),
+      tp:x.tmax,mm:x.mm,pop:x.pop,
+      score:x.score??scoreFor(r,x.iso,x.mm,x.pop),ev};
+  });
+
+  const today=days[0], [tc,tl]=tone(today.score);
+  $('#vNum').textContent=today.score; $('#vNum').style.color=tc;
+  $('#vRail').style.width=today.score+'%'; $('#vRail').style.background=tc;
+  $('#vSt').textContent=v[0]; $('#vTx').textContent=v[1];
+
+  const best=days.reduce((a,b)=>b.score>a.score?b:a);
+  $('#week').innerHTML=days.map(x=>{
+    const [c]=tone(x.score);
+    const cls=x===best?' best':x.ev?' ev':'';
+    return `<div class="dy${cls}"><div class="dw">${t.days[x.dow]}</div><div class="dd">${x.dd}</div>
+      <div class="tp">${x.tp}°</div><div class="rn">${x.mm.toFixed(1)} ${t.rain}</div>
+      <div class="mtr"><i style="width:${x.score}%;background:${c}"></i></div>
+      <div class="sc" style="color:${c}">${x.score}</div>
+      ${x.ev?`<div class="evd">${x.ev}</div>`:''}</div>`;}).join('');
+
+  /* week-ahead outlook, generated from the data */
+  const fwd=days.slice(1);
+  const worst=fwd.reduce((a,b)=>b.score<a.score?b:a);
+  const bestF=fwd.reduce((a,b)=>b.score>a.score?b:a);
+  const avg=Math.round(fwd.reduce((s,x)=>s+x.score,0)/fwd.length);
+  const [ac,al]=tone(avg);
+  const evList=[...new Set(fwd.filter(x=>x.ev).map(x=>x.ev))];
+  const wet=fwd.filter(x=>x.mm>=15).length;
+
+  $('#olP').innerHTML = LANG==='en'
+    ? `Over the next seven days the index averages <b>${avg}</b> (${al.toLowerCase()}). The strongest day is <b>${t.days[bestF.dow]} ${bestF.dd}</b> at ${bestF.score}, the weakest <b>${t.days[worst.dow]} ${worst.dd}</b> at ${worst.score}. ${wet?`Heavy rain is forecast on <b>${wet}</b> of them.`:'No heavy-rain days are forecast.'} ${evList.length?`Events in the window: <b>${evList.join(', ')}</b>.`:`Calendar is clear — ${t.noEvent}.`}`
+    : `На ближайшие семь дней индекс в среднем <b>${avg}</b> (${al.toLowerCase()}). Сильнейший день — <b>${t.days[bestF.dow]} ${bestF.dd}</b> с ${bestF.score}, слабейший — <b>${t.days[worst.dow]} ${worst.dd}</b> с ${worst.score}. ${wet?`Сильный дождь ожидается в <b>${wet}</b> из них.`:'Дней с сильным дождём не ожидается.'} ${evList.length?`События в окне: <b>${evList.join(', ')}</b>.`:`Календарь пуст — ${t.noEvent}.`}`;
+
+  $('#olGrid').innerHTML=[
+    [t.olBest,`${t.days[bestF.dow]} ${bestF.dd}`,`${bestF.score} / 100`,tone(bestF.score)[0]],
+    [t.olWorst,`${t.days[worst.dow]} ${worst.dd}`,`${worst.score} / 100`,tone(worst.score)[0]],
+    [t.olAvg,String(avg),al,ac]
+  ].map(([a,b,c,col])=>`<div class="ol"><div class="t">${a}</div>
+    <div class="v" style="color:${col}">${b}</div><div class="s">${c}</div></div>`).join('');
+}
+
+/* ---------------- init ---------------- */
+$('#btnEn').addEventListener('click',()=>{LANG='en';render();});
+$('#btnRu').addEventListener('click',()=>{LANG='ru';render();});
+render();
+loadLive();
+</script>
+</body>
+</html>

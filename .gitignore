@@ -1,0 +1,9 @@
+# local tooling
+.claude/
+__pycache__/
+*.pyc
+
+# never commit credentials
+.env
+*.token
+secrets*
