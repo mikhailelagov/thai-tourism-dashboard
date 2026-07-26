@@ -20,6 +20,9 @@ OUT = ROOT / "post.txt"
 ERR = ROOT / "post_error.txt"
 
 MODEL = "claude-opus-5"
+# Telegram splits a message past 4096 characters; stop well short of it so a
+# post always arrives in one piece.
+MAX_CHARS = 3400
 DOW = ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"]
 ORDER = ["bangkok", "pattaya", "phuket", "krabi", "samui", "chiangmai"]
 NAMES = {"bangkok": "Бангкок", "pattaya": "Паттайя", "phuket": "Пхукет",
@@ -68,7 +71,9 @@ Telegram-канала. Читатели — владельцы и управля
 
 Формат: Telegram HTML. Разрешены только <b>, <i>, <a href="">, <code>. \
 Никакого Markdown, никаких заголовков через #. Подзаголовки — <b>жирным</b>. \
-Строго не более 3200 символов вместе с тегами.
+Жёсткий предел — 3000 символов вместе с тегами. Это лимит Telegram, а не \
+пожелание: превышение режет пост на два сообщения. Лучше выкинуть блок \
+целиком, чем ужимать всё до телеграфного стиля.
 
 Обязательно: используй веб-поиск, чтобы найти свежие факты этой недели — \
 цены на авиатопливо, изменения в маршрутах и провозных ёмкостях, статистику \
@@ -194,6 +199,33 @@ def generate(digest):
     text = extract_text(message)
     if not text:
         raise RuntimeError(f"model returned no text (stop_reason={message.stop_reason})")
+    if len(text) > MAX_CHARS:
+        text = shorten(create, kwargs, text)
+    return text
+
+
+def shorten(create, kwargs, text):
+    """Ask for a shorter post, then trim on a paragraph boundary if needed."""
+    print(f"post is {len(text)} chars - asking for a shorter one", file=sys.stderr)
+    try:
+        retry = create(**{**kwargs, "tools": [], "messages": [
+            {"role": "user", "content":
+                f"Сократи этот пост до {MAX_CHARS - 200} символов. Сохрани "
+                f"структуру, заголовки и раздел «что делать». Убирай целые "
+                f"блоки и подробности, а не превращай текст в телеграф. "
+                f"Верни только сокращённый пост.\n\n{text}"},
+        ]})
+        shorter = extract_text(retry)
+        if shorter and len(shorter) < len(text):
+            text = shorter
+    except Exception as e:
+        print(f"could not shorten the post: {e}", file=sys.stderr)
+
+    if len(text) > MAX_CHARS:
+        # Cut between paragraphs - a cut inside one can split an HTML tag.
+        cut = text.rfind("\n\n", 0, MAX_CHARS)
+        text = text[:cut if cut > 0 else MAX_CHARS].rstrip()
+        print(f"trimmed to {len(text)} chars", file=sys.stderr)
     return text
 
 
