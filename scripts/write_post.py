@@ -67,7 +67,9 @@ Telegram-канала. Читатели — владельцы и управля
 приездов, курс бата, события. Опирайся на найденное, а не на память. \
 Не выдумывай цифры: если факт не нашёлся, не пиши его.
 
-Верни только текст поста. Без преамбулы, без объяснений, без markdown-ограды."""
+Верни только текст поста. Не пиши ничего до него: ни что собираешься искать, \
+ни что нашёл, ни пояснений к своей работе. Первая строка ответа — заголовок \
+поста. Без markdown-ограды."""
 
 
 def summarize(payload):
@@ -113,7 +115,19 @@ def summarize(payload):
 
 
 def extract_text(message):
-    return "".join(b.text for b in message.content if b.type == "text").strip()
+    """Return the post only.
+
+    The model narrates before it searches ("I'll look up..."), so the response
+    holds that preamble, then the search blocks, then the post. Everything
+    before the last non-text block is working commentary, not the briefing.
+    """
+    blocks = message.content
+    last_tool = -1
+    for i, b in enumerate(blocks):
+        if b.type != "text":
+            last_tool = i
+    tail = blocks[last_tool + 1:]
+    return "".join(b.text for b in tail if b.type == "text").strip()
 
 
 def generate(digest):
