@@ -1,0 +1,20 @@
+name: Find chat id
+
+# Run this by hand when you need the id of a group or channel.
+# Uses the bot token already stored in secrets, so nothing has to be typed
+# anywhere. Send a message in the group first - the bot only reports chats
+# it has actually seen.
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  find:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: List every chat the bot can see
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        run: python3 scripts/find_chat_id.py
