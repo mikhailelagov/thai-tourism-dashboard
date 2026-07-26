@@ -4,17 +4,21 @@ on:
   schedule:
     # 01:00 UTC = 08:00 in Bangkok, so the summary lands in the morning
     - cron: "0 1 * * *"
+  push:
+    branches: [main]
   workflow_dispatch: {}
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: daily-summary
   cancel-in-progress: false
 
 jobs:
-  build-and-send:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -34,10 +38,31 @@ jobs:
             git push
           fi
 
+      # turns Pages on by itself the first time this runs
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Package the site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
       - name: Send Telegram summary
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          DASHBOARD_URL: ${{ vars.DASHBOARD_URL }}
           SUMMARY_LANG: ${{ vars.SUMMARY_LANG }}
+          DASHBOARD_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
         run: python3 scripts/send_telegram.py
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
