@@ -255,5 +255,28 @@ def build():
           f"{len(next(iter(regions.values())))} days, fx={'yes' if fx else 'no'}")
 
 
+def main():
+    """Keep yesterday's data rather than losing the whole run.
+
+    The weather API is required - without it there is nothing to compute. But
+    an outage upstream should not cost a chart, a briefing, and the Telegram
+    post as well, so fall back to the committed data.json when one exists.
+    """
+    try:
+        build()
+        return 0
+    except Exception as e:
+        print(f"could not rebuild data: {e}", file=sys.stderr)
+        if not OUT.exists():
+            print("no previous data.json to fall back to.", file=sys.stderr)
+            return 1
+        try:
+            stale = json.loads(OUT.read_text(encoding="utf-8"))["built_at"]
+        except (ValueError, KeyError, OSError):
+            stale = "unknown date"
+        print(f"keeping the existing data.json (built {stale}).", file=sys.stderr)
+        return 0
+
+
 if __name__ == "__main__":
-    build()
+    sys.exit(main())
