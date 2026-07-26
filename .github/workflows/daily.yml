@@ -33,5 +33,10 @@ jobs:
           else
             git add data.json
             git commit -m "data: refresh $(date -u +%Y-%m-%d)"
-            git push
+            # The daily and weekly jobs can finish together; rebase onto
+            # whichever pushed first instead of failing the run.
+            for i in 1 2 3; do
+              git push && break
+              git pull --rebase -X ours origin main
+            done
           fi
