@@ -120,19 +120,40 @@
   .subh .live-tag{font-size:9px;font-weight:800;letter-spacing:.06em;padding:2px 6px;border-radius:5px;
     background:color-mix(in srgb,var(--green) 15%,transparent);color:var(--green);}
 
-  /* week forecast */
-  .week{display:grid;grid-template-columns:repeat(8,1fr);gap:6px;}
-  .dy{background:var(--soft);border:1px solid var(--line);border-radius:9px;padding:9px 6px;text-align:center;}
-  .dy .dw{font-size:11px;font-weight:700;}
-  .dy .dd{font-size:9px;color:var(--faint);font-family:var(--mono);}
-  .dy .tp{font-size:14.5px;font-weight:700;margin:4px 0 1px;}
-  .dy .rn{font-size:9.5px;color:var(--muted);font-family:var(--mono);}
-  .dy .mtr{height:4px;border-radius:3px;background:var(--inset);margin:6px 0 4px;overflow:hidden;}
-  .dy .mtr>i{display:block;height:100%;border-radius:3px;}
-  .dy .sc{font-size:10.5px;font-weight:700;}
-  .dy.best{border-color:var(--teal);background:var(--teal-w);}
-  .dy.ev{border-color:var(--amber);}
-  .dy .evd{font-size:8.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--amber);font-weight:800;margin-top:3px;line-height:1.2;}
+  /* Week forecast. Temperature, rainfall and the index each get their own
+     visual channel - a plain number, a filled droplet, a tinted chip - so two
+     days that differ never look alike. */
+  .week{display:grid;grid-template-columns:repeat(8,1fr);gap:7px;}
+  .dy{background:var(--card);border:1px solid var(--line);border-radius:10px;
+    overflow:hidden;text-align:center;}
+  .dy .hd{padding:6px 4px 5px;border-bottom:1px solid var(--line);background:var(--soft);}
+  .dy .dw{font-size:11.5px;font-weight:700;line-height:1.2;}
+  .dy .dd{font-size:9.5px;color:var(--faint);font-family:var(--mono);}
+  .dy .bd{padding:9px 5px 10px;}
+  .dy .tp{font-size:17px;font-weight:700;line-height:1;letter-spacing:-.02em;}
+  .dy .rain{display:flex;align-items:center;justify-content:center;gap:4px;
+    font-size:10.5px;font-family:var(--mono);color:var(--muted);margin-top:7px;}
+  .dy .drop{width:8px;height:8px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);
+    flex-shrink:0;}
+  .dy .chip{display:inline-block;margin-top:9px;padding:2px 9px;border-radius:999px;
+    font-size:11.5px;font-weight:800;font-variant-numeric:tabular-nums;}
+  .dy.today{border-color:var(--teal);box-shadow:0 0 0 1px var(--teal);}
+  .dy.today .hd{background:var(--teal-w);}
+  .dy .flag{font-size:8.5px;letter-spacing:.06em;text-transform:uppercase;
+    font-weight:800;margin-top:6px;line-height:1.25;}
+
+  /* past years */
+  .hist{margin-top:16px;}
+  .hrow{display:grid;grid-template-columns:44px 1fr auto;gap:11px;align-items:center;
+    padding:7px 0;border-bottom:1px dotted var(--line2);}
+  .hrow:last-child{border-bottom:0;}
+  .hrow .yr{font-family:var(--mono);font-size:12.5px;font-weight:700;color:var(--muted);}
+  .hrow.now .yr{color:var(--teal-d);}
+  .hbar{height:9px;border-radius:5px;background:var(--inset);overflow:hidden;}
+  .hbar>i{display:block;height:100%;border-radius:5px;}
+  .hrow .hv{font-size:12px;font-variant-numeric:tabular-nums;white-space:nowrap;
+    color:var(--muted);}
+  .hrow .hv b{color:var(--ink);font-size:13px;}
 
   .outlook{background:var(--soft);border:1px solid var(--line);border-radius:11px;padding:16px 18px;margin-top:14px;}
   .outlook h4{font-size:14px;margin:0 0 8px;font-weight:700;}
@@ -199,7 +220,11 @@
     <div class="rows" id="rows"></div>
     <div class="subh"><span id="wkH"></span><span class="live-tag" id="wkLive"></span></div>
     <div class="week" id="week"></div>
-    <div class="outlook">
+    <div class="hist">
+      <div class="subh"><span id="hiH"></span></div>
+      <div id="history"></div>
+    </div>
+    <div class="outlook" style="margin-top:14px">
       <h4 id="olH"></h4>
       <p id="olP"></p>
       <div class="ol-grid" id="olGrid"></div>
@@ -301,6 +326,9 @@ const T={
   olBest:'Best day',olWorst:'Weakest day',olAvg:'Week average',
   ftSrc:'Sources: TAT arrivals forecast · Forbes on jet fuel · AeroRoutes route cuts · Bangkok Post on Pattaya hotels · AOT passenger traffic · weather by Open-Meteo · rates by ExchangeRate-API.',
   ftDis:'Weather and currency update automatically on every visit. Market context is a manual snapshot and carries its own date. The demand index is a composite estimate — an orientation tool, not a measurement.',
+  today:'today',hiH:'The same week in past years',
+  hiNote:'Weather only - holidays move around the calendar, so events are excluded and the years compare conditions rather than dates.',
+  hiNone:'Past-year data is not loaded.',hiNow:'now',hiWet:'wet days',
   days:['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],
   tones:['Low','Below average','Moderate','Good'],
   noEvent:'no notable events',rain:'mm'},
@@ -318,13 +346,16 @@ const T={
   olBest:'Лучший день',olWorst:'Слабейший день',olAvg:'Среднее за неделю',
   ftSrc:'Источники: прогноз приездов TAT · Forbes о цене авиатоплива · AeroRoutes о сокращении маршрутов · Bangkok Post об отелях Паттайи · пассажиропоток AOT · погода Open-Meteo · курсы ExchangeRate-API.',
   ftDis:'Погода и валюта обновляются автоматически при каждом заходе. Рыночный контекст — ручной снимок, у него своя дата. Индекс спроса — сводная оценка, инструмент ориентации, а не измерение.',
+  today:'сегодня',hiH:'Эта же неделя в прошлые годы',
+  hiNote:'Только погода — праздники сдвигаются по календарю, поэтому события исключены: годы сравниваются по условиям, а не по датам.',
+  hiNone:'Данные прошлых лет не загружены.',hiNow:'сейчас',hiWet:'мокрых дней',
   days:['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
   tones:['Низкий','Ниже среднего','Умеренный','Хороший'],
   noEvent:'без заметных событий',rain:'мм'}
 };
 
 /* ---------------- state ---------------- */
-let LANG='en', CUR=0, DATA=null, FX=null, BUILT=null, STATUS='loading';
+let LANG='en', CUR=0, DATA=null, FX=null, BUILT=null, HIST=null, STATUS='loading';
 const $=s=>document.querySelector(s);
 const CL={coral:'var(--coral)',amber:'var(--amber)',green:'var(--green)',grey:'var(--grey)'};
 
@@ -362,7 +393,8 @@ async function loadLive(){
       .then(r=>r.ok?r.json():null);
     if(d&&d.regions&&Object.keys(d.regions).length){
       DATA=d.regions; FX=d.fx||null; BUILT=d.built_at||null;
-      STATUS='live'; render(); return;
+      HIST=await fetch('history.json').then(r=>r.ok?r.json():null).catch(()=>null);
+    STATUS='live'; render(); return;
     }
   }catch(e){/* fall through to direct fetch */}
   try{ await fetchDirect(); STATUS='live'; }
@@ -411,13 +443,42 @@ function render(){
   $('#wkLive').textContent=STATUS==='live'?t.wkLive:'';
   $('#wkLive').style.display=STATUS==='live'?'':'none';
   $('#ftSrc').innerHTML=t.ftSrc; $('#ftDis').textContent=t.ftDis;
-  $('#olH').textContent=t.olH;
+  $('#olH').textContent=t.olH; $('#hiH').textContent=t.hiH;
 
   $('#tabs').innerHTML=REGIONS.map((r,i)=>
     `<button class="tab" role="tab" data-i="${i}" aria-selected="${i===CUR}">${r[LANG]}<i>${r.ap}</i></button>`).join('');
   document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{CUR=+b.dataset.i;render();}));
 
   renderRegion();
+}
+
+function renderHistory(rid, days){
+  const t=T[LANG], box=$('#history');
+  if(!HIST||!HIST.years){ box.innerHTML=`<p class="skel" style="margin:0;font-size:13px">${t.hiNone}</p>`; return; }
+
+  const rows=[];
+  if(days&&days.length){
+    const w=days.slice(0,7);
+    rows.push({year:new Date().getFullYear(), now:true,
+      score:Math.round(w.reduce((a,b)=>a+b.score,0)/w.length),
+      mm:Math.round(w.reduce((a,b)=>a+b.mm,0)*10)/10,
+      wet:w.filter(d=>d.mm>=15).length});
+  }
+  Object.keys(HIST.years).sort().reverse().forEach(y=>{
+    const d=HIST.years[y][rid];
+    if(d) rows.push({year:y, score:d.avg_score, mm:d.mm_total, wet:d.wet_days});
+  });
+  if(!rows.length){ box.innerHTML=`<p class="skel" style="margin:0;font-size:13px">${t.hiNone}</p>`; return; }
+
+  const top=Math.max(...rows.map(r=>r.score),1);
+  box.innerHTML=rows.map(r=>{
+    const [c]=tone(r.score);
+    return `<div class="hrow${r.now?' now':''}">
+      <span class="yr">${r.year}${r.now?'*':''}</span>
+      <span class="hbar"><i style="width:${Math.round(r.score/top*100)}%;background:${c}"></i></span>
+      <span class="hv"><b>${r.score}</b> · ${r.mm} ${t.rain} · ${r.wet} ${t.hiWet}</span>
+    </div>`;}).join('')
+    +`<p style="font-size:11.5px;color:var(--faint);margin:9px 0 0">* ${t.hiNow}. ${t.hiNote}</p>`;
 }
 
 function renderRegion(){
@@ -435,7 +496,7 @@ function renderRegion(){
   if(!DATA||!DATA[r.id]){
     $('#vNum').textContent='—'; $('#vSt').textContent=v[0]; $('#vTx').textContent=v[1];
     $('#week').innerHTML=`<p class="skel" style="grid-column:1/-1;margin:0">${t.loading}</p>`;
-    $('#olP').textContent=''; $('#olGrid').innerHTML=''; return;
+    $('#olP').textContent=''; $('#olGrid').innerHTML=''; renderHistory(r.id,null); return;
   }
 
   const days=DATA[r.id].map(x=>{
@@ -453,14 +514,25 @@ function renderRegion(){
   $('#vSt').textContent=v[0]; $('#vTx').textContent=v[1];
 
   const best=days.reduce((a,b)=>b.score>a.score?b:a);
-  $('#week').innerHTML=days.map(x=>{
+  $('#week').innerHTML=days.map((x,i)=>{
     const [c]=tone(x.score);
-    const cls=x===best?' best':x.ev?' ev':'';
-    return `<div class="dy${cls}"><div class="dw">${t.days[x.dow]}</div><div class="dd">${x.dd}</div>
-      <div class="tp">${x.tp}°</div><div class="rn">${x.mm.toFixed(1)} ${t.rain}</div>
-      <div class="mtr"><i style="width:${x.score}%;background:${c}"></i></div>
-      <div class="sc" style="color:${c}">${x.score}</div>
-      ${x.ev?`<div class="evd">${x.ev}</div>`:''}</div>`;}).join('');
+    // Droplet darkens with rainfall, independent of the demand colour.
+    const wet=Math.round(Math.min(1,x.mm/25)*100);
+    const flag=i===0
+      ? `<div class="flag" style="color:var(--teal-d)">${t.today}</div>`
+      : x.ev ? `<div class="flag" style="color:var(--amber)">${x.ev}</div>` : '';
+    return `<div class="dy${i===0?' today':''}">
+      <div class="hd"><div class="dw">${t.days[x.dow]}</div><div class="dd">${x.dd}</div></div>
+      <div class="bd">
+        <div class="tp">${x.tp}°</div>
+        <div class="rain"><span class="drop" style="background:color-mix(in srgb,var(--teal) ${wet}%,var(--line2))"></span>${x.mm.toFixed(1)}</div>
+        <div class="chip" style="background:color-mix(in srgb,${c} 16%,transparent);color:${c}">${x.score}</div>
+        ${flag}
+      </div></div>`;}).join('');
+
+
+
+  renderHistory(r.id, days);
 
   /* week-ahead outlook, generated from the data */
   const fwd=days.slice(1);

@@ -16,6 +16,7 @@ from datetime import date
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = ROOT / "data.json"
+HISTORY = ROOT / "history.json"
 OUT = ROOT / "post.txt"
 ERR = ROOT / "post_error.txt"
 
@@ -47,6 +48,9 @@ Telegram-канала. Читатели — владельцы и управля
 — Если данные противоречат друг другу — скажи об этом прямо, не сглаживай.
 — Если за неделю не произошло ничего заметного — так и напиши, коротко. \
 Не раздувай пустую неделю до полноценного разбора.
+— Если в данных есть прошлые годы — сравни с ними текущую неделю одной-двумя \
+фразами. Но честно: сравнима только погодная часть, приездов и загрузки за \
+те годы у нас нет. Не выдавай погодное сравнение за сравнение спроса.
 — Регулирование каннабиса в Таиланде меняется часто и бьёт по выручке \
 напрямую. Если за неделю были новости — законопроекты, статус растения, \
 правила лицензирования и продления, требования к рецепту и учёту, \
@@ -125,6 +129,27 @@ def summarize(payload):
         parts += ["", "События и праздники в окне:", *events]
     if fx.get("THB"):
         parts += ["", f"Курс: {fx['THB']:.2f} бата за доллар."]
+
+    if HISTORY.exists():
+        try:
+            h = json.loads(HISTORY.read_text(encoding="utf-8"))
+            past = ["", "Эта же неделя в прошлые годы (только погодная часть "
+                        "индекса, события исключены — годы сравниваются по "
+                        "условиям, а не по календарю):"]
+            for year in sorted(h.get("years", {}), reverse=True):
+                bits = []
+                for rid in ORDER:
+                    d = h["years"][year].get(rid)
+                    if d:
+                        bits.append(f"{NAMES[rid]} {d['avg_score']} "
+                                    f"({d['mm_total']}мм, мокрых {d['wet_days']})")
+                if bits:
+                    past.append(f"{year}: " + "; ".join(bits))
+            if len(past) > 2:
+                parts += past
+        except (ValueError, KeyError, OSError):
+            pass
+
     return "\n".join(parts)
 
 
