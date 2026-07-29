@@ -1,24 +1,13 @@
 {
- "built_at": "2026-07-28T03:52:53+00:00",
+ "built_at": "2026-07-29T03:56:55+00:00",
  "regions": {
   "bangkok": [
    {
-    "iso": "2026-07-28",
-    "tmax": 30,
-    "mm": 5.5,
-    "pop": 84,
-    "score": 51,
-    "event": {
-     "en": "King Vajiralongkorn's Birthday",
-     "ru": "День рождения короля"
-    }
-   },
-   {
     "iso": "2026-07-29",
-    "tmax": 32,
-    "mm": 16.0,
-    "pop": 90,
-    "score": 49,
+    "tmax": 30,
+    "mm": 13.1,
+    "pop": 88,
+    "score": 50,
     "event": {
      "en": "Asalha Bucha",
      "ru": "Асалха Буча"
@@ -27,70 +16,67 @@
    {
     "iso": "2026-07-30",
     "tmax": 31,
-    "mm": 20.6,
-    "pop": 100,
-    "score": 42,
-    "event": null
-   },
-   {
-    "iso": "2026-07-31",
-    "tmax": 29,
-    "mm": 19.1,
-    "pop": 91,
+    "mm": 16.1,
+    "pop": 98,
     "score": 43,
     "event": null
    },
    {
+    "iso": "2026-07-31",
+    "tmax": 31,
+    "mm": 23.5,
+    "pop": 91,
+    "score": 42,
+    "event": null
+   },
+   {
     "iso": "2026-08-01",
-    "tmax": 29,
-    "mm": 12.5,
+    "tmax": 30,
+    "mm": 12.6,
     "pop": 86,
     "score": 44,
     "event": null
    },
    {
     "iso": "2026-08-02",
-    "tmax": 29,
-    "mm": 19.4,
-    "pop": 92,
-    "score": 43,
+    "tmax": 31,
+    "mm": 5.1,
+    "pop": 80,
+    "score": 46,
     "event": null
    },
    {
     "iso": "2026-08-03",
-    "tmax": 28,
-    "mm": 18.2,
-    "pop": 86,
-    "score": 43,
+    "tmax": 30,
+    "mm": 14.3,
+    "pop": 83,
+    "score": 44,
     "event": null
    },
    {
     "iso": "2026-08-04",
-    "tmax": 29,
-    "mm": 10.2,
-    "pop": 82,
-    "score": 45,
+    "tmax": 30,
+    "mm": 17.8,
+    "pop": 87,
+    "score": 43,
+    "event": null
+   },
+   {
+    "iso": "2026-08-05",
+    "tmax": 30,
+    "mm": 12.4,
+    "pop": 80,
+    "score": 44,
     "event": null
    }
   ],
   "pattaya": [
    {
-    "iso": "2026-07-28",
-    "tmax": 29,
-    "mm": 11.1,
-    "pop": 100,
-    "score": 29,
-    "event": {
-     "en": "King Vajiralongkorn's Birthday",
-     "ru": "День рождения короля"
-    }
-   },
-   {
     "iso": "2026-07-29",
-    "tmax": 30,
-    "mm": 14.7,
-    "pop": 96,
-    "score": 27,
+    "tmax": 28,
+    "mm": 18.1,
+    "pop": 100,
+    "score": 26,
     "event": {
      "en": "Asalha Bucha",
      "ru": "Асалха Буча"
@@ -98,10 +84,10 @@
    },
    {
     "iso": "2026-07-30",
-    "tmax": 29,
-    "mm": 26.8,
+    "tmax": 28,
+    "mm": 31.9,
     "pop": 92,
-    "score": 35,
+    "score": 34,
     "event": {
      "en": "Fireworks Festival",
      "ru": "Фестиваль фейерверков"
@@ -110,9 +96,9 @@
    {
     "iso": "2026-07-31",
     "tmax": 29,
-    "mm": 29.0,
-    "pop": 94,
-    "score": 34,
+    "mm": 27.8,
+    "pop": 98,
+    "score": 35,
     "event": {
      "en": "Fireworks Festival",
      "ru": "Фестиваль фейерверков"
@@ -121,9 +107,9 @@
    {
     "iso": "2026-08-01",
     "tmax": 30,
-    "mm": 6.8,
-    "pop": 69,
-    "score": 43,
+    "mm": 3.6,
+    "pop": 64,
+    "score": 45,
     "event": {
      "en": "Fireworks Festival",
      "ru": "Фестиваль фейерверков"
@@ -132,9 +118,9 @@
    {
     "iso": "2026-08-02",
     "tmax": 30,
-    "mm": 15.3,
-    "pop": 76,
-    "score": 40,
+    "mm": 11.2,
+    "pop": 69,
+    "score": 42,
     "event": {
      "en": "Fireworks Festival",
      "ru": "Фестиваль фейерверков"
@@ -142,39 +128,36 @@
    },
    {
     "iso": "2026-08-03",
-    "tmax": 27,
-    "mm": 24.2,
-    "pop": 71,
-    "score": 19,
+    "tmax": 30,
+    "mm": 15.5,
+    "pop": 75,
+    "score": 22,
     "event": null
    },
    {
     "iso": "2026-08-04",
-    "tmax": 29,
-    "mm": 7.8,
-    "pop": 68,
-    "score": 25,
+    "tmax": 30,
+    "mm": 15.0,
+    "pop": 76,
+    "score": 22,
+    "event": null
+   },
+   {
+    "iso": "2026-08-05",
+    "tmax": 30,
+    "mm": 5.4,
+    "pop": 71,
+    "score": 26,
     "event": null
    }
   ],
   "phuket": [
    {
-    "iso": "2026-07-28",
-    "tmax": 32,
-    "mm": 3.1,
-    "pop": 82,
-    "score": 43,
-    "event": {
-     "en": "King Vajiralongkorn's Birthday",
-     "ru": "День рождения короля"
-    }
-   },
-   {
     "iso": "2026-07-29",
-    "tmax": 26,
-    "mm": 40.5,
-    "pop": 97,
-    "score": 30,
+    "tmax": 29,
+    "mm": 24.7,
+    "pop": 100,
+    "score": 32,
     "event": {
      "en": "Asalha Bucha",
      "ru": "Асалха Буча"
@@ -182,143 +165,137 @@
    },
    {
     "iso": "2026-07-30",
-    "tmax": 28,
-    "mm": 9.2,
-    "pop": 86,
-    "score": 34,
+    "tmax": 29,
+    "mm": 13.1,
+    "pop": 93,
+    "score": 32,
     "event": null
    },
    {
     "iso": "2026-07-31",
     "tmax": 30,
-    "mm": 9.4,
-    "pop": 65,
+    "mm": 8.2,
+    "pop": 67,
     "score": 35,
     "event": null
    },
    {
     "iso": "2026-08-01",
-    "tmax": 30,
-    "mm": 2.7,
-    "pop": 60,
-    "score": 38,
+    "tmax": 31,
+    "mm": 1.9,
+    "pop": 56,
+    "score": 39,
     "event": null
    },
    {
     "iso": "2026-08-02",
-    "tmax": 28,
-    "mm": 17.2,
-    "pop": 78,
-    "score": 30,
+    "tmax": 29,
+    "mm": 16.3,
+    "pop": 86,
+    "score": 31,
     "event": null
    },
    {
     "iso": "2026-08-03",
     "tmax": 28,
-    "mm": 23.8,
-    "pop": 85,
+    "mm": 27.0,
+    "pop": 81,
+    "score": 26,
+    "event": null
+   },
+   {
+    "iso": "2026-08-04",
+    "tmax": 26,
+    "mm": 17.0,
+    "pop": 79,
+    "score": 30,
+    "event": null
+   },
+   {
+    "iso": "2026-08-05",
+    "tmax": 29,
+    "mm": 17.6,
+    "pop": 71,
+    "score": 31,
+    "event": null
+   }
+  ],
+  "krabi": [
+   {
+    "iso": "2026-07-29",
+    "tmax": 28,
+    "mm": 17.0,
+    "pop": 100,
+    "score": 36,
+    "event": {
+     "en": "Asalha Bucha",
+     "ru": "Асалха Буча"
+    }
+   },
+   {
+    "iso": "2026-07-30",
+    "tmax": 27,
+    "mm": 7.4,
+    "pop": 91,
+    "score": 36,
+    "event": null
+   },
+   {
+    "iso": "2026-07-31",
+    "tmax": 30,
+    "mm": 5.6,
+    "pop": 69,
+    "score": 38,
+    "event": null
+   },
+   {
+    "iso": "2026-08-01",
+    "tmax": 30,
+    "mm": 3.5,
+    "pop": 50,
+    "score": 40,
+    "event": null
+   },
+   {
+    "iso": "2026-08-02",
+    "tmax": 28,
+    "mm": 17.1,
+    "pop": 82,
+    "score": 31,
+    "event": null
+   },
+   {
+    "iso": "2026-08-03",
+    "tmax": 28,
+    "mm": 25.9,
+    "pop": 82,
     "score": 27,
     "event": null
    },
    {
     "iso": "2026-08-04",
     "tmax": 28,
-    "mm": 11.4,
-    "pop": 70,
-    "score": 34,
-    "event": null
-   }
-  ],
-  "krabi": [
-   {
-    "iso": "2026-07-28",
-    "tmax": 31,
-    "mm": 5.0,
-    "pop": 76,
-    "score": 44,
-    "event": {
-     "en": "King Vajiralongkorn's Birthday",
-     "ru": "День рождения короля"
-    }
-   },
-   {
-    "iso": "2026-07-29",
-    "tmax": 27,
-    "mm": 18.4,
-    "pop": 92,
-    "score": 36,
-    "event": {
-     "en": "Asalha Bucha",
-     "ru": "Асалха Буча"
-    }
-   },
-   {
-    "iso": "2026-07-30",
-    "tmax": 29,
-    "mm": 5.9,
-    "pop": 84,
-    "score": 37,
+    "mm": 18.6,
+    "pop": 80,
+    "score": 30,
     "event": null
    },
    {
-    "iso": "2026-07-31",
-    "tmax": 30,
-    "mm": 9.0,
-    "pop": 69,
-    "score": 36,
-    "event": null
-   },
-   {
-    "iso": "2026-08-01",
-    "tmax": 31,
-    "mm": 2.4,
-    "pop": 73,
-    "score": 39,
-    "event": null
-   },
-   {
-    "iso": "2026-08-02",
-    "tmax": 29,
-    "mm": 22.0,
-    "pop": 76,
-    "score": 29,
-    "event": null
-   },
-   {
-    "iso": "2026-08-03",
+    "iso": "2026-08-05",
     "tmax": 28,
-    "mm": 23.6,
-    "pop": 82,
-    "score": 28,
-    "event": null
-   },
-   {
-    "iso": "2026-08-04",
-    "tmax": 27,
-    "mm": 8.8,
-    "pop": 74,
-    "score": 36,
+    "mm": 21.0,
+    "pop": 73,
+    "score": 30,
     "event": null
    }
   ],
   "samui": [
    {
-    "iso": "2026-07-28",
-    "tmax": 30,
-    "mm": 2.7,
-    "pop": 80,
-    "score": 46,
-    "event": {
-     "en": "King Vajiralongkorn's Birthday",
-     "ru": "День рождения короля"
-    }
-   },
-   {
     "iso": "2026-07-29",
-    "tmax": 27,
-    "mm": 17.4,
-    "pop": 93,
-    "score": 38,
+    "tmax": 28,
+    "mm": 15.7,
+    "pop": 96,
+    "score": 39,
     "event": {
      "en": "Asalha Bucha",
      "ru": "Асалха Буча"
@@ -326,71 +303,68 @@
    },
    {
     "iso": "2026-07-30",
-    "tmax": 26,
-    "mm": 26.1,
-    "pop": 89,
-    "score": 28,
+    "tmax": 27,
+    "mm": 22.3,
+    "pop": 92,
+    "score": 29,
     "event": null
    },
    {
     "iso": "2026-07-31",
-    "tmax": 29,
-    "mm": 5.5,
-    "pop": 72,
-    "score": 39,
+    "tmax": 30,
+    "mm": 17.6,
+    "pop": 75,
+    "score": 33,
     "event": null
    },
    {
     "iso": "2026-08-01",
     "tmax": 30,
-    "mm": 3.3,
-    "pop": 73,
-    "score": 40,
+    "mm": 4.9,
+    "pop": 71,
+    "score": 39,
     "event": null
    },
    {
     "iso": "2026-08-02",
-    "tmax": 29,
-    "mm": 6.9,
-    "pop": 85,
-    "score": 37,
+    "tmax": 30,
+    "mm": 3.3,
+    "pop": 93,
+    "score": 39,
     "event": null
    },
    {
     "iso": "2026-08-03",
-    "tmax": 28,
-    "mm": 4.0,
-    "pop": 82,
-    "score": 39,
+    "tmax": 29,
+    "mm": 5.4,
+    "pop": 88,
+    "score": 38,
     "event": null
    },
    {
     "iso": "2026-08-04",
     "tmax": 29,
-    "mm": 0.8,
-    "pop": 73,
+    "mm": 2.4,
+    "pop": 78,
+    "score": 40,
+    "event": null
+   },
+   {
+    "iso": "2026-08-05",
+    "tmax": 30,
+    "mm": 1.2,
+    "pop": 69,
     "score": 41,
     "event": null
    }
   ],
   "chiangmai": [
    {
-    "iso": "2026-07-28",
-    "tmax": 30,
-    "mm": 15.2,
-    "pop": 92,
-    "score": 37,
-    "event": {
-     "en": "King Vajiralongkorn's Birthday",
-     "ru": "День рождения короля"
-    }
-   },
-   {
     "iso": "2026-07-29",
-    "tmax": 30,
-    "mm": 13.1,
-    "pop": 94,
-    "score": 37,
+    "tmax": 28,
+    "mm": 15.9,
+    "pop": 98,
+    "score": 36,
     "event": {
      "en": "Asalha Bucha",
      "ru": "Асалха Буча"
@@ -399,72 +373,74 @@
    {
     "iso": "2026-07-30",
     "tmax": 29,
-    "mm": 10.4,
-    "pop": 92,
-    "score": 32,
-    "event": null
-   },
-   {
-    "iso": "2026-07-31",
-    "tmax": 29,
-    "mm": 28.1,
-    "pop": 96,
+    "mm": 35.1,
+    "pop": 97,
     "score": 27,
     "event": null
    },
    {
-    "iso": "2026-08-01",
-    "tmax": 28,
-    "mm": 18.2,
+    "iso": "2026-07-31",
+    "tmax": 30,
+    "mm": 16.0,
     "pop": 96,
     "score": 30,
     "event": null
    },
    {
+    "iso": "2026-08-01",
+    "tmax": 29,
+    "mm": 28.1,
+    "pop": 92,
+    "score": 27,
+    "event": null
+   },
+   {
     "iso": "2026-08-02",
-    "tmax": 28,
-    "mm": 33.6,
+    "tmax": 30,
+    "mm": 21.5,
+    "pop": 96,
+    "score": 29,
+    "event": null
+   },
+   {
+    "iso": "2026-08-03",
+    "tmax": 27,
+    "mm": 16.7,
+    "pop": 96,
+    "score": 30,
+    "event": null
+   },
+   {
+    "iso": "2026-08-04",
+    "tmax": 30,
+    "mm": 40.8,
     "pop": 98,
     "score": 27,
     "event": null
    },
    {
-    "iso": "2026-08-03",
-    "tmax": 29,
-    "mm": 39.6,
-    "pop": 100,
+    "iso": "2026-08-05",
+    "tmax": 28,
+    "mm": 36.2,
+    "pop": 98,
     "score": 27,
-    "event": null
-   },
-   {
-    "iso": "2026-08-04",
-    "tmax": 29,
-    "mm": 24.8,
-    "pop": 99,
-    "score": 28,
     "event": null
    }
   ]
  },
  "fx": {
   "USD": 1,
-  "AUD": 1.430712,
-  "CNY": 6.774553,
-  "EUR": 0.878802,
-  "GBP": 0.751907,
-  "INR": 95.938043,
-  "KRW": 1467.334302,
-  "MYR": 4.085367,
-  "RUB": 77.98517,
-  "THB": 33.623749
+  "AUD": 1.433775,
+  "CNY": 6.77847,
+  "EUR": 0.878652,
+  "GBP": 0.752494,
+  "INR": 95.858965,
+  "KRW": 1457.517826,
+  "MYR": 4.090974,
+  "RUB": 78.581702,
+  "THB": 33.578857
  },
  "holidays": {
-  "2026-07-28": [
-   {
-    "country": "TH",
-    "name": "King Vajiralongkorn's Birthday"
-   }
-  ],
   "2026-07-29": [
    {
     "country": "TH",
