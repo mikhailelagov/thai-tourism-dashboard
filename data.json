@@ -1,125 +1,78 @@
 {
- "built_at": "2026-07-29T03:56:55+00:00",
+ "built_at": "2026-07-30T03:47:44+00:00",
  "regions": {
   "bangkok": [
    {
-    "iso": "2026-07-29",
-    "tmax": 30,
-    "mm": 13.1,
-    "pop": 88,
-    "score": 50,
-    "event": {
-     "en": "Asalha Bucha",
-     "ru": "Асалха Буча"
-    }
-   },
-   {
     "iso": "2026-07-30",
-    "tmax": 31,
-    "mm": 16.1,
-    "pop": 98,
+    "tmax": 30,
+    "mm": 14.2,
+    "pop": 100,
     "score": 43,
     "event": null
    },
    {
     "iso": "2026-07-31",
     "tmax": 31,
-    "mm": 23.5,
-    "pop": 91,
-    "score": 42,
+    "mm": 11.0,
+    "pop": 94,
+    "score": 44,
     "event": null
    },
    {
     "iso": "2026-08-01",
     "tmax": 30,
-    "mm": 12.6,
-    "pop": 86,
-    "score": 44,
+    "mm": 18.0,
+    "pop": 84,
+    "score": 43,
     "event": null
    },
    {
     "iso": "2026-08-02",
-    "tmax": 31,
-    "mm": 5.1,
-    "pop": 80,
-    "score": 46,
+    "tmax": 30,
+    "mm": 11.3,
+    "pop": 94,
+    "score": 44,
     "event": null
    },
    {
     "iso": "2026-08-03",
     "tmax": 30,
-    "mm": 14.3,
-    "pop": 83,
+    "mm": 12.2,
+    "pop": 94,
     "score": 44,
     "event": null
    },
    {
     "iso": "2026-08-04",
     "tmax": 30,
-    "mm": 17.8,
-    "pop": 87,
-    "score": 43,
+    "mm": 5.1,
+    "pop": 79,
+    "score": 46,
     "event": null
    },
    {
     "iso": "2026-08-05",
-    "tmax": 30,
-    "mm": 12.4,
-    "pop": 80,
-    "score": 44,
+    "tmax": 31,
+    "mm": 4.8,
+    "pop": 85,
+    "score": 46,
+    "event": null
+   },
+   {
+    "iso": "2026-08-06",
+    "tmax": 31,
+    "mm": 7.8,
+    "pop": 82,
+    "score": 45,
     "event": null
    }
   ],
   "pattaya": [
    {
-    "iso": "2026-07-29",
-    "tmax": 28,
-    "mm": 18.1,
-    "pop": 100,
-    "score": 26,
-    "event": {
-     "en": "Asalha Bucha",
-     "ru": "Асалха Буча"
-    }
-   },
-   {
     "iso": "2026-07-30",
-    "tmax": 28,
-    "mm": 31.9,
-    "pop": 92,
-    "score": 34,
-    "event": {
-     "en": "Fireworks Festival",
-     "ru": "Фестиваль фейерверков"
-    }
-   },
-   {
-    "iso": "2026-07-31",
-    "tmax": 29,
-    "mm": 27.8,
-    "pop": 98,
-    "score": 35,
-    "event": {
-     "en": "Fireworks Festival",
-     "ru": "Фестиваль фейерверков"
-    }
-   },
-   {
-    "iso": "2026-08-01",
     "tmax": 30,
-    "mm": 3.6,
-    "pop": 64,
-    "score": 45,
-    "event": {
-     "en": "Fireworks Festival",
-     "ru": "Фестиваль фейерверков"
-    }
-   },
-   {
-    "iso": "2026-08-02",
-    "tmax": 30,
-    "mm": 11.2,
-    "pop": 69,
+    "mm": 8.0,
+    "pop": 100,
     "score": 42,
     "event": {
      "en": "Fireworks Festival",
@@ -127,325 +80,347 @@
     }
    },
    {
-    "iso": "2026-08-03",
+    "iso": "2026-07-31",
+    "tmax": 29,
+    "mm": 16.9,
+    "pop": 94,
+    "score": 39,
+    "event": {
+     "en": "Fireworks Festival",
+     "ru": "Фестиваль фейерверков"
+    }
+   },
+   {
+    "iso": "2026-08-01",
     "tmax": 30,
-    "mm": 15.5,
+    "mm": 9.1,
     "pop": 75,
+    "score": 42,
+    "event": {
+     "en": "Fireworks Festival",
+     "ru": "Фестиваль фейерверков"
+    }
+   },
+   {
+    "iso": "2026-08-02",
+    "tmax": 30,
+    "mm": 6.7,
+    "pop": 80,
+    "score": 43,
+    "event": {
+     "en": "Fireworks Festival",
+     "ru": "Фестиваль фейерверков"
+    }
+   },
+   {
+    "iso": "2026-08-03",
+    "tmax": 29,
+    "mm": 15.6,
+    "pop": 78,
     "score": 22,
     "event": null
    },
    {
     "iso": "2026-08-04",
-    "tmax": 30,
-    "mm": 15.0,
-    "pop": 76,
-    "score": 22,
+    "tmax": 29,
+    "mm": 5.0,
+    "pop": 67,
+    "score": 26,
     "event": null
    },
    {
     "iso": "2026-08-05",
     "tmax": 30,
-    "mm": 5.4,
-    "pop": 71,
+    "mm": 4.8,
+    "pop": 67,
     "score": 26,
+    "event": null
+   },
+   {
+    "iso": "2026-08-06",
+    "tmax": 30,
+    "mm": 9.6,
+    "pop": 65,
+    "score": 24,
     "event": null
    }
   ],
   "phuket": [
    {
-    "iso": "2026-07-29",
-    "tmax": 29,
-    "mm": 24.7,
-    "pop": 100,
-    "score": 32,
-    "event": {
-     "en": "Asalha Bucha",
-     "ru": "Асалха Буча"
-    }
-   },
-   {
     "iso": "2026-07-30",
     "tmax": 29,
-    "mm": 13.1,
-    "pop": 93,
-    "score": 32,
+    "mm": 16.2,
+    "pop": 98,
+    "score": 30,
     "event": null
    },
    {
     "iso": "2026-07-31",
     "tmax": 30,
-    "mm": 8.2,
-    "pop": 67,
-    "score": 35,
+    "mm": 2.9,
+    "pop": 76,
+    "score": 37,
     "event": null
    },
    {
     "iso": "2026-08-01",
-    "tmax": 31,
-    "mm": 1.9,
-    "pop": 56,
-    "score": 39,
+    "tmax": 30,
+    "mm": 6.4,
+    "pop": 75,
+    "score": 36,
     "event": null
    },
    {
     "iso": "2026-08-02",
     "tmax": 29,
-    "mm": 16.3,
-    "pop": 86,
-    "score": 31,
+    "mm": 10.3,
+    "pop": 88,
+    "score": 33,
     "event": null
    },
    {
     "iso": "2026-08-03",
-    "tmax": 28,
-    "mm": 27.0,
-    "pop": 81,
-    "score": 26,
+    "tmax": 30,
+    "mm": 21.4,
+    "pop": 80,
+    "score": 28,
     "event": null
    },
    {
     "iso": "2026-08-04",
-    "tmax": 26,
-    "mm": 17.0,
-    "pop": 79,
-    "score": 30,
+    "tmax": 29,
+    "mm": 12.7,
+    "pop": 69,
+    "score": 33,
     "event": null
    },
    {
     "iso": "2026-08-05",
-    "tmax": 29,
-    "mm": 17.6,
-    "pop": 71,
-    "score": 31,
+    "tmax": 27,
+    "mm": 11.2,
+    "pop": 64,
+    "score": 34,
+    "event": null
+   },
+   {
+    "iso": "2026-08-06",
+    "tmax": 30,
+    "mm": 9.6,
+    "pop": 69,
+    "score": 34,
     "event": null
    }
   ],
   "krabi": [
    {
-    "iso": "2026-07-29",
-    "tmax": 28,
-    "mm": 17.0,
-    "pop": 100,
-    "score": 36,
-    "event": {
-     "en": "Asalha Bucha",
-     "ru": "Асалха Буча"
-    }
-   },
-   {
     "iso": "2026-07-30",
     "tmax": 27,
-    "mm": 7.4,
-    "pop": 91,
-    "score": 36,
+    "mm": 16.4,
+    "pop": 100,
+    "score": 31,
     "event": null
    },
    {
     "iso": "2026-07-31",
-    "tmax": 30,
-    "mm": 5.6,
-    "pop": 69,
-    "score": 38,
+    "tmax": 29,
+    "mm": 6.5,
+    "pop": 78,
+    "score": 37,
     "event": null
    },
    {
     "iso": "2026-08-01",
     "tmax": 30,
-    "mm": 3.5,
-    "pop": 50,
+    "mm": 2.2,
+    "pop": 53,
     "score": 40,
     "event": null
    },
    {
     "iso": "2026-08-02",
-    "tmax": 28,
-    "mm": 17.1,
-    "pop": 82,
-    "score": 31,
+    "tmax": 29,
+    "mm": 9.1,
+    "pop": 84,
+    "score": 35,
     "event": null
    },
    {
     "iso": "2026-08-03",
-    "tmax": 28,
-    "mm": 25.9,
+    "tmax": 29,
+    "mm": 12.2,
     "pop": 82,
-    "score": 27,
+    "score": 34,
     "event": null
    },
    {
     "iso": "2026-08-04",
-    "tmax": 28,
-    "mm": 18.6,
-    "pop": 80,
-    "score": 30,
+    "tmax": 30,
+    "mm": 4.7,
+    "pop": 59,
+    "score": 39,
     "event": null
    },
    {
     "iso": "2026-08-05",
-    "tmax": 28,
-    "mm": 21.0,
-    "pop": 73,
-    "score": 30,
+    "tmax": 26,
+    "mm": 7.6,
+    "pop": 69,
+    "score": 37,
+    "event": null
+   },
+   {
+    "iso": "2026-08-06",
+    "tmax": 30,
+    "mm": 13.4,
+    "pop": 74,
+    "score": 33,
     "event": null
    }
   ],
   "samui": [
    {
-    "iso": "2026-07-29",
-    "tmax": 28,
-    "mm": 15.7,
-    "pop": 96,
-    "score": 39,
-    "event": {
-     "en": "Asalha Bucha",
-     "ru": "Асалха Буча"
-    }
-   },
-   {
     "iso": "2026-07-30",
-    "tmax": 27,
-    "mm": 22.3,
-    "pop": 92,
-    "score": 29,
+    "tmax": 28,
+    "mm": 13.2,
+    "pop": 88,
+    "score": 34,
     "event": null
    },
    {
     "iso": "2026-07-31",
-    "tmax": 30,
-    "mm": 17.6,
-    "pop": 75,
-    "score": 33,
+    "tmax": 29,
+    "mm": 8.2,
+    "pop": 84,
+    "score": 37,
     "event": null
    },
    {
     "iso": "2026-08-01",
     "tmax": 30,
-    "mm": 4.9,
-    "pop": 71,
-    "score": 39,
+    "mm": 8.9,
+    "pop": 78,
+    "score": 37,
     "event": null
    },
    {
     "iso": "2026-08-02",
     "tmax": 30,
-    "mm": 3.3,
-    "pop": 93,
+    "mm": 3.5,
+    "pop": 84,
     "score": 39,
     "event": null
    },
    {
     "iso": "2026-08-03",
-    "tmax": 29,
-    "mm": 5.4,
-    "pop": 88,
-    "score": 38,
+    "tmax": 30,
+    "mm": 13.4,
+    "pop": 87,
+    "score": 34,
     "event": null
    },
    {
     "iso": "2026-08-04",
-    "tmax": 29,
-    "mm": 2.4,
-    "pop": 78,
-    "score": 40,
+    "tmax": 30,
+    "mm": 5.2,
+    "pop": 61,
+    "score": 39,
     "event": null
    },
    {
     "iso": "2026-08-05",
     "tmax": 30,
-    "mm": 1.2,
-    "pop": 69,
+    "mm": 1.0,
+    "pop": 78,
+    "score": 41,
+    "event": null
+   },
+   {
+    "iso": "2026-08-06",
+    "tmax": 30,
+    "mm": 1.8,
+    "pop": 71,
     "score": 41,
     "event": null
    }
   ],
   "chiangmai": [
    {
-    "iso": "2026-07-29",
-    "tmax": 28,
-    "mm": 15.9,
-    "pop": 98,
-    "score": 36,
-    "event": {
-     "en": "Asalha Bucha",
-     "ru": "Асалха Буча"
-    }
-   },
-   {
     "iso": "2026-07-30",
-    "tmax": 29,
-    "mm": 35.1,
-    "pop": 97,
-    "score": 27,
+    "tmax": 28,
+    "mm": 22.9,
+    "pop": 100,
+    "score": 28,
     "event": null
    },
    {
     "iso": "2026-07-31",
-    "tmax": 30,
-    "mm": 16.0,
-    "pop": 96,
-    "score": 30,
+    "tmax": 29,
+    "mm": 25.3,
+    "pop": 99,
+    "score": 27,
     "event": null
    },
    {
     "iso": "2026-08-01",
-    "tmax": 29,
-    "mm": 28.1,
-    "pop": 92,
+    "tmax": 30,
+    "mm": 42.6,
+    "pop": 96,
     "score": 27,
     "event": null
    },
    {
     "iso": "2026-08-02",
     "tmax": 30,
-    "mm": 21.5,
-    "pop": 96,
-    "score": 29,
+    "mm": 29.7,
+    "pop": 98,
+    "score": 27,
     "event": null
    },
    {
     "iso": "2026-08-03",
-    "tmax": 27,
-    "mm": 16.7,
-    "pop": 96,
-    "score": 30,
+    "tmax": 28,
+    "mm": 21.9,
+    "pop": 98,
+    "score": 29,
     "event": null
    },
    {
     "iso": "2026-08-04",
-    "tmax": 30,
-    "mm": 40.8,
-    "pop": 98,
-    "score": 27,
+    "tmax": 28,
+    "mm": 22.8,
+    "pop": 93,
+    "score": 28,
     "event": null
    },
    {
     "iso": "2026-08-05",
     "tmax": 28,
-    "mm": 36.2,
+    "mm": 26.6,
     "pop": 98,
     "score": 27,
+    "event": null
+   },
+   {
+    "iso": "2026-08-06",
+    "tmax": 29,
+    "mm": 23.8,
+    "pop": 98,
+    "score": 28,
     "event": null
    }
   ]
  },
  "fx": {
   "USD": 1,
-  "AUD": 1.433775,
-  "CNY": 6.77847,
-  "EUR": 0.878652,
-  "GBP": 0.752494,
-  "INR": 95.858965,
-  "KRW": 1457.517826,
-  "MYR": 4.090974,
-  "RUB": 78.581702,
-  "THB": 33.578857
+  "AUD": 1.438397,
+  "CNY": 6.773647,
+  "EUR": 0.875576,
+  "GBP": 0.750708,
+  "INR": 95.755723,
+  "KRW": 1448.987863,
+  "MYR": 4.089576,
+  "RUB": 79.610054,
+  "THB": 33.525647
  },
- "holidays": {
-  "2026-07-29": [
-   {
-    "country": "TH",
-    "name": "Asalha Bucha"
-   }
-  ]
- }
+ "holidays": {}
 }

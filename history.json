@@ -1,7 +1,7 @@
 {
  "window": {
-  "from": "07-29",
-  "to": "08-04",
+  "from": "07-30",
+  "to": "08-05",
   "days": 7
  },
  "note": "weather-only index; events and holidays excluded so the years compare conditions rather than calendars",
@@ -9,153 +9,153 @@
   "2025": {
    "bangkok": {
     "avg_score": 47,
-    "mm_total": 18.4,
+    "mm_total": 9.6,
     "wet_days": 0,
-    "tmax_avg": 33.4
+    "tmax_avg": 33.9
    },
    "pattaya": {
-    "avg_score": 29,
-    "mm_total": 10.2,
+    "avg_score": 30,
+    "mm_total": 2.5,
     "wet_days": 0,
-    "tmax_avg": 33.3
+    "tmax_avg": 33.7
    },
    "phuket": {
     "avg_score": 39,
-    "mm_total": 27.6,
+    "mm_total": 28.5,
     "wet_days": 0,
-    "tmax_avg": 32.1
+    "tmax_avg": 32.2
    },
    "krabi": {
     "avg_score": 39,
-    "mm_total": 46.6,
+    "mm_total": 46.9,
     "wet_days": 2,
-    "tmax_avg": 31.7
+    "tmax_avg": 31.8
    },
    "samui": {
     "avg_score": 42,
-    "mm_total": 24.6,
+    "mm_total": 24.0,
     "wet_days": 0,
-    "tmax_avg": 33.5
+    "tmax_avg": 33.6
    },
    "chiangmai": {
     "avg_score": 33,
-    "mm_total": 56.0,
-    "wet_days": 2,
-    "tmax_avg": 31.4
+    "mm_total": 52.3,
+    "wet_days": 1,
+    "tmax_avg": 31.6
    }
   },
   "2024": {
    "bangkok": {
-    "avg_score": 45,
-    "mm_total": 61.8,
-    "wet_days": 1,
-    "tmax_avg": 30.7
-   },
-   "pattaya": {
-    "avg_score": 24,
-    "mm_total": 68.7,
-    "wet_days": 2,
-    "tmax_avg": 29.7
-   },
-   "phuket": {
-    "avg_score": 36,
-    "mm_total": 47.7,
-    "wet_days": 0,
-    "tmax_avg": 30.1
-   },
-   "krabi": {
-    "avg_score": 36,
-    "mm_total": 64.2,
-    "wet_days": 1,
-    "tmax_avg": 30.6
-   },
-   "samui": {
-    "avg_score": 38,
-    "mm_total": 49.5,
-    "wet_days": 1,
-    "tmax_avg": 30.1
-   },
-   "chiangmai": {
-    "avg_score": 29,
-    "mm_total": 156.1,
-    "wet_days": 5,
-    "tmax_avg": 28.0
-   }
-  },
-  "2023": {
-   "bangkok": {
-    "avg_score": 45,
-    "mm_total": 44.7,
+    "avg_score": 46,
+    "mm_total": 39.0,
     "wet_days": 0,
     "tmax_avg": 30.7
    },
    "pattaya": {
     "avg_score": 25,
-    "mm_total": 48.8,
+    "mm_total": 44.1,
+    "wet_days": 1,
+    "tmax_avg": 29.8
+   },
+   "phuket": {
+    "avg_score": 35,
+    "mm_total": 53.6,
+    "wet_days": 1,
+    "tmax_avg": 30.0
+   },
+   "krabi": {
+    "avg_score": 36,
+    "mm_total": 61.6,
+    "wet_days": 1,
+    "tmax_avg": 30.6
+   },
+   "samui": {
+    "avg_score": 38,
+    "mm_total": 46.1,
+    "wet_days": 1,
+    "tmax_avg": 29.9
+   },
+   "chiangmai": {
+    "avg_score": 29,
+    "mm_total": 159.3,
+    "wet_days": 5,
+    "tmax_avg": 27.8
+   }
+  },
+  "2023": {
+   "bangkok": {
+    "avg_score": 46,
+    "mm_total": 37.0,
+    "wet_days": 0,
+    "tmax_avg": 30.7
+   },
+   "pattaya": {
+    "avg_score": 26,
+    "mm_total": 40.0,
     "wet_days": 1,
     "tmax_avg": 30.2
    },
    "phuket": {
     "avg_score": 36,
-    "mm_total": 44.4,
+    "mm_total": 43.8,
     "wet_days": 0,
-    "tmax_avg": 29.7
+    "tmax_avg": 29.9
    },
    "krabi": {
     "avg_score": 34,
-    "mm_total": 85.2,
+    "mm_total": 84.9,
     "wet_days": 3,
     "tmax_avg": 29.7
    },
    "samui": {
     "avg_score": 43,
-    "mm_total": 12.0,
+    "mm_total": 11.9,
     "wet_days": 0,
-    "tmax_avg": 31.4
+    "tmax_avg": 31.7
    },
    "chiangmai": {
     "avg_score": 29,
-    "mm_total": 147.9,
-    "wet_days": 6,
-    "tmax_avg": 29.7
+    "mm_total": 133.0,
+    "wet_days": 5,
+    "tmax_avg": 29.4
    }
   },
   "2022": {
    "bangkok": {
     "avg_score": 44,
-    "mm_total": 89.5,
+    "mm_total": 97.6,
     "wet_days": 3,
-    "tmax_avg": 30.9
+    "tmax_avg": 30.7
    },
    "pattaya": {
-    "avg_score": 24,
-    "mm_total": 64.2,
+    "avg_score": 23,
+    "mm_total": 77.5,
     "wet_days": 2,
-    "tmax_avg": 29.7
+    "tmax_avg": 29.4
    },
    "phuket": {
-    "avg_score": 33,
-    "mm_total": 85.7,
+    "avg_score": 34,
+    "mm_total": 72.2,
     "wet_days": 2,
     "tmax_avg": 28.4
    },
    "krabi": {
     "avg_score": 35,
-    "mm_total": 74.9,
+    "mm_total": 71.8,
     "wet_days": 3,
     "tmax_avg": 29.0
    },
    "samui": {
-    "avg_score": 38,
-    "mm_total": 55.2,
+    "avg_score": 39,
+    "mm_total": 45.4,
     "wet_days": 1,
-    "tmax_avg": 29.7
+    "tmax_avg": 29.6
    },
    "chiangmai": {
-    "avg_score": 32,
-    "mm_total": 81.9,
+    "avg_score": 31,
+    "mm_total": 95.1,
     "wet_days": 3,
-    "tmax_avg": 30.7
+    "tmax_avg": 30.4
    }
   }
  }
