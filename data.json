@@ -1,100 +1,84 @@
 {
- "built_at": "2026-08-07T03:41:26+00:00",
+ "built_at": "2026-08-08T02:46:33+00:00",
  "regions": {
   "bangkok": [
    {
-    "iso": "2026-08-07",
-    "tmax": 31,
-    "mm": 5.7,
-    "pop": 99,
-    "score": 44,
-    "parts": {
-     "weather": 45.1,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
-    },
-    "event": null
-   },
-   {
     "iso": "2026-08-08",
-    "tmax": 32,
-    "mm": 2.2,
-    "pop": 82,
+    "tmax": 31,
+    "mm": 8.5,
+    "pop": 92,
     "score": 45,
     "parts": {
-     "weather": 46.1,
+     "weather": 44.7,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
+     "fuel": 1.3,
+     "fx": -1.2
     },
     "event": null
    },
    {
     "iso": "2026-08-09",
     "tmax": 31,
-    "mm": 7.7,
-    "pop": 92,
-    "score": 44,
+    "mm": 8.6,
+    "pop": 96,
+    "score": 45,
     "parts": {
-     "weather": 44.9,
+     "weather": 44.6,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
+     "fuel": 1.3,
+     "fx": -1.2
     },
     "event": null
    },
    {
     "iso": "2026-08-10",
     "tmax": 30,
-    "mm": 3.6,
-    "pop": 92,
-    "score": 45,
+    "mm": 2.1,
+    "pop": 90,
+    "score": 46,
     "parts": {
-     "weather": 45.6,
+     "weather": 46.0,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
+     "fuel": 1.3,
+     "fx": -1.2
     },
     "event": null
    },
    {
     "iso": "2026-08-11",
-    "tmax": 30,
-    "mm": 6.0,
-    "pop": 82,
-    "score": 44,
+    "tmax": 32,
+    "mm": 8.1,
+    "pop": 90,
+    "score": 45,
     "parts": {
-     "weather": 45.4,
+     "weather": 44.8,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
+     "fuel": 1.3,
+     "fx": -1.2
     },
     "event": null
    },
    {
     "iso": "2026-08-12",
-    "tmax": 29,
-    "mm": 8.4,
-    "pop": 67,
-    "score": 50,
+    "tmax": 30,
+    "mm": 6.7,
+    "pop": 76,
+    "score": 51,
     "parts": {
-     "weather": 45.2,
+     "weather": 45.3,
      "event": 0.0,
      "holiday_th": 6.0,
      "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
+     "fuel": 1.3,
+     "fx": -1.2
     },
     "event": {
      "en": "The Queen Mother's Birthday",
@@ -103,131 +87,131 @@
    },
    {
     "iso": "2026-08-13",
-    "tmax": 29,
-    "mm": 6.6,
-    "pop": 78,
-    "score": 44,
+    "tmax": 32,
+    "mm": 8.0,
+    "pop": 88,
+    "score": 45,
     "parts": {
-     "weather": 45.3,
+     "weather": 44.9,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
+     "fuel": 1.3,
+     "fx": -1.2
     },
     "event": null
    },
    {
     "iso": "2026-08-14",
-    "tmax": 31,
-    "mm": 9.4,
-    "pop": 95,
-    "score": 43,
+    "tmax": 29,
+    "mm": 11.2,
+    "pop": 91,
+    "score": 44,
     "parts": {
-     "weather": 44.5,
+     "weather": 44.2,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
+     "fuel": 1.3,
+     "fx": -1.2
+    },
+    "event": null
+   },
+   {
+    "iso": "2026-08-15",
+    "tmax": 30,
+    "mm": 20.0,
+    "pop": 92,
+    "score": 47,
+    "parts": {
+     "weather": 42.5,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 4.0,
+     "fuel": 1.3,
+     "fx": -1.2
     },
     "event": null
    }
   ],
   "pattaya": [
    {
-    "iso": "2026-08-07",
-    "tmax": 30,
-    "mm": 8.2,
-    "pop": 92,
-    "score": 23,
-    "parts": {
-     "weather": 23.9,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
-    },
-    "event": null
-   },
-   {
     "iso": "2026-08-08",
-    "tmax": 31,
-    "mm": 9.5,
-    "pop": 55,
-    "score": 24,
+    "tmax": 30,
+    "mm": 5.4,
+    "pop": 85,
+    "score": 25,
     "parts": {
-     "weather": 24.7,
+     "weather": 25.2,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
+     "fuel": 1.3,
+     "fx": -1.2
     },
     "event": null
    },
    {
     "iso": "2026-08-09",
     "tmax": 30,
-    "mm": 2.7,
-    "pop": 70,
+    "mm": 4.4,
+    "pop": 67,
     "score": 26,
     "parts": {
-     "weather": 26.7,
+     "weather": 26.1,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
+     "fuel": 1.3,
+     "fx": -1.2
     },
     "event": null
    },
    {
     "iso": "2026-08-10",
-    "tmax": 30,
-    "mm": 2.2,
-    "pop": 64,
-    "score": 26,
+    "tmax": 31,
+    "mm": 7.9,
+    "pop": 73,
+    "score": 25,
     "parts": {
-     "weather": 27.0,
+     "weather": 24.7,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
+     "fuel": 1.3,
+     "fx": -1.2
     },
     "event": null
    },
    {
     "iso": "2026-08-11",
     "tmax": 30,
-    "mm": 1.0,
+    "mm": 4.2,
     "pop": 67,
     "score": 26,
     "parts": {
-     "weather": 27.4,
+     "weather": 26.2,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
+     "fuel": 1.3,
+     "fx": -1.2
     },
     "event": null
    },
    {
     "iso": "2026-08-12",
-    "tmax": 30,
-    "mm": 4.1,
-    "pop": 45,
-    "score": 32,
+    "tmax": 29,
+    "mm": 9.2,
+    "pop": 54,
+    "score": 31,
     "parts": {
-     "weather": 27.0,
+     "weather": 24.9,
      "event": 0.0,
      "holiday_th": 6.0,
      "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
+     "fuel": 1.3,
+     "fx": -1.2
     },
     "event": {
      "en": "The Queen Mother's Birthday",
@@ -236,131 +220,131 @@
    },
    {
     "iso": "2026-08-13",
-    "tmax": 30,
-    "mm": 1.2,
-    "pop": 46,
-    "score": 27,
+    "tmax": 31,
+    "mm": 7.8,
+    "pop": 59,
+    "score": 25,
     "parts": {
-     "weather": 28.0,
+     "weather": 25.2,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
+     "fuel": 1.3,
+     "fx": -1.2
     },
     "event": null
    },
    {
     "iso": "2026-08-14",
     "tmax": 30,
-    "mm": 1.8,
-    "pop": 62,
-    "score": 26,
+    "mm": 2.4,
+    "pop": 64,
+    "score": 27,
     "parts": {
-     "weather": 27.3,
+     "weather": 27.0,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
+     "fuel": 1.3,
+     "fx": -1.2
+    },
+    "event": null
+   },
+   {
+    "iso": "2026-08-15",
+    "tmax": 30,
+    "mm": 6.2,
+    "pop": 52,
+    "score": 30,
+    "parts": {
+     "weather": 26.0,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 4.0,
+     "fuel": 1.3,
+     "fx": -1.2
     },
     "event": null
    }
   ],
   "phuket": [
    {
-    "iso": "2026-08-07",
-    "tmax": 32,
-    "mm": 1.0,
-    "pop": 65,
-    "score": 38,
-    "parts": {
-     "weather": 38.7,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
-    },
-    "event": null
-   },
-   {
     "iso": "2026-08-08",
-    "tmax": 30,
-    "mm": 21.1,
-    "pop": 76,
-    "score": 28,
+    "tmax": 31,
+    "mm": 1.7,
+    "pop": 59,
+    "score": 39,
     "parts": {
-     "weather": 28.7,
+     "weather": 38.6,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
+     "fuel": 1.3,
+     "fx": -1.2
     },
     "event": null
    },
    {
     "iso": "2026-08-09",
-    "tmax": 30,
-    "mm": 8.9,
-    "pop": 68,
-    "score": 34,
+    "tmax": 32,
+    "mm": 3.2,
+    "pop": 65,
+    "score": 38,
     "parts": {
-     "weather": 34.8,
+     "weather": 37.6,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
+     "fuel": 1.3,
+     "fx": -1.2
     },
     "event": null
    },
    {
     "iso": "2026-08-10",
-    "tmax": 30,
-    "mm": 10.4,
-    "pop": 69,
-    "score": 33,
+    "tmax": 31,
+    "mm": 4.7,
+    "pop": 79,
+    "score": 36,
     "parts": {
-     "weather": 34.0,
+     "weather": 36.3,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
+     "fuel": 1.3,
+     "fx": -1.2
     },
     "event": null
    },
    {
     "iso": "2026-08-11",
-    "tmax": 30,
-    "mm": 1.5,
-    "pop": 45,
-    "score": 38,
+    "tmax": 31,
+    "mm": 0.6,
+    "pop": 31,
+    "score": 40,
     "parts": {
-     "weather": 39.3,
+     "weather": 40.3,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
+     "fuel": 1.3,
+     "fx": -1.2
     },
     "event": null
    },
    {
     "iso": "2026-08-12",
-    "tmax": 31,
-    "mm": 1.5,
-    "pop": 43,
+    "tmax": 30,
+    "mm": 3.7,
+    "pop": 59,
     "score": 44,
     "parts": {
-     "weather": 39.4,
+     "weather": 37.6,
      "event": 0.0,
      "holiday_th": 6.0,
      "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
+     "fuel": 1.3,
+     "fx": -1.2
     },
     "event": {
      "en": "The Queen Mother's Birthday",
@@ -369,131 +353,131 @@
    },
    {
     "iso": "2026-08-13",
-    "tmax": 30,
-    "mm": 5.0,
-    "pop": 62,
-    "score": 36,
+    "tmax": 31,
+    "mm": 4.4,
+    "pop": 71,
+    "score": 37,
     "parts": {
-     "weather": 36.9,
+     "weather": 36.8,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
+     "fuel": 1.3,
+     "fx": -1.2
     },
     "event": null
    },
    {
     "iso": "2026-08-14",
-    "tmax": 30,
-    "mm": 6.4,
-    "pop": 59,
-    "score": 35,
+    "tmax": 31,
+    "mm": 4.0,
+    "pop": 76,
+    "score": 37,
     "parts": {
-     "weather": 36.4,
+     "weather": 36.8,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
+     "fuel": 1.3,
+     "fx": -1.2
+    },
+    "event": null
+   },
+   {
+    "iso": "2026-08-15",
+    "tmax": 30,
+    "mm": 8.6,
+    "pop": 73,
+    "score": 39,
+    "parts": {
+     "weather": 34.7,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 4.0,
+     "fuel": 1.3,
+     "fx": -1.2
     },
     "event": null
    }
   ],
   "krabi": [
    {
-    "iso": "2026-08-07",
-    "tmax": 31,
-    "mm": 1.9,
-    "pop": 64,
-    "score": 39,
-    "parts": {
-     "weather": 39.9,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
-    },
-    "event": null
-   },
-   {
     "iso": "2026-08-08",
-    "tmax": 29,
-    "mm": 17.1,
-    "pop": 84,
-    "score": 30,
+    "tmax": 30,
+    "mm": 4.9,
+    "pop": 68,
+    "score": 38,
     "parts": {
-     "weather": 31.1,
+     "weather": 38.2,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
+     "fuel": 1.3,
+     "fx": -1.2
     },
     "event": null
    },
    {
     "iso": "2026-08-09",
-    "tmax": 30,
-    "mm": 5.3,
-    "pop": 76,
-    "score": 37,
+    "tmax": 31,
+    "mm": 6.1,
+    "pop": 58,
+    "score": 38,
     "parts": {
-     "weather": 37.6,
+     "weather": 38.0,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
+     "fuel": 1.3,
+     "fx": -1.2
     },
     "event": null
    },
    {
     "iso": "2026-08-10",
-    "tmax": 30,
-    "mm": 14.1,
-    "pop": 80,
-    "score": 32,
+    "tmax": 31,
+    "mm": 9.5,
+    "pop": 81,
+    "score": 35,
     "parts": {
-     "weather": 32.8,
+     "weather": 35.2,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
+     "fuel": 1.3,
+     "fx": -1.2
     },
     "event": null
    },
    {
     "iso": "2026-08-11",
-    "tmax": 30,
-    "mm": 3.3,
+    "tmax": 31,
+    "mm": 0.8,
     "pop": 59,
-    "score": 38,
+    "score": 41,
     "parts": {
-     "weather": 39.4,
+     "weather": 40.7,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
+     "fuel": 1.3,
+     "fx": -1.2
     },
     "event": null
    },
    {
     "iso": "2026-08-12",
-    "tmax": 31,
-    "mm": 1.2,
-    "pop": 45,
-    "score": 46,
+    "tmax": 29,
+    "mm": 5.4,
+    "pop": 52,
+    "score": 45,
     "parts": {
-     "weather": 41.2,
+     "weather": 38.7,
      "event": 0.0,
      "holiday_th": 6.0,
      "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
+     "fuel": 1.3,
+     "fx": -1.2
     },
     "event": {
      "en": "The Queen Mother's Birthday",
@@ -502,131 +486,131 @@
    },
    {
     "iso": "2026-08-13",
-    "tmax": 30,
-    "mm": 7.6,
-    "pop": 59,
-    "score": 36,
+    "tmax": 29,
+    "mm": 4.1,
+    "pop": 80,
+    "score": 38,
     "parts": {
-     "weather": 37.2,
+     "weather": 38.0,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
+     "fuel": 1.3,
+     "fx": -1.2
     },
     "event": null
    },
    {
     "iso": "2026-08-14",
-    "tmax": 31,
-    "mm": 4.4,
-    "pop": 64,
-    "score": 38,
+    "tmax": 30,
+    "mm": 5.4,
+    "pop": 83,
+    "score": 37,
     "parts": {
-     "weather": 38.6,
+     "weather": 37.2,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
+     "fuel": 1.3,
+     "fx": -1.2
+    },
+    "event": null
+   },
+   {
+    "iso": "2026-08-15",
+    "tmax": 30,
+    "mm": 15.4,
+    "pop": 78,
+    "score": 36,
+    "parts": {
+     "weather": 32.2,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 4.0,
+     "fuel": 1.3,
+     "fx": -1.2
     },
     "event": null
    }
   ],
   "samui": [
    {
-    "iso": "2026-08-07",
-    "tmax": 32,
-    "mm": 1.8,
-    "pop": 88,
-    "score": 39,
-    "parts": {
-     "weather": 39.9,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
-    },
-    "event": null
-   },
-   {
     "iso": "2026-08-08",
     "tmax": 31,
-    "mm": 2.8,
-    "pop": 67,
-    "score": 39,
+    "mm": 0.5,
+    "pop": 53,
+    "score": 42,
     "parts": {
-     "weather": 40.4,
+     "weather": 42.2,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
+     "fuel": 1.3,
+     "fx": -1.2
     },
     "event": null
    },
    {
     "iso": "2026-08-09",
     "tmax": 31,
-    "mm": 1.4,
-    "pop": 66,
-    "score": 40,
+    "mm": 1.2,
+    "pop": 57,
+    "score": 42,
     "parts": {
-     "weather": 41.2,
+     "weather": 41.7,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
+     "fuel": 1.3,
+     "fx": -1.2
     },
     "event": null
    },
    {
     "iso": "2026-08-10",
     "tmax": 32,
-    "mm": 6.7,
-    "pop": 70,
-    "score": 37,
+    "mm": 3.0,
+    "pop": 76,
+    "score": 40,
     "parts": {
-     "weather": 38.3,
+     "weather": 39.9,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
+     "fuel": 1.3,
+     "fx": -1.2
     },
     "event": null
    },
    {
     "iso": "2026-08-11",
-    "tmax": 30,
-    "mm": 0.6,
-    "pop": 67,
-    "score": 40,
+    "tmax": 31,
+    "mm": 1.9,
+    "pop": 53,
+    "score": 42,
     "parts": {
      "weather": 41.5,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
+     "fuel": 1.3,
+     "fx": -1.2
     },
     "event": null
    },
    {
     "iso": "2026-08-12",
-    "tmax": 31,
-    "mm": 0.0,
-    "pop": 31,
-    "score": 48,
+    "tmax": 32,
+    "mm": 1.5,
+    "pop": 25,
+    "score": 49,
     "parts": {
-     "weather": 43.5,
+     "weather": 43.1,
      "event": 0.0,
      "holiday_th": 6.0,
      "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
+     "fuel": 1.3,
+     "fx": -1.2
     },
     "event": {
      "en": "The Queen Mother's Birthday",
@@ -636,130 +620,130 @@
    {
     "iso": "2026-08-13",
     "tmax": 32,
-    "mm": 1.8,
-    "pop": 51,
-    "score": 41,
+    "mm": 0.9,
+    "pop": 59,
+    "score": 42,
     "parts": {
-     "weather": 41.7,
+     "weather": 41.8,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
+     "fuel": 1.3,
+     "fx": -1.2
     },
     "event": null
    },
    {
     "iso": "2026-08-14",
-    "tmax": 33,
-    "mm": 1.8,
-    "pop": 61,
-    "score": 40,
+    "tmax": 32,
+    "mm": 4.0,
+    "pop": 80,
+    "score": 39,
     "parts": {
-     "weather": 41.2,
+     "weather": 39.2,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
+     "fuel": 1.3,
+     "fx": -1.2
+    },
+    "event": null
+   },
+   {
+    "iso": "2026-08-15",
+    "tmax": 30,
+    "mm": 3.2,
+    "pop": 67,
+    "score": 44,
+    "parts": {
+     "weather": 40.2,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 4.0,
+     "fuel": 1.3,
+     "fx": -1.2
     },
     "event": null
    }
   ],
   "chiangmai": [
    {
-    "iso": "2026-08-07",
-    "tmax": 29,
-    "mm": 37.4,
-    "pop": 97,
-    "score": 26,
+    "iso": "2026-08-08",
+    "tmax": 30,
+    "mm": 57.3,
+    "pop": 100,
+    "score": 27,
     "parts": {
      "weather": 26.6,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
-    },
-    "event": null
-   },
-   {
-    "iso": "2026-08-08",
-    "tmax": 29,
-    "mm": 17.2,
-    "pop": 100,
-    "score": 29,
-    "parts": {
-     "weather": 29.9,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
+     "fuel": 1.3,
+     "fx": -1.2
     },
     "event": null
    },
    {
     "iso": "2026-08-09",
     "tmax": 29,
-    "mm": 24.4,
+    "mm": 18.3,
     "pop": 100,
-    "score": 27,
+    "score": 30,
     "parts": {
-     "weather": 27.7,
+     "weather": 29.6,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
+     "fuel": 1.3,
+     "fx": -1.2
     },
     "event": null
    },
    {
     "iso": "2026-08-10",
     "tmax": 29,
-    "mm": 24.3,
-    "pop": 98,
-    "score": 27,
+    "mm": 24.6,
+    "pop": 100,
+    "score": 28,
     "parts": {
-     "weather": 27.8,
+     "weather": 27.6,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
+     "fuel": 1.3,
+     "fx": -1.2
     },
     "event": null
    },
    {
     "iso": "2026-08-11",
-    "tmax": 29,
-    "mm": 30.4,
-    "pop": 94,
-    "score": 26,
+    "tmax": 28,
+    "mm": 27.1,
+    "pop": 100,
+    "score": 27,
     "parts": {
-     "weather": 26.6,
+     "weather": 26.9,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
+     "fuel": 1.3,
+     "fx": -1.2
     },
     "event": null
    },
    {
     "iso": "2026-08-12",
-    "tmax": 30,
-    "mm": 41.2,
-    "pop": 98,
-    "score": 32,
+    "tmax": 28,
+    "mm": 19.5,
+    "pop": 95,
+    "score": 35,
     "parts": {
-     "weather": 26.6,
+     "weather": 29.3,
      "event": 0.0,
      "holiday_th": 6.0,
      "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
+     "fuel": 1.3,
+     "fx": -1.2
     },
     "event": {
      "en": "The Queen Mother's Birthday",
@@ -769,32 +753,48 @@
    {
     "iso": "2026-08-13",
     "tmax": 28,
-    "mm": 12.8,
+    "mm": 21.4,
     "pop": 100,
-    "score": 30,
+    "score": 29,
     "parts": {
-     "weather": 31.2,
+     "weather": 28.6,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
+     "fuel": 1.3,
+     "fx": -1.2
     },
     "event": null
    },
    {
     "iso": "2026-08-14",
-    "tmax": 29,
-    "mm": 15.0,
-    "pop": 91,
-    "score": 30,
+    "tmax": 28,
+    "mm": 9.6,
+    "pop": 97,
+    "score": 32,
     "parts": {
-     "weather": 30.8,
+     "weather": 32.3,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
-     "fuel": -0.0,
-     "fx": -1.0
+     "fuel": 1.3,
+     "fx": -1.2
+    },
+    "event": null
+   },
+   {
+    "iso": "2026-08-15",
+    "tmax": 29,
+    "mm": 26.2,
+    "pop": 100,
+    "score": 31,
+    "parts": {
+     "weather": 27.1,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 4.0,
+     "fuel": 1.3,
+     "fx": -1.2
     },
     "event": null
    }
@@ -802,77 +802,92 @@
  },
  "fx": {
   "USD": 1,
-  "AUD": 1.421461,
-  "CNY": 6.763426,
-  "EUR": 0.867316,
-  "GBP": 0.743043,
-  "INR": 95.266754,
-  "KRW": 1423.480079,
-  "MYR": 4.089859,
-  "RUB": 81.287231,
-  "THB": 33.086318
+  "AUD": 1.417271,
+  "CNY": 6.759674,
+  "EUR": 0.865666,
+  "GBP": 0.74208,
+  "INR": 95.24211,
+  "KRW": 1411.629686,
+  "MYR": 4.090834,
+  "RUB": 81.799945,
+  "THB": 33.001783
  },
  "markets": {
-  "brent": 83.43,
-  "usdthb": 33.1,
-  "usdthb_delta": -0.0073,
+  "brent": 82.27,
+  "brent_delta": -0.0321,
+  "usdthb": 33.02,
+  "usdthb_delta": -0.0078,
   "purchasing_power": {
    "CNY": {
     "name": "Китай",
     "share": 2.23,
-    "thb": 4.9065,
-    "delta": -0.0056
+    "thb": 4.9011,
+    "delta": -0.0067
    },
    "MYR": {
     "name": "Малайзия",
     "share": 1.55,
-    "thb": 8.0937,
-    "delta": -0.0117
+    "thb": 8.0773,
+    "delta": -0.0138
    },
    "RUB": {
     "name": "Россия",
     "share": 1.02,
-    "thb": 0.4088,
-    "delta": -0.05
+    "thb": 0.4032,
+    "delta": -0.0573
    },
    "INR": {
     "name": "Индия",
     "share": 1.0,
-    "thb": 0.3475,
-    "delta": -0.0054
+    "thb": 0.3469,
+    "delta": -0.0066
    },
    "KRW": {
     "name": "Южная Корея",
     "share": 0.6,
-    "thb": 0.0233,
-    "delta": 0.0365
+    "thb": 0.0235,
+    "delta": 0.0408
    },
    "GBP": {
     "name": "Британия",
     "share": 0.5,
-    "thb": 44.5269,
-    "delta": -0.0039
+    "thb": 44.553,
+    "delta": -0.0038
    },
    "EUR": {
     "name": "Еврозона",
     "share": 0.5,
-    "thb": 38.1468,
-    "delta": -0.002
+    "thb": 38.1778,
+    "delta": -0.0014
    },
    "AUD": {
     "name": "Австралия",
     "share": 0.5,
-    "thb": 23.2607,
-    "delta": -0.0012
+    "thb": 23.3472,
+    "delta": 0.0021
    }
   },
-  "pp_composite": -0.0087
+  "pp_composite": -0.0099
  },
  "holidays": {
   "2026-08-12": [
    {
     "country": "TH",
     "name": "The Queen Mother's Birthday"
+   }
+  ],
+  "2026-08-15": [
+   {
+    "country": "IN",
+    "name": "Independence Day"
+   },
+   {
+    "country": "KR",
+    "name": "Liberation Day"
+   },
+   {
+    "country": "DE",
+    "name": "Assumption of Mary (regional holiday)"
    }
   ]
  }
