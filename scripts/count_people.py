@@ -38,6 +38,13 @@ BOXES = {
 }
 MAX_CAMS_PER_REGION = 4  # keeps a run inside a couple of minutes on CPU
 
+# Toll gates and distant viewpoints show cars or empty sea, so they add noise
+# rather than footfall. Prefer pedestrian places, and drop the obvious misses.
+PREFER = ("beach", "walking", "street", "road", "market", "pier", "promenade",
+          "bang la", "bangla", "patong", "jomtien", "ao nang", "night")
+AVOID = ("toll", "tool gate", "expressway", "motorway", "airport", "viewpoint",
+         "underwater", "sky", "weather")
+
 
 def api(path, key, params):
     from urllib.parse import urlencode
@@ -76,7 +83,14 @@ def find_webcams(key):
         cams = data.get("webcams") or []
         usable = [c for c in cams
                   if c.get("status") in (None, "active") and latest_image_url(c)]
-        usable.sort(key=lambda c: str(c.get("title") or ""))
+
+        def rank(c):
+            t = f"{c.get('title') or ''} {(c.get('location') or {}).get('city') or ''}".lower()
+            if any(a in t for a in AVOID):
+                return (2, t)
+            return (0 if any(k in t for k in PREFER) else 1, t)
+
+        usable.sort(key=rank)
         print(f"{region}: {len(cams)} in box, {len(usable)} usable", file=sys.stderr)
         for c in usable[:MAX_CAMS_PER_REGION]:
             print(f"  {c.get('webcamId')}  {c.get('title')}", file=sys.stderr)
@@ -86,7 +100,7 @@ def find_webcams(key):
 
 def count_people(model, path):
     """Persons in one frame. COCO class 0 is 'person'."""
-    res = model.predict(str(path), classes=[0], conf=0.35, verbose=False)
+    res = model.predict(str(path), classes=[0], conf=0.25, verbose=False)
     return sum(len(r.boxes) for r in res)
 
 
@@ -120,10 +134,18 @@ def main():
                 frame = pathlib.Path(tmp) / f"{slot}.jpg"
                 urllib.request.urlretrieve(url, frame)
                 n = count_people(model, frame)
+                try:
+                    from PIL import Image
+                    with Image.open(frame) as im:
+                        size = f"{im.width}x{im.height}"
+                except Exception:
+                    size = None
                 row["cams"][slot] = {"people": n, "region": region,
                                      "title": cam.get("title"),
-                                     "cam_id": cam.get("webcamId")}
-                print(f"{region:<10} {n:>3} people   {cam.get('title')}")
+                                     "cam_id": cam.get("webcamId"),
+                                     "frame": size}
+                print(f"{region:<10} {n:>3} people  {size or '?':>9}  "
+                      f"{cam.get('title')}")
             except (urllib.error.URLError, OSError) as e:
                 print(f"warn: {slot}: {e}", file=sys.stderr)
     # frames are gone with the temp dir - only counts leave this function
