@@ -29,11 +29,11 @@ KEEP_DAYS = 90
 # a substring so a renamed webcam still resolves.
 # One box per destination: south, west, north, east.
 BOXES = {
-    "pattaya":   (12.83, 100.82, 13.02, 100.95),
+    "pattaya":   (12.74, 100.75, 13.10, 101.02),
     "phuket":    (7.79,  98.27,  8.00,  98.40),   # Patong, Bangla, Kata, Karon
     "bangkok":   (13.68, 100.47, 13.80, 100.60),
-    "krabi":     (7.99,  98.78,  8.10,  98.86),   # Ao Nang, Railay
-    "samui":     (9.42,  99.93,  9.58, 100.09),
+    "krabi":     (7.85,  98.62,  8.20,  99.00),   # Ao Nang, Railay
+    "samui":     (9.35,  99.85,  9.65, 100.15),
     "chiangmai": (18.75, 98.94,  18.83, 99.02),
 }
 MAX_CAMS_PER_REGION = 4  # keeps a run inside a couple of minutes on CPU
@@ -100,7 +100,8 @@ def find_webcams(key):
 
 def count_people(model, path):
     """Persons in one frame. COCO class 0 is 'person'."""
-    res = model.predict(str(path), classes=[0], conf=0.25, verbose=False)
+    res = model.predict(str(path), classes=[0], conf=0.25, imgsz=960,
+                        verbose=False)
     return sum(len(r.boxes) for r in res)
 
 
