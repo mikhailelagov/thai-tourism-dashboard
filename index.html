@@ -142,6 +142,19 @@
   .dy .flag{font-size:8.5px;letter-spacing:.06em;text-transform:uppercase;
     font-weight:800;margin-top:6px;line-height:1.25;}
 
+  /* footfall from webcams */
+  .foot{margin-top:16px;}
+  .frow{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:end;
+    padding:9px 0;border-bottom:1px dotted var(--line2);}
+  .frow:last-child{border-bottom:0;}
+  .frow .fn{font-size:13.5px;font-weight:700;}
+  .frow .fs{font-size:11.5px;color:var(--faint);margin-top:2px;}
+  .frow .fv{font-size:22px;font-weight:700;letter-spacing:-.02em;line-height:1;text-align:right;}
+  .frow .fv small{display:block;font-size:11px;font-weight:600;letter-spacing:0;margin-top:3px;}
+  .spark{display:flex;align-items:flex-end;gap:2px;height:28px;margin-top:6px;}
+  .spark i{display:block;flex:1;min-width:2px;background:var(--teal);border-radius:1px 1px 0 0;opacity:.75;}
+  .spark i.now{opacity:1;background:var(--teal-d);}
+
   /* past years */
   .hist{margin-top:16px;}
   .hrow{display:grid;grid-template-columns:44px 1fr auto;gap:11px;align-items:center;
@@ -220,6 +233,10 @@
     <div class="rows" id="rows"></div>
     <div class="subh"><span id="wkH"></span><span class="live-tag" id="wkLive"></span></div>
     <div class="week" id="week"></div>
+    <div class="foot" id="foot" hidden>
+      <div class="subh"><span id="ftH"></span><span class="live-tag" id="ftLive"></span></div>
+      <div id="footfall"></div>
+    </div>
     <div class="hist">
       <div class="subh"><span id="hiH"></span></div>
       <div id="history"></div>
@@ -326,7 +343,8 @@ const T={
   olBest:'Best day',olWorst:'Weakest day',olAvg:'Week average',
   ftSrc:'Sources: TAT arrivals forecast · Forbes on jet fuel · AeroRoutes route cuts · Bangkok Post on Pattaya hotels · AOT passenger traffic · weather by Open-Meteo · rates by ExchangeRate-API.',
   ftDis:'Weather and currency update automatically on every visit. Market context is a manual snapshot and carries its own date. The demand index is a composite estimate — an orientation tool, not a measurement.',
-  today:'today',hiH:'The same week in past years',
+  today:'today',ftH:'People on the street right now',ftLive:'webcams',ftVs:'vs same hour last week',ftAt:'counted at',
+  hiH:'The same week in past years',
   hiNote:'Weather only - holidays move around the calendar, so events are excluded and the years compare conditions rather than dates.',
   hiNone:'Past-year data is not loaded.',hiNow:'now',hiWet:'wet days',
   days:['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],
@@ -346,7 +364,8 @@ const T={
   olBest:'Лучший день',olWorst:'Слабейший день',olAvg:'Среднее за неделю',
   ftSrc:'Источники: прогноз приездов TAT · Forbes о цене авиатоплива · AeroRoutes о сокращении маршрутов · Bangkok Post об отелях Паттайи · пассажиропоток AOT · погода Open-Meteo · курсы ExchangeRate-API.',
   ftDis:'Погода и валюта обновляются автоматически при каждом заходе. Рыночный контекст — ручной снимок, у него своя дата. Индекс спроса — сводная оценка, инструмент ориентации, а не измерение.',
-  today:'сегодня',hiH:'Эта же неделя в прошлые годы',
+  today:'сегодня',ftH:'Людей на улице сейчас',ftLive:'камеры',ftVs:'к тому же часу неделю назад',ftAt:'снято',
+  hiH:'Эта же неделя в прошлые годы',
   hiNote:'Только погода — праздники сдвигаются по календарю, поэтому события исключены: годы сравниваются по условиям, а не по датам.',
   hiNone:'Данные прошлых лет не загружены.',hiNow:'сейчас',hiWet:'мокрых дней',
   days:['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
@@ -355,7 +374,7 @@ const T={
 };
 
 /* ---------------- state ---------------- */
-let LANG='en', CUR=0, DATA=null, FX=null, BUILT=null, HIST=null, STATUS='loading';
+let LANG='en', CUR=0, DATA=null, FX=null, BUILT=null, HIST=null, FOOT=null, STATUS='loading';
 const $=s=>document.querySelector(s);
 const CL={coral:'var(--coral)',amber:'var(--amber)',green:'var(--green)',grey:'var(--grey)'};
 
@@ -394,6 +413,7 @@ async function loadLive(){
     if(d&&d.regions&&Object.keys(d.regions).length){
       DATA=d.regions; FX=d.fx||null; BUILT=d.built_at||null;
       HIST=await fetch('history.json').then(r=>r.ok?r.json():null).catch(()=>null);
+      FOOT=await fetch('footfall.json').then(r=>r.ok?r.json():null).catch(()=>null);
     STATUS='live'; render(); return;
     }
   }catch(e){/* fall through to direct fetch */}
@@ -443,13 +463,39 @@ function render(){
   $('#wkLive').textContent=STATUS==='live'?t.wkLive:'';
   $('#wkLive').style.display=STATUS==='live'?'':'none';
   $('#ftSrc').innerHTML=t.ftSrc; $('#ftDis').textContent=t.ftDis;
-  $('#olH').textContent=t.olH; $('#hiH').textContent=t.hiH;
+  $('#olH').textContent=t.olH; $('#hiH').textContent=t.hiH; $('#ftH').textContent=t.ftH; $('#ftLive').textContent=t.ftLive;
 
   $('#tabs').innerHTML=REGIONS.map((r,i)=>
     `<button class="tab" role="tab" data-i="${i}" aria-selected="${i===CUR}">${r[LANG]}<i>${r.ap}</i></button>`).join('');
   document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{CUR=+b.dataset.i;render();}));
 
   renderRegion();
+}
+
+function renderFootfall(rid){
+  const t=T[LANG], box=$('#foot');
+  const rows=(FOOT&&FOOT.rows)||[];
+  if(rid!=='pattaya'||!rows.length){ box.hidden=true; return; }
+  box.hidden=false;
+  const last=rows[rows.length-1], cams=Object.keys(last.cams||{});
+  const lastT=new Date(last.at);
+  const html=cams.map(slot=>{
+    const cur=last.cams[slot], series=rows.slice(-24).map(r=>(r.cams[slot]||{}).people??0);
+    const mx=Math.max(...series,1);
+    // same hour a week ago - the honest comparison for a daily rhythm
+    const wk=rows.find(r=>Math.abs(new Date(r.at)-(lastT-7*864e5))<36e5);
+    const prev=wk&&wk.cams[slot]?wk.cams[slot].people:null;
+    const d=prev!=null&&prev>0?Math.round((cur.people-prev)/prev*100):null;
+    const dc=d==null?'var(--faint)':d>=0?'var(--green)':'var(--coral)';
+    const dtxt=d==null?'—':(d>=0?'+':'')+d+'% '+t.ftVs;
+    return `<div class="frow"><div>
+        <div class="fn">${cur.title||slot}</div>
+        <div class="fs">${t.ftAt} ${lastT.toLocaleString(LANG==='ru'?'ru-RU':'en-GB',{timeZone:'Asia/Bangkok',hour:'2-digit',minute:'2-digit',day:'2-digit',month:'2-digit'})}</div>
+        <div class="spark">${series.map((v,i)=>`<i class="${i===series.length-1?'now':''}" style="height:${Math.max(2,Math.round(v/mx*100))}%"></i>`).join('')}</div>
+      </div>
+      <div class="fv">${cur.people}<small style="color:${dc}">${dtxt}</small></div></div>`;
+  }).join('');
+  $('#footfall').innerHTML=html;
 }
 
 function renderHistory(rid, days){
@@ -496,7 +542,7 @@ function renderRegion(){
   if(!DATA||!DATA[r.id]){
     $('#vNum').textContent='—'; $('#vSt').textContent=v[0]; $('#vTx').textContent=v[1];
     $('#week').innerHTML=`<p class="skel" style="grid-column:1/-1;margin:0">${t.loading}</p>`;
-    $('#olP').textContent=''; $('#olGrid').innerHTML=''; renderHistory(r.id,null); return;
+    $('#olP').textContent=''; $('#olGrid').innerHTML=''; renderHistory(r.id,null); renderFootfall(r.id); return;
   }
 
   const days=DATA[r.id].map(x=>{
@@ -533,6 +579,7 @@ function renderRegion(){
 
 
   renderHistory(r.id, days);
+  renderFootfall(r.id);
 
   /* week-ahead outlook, generated from the data */
   const fwd=days.slice(1);

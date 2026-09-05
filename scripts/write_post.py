@@ -17,6 +17,7 @@ from datetime import date
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = ROOT / "data.json"
 HISTORY = ROOT / "history.json"
+FOOTFALL = ROOT / "footfall.json"
 OUT = ROOT / "post.txt"
 ERR = ROOT / "post_error.txt"
 
@@ -49,8 +50,8 @@ Telegram-канала. Читатели — владельцы и управля
 — Если за неделю не произошло ничего заметного — так и напиши, коротко. \
 Не раздувай пустую неделю до полноценного разбора.
 — Если в данных есть прошлые годы — сравни с ними текущую неделю одной-двумя \
-фразами. Но честно: сравнима только погодная часть, приездов и загрузки за \
-те годы у нас нет. Не выдавай погодное сравнение за сравнение спроса.
+фразами. Сравнение по прошлым годам построено на погодных условиях: пиши \
+про условия, не называй это сравнением спроса.
 — Регулирование каннабиса в Таиланде меняется часто и бьёт по выручке \
 напрямую. Если за неделю были новости — законопроекты, статус растения, \
 правила лицензирования и продления, требования к рецепту и учёту, \
@@ -84,6 +85,13 @@ Telegram-канала. Читатели — владельцы и управля
 приездов, курс бата, события, а также изменения в регулировании каннабиса \
 в Таиланде. Опирайся на найденное, а не на память. \
 Не выдумывай цифры: если факт не нашёлся, не пиши его.
+
+Никогда не пиши о том, чего в данных нет. Запрещены обороты вида «данных \
+нет», «сказать нельзя», «информация недоступна», «не удалось найти», \
+«статистика не публикуется». Читателю нужны факты, а не отчёт о пробелах: \
+если чего-то нет — молча не пиши про это и раскрой то, что есть. \
+Оговорки к цифре допустимы, только если без них цифру поймут неверно, \
+и тогда — коротко, внутри фразы, а не отдельным абзацем.
 
 Верни только текст поста. Не пиши ничего до него: ни что собираешься искать, \
 ни что нашёл, ни пояснений к своей работе. Первая строка ответа — заголовок \
@@ -123,8 +131,7 @@ def summarize(payload):
                     events.append(item)
 
     fx = payload.get("fx") or {}
-    parts = ["Расчётные показатели (индекс спроса 0–100, считается из погоды, "
-             "структурного положения направления и календаря событий):", *lines]
+    parts = ["Индекс спроса 0–100 по направлениям:", *lines]
     if events:
         parts += ["", "События и праздники в окне:", *events]
     if fx.get("THB"):
@@ -133,9 +140,7 @@ def summarize(payload):
     if HISTORY.exists():
         try:
             h = json.loads(HISTORY.read_text(encoding="utf-8"))
-            past = ["", "Эта же неделя в прошлые годы (только погодная часть "
-                        "индекса, события исключены — годы сравниваются по "
-                        "условиям, а не по календарю):"]
+            past = ["", "Погодные условия этой же недели в прошлые годы:"]
             for year in sorted(h.get("years", {}), reverse=True):
                 bits = []
                 for rid in ORDER:
@@ -150,7 +155,45 @@ def summarize(payload):
         except (ValueError, KeyError, OSError):
             pass
 
+    parts += footfall_digest()
     return "\n".join(parts)
+
+
+def footfall_digest():
+    """People counted in public webcam frames - the one directly measured
+    demand number we have. Last 7 days against the 7 before, per camera."""
+    if not FOOTFALL.exists():
+        return []
+    try:
+        rows = json.loads(FOOTFALL.read_text(encoding="utf-8")).get("rows", [])
+    except (ValueError, OSError):
+        return []
+    if len(rows) < 24:
+        return []
+    from datetime import datetime, timedelta, timezone
+    now = datetime.now(timezone.utc)
+    def avg(sel):
+        vals = [v for v in sel if v is not None]
+        return round(sum(vals) / len(vals)) if vals else None
+    out = ["", "Люди в кадре уличных камер Паттайи, среднее за 7 дней "
+               "против предыдущих 7:"]
+    cams = sorted({c for r in rows for c in r.get("cams", {})})
+    for c in cams:
+        def pick(lo, hi):
+            return [r["cams"][c]["people"] for r in rows
+                    if c in r.get("cams", {})
+                    and lo <= datetime.fromisoformat(r["at"]) < hi]
+        cur = avg(pick(now - timedelta(days=7), now))
+        prev = avg(pick(now - timedelta(days=14), now - timedelta(days=7)))
+        title = next((r["cams"][c].get("title") for r in reversed(rows)
+                      if c in r.get("cams", {})), c)
+        if cur is None:
+            continue
+        line = f"{title}: в среднем {cur} чел. в кадре"
+        if prev:
+            line += f", неделей раньше {prev} ({(cur - prev) / prev * 100:+.0f}%)"
+        out.append(line)
+    return out if len(out) > 2 else []
 
 
 def extract_text(message):
