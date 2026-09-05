@@ -92,8 +92,14 @@ def find_webcams(key):
 
         usable.sort(key=rank)
         print(f"{region}: {len(cams)} in box, {len(usable)} usable", file=sys.stderr)
+        # Full catalogue for the region, so the selection can be judged rather
+        # than guessed at from the four that happen to win the ranking.
+        for c in usable:
+            loc = c.get("location") or {}
+            print(f"    ALL {c.get('webcamId'):>12}  {str(c.get('title'))[:70]}"
+                  f"   [{loc.get('city')}]", file=sys.stderr)
         for c in usable[:MAX_CAMS_PER_REGION]:
-            print(f"  {c.get('webcamId')}  {c.get('title')}", file=sys.stderr)
+            print(f"  PICKED {c.get('webcamId')}  {c.get('title')}", file=sys.stderr)
             found[str(c.get("webcamId"))] = (region, c)
     return found
 
