@@ -1,0 +1,50 @@
+name: Footfall from webcams
+
+on:
+  schedule:
+    # every 2 hours - stays inside the free Actions minutes with the model cached
+    - cron: "0 */2 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: footfall
+  cancel-in-progress: false
+
+jobs:
+  count:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      # CPU-only torch keeps the install small and the run fast.
+      - run: |
+          pip install --index-url https://download.pytorch.org/whl/cpu torch torchvision
+          pip install ultralytics
+
+      - name: Count people in the latest frames
+        env:
+          WINDY_API_KEY: ${{ secrets.WINDY_API_KEY }}
+        run: python3 scripts/count_people.py
+
+      - name: Commit counts
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- footfall.json; then
+            echo "footfall.json unchanged"
+          else
+            git add footfall.json
+            git commit -m "data: footfall $(date -u +%Y-%m-%dT%H:00)"
+            for i in 1 2 3; do
+              git push && break
+              git pull --rebase -X ours origin main
+            done
+          fi
