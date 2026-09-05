@@ -4,6 +4,9 @@ on:
   schedule:
     # every 2 hours - stays inside the free Actions minutes with the model cached
     - cron: "0 */2 * * *"
+  # Touching .run-footfall counts on demand, so a run can be triggered from git.
+  push:
+    paths: [".run-footfall"]
   workflow_dispatch: {}
 
 permissions:
