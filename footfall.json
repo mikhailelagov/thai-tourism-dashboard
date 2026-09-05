@@ -1,0 +1,70 @@
+{
+ "note": "people counted in public webcam frames; frames are not stored",
+ "rows": [
+  {
+   "at": "2026-09-05T16:00+00:00",
+   "cams": {
+    "1754300622": {
+     "people": 0,
+     "region": "phuket",
+     "title": "Kata Yai › West: SSS Phuket Dive, Freedive & Surf - Kata Beach - Phuket",
+     "cam_id": 1754300622
+    },
+    "1753439957": {
+     "people": 0,
+     "region": "phuket",
+     "title": "Kathu",
+     "cam_id": 1753439957
+    },
+    "1613136596": {
+     "people": 0,
+     "region": "phuket",
+     "title": "Pa Tong › West: Charli , beach chair ,zone 2",
+     "cam_id": 1613136596
+    },
+    "1500120146": {
+     "people": 0,
+     "region": "phuket",
+     "title": "Phuket › North-east: Phuket Ocean View Resort - Freedom Beach - Freedom Beach Viewpoint",
+     "cam_id": 1500120146
+    },
+    "1717744769": {
+     "people": 0,
+     "region": "bangkok",
+     "title": "Chom Phon Subdistrict: Vibhavadi Rangsit Road - Don Muang Toll Way",
+     "cam_id": 1717744769
+    },
+    "1302885774": {
+     "people": 0,
+     "region": "bangkok",
+     "title": "Khlong Khwang Subdistrict: Phayathai, Bangkok",
+     "cam_id": 1302885774
+    },
+    "1302885713": {
+     "people": 0,
+     "region": "bangkok",
+     "title": "Khlong Khwang Subdistrict: Rama IX Exit, Bangkok",
+     "cam_id": 1302885713
+    },
+    "1302885735": {
+     "people": 0,
+     "region": "bangkok",
+     "title": "Khlong Khwang Subdistrict: Rama IX Tool Gate, Bangkok",
+     "cam_id": 1302885735
+    },
+    "1623054222": {
+     "people": 0,
+     "region": "chiangmai",
+     "title": "Chiang Mai",
+     "cam_id": 1623054222
+    },
+    "1718364353": {
+     "people": 0,
+     "region": "chiangmai",
+     "title": "Fa Ham",
+     "cam_id": 1718364353
+    }
+   }
+  }
+ ]
+}
