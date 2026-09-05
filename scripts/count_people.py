@@ -27,13 +27,16 @@ KEEP_DAYS = 90
 # Pattaya bounding box - the API is asked for every webcam inside it, then
 # the curated list below picks the ones that matter. Names are matched on
 # a substring so a renamed webcam still resolves.
-BBOX = (12.87, 100.83, 12.99, 100.93)  # south, west, north, east
-WATCH = [
-    ("walking_street", "walking street"),
-    ("beach_road", "beach road"),
-    ("jomtien", "jomtien"),
-    ("na_kluea", "na kluea"),
-]
+# One box per destination: south, west, north, east.
+BOXES = {
+    "pattaya":   (12.83, 100.82, 13.02, 100.95),
+    "phuket":    (7.79,  98.27,  8.00,  98.40),   # Patong, Bangla, Kata, Karon
+    "bangkok":   (13.68, 100.47, 13.80, 100.60),
+    "krabi":     (7.99,  98.78,  8.10,  98.86),   # Ao Nang, Railay
+    "samui":     (9.42,  99.93,  9.58, 100.09),
+    "chiangmai": (18.75, 98.94,  18.83, 99.02),
+}
+MAX_CAMS_PER_REGION = 4  # keeps a run inside a couple of minutes on CPU
 
 
 def api(path, key, params):
@@ -45,20 +48,6 @@ def api(path, key, params):
         return json.loads(r.read().decode("utf-8"))
 
 
-def find_webcams(key):
-    """Every webcam in the box, tagged with the watch-list slot it fills."""
-    s, w, n, e = BBOX
-    data = api("", key, {"limit": 50, "include": "images,location",
-                         "bbox": f"{n},{e},{s},{w}"})
-    hits = {}
-    for cam in data.get("webcams", []):
-        title = (cam.get("title") or "").lower()
-        for slot, needle in WATCH:
-            if needle in title and slot not in hits:
-                hits[slot] = cam
-    return hits
-
-
 def latest_image_url(cam):
     imgs = (cam.get("images") or {}).get("current") or {}
     # Prefer the largest the tier allows; free returns a preview-size image.
@@ -66,6 +55,33 @@ def latest_image_url(cam):
         if imgs.get(k):
             return imgs[k]
     return None
+
+
+def find_webcams(key):
+    """Active webcams that serve an image, across every destination box.
+
+    Selection used to match hard-coded words in the title, which silently
+    found nothing when the cameras were named differently. The box is now
+    the only filter, and each camera is keyed by its own id so a rename
+    never breaks the series.
+    """
+    found = {}
+    for region, (s_, w_, n_, e_) in BOXES.items():
+        try:
+            data = api("", key, {"limit": 50, "include": "images,location",
+                                 "bbox": f"{n_},{e_},{s_},{w_}"})
+        except (urllib.error.URLError, OSError, ValueError) as exc:
+            print(f"warn: {region}: {exc}", file=sys.stderr)
+            continue
+        cams = data.get("webcams") or []
+        usable = [c for c in cams
+                  if c.get("status") in (None, "active") and latest_image_url(c)]
+        usable.sort(key=lambda c: str(c.get("title") or ""))
+        print(f"{region}: {len(cams)} in box, {len(usable)} usable", file=sys.stderr)
+        for c in usable[:MAX_CAMS_PER_REGION]:
+            print(f"  {c.get('webcamId')}  {c.get('title')}", file=sys.stderr)
+            found[str(c.get("webcamId"))] = (region, c)
+    return found
 
 
 def count_people(model, path):
@@ -89,14 +105,14 @@ def main():
         print(f"could not list webcams: {e}", file=sys.stderr)
         return 1
     if not cams:
-        print("no watched webcams found inside the Pattaya box.", file=sys.stderr)
+        print("no usable webcams found in any destination box.", file=sys.stderr)
         return 1
 
     stamp = datetime.now(timezone.utc).replace(minute=0, second=0, microsecond=0)
     row = {"at": stamp.isoformat(timespec="minutes"), "cams": {}}
 
     with tempfile.TemporaryDirectory() as tmp:
-        for slot, cam in cams.items():
+        for slot, (region, cam) in cams.items():
             url = latest_image_url(cam)
             if not url:
                 continue
@@ -104,9 +120,10 @@ def main():
                 frame = pathlib.Path(tmp) / f"{slot}.jpg"
                 urllib.request.urlretrieve(url, frame)
                 n = count_people(model, frame)
-                row["cams"][slot] = {"people": n, "title": cam.get("title"),
+                row["cams"][slot] = {"people": n, "region": region,
+                                     "title": cam.get("title"),
                                      "cam_id": cam.get("webcamId")}
-                print(f"{slot:<16} {n:>3} people   {cam.get('title')}")
+                print(f"{region:<10} {n:>3} people   {cam.get('title')}")
             except (urllib.error.URLError, OSError) as e:
                 print(f"warn: {slot}: {e}", file=sys.stderr)
     # frames are gone with the temp dir - only counts leave this function
