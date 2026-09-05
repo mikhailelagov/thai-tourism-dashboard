@@ -41,10 +41,12 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet -- footfall.json; then
+          # Stage first: git diff cannot see a file that is still untracked,
+          # so the very first run reported "unchanged" and committed nothing.
+          git add footfall.json
+          if git diff --cached --quiet -- footfall.json; then
             echo "footfall.json unchanged"
           else
-            git add footfall.json
             git commit -m "data: footfall $(date -u +%Y-%m-%dT%H:00)"
             for i in 1 2 3; do
               git push && break
