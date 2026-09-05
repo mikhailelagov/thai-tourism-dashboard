@@ -89,6 +89,95 @@
      "frame": "400x224"
     }
    }
+  },
+  {
+   "at": "2026-09-05T20:00+00:00",
+   "cams": {
+    "1650769336": {
+     "people": 0,
+     "region": "pattaya",
+     "title": "Pong: Bang Lamung District",
+     "cam_id": 1650769336,
+     "frame": "400x224"
+    },
+    "1671707485": {
+     "people": 0,
+     "region": "pattaya",
+     "title": "Huai Yai",
+     "cam_id": 1671707485,
+     "frame": "400x224"
+    },
+    "1754300622": {
+     "people": 0,
+     "region": "phuket",
+     "title": "Kata Yai › West: SSS Phuket Dive, Freedive & Surf - Kata Beach - Phuket",
+     "cam_id": 1754300622,
+     "frame": "400x224"
+    },
+    "1613136596": {
+     "people": 0,
+     "region": "phuket",
+     "title": "Pa Tong › West: Charli , beach chair ,zone 2",
+     "cam_id": 1613136596,
+     "frame": "400x224"
+    },
+    "1245318606": {
+     "people": 0,
+     "region": "phuket",
+     "title": "Phuket › North: Karon Beach",
+     "cam_id": 1245318606,
+     "frame": "400x224"
+    },
+    "1753439957": {
+     "people": 0,
+     "region": "phuket",
+     "title": "Kathu",
+     "cam_id": 1753439957,
+     "frame": "400x224"
+    },
+    "1302885744": {
+     "people": 0,
+     "region": "bangkok",
+     "title": "Si Lom Subdistrict › West: North Sathon Road - Saphan Taksin Public Park",
+     "cam_id": 1302885744,
+     "frame": "400x224"
+    },
+    "1302885774": {
+     "people": 0,
+     "region": "bangkok",
+     "title": "Khlong Khwang Subdistrict: Phayathai, Bangkok",
+     "cam_id": 1302885774,
+     "frame": "400x224"
+    },
+    "1302885713": {
+     "people": 0,
+     "region": "bangkok",
+     "title": "Khlong Khwang Subdistrict: Rama IX Exit, Bangkok",
+     "cam_id": 1302885713,
+     "frame": "400x224"
+    },
+    "1302885716": {
+     "people": 0,
+     "region": "bangkok",
+     "title": "Khlong Khwang Subdistrict: Ramkhamhaeng, Bangkok 2",
+     "cam_id": 1302885716,
+     "frame": "400x224"
+    },
+    "1623054222": {
+     "people": 0,
+     "region": "chiangmai",
+     "title": "Chiang Mai",
+     "cam_id": 1623054222,
+     "frame": "400x224"
+    },
+    "1718364353": {
+     "people": 1,
+     "region": "chiangmai",
+     "title": "Fa Ham",
+     "cam_id": 1718364353,
+     "frame": "400x224"
+    }
+   }
   }
  ]
 }
