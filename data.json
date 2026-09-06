@@ -1,27 +1,11 @@
 {
- "built_at": "2026-09-05T16:45:58+00:00",
+ "built_at": "2026-09-06T02:49:17+00:00",
  "regions": {
   "bangkok": [
    {
-    "iso": "2026-09-05",
-    "tmax": 34,
-    "mm": 1.5,
-    "pop": 44,
-    "score": 45,
-    "parts": {
-     "weather": 46.9,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": -1.9,
-     "fx": -0.4
-    },
-    "event": null
-   },
-   {
     "iso": "2026-09-06",
-    "tmax": 33,
-    "mm": 10.1,
+    "tmax": 32,
+    "mm": 10.0,
     "pop": 100,
     "score": 42,
     "parts": {
@@ -36,12 +20,12 @@
    },
    {
     "iso": "2026-09-07",
-    "tmax": 32,
-    "mm": 7.3,
-    "pop": 98,
+    "tmax": 31,
+    "mm": 5.7,
+    "pop": 100,
     "score": 43,
     "parts": {
-     "weather": 44.8,
+     "weather": 45.1,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
@@ -52,9 +36,9 @@
    },
    {
     "iso": "2026-09-08",
-    "tmax": 32,
-    "mm": 6.8,
-    "pop": 96,
+    "tmax": 31,
+    "mm": 6.7,
+    "pop": 97,
     "score": 43,
     "parts": {
      "weather": 45.0,
@@ -68,12 +52,12 @@
    },
    {
     "iso": "2026-09-09",
-    "tmax": 31,
-    "mm": 12.6,
-    "pop": 93,
-    "score": 42,
+    "tmax": 32,
+    "mm": 5.8,
+    "pop": 97,
+    "score": 43,
     "parts": {
-     "weather": 43.9,
+     "weather": 45.1,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
@@ -85,11 +69,11 @@
    {
     "iso": "2026-09-10",
     "tmax": 30,
-    "mm": 40.3,
+    "mm": 23.5,
     "pop": 100,
-    "score": 40,
+    "score": 41,
     "parts": {
-     "weather": 40.8,
+     "weather": 41.7,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 1.5,
@@ -100,9 +84,25 @@
    },
    {
     "iso": "2026-09-11",
+    "tmax": 31,
+    "mm": 20.6,
+    "pop": 96,
+    "score": 40,
+    "parts": {
+     "weather": 42.3,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": -1.9,
+     "fx": -0.4
+    },
+    "event": null
+   },
+   {
+    "iso": "2026-09-12",
     "tmax": 26,
-    "mm": 28.9,
-    "pop": 100,
+    "mm": 49.0,
+    "pop": 89,
     "score": 38,
     "parts": {
      "weather": 40.8,
@@ -115,13 +115,13 @@
     "event": null
    },
    {
-    "iso": "2026-09-12",
-    "tmax": 26,
-    "mm": 34.4,
-    "pop": 98,
-    "score": 38,
+    "iso": "2026-09-13",
+    "tmax": 31,
+    "mm": 28.4,
+    "pop": 86,
+    "score": 39,
     "parts": {
-     "weather": 40.8,
+     "weather": 41.0,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
@@ -133,159 +133,13 @@
   ],
   "pattaya": [
    {
-    "iso": "2026-09-05",
-    "tmax": 32,
-    "mm": 0.0,
-    "pop": 39,
-    "score": 26,
-    "parts": {
-     "weather": 28.7,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": -1.9,
-     "fx": -0.4
-    },
-    "event": null
-   },
-   {
     "iso": "2026-09-06",
     "tmax": 31,
-    "mm": 0.2,
-    "pop": 51,
-    "score": 26,
-    "parts": {
-     "weather": 28.2,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": -1.9,
-     "fx": -0.4
-    },
-    "event": null
-   },
-   {
-    "iso": "2026-09-07",
-    "tmax": 31,
-    "mm": 1.4,
-    "pop": 64,
+    "mm": 0.7,
+    "pop": 62,
     "score": 25,
     "parts": {
-     "weather": 27.3,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": -1.9,
-     "fx": -0.4
-    },
-    "event": null
-   },
-   {
-    "iso": "2026-09-08",
-    "tmax": 31,
-    "mm": 6.0,
-    "pop": 76,
-    "score": 23,
-    "parts": {
-     "weather": 25.3,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": -1.9,
-     "fx": -0.4
-    },
-    "event": null
-   },
-   {
-    "iso": "2026-09-09",
-    "tmax": 30,
-    "mm": 7.6,
-    "pop": 73,
-    "score": 22,
-    "parts": {
-     "weather": 24.8,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": -1.9,
-     "fx": -0.4
-    },
-    "event": null
-   },
-   {
-    "iso": "2026-09-10",
-    "tmax": 28,
-    "mm": 29.9,
-    "pop": 91,
-    "score": 16,
-    "parts": {
-     "weather": 16.5,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 1.5,
-     "fuel": -1.9,
-     "fx": -0.4
-    },
-    "event": null
-   },
-   {
-    "iso": "2026-09-11",
-    "tmax": 26,
-    "mm": 55.7,
-    "pop": 96,
-    "score": 14,
-    "parts": {
-     "weather": 16.5,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": -1.9,
-     "fx": -0.4
-    },
-    "event": null
-   },
-   {
-    "iso": "2026-09-12",
-    "tmax": 27,
-    "mm": 84.4,
-    "pop": 98,
-    "score": 14,
-    "parts": {
-     "weather": 16.5,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": -1.9,
-     "fx": -0.4
-    },
-    "event": null
-   }
-  ],
-  "phuket": [
-   {
-    "iso": "2026-09-05",
-    "tmax": 34,
-    "mm": 0.6,
-    "pop": 29,
-    "score": 38,
-    "parts": {
-     "weather": 40.4,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": -1.9,
-     "fx": -0.4
-    },
-    "event": null
-   },
-   {
-    "iso": "2026-09-06",
-    "tmax": 32,
-    "mm": 0.9,
-    "pop": 80,
-    "score": 36,
-    "parts": {
-     "weather": 38.0,
+     "weather": 27.7,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
@@ -296,203 +150,9 @@
    },
    {
     "iso": "2026-09-07",
-    "tmax": 32,
-    "mm": 1.7,
-    "pop": 79,
-    "score": 35,
-    "parts": {
-     "weather": 37.7,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": -1.9,
-     "fx": -0.4
-    },
-    "event": null
-   },
-   {
-    "iso": "2026-09-08",
-    "tmax": 33,
-    "mm": 1.0,
-    "pop": 75,
-    "score": 36,
-    "parts": {
-     "weather": 38.2,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": -1.9,
-     "fx": -0.4
-    },
-    "event": null
-   },
-   {
-    "iso": "2026-09-09",
     "tmax": 30,
-    "mm": 10.9,
-    "pop": 99,
-    "score": 30,
-    "parts": {
-     "weather": 32.5,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": -1.9,
-     "fx": -0.4
-    },
-    "event": null
-   },
-   {
-    "iso": "2026-09-10",
-    "tmax": 27,
-    "mm": 25.0,
-    "pop": 100,
-    "score": 25,
-    "parts": {
-     "weather": 25.8,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 1.5,
-     "fuel": -1.9,
-     "fx": -0.4
-    },
-    "event": null
-   },
-   {
-    "iso": "2026-09-11",
-    "tmax": 27,
-    "mm": 27.8,
-    "pop": 92,
-    "score": 22,
-    "parts": {
-     "weather": 24.8,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": -1.9,
-     "fx": -0.4
-    },
-    "event": null
-   },
-   {
-    "iso": "2026-09-12",
-    "tmax": 26,
-    "mm": 18.4,
-    "pop": 90,
-    "score": 27,
-    "parts": {
-     "weather": 29.3,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": -1.9,
-     "fx": -0.4
-    },
-    "event": null
-   }
-  ],
-  "krabi": [
-   {
-    "iso": "2026-09-05",
-    "tmax": 33,
-    "mm": 1.3,
-    "pop": 37,
-    "score": 39,
-    "parts": {
-     "weather": 41.5,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": -1.9,
-     "fx": -0.4
-    },
-    "event": null
-   },
-   {
-    "iso": "2026-09-06",
-    "tmax": 32,
-    "mm": 1.8,
-    "pop": 84,
-    "score": 37,
-    "parts": {
-     "weather": 39.0,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": -1.9,
-     "fx": -0.4
-    },
-    "event": null
-   },
-   {
-    "iso": "2026-09-07",
-    "tmax": 31,
     "mm": 1.2,
-    "pop": 81,
-    "score": 37,
-    "parts": {
-     "weather": 39.5,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": -1.9,
-     "fx": -0.4
-    },
-    "event": null
-   },
-   {
-    "iso": "2026-09-08",
-    "tmax": 32,
-    "mm": 0.8,
     "pop": 78,
-    "score": 37,
-    "parts": {
-     "weather": 39.8,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": -1.9,
-     "fx": -0.4
-    },
-    "event": null
-   },
-   {
-    "iso": "2026-09-09",
-    "tmax": 30,
-    "mm": 12.5,
-    "pop": 98,
-    "score": 30,
-    "parts": {
-     "weather": 32.8,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": -1.9,
-     "fx": -0.4
-    },
-    "event": null
-   },
-   {
-    "iso": "2026-09-10",
-    "tmax": 27,
-    "mm": 29.2,
-    "pop": 97,
-    "score": 24,
-    "parts": {
-     "weather": 24.6,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 1.5,
-     "fuel": -1.9,
-     "fx": -0.4
-    },
-    "event": null
-   },
-   {
-    "iso": "2026-09-11",
-    "tmax": 28,
-    "mm": 24.2,
-    "pop": 94,
     "score": 25,
     "parts": {
      "weather": 26.9,
@@ -505,31 +165,13 @@
     "event": null
    },
    {
-    "iso": "2026-09-12",
-    "tmax": 25,
-    "mm": 21.0,
-    "pop": 83,
-    "score": 27,
+    "iso": "2026-09-08",
+    "tmax": 30,
+    "mm": 0.9,
+    "pop": 65,
+    "score": 25,
     "parts": {
-     "weather": 29.1,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": -1.9,
-     "fx": -0.4
-    },
-    "event": null
-   }
-  ],
-  "samui": [
-   {
-    "iso": "2026-09-05",
-    "tmax": 34,
-    "mm": 0.3,
-    "pop": 57,
-    "score": 40,
-    "parts": {
-     "weather": 42.2,
+     "weather": 27.5,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
@@ -539,10 +181,124 @@
     "event": null
    },
    {
+    "iso": "2026-09-09",
+    "tmax": 30,
+    "mm": 6.9,
+    "pop": 77,
+    "score": 23,
+    "parts": {
+     "weather": 24.9,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": -1.9,
+     "fx": -0.4
+    },
+    "event": null
+   },
+   {
+    "iso": "2026-09-10",
+    "tmax": 29,
+    "mm": 26.0,
+    "pop": 94,
+    "score": 17,
+    "parts": {
+     "weather": 17.4,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 1.5,
+     "fuel": -1.9,
+     "fx": -0.4
+    },
+    "event": null
+   },
+   {
+    "iso": "2026-09-11",
+    "tmax": 28,
+    "mm": 46.2,
+    "pop": 98,
+    "score": 14,
+    "parts": {
+     "weather": 16.5,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": -1.9,
+     "fx": -0.4
+    },
+    "event": null
+   },
+   {
+    "iso": "2026-09-12",
+    "tmax": 29,
+    "mm": 46.0,
+    "pop": 89,
+    "score": 14,
+    "parts": {
+     "weather": 16.5,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": -1.9,
+     "fx": -0.4
+    },
+    "event": null
+   },
+   {
+    "iso": "2026-09-13",
+    "tmax": 30,
+    "mm": 18.0,
+    "pop": 82,
+    "score": 18,
+    "parts": {
+     "weather": 20.7,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": -1.9,
+     "fx": -0.4
+    },
+    "event": null
+   }
+  ],
+  "phuket": [
+   {
     "iso": "2026-09-06",
+    "tmax": 32,
+    "mm": 0.8,
+    "pop": 58,
+    "score": 37,
+    "parts": {
+     "weather": 39.1,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": -1.9,
+     "fx": -0.4
+    },
+    "event": null
+   },
+   {
+    "iso": "2026-09-07",
+    "tmax": 32,
+    "mm": 1.7,
+    "pop": 78,
+    "score": 35,
+    "parts": {
+     "weather": 37.8,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": -1.9,
+     "fx": -0.4
+    },
+    "event": null
+   },
+   {
+    "iso": "2026-09-08",
     "tmax": 33,
-    "mm": 5.5,
-    "pop": 74,
+    "mm": 1.2,
+    "pop": 61,
     "score": 36,
     "parts": {
      "weather": 38.7,
@@ -555,10 +311,92 @@
     "event": null
    },
    {
-    "iso": "2026-09-07",
-    "tmax": 33,
-    "mm": 5.5,
-    "pop": 59,
+    "iso": "2026-09-09",
+    "tmax": 32,
+    "mm": 6.6,
+    "pop": 98,
+    "score": 32,
+    "parts": {
+     "weather": 34.6,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": -1.9,
+     "fx": -0.4
+    },
+    "event": null
+   },
+   {
+    "iso": "2026-09-10",
+    "tmax": 27,
+    "mm": 29.5,
+    "pop": 99,
+    "score": 24,
+    "parts": {
+     "weather": 24.4,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 1.5,
+     "fuel": -1.9,
+     "fx": -0.4
+    },
+    "event": null
+   },
+   {
+    "iso": "2026-09-11",
+    "tmax": 26,
+    "mm": 38.2,
+    "pop": 89,
+    "score": 22,
+    "parts": {
+     "weather": 24.4,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": -1.9,
+     "fx": -0.4
+    },
+    "event": null
+   },
+   {
+    "iso": "2026-09-12",
+    "tmax": 25,
+    "mm": 28.6,
+    "pop": 77,
+    "score": 23,
+    "parts": {
+     "weather": 25.1,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": -1.9,
+     "fx": -0.4
+    },
+    "event": null
+   },
+   {
+    "iso": "2026-09-13",
+    "tmax": 26,
+    "mm": 27.8,
+    "pop": 83,
+    "score": 23,
+    "parts": {
+     "weather": 25.2,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": -1.9,
+     "fx": -0.4
+    },
+    "event": null
+   }
+  ],
+  "krabi": [
+   {
+    "iso": "2026-09-06",
+    "tmax": 32,
+    "mm": 1.0,
+    "pop": 84,
     "score": 37,
     "parts": {
      "weather": 39.4,
@@ -571,13 +409,29 @@
     "event": null
    },
    {
-    "iso": "2026-09-08",
-    "tmax": 30,
-    "mm": 3.9,
-    "pop": 69,
-    "score": 37,
+    "iso": "2026-09-07",
+    "tmax": 32,
+    "mm": 5.7,
+    "pop": 76,
+    "score": 35,
     "parts": {
-     "weather": 39.8,
+     "weather": 37.4,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": -1.9,
+     "fx": -0.4
+    },
+    "event": null
+   },
+   {
+    "iso": "2026-09-08",
+    "tmax": 32,
+    "mm": 0.1,
+    "pop": 62,
+    "score": 39,
+    "parts": {
+     "weather": 40.9,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
@@ -589,11 +443,11 @@
    {
     "iso": "2026-09-09",
     "tmax": 30,
-    "mm": 4.1,
-    "pop": 78,
-    "score": 37,
+    "mm": 9.3,
+    "pop": 96,
+    "score": 32,
     "parts": {
-     "weather": 39.2,
+     "weather": 34.5,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
@@ -604,12 +458,12 @@
    },
    {
     "iso": "2026-09-10",
-    "tmax": 29,
-    "mm": 22.7,
-    "pop": 92,
-    "score": 28,
+    "tmax": 27,
+    "mm": 16.2,
+    "pop": 90,
+    "score": 30,
     "parts": {
-     "weather": 29.2,
+     "weather": 31.2,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 1.5,
@@ -621,11 +475,11 @@
    {
     "iso": "2026-09-11",
     "tmax": 28,
-    "mm": 24.1,
-    "pop": 100,
-    "score": 26,
+    "mm": 28.4,
+    "pop": 87,
+    "score": 23,
     "parts": {
-     "weather": 28.1,
+     "weather": 25.1,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
@@ -636,12 +490,158 @@
    },
    {
     "iso": "2026-09-12",
-    "tmax": 27,
-    "mm": 22.2,
-    "pop": 98,
-    "score": 27,
+    "tmax": 26,
+    "mm": 25.0,
+    "pop": 86,
+    "score": 25,
     "parts": {
-     "weather": 29.1,
+     "weather": 26.9,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": -1.9,
+     "fx": -0.4
+    },
+    "event": null
+   },
+   {
+    "iso": "2026-09-13",
+    "tmax": 26,
+    "mm": 24.8,
+    "pop": 88,
+    "score": 25,
+    "parts": {
+     "weather": 26.9,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": -1.9,
+     "fx": -0.4
+    },
+    "event": null
+   }
+  ],
+  "samui": [
+   {
+    "iso": "2026-09-06",
+    "tmax": 33,
+    "mm": 4.8,
+    "pop": 78,
+    "score": 37,
+    "parts": {
+     "weather": 38.9,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": -1.9,
+     "fx": -0.4
+    },
+    "event": null
+   },
+   {
+    "iso": "2026-09-07",
+    "tmax": 33,
+    "mm": 4.2,
+    "pop": 76,
+    "score": 37,
+    "parts": {
+     "weather": 39.3,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": -1.9,
+     "fx": -0.4
+    },
+    "event": null
+   },
+   {
+    "iso": "2026-09-08",
+    "tmax": 32,
+    "mm": 5.5,
+    "pop": 71,
+    "score": 37,
+    "parts": {
+     "weather": 38.9,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": -1.9,
+     "fx": -0.4
+    },
+    "event": null
+   },
+   {
+    "iso": "2026-09-09",
+    "tmax": 31,
+    "mm": 5.8,
+    "pop": 89,
+    "score": 36,
+    "parts": {
+     "weather": 37.9,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": -1.9,
+     "fx": -0.4
+    },
+    "event": null
+   },
+   {
+    "iso": "2026-09-10",
+    "tmax": 28,
+    "mm": 30.2,
+    "pop": 98,
+    "score": 25,
+    "parts": {
+     "weather": 26.1,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 1.5,
+     "fuel": -1.9,
+     "fx": -0.4
+    },
+    "event": null
+   },
+   {
+    "iso": "2026-09-11",
+    "tmax": 27,
+    "mm": 31.3,
+    "pop": 86,
+    "score": 24,
+    "parts": {
+     "weather": 26.1,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": -1.9,
+     "fx": -0.4
+    },
+    "event": null
+   },
+   {
+    "iso": "2026-09-12",
+    "tmax": 26,
+    "mm": 30.2,
+    "pop": 94,
+    "score": 24,
+    "parts": {
+     "weather": 26.1,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": -1.9,
+     "fx": -0.4
+    },
+    "event": null
+   },
+   {
+    "iso": "2026-09-13",
+    "tmax": 28,
+    "mm": 29.6,
+    "pop": 86,
+    "score": 24,
+    "parts": {
+     "weather": 26.1,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
@@ -653,29 +653,13 @@
   ],
   "chiangmai": [
    {
-    "iso": "2026-09-05",
-    "tmax": 29,
-    "mm": 20.0,
-    "pop": 100,
-    "score": 27,
-    "parts": {
-     "weather": 29.0,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": -1.9,
-     "fx": -0.4
-    },
-    "event": null
-   },
-   {
     "iso": "2026-09-06",
-    "tmax": 30,
+    "tmax": 31,
     "mm": 9.6,
-    "pop": 94,
+    "pop": 84,
     "score": 30,
     "parts": {
-     "weather": 32.4,
+     "weather": 32.7,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
@@ -687,11 +671,11 @@
    {
     "iso": "2026-09-07",
     "tmax": 30,
-    "mm": 8.2,
-    "pop": 96,
-    "score": 30,
+    "mm": 12.8,
+    "pop": 98,
+    "score": 29,
     "parts": {
-     "weather": 32.8,
+     "weather": 31.3,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
@@ -703,11 +687,11 @@
    {
     "iso": "2026-09-08",
     "tmax": 29,
-    "mm": 11.3,
-    "pop": 100,
-    "score": 29,
+    "mm": 9.1,
+    "pop": 92,
+    "score": 30,
     "parts": {
-     "weather": 31.7,
+     "weather": 32.6,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
@@ -719,11 +703,11 @@
    {
     "iso": "2026-09-09",
     "tmax": 28,
-    "mm": 17.5,
-    "pop": 98,
-    "score": 28,
+    "mm": 8.5,
+    "pop": 94,
+    "score": 30,
     "parts": {
-     "weather": 29.9,
+     "weather": 32.7,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
@@ -734,12 +718,12 @@
    },
    {
     "iso": "2026-09-10",
-    "tmax": 28,
-    "mm": 10.6,
+    "tmax": 30,
+    "mm": 11.3,
     "pop": 98,
     "score": 31,
     "parts": {
-     "weather": 32.0,
+     "weather": 31.8,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 1.5,
@@ -751,8 +735,8 @@
    {
     "iso": "2026-09-11",
     "tmax": 29,
-    "mm": 8.3,
-    "pop": 91,
+    "mm": 8.8,
+    "pop": 86,
     "score": 31,
     "parts": {
      "weather": 32.9,
@@ -767,11 +751,27 @@
    {
     "iso": "2026-09-12",
     "tmax": 30,
-    "mm": 15.6,
-    "pop": 65,
-    "score": 29,
+    "mm": 12.0,
+    "pop": 59,
+    "score": 30,
     "parts": {
-     "weather": 31.4,
+     "weather": 32.7,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": -1.9,
+     "fx": -0.4
+    },
+    "event": null
+   },
+   {
+    "iso": "2026-09-13",
+    "tmax": 33,
+    "mm": 0.0,
+    "pop": 31,
+    "score": 35,
+    "parts": {
+     "weather": 37.1,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
@@ -784,15 +784,15 @@
  },
  "fx": {
   "USD": 1,
-  "AUD": 1.388189,
-  "CNY": 6.728858,
-  "EUR": 0.861117,
-  "GBP": 0.739612,
-  "INR": 94.51761,
-  "KRW": 1348.990395,
-  "MYR": 4.044043,
-  "RUB": 86.587805,
-  "THB": 32.914495
+  "AUD": 1.388315,
+  "CNY": 6.73441,
+  "EUR": 0.861064,
+  "GBP": 0.739657,
+  "INR": 94.511608,
+  "KRW": 1349.83747,
+  "MYR": 4.043748,
+  "RUB": 86.563332,
+  "THB": 32.91598
  },
  "markets": {
   "brent": 96.28,
