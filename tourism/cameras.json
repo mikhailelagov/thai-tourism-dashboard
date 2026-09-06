@@ -1,0 +1,13 @@
+{
+  "timezone": "Asia/Bangkok",
+  "cameras": [
+    {"id":"pattaya-walking-sc081","provider":"pattaya","provider_id":"44f7a27a-16c0-4fa2-b865-787228c7ab95","region":"pattaya","title":"Walking Street · SC081","source_url":"https://livestream.pattaya.go.th/","hours":[18,19,20,21,22,23,0,1,2],"review_status":"access_required"},
+    {"id":"pattaya-balihai-sc090","provider":"pattaya","provider_id":"7d7e219d-bab6-4b6d-adc8-da682af0bfb3","region":"pattaya","title":"Бали Хай · пешеходный пирс SC090","source_url":"https://livestream.pattaya.go.th/","hours":[7,8,9,10,11,12,13,14,15,16,17,18],"review_status":"access_required"},
+    {"id":"pattaya-balihai-sc088","provider":"pattaya","provider_id":"c1c751d9-18e6-4160-b13a-f15dca79becc","region":"pattaya","title":"Бали Хай · площадь перед павильоном SC088","source_url":"https://livestream.pattaya.go.th/","hours":[7,8,9,10,11,12,13,14,15,16,17,18],"review_status":"access_required"},
+    {"id":"phuket-kata-windy","provider":"windy","provider_id":"1754300622","region":"phuket","title":"Kata Beach · SSS Phuket","source_url":"https://www.windy.com/webcams/1754300622","hours":[8,9,10,11,12,13,14,15,16,17,18],"review_status":"not_validated"},
+    {"id":"phuket-patong-windy","provider":"windy","provider_id":"1613136596","region":"phuket","title":"Patong Beach · zone 2","source_url":"https://www.windy.com/webcams/1613136596","hours":[8,9,10,11,12,13,14,15,16,17,18],"review_status":"not_validated"},
+    {"id":"phuket-karon-windy","provider":"windy","provider_id":"1245318606","region":"phuket","title":"Karon Beach","source_url":"https://www.windy.com/webcams/1245318606","hours":[8,9,10,11,12,13,14,15,16,17,18],"review_status":"not_validated"},
+    {"id":"phuket-bangla","provider":"pending","region":"phuket","title":"Bangla Road","source_url":"https://www.webcamgalore.com/webcam/Thailand/Patong-Beach-Phuket/29103.html","hours":[18,19,20,21,22,23,0,1,2],"review_status":"offline"},
+    {"id":"bangkok-khaosan","provider":"pending","region":"bangkok","title":"Khao San Road","source_url":"https://webcamera24.com/fr/camera/thailand/khaosan-road/","hours":[18,19,20,21,22,23,0,1,2],"review_status":"offline"}
+  ]
+}

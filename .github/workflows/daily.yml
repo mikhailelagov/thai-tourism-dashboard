@@ -2,8 +2,8 @@ name: Daily data refresh
 
 on:
   schedule:
-    # 01:00 UTC = 08:00 in Bangkok
-    - cron: "0 1 * * *"
+    # 01:45 UTC = 08:45 Bangkok; the report is also available with the Mac off.
+    - cron: "45 1 * * *"
   push:
     branches: [main]
   workflow_dispatch: {}
@@ -18,6 +18,7 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
 
@@ -29,19 +30,25 @@ jobs:
         run: python3 scripts/build_history.py
         continue-on-error: true
 
+      - name: Prepare the morning tourism report
+        if: ${{ always() }}
+        run: python3 scripts/morning_brief.py
+
       - name: Commit refreshed data
+        if: ${{ always() }}
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet -- data.json history.json; then
+          git add data.json history.json reports/
+          if git diff --cached --quiet; then
             echo "data.json unchanged, nothing to commit"
           else
-            git add data.json history.json
             git commit -m "data: refresh $(date -u +%Y-%m-%d)"
             # The daily and weekly jobs can finish together; rebase onto
             # whichever pushed first instead of failing the run.
             for i in 1 2 3; do
-              git push && break
-              git pull --rebase -X ours origin main
+              if git push; then exit 0; fi
+              git pull --rebase origin main || exit 1
             done
+            exit 1
           fi

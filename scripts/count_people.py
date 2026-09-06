@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
-"""Count people in public webcam frames. Real footfall, not a proxy.
+"""Legacy experimental detector; not used by the scheduled collector.
 
 Pulls the latest frame from each curated webcam through the Windy Webcams
 API, runs a person detector on it, and appends the counts to footfall.json.
 Frames are never kept: only a number per camera per hour is stored.
 
-Needs WINDY_API_KEY in the environment (free tier is enough - the low
-resolution it returns is fine for counting people).
+Needs WINDY_API_KEY. Preview detections are unvalidated and must not be
+used as visitor counts. Scheduled collection uses collect_tourism.py with
+explicit camera selection and missing-data statuses instead.
 """
 
 import json
@@ -115,7 +116,7 @@ def main():
     key = os.environ.get("WINDY_API_KEY")
     if not key:
         print("WINDY_API_KEY is not set - nothing to count.", file=sys.stderr)
-        return 0
+        return 1
 
     from ultralytics import YOLO
     model = YOLO("yolov8n.pt")

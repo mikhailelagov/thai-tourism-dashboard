@@ -1,12 +1,13 @@
-name: Footfall from webcams
+name: Hourly tourism observations
 
 on:
   schedule:
-    # every 2 hours - stays inside the free Actions minutes with the model cached
-    - cron: "0 */2 * * *"
+    # Hourly, away from the busiest minute. GitHub may delay scheduled jobs.
+    - cron: "17 * * * *"
   # Touching .run-footfall counts on demand, so a run can be triggered from git.
   push:
-    paths: [".run-footfall"]
+    branches: [main]
+    paths: [".run-footfall", ".github/workflows/footfall.yml", "scripts/collect_tourism.py", "tourism/cameras.json"]
   workflow_dispatch: {}
 
 permissions:
@@ -19,26 +20,21 @@ concurrency:
 jobs:
   count:
     runs-on: ubuntu-latest
+    timeout-minutes: 8
     steps:
       - uses: actions/checkout@v4
-
-      - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
-          cache: pip
+          fetch-depth: 0
 
-      # CPU-only torch keeps the install small and the run fast.
-      - run: |
-          pip install --index-url https://download.pytorch.org/whl/cpu torch torchvision
-          pip install ultralytics
-
-      - name: Count people in the latest frames
+      - name: Collect reviewed tourism source statuses
         env:
           WINDY_API_KEY: ${{ secrets.WINDY_API_KEY }}
-        run: python3 scripts/count_people.py
+        run: python3 scripts/collect_tourism.py
 
-      - name: Commit counts
+      - name: Save observations, including explicit gaps
+        if: ${{ always() }}
         run: |
+          test -f footfall.json || exit 1
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           # Stage first: git diff cannot see a file that is still untracked,
@@ -47,9 +43,10 @@ jobs:
           if git diff --cached --quiet -- footfall.json; then
             echo "footfall.json unchanged"
           else
-            git commit -m "data: footfall $(date -u +%Y-%m-%dT%H:00)"
+            git commit -m "data: tourism observations $(date -u +%Y-%m-%dT%H:%M)"
             for i in 1 2 3; do
-              git push && break
-              git pull --rebase -X ours origin main
+              if git push; then exit 0; fi
+              git pull --rebase origin main || exit 1
             done
+            exit 1
           fi

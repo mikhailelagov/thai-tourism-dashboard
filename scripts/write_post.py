@@ -160,39 +160,39 @@ def summarize(payload):
 
 
 def footfall_digest():
-    """People counted in public webcam frames - the one directly measured
-    demand number we have. Last 7 days against the 7 before, per camera."""
+    """Validated occupancy snapshots only, never a total of tourists or demand."""
     if not FOOTFALL.exists():
         return []
     try:
         rows = json.loads(FOOTFALL.read_text(encoding="utf-8")).get("rows", [])
     except (ValueError, OSError):
         return []
-    if len(rows) < 24:
-        return []
     from datetime import datetime, timedelta, timezone
+    import math
     now = datetime.now(timezone.utc)
-    def avg(sel):
-        vals = [v for v in sel if v is not None]
-        return round(sum(vals) / len(vals)) if vals else None
-    out = ["", "Люди в кадре уличных камер Паттайи, среднее за 7 дней "
-               "против предыдущих 7:"]
-    cams = sorted({c for r in rows for c in r.get("cams", {})})
-    for c in cams:
-        def pick(lo, hi):
-            return [r["cams"][c]["people"] for r in rows
-                    if c in r.get("cams", {})
-                    and lo <= datetime.fromisoformat(r["at"]) < hi]
-        cur = avg(pick(now - timedelta(days=7), now))
-        prev = avg(pick(now - timedelta(days=14), now - timedelta(days=7)))
-        title = next((r["cams"][c].get("title") for r in reversed(rows)
-                      if c in r.get("cams", {})), c)
-        if cur is None:
-            continue
-        line = f"{title}: в среднем {cur} чел. в кадре"
-        if prev:
-            line += f", неделей раньше {prev} ({(cur - prev) / prev * 100:+.0f}%)"
-        out.append(line)
+    latest = {}
+    for row in rows:
+        for cid, cam in row.get("cams", {}).items():
+            value = cam.get("people")
+            if (cam.get("status") != "ok" or not cam.get("series_version")
+                    or isinstance(value, bool) or not isinstance(value, (float, int))
+                    or not math.isfinite(value) or value < 0):
+                continue
+            try:
+                stamp = datetime.fromisoformat(cam.get("observed_at") or row["at"])
+                if stamp.tzinfo is None or not now - timedelta(hours=24) <= stamp <= now:
+                    continue
+            except (ValueError, KeyError, TypeError):
+                continue
+            if cid not in latest or stamp > latest[cid][0]:
+                latest[cid] = (stamp, cam)
+    out = ["", "Последние проверенные замеры за 24 часа: люди в фиксированной "
+               "зоне кадра. Это не число туристов и не измерение спроса; "
+               "сравнение между разными камерами недопустимо."]
+    for cid, (stamp, cam) in sorted(latest.items()):
+        region = NAMES.get(cam.get("region"), cam.get("region", ""))
+        out.append(f"{region}, {cam.get('title', cid)}: {cam['people']} чел.; "
+                   f"момент наблюдения {stamp.isoformat()}, источник {cam.get('source_url', '')}")
     return out if len(out) > 2 else []
 
 

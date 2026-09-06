@@ -343,7 +343,7 @@ const T={
   olBest:'Best day',olWorst:'Weakest day',olAvg:'Week average',
   ftSrc:'Sources: TAT arrivals forecast · Forbes on jet fuel · AeroRoutes route cuts · Bangkok Post on Pattaya hotels · AOT passenger traffic · weather by Open-Meteo · rates by ExchangeRate-API.',
   ftDis:'Weather and currency update automatically on every visit. Market context is a manual snapshot and carries its own date. The demand index is a composite estimate — an orientation tool, not a measurement.',
-  today:'today',ftH:'People on the street right now',ftLive:'webcams',ftVs:'vs same hour last week',ftAt:'counted at',
+  today:'today',ftH:'Latest count in the observed area',ftLive:'webcams',ftVs:'vs same hour last week',ftAt:'counted at',
   hiH:'The same week in past years',
   hiNote:'Weather only - holidays move around the calendar, so events are excluded and the years compare conditions rather than dates.',
   hiNone:'Past-year data is not loaded.',hiNow:'now',hiWet:'wet days',
@@ -364,7 +364,7 @@ const T={
   olBest:'Лучший день',olWorst:'Слабейший день',olAvg:'Среднее за неделю',
   ftSrc:'Источники: прогноз приездов TAT · Forbes о цене авиатоплива · AeroRoutes о сокращении маршрутов · Bangkok Post об отелях Паттайи · пассажиропоток AOT · погода Open-Meteo · курсы ExchangeRate-API.',
   ftDis:'Погода и валюта обновляются автоматически при каждом заходе. Рыночный контекст — ручной снимок, у него своя дата. Индекс спроса — сводная оценка, инструмент ориентации, а не измерение.',
-  today:'сегодня',ftH:'Людей на улице сейчас',ftLive:'камеры',ftVs:'к тому же часу неделю назад',ftAt:'снято',
+  today:'сегодня',ftH:'Последний замер людей в кадре',ftLive:'камеры',ftVs:'к тому же часу неделю назад',ftAt:'снято',
   hiH:'Эта же неделя в прошлые годы',
   hiNote:'Только погода — праздники сдвигаются по календарю, поэтому события исключены: годы сравниваются по условиям, а не по датам.',
   hiNone:'Данные прошлых лет не загружены.',hiNow:'сейчас',hiWet:'мокрых дней',
@@ -474,24 +474,31 @@ function render(){
 
 function renderFootfall(rid){
   const t=T[LANG], box=$('#foot');
-  const rows=(FOOT&&FOOT.rows)||[];
-  if(rid!=='pattaya'||!rows.length){ box.hidden=true; return; }
+  // Legacy unreviewed detections and unavailable frames are not measurements.
+  const valid=c=>c&&c.status==='ok'&&Number.isFinite(c.people)&&c.people>=0&&c.series_version;
+  const rows=((FOOT&&FOOT.rows)||[]).filter(r=>Object.values(r.cams||{}).some(c=>c.region===rid&&valid(c)));
+  if(!rows.length){ box.hidden=true; return; }
   box.hidden=false;
-  const last=rows[rows.length-1], cams=Object.keys(last.cams||{});
+  const last=rows[rows.length-1], cams=Object.keys(last.cams||{}).filter(k=>last.cams[k].region===rid&&valid(last.cams[k]));
   const lastT=new Date(last.at);
+  if(Date.now()-lastT>3*36e5){box.hidden=true;return;}
   const html=cams.map(slot=>{
-    const cur=last.cams[slot], series=rows.slice(-24).map(r=>(r.cams[slot]||{}).people??0);
+    const cur=last.cams[slot], series=rows.slice(-24).map(r=>{
+      const c=(r.cams||{})[slot];
+      return valid(c)&&c.series_version===cur.series_version?c.people:null;
+    });
     const mx=Math.max(...series,1);
     // same hour a week ago - the honest comparison for a daily rhythm
     const wk=rows.find(r=>Math.abs(new Date(r.at)-(lastT-7*864e5))<36e5);
-    const prev=wk&&wk.cams[slot]?wk.cams[slot].people:null;
+    const old=wk&&wk.cams[slot];
+    const prev=valid(old)&&old.series_version===cur.series_version?old.people:null;
     const d=prev!=null&&prev>0?Math.round((cur.people-prev)/prev*100):null;
     const dc=d==null?'var(--faint)':d>=0?'var(--green)':'var(--coral)';
     const dtxt=d==null?'—':(d>=0?'+':'')+d+'% '+t.ftVs;
     return `<div class="frow"><div>
         <div class="fn">${cur.title||slot}</div>
         <div class="fs">${t.ftAt} ${lastT.toLocaleString(LANG==='ru'?'ru-RU':'en-GB',{timeZone:'Asia/Bangkok',hour:'2-digit',minute:'2-digit',day:'2-digit',month:'2-digit'})}</div>
-        <div class="spark">${series.map((v,i)=>`<i class="${i===series.length-1?'now':''}" style="height:${Math.max(2,Math.round(v/mx*100))}%"></i>`).join('')}</div>
+        <div class="spark">${series.map((v,i)=>`<i class="${i===series.length-1?'now':''}" style="height:${v===null?0:Math.max(2,Math.round(v/mx*100))}%;opacity:${v===null?0:1}"></i>`).join('')}</div>
       </div>
       <div class="fv">${cur.people}<small style="color:${dc}">${dtxt}</small></div></div>`;
   }).join('');
