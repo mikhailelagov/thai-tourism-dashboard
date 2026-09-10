@@ -2461,9 +2461,103 @@
      "reason": "source_offline"
     }
    }
+  },
+  {
+   "schema_version": 2,
+   "at": "2026-09-10T06:02:10+00:00",
+   "measurement_kind": "availability_only",
+   "collector_status": "partial",
+   "errors": [],
+   "cams": {
+    "pattaya-walking-sc081": {
+     "status": "inactive",
+     "people": null,
+     "observed_at": "2026-09-10T06:02:10+00:00",
+     "region": "pattaya",
+     "title": "Walking Street · SC081",
+     "source_url": "https://livestream.pattaya.go.th/",
+     "series_version": null,
+     "reason": "outside_observation_hours"
+    },
+    "pattaya-balihai-sc090": {
+     "status": "unavailable",
+     "people": null,
+     "observed_at": "2026-09-10T06:02:10+00:00",
+     "region": "pattaya",
+     "title": "Бали Хай · пешеходный пирс SC090",
+     "source_url": "https://livestream.pattaya.go.th/",
+     "series_version": null,
+     "catalog_status": "online",
+     "reason": "provider_access_required"
+    },
+    "pattaya-balihai-sc088": {
+     "status": "unavailable",
+     "people": null,
+     "observed_at": "2026-09-10T06:02:10+00:00",
+     "region": "pattaya",
+     "title": "Бали Хай · площадь перед павильоном SC088",
+     "source_url": "https://livestream.pattaya.go.th/",
+     "series_version": null,
+     "catalog_status": "online",
+     "reason": "provider_access_required"
+    },
+    "phuket-kata-windy": {
+     "status": "unavailable",
+     "people": null,
+     "observed_at": "2026-09-10T06:02:10+00:00",
+     "region": "phuket",
+     "title": "Kata Beach · SSS Phuket",
+     "source_url": "https://www.windy.com/webcams/1754300622",
+     "series_version": null,
+     "catalog_status": "active",
+     "reason": "camera_not_validated"
+    },
+    "phuket-patong-windy": {
+     "status": "unavailable",
+     "people": null,
+     "observed_at": "2026-09-10T06:02:10+00:00",
+     "region": "phuket",
+     "title": "Patong Beach · zone 2",
+     "source_url": "https://www.windy.com/webcams/1613136596",
+     "series_version": null,
+     "catalog_status": "active",
+     "reason": "camera_not_validated"
+    },
+    "phuket-karon-windy": {
+     "status": "unavailable",
+     "people": null,
+     "observed_at": "2026-09-10T06:02:10+00:00",
+     "region": "phuket",
+     "title": "Karon Beach",
+     "source_url": "https://www.windy.com/webcams/1245318606",
+     "series_version": null,
+     "catalog_status": "active",
+     "reason": "camera_not_validated"
+    },
+    "phuket-bangla": {
+     "status": "unavailable",
+     "people": null,
+     "observed_at": "2026-09-10T06:02:10+00:00",
+     "region": "phuket",
+     "title": "Bangla Road",
+     "source_url": "https://www.webcamgalore.com/webcam/Thailand/Patong-Beach-Phuket/29103.html",
+     "series_version": null,
+     "reason": "source_offline"
+    },
+    "bangkok-khaosan": {
+     "status": "unavailable",
+     "people": null,
+     "observed_at": "2026-09-10T06:02:10+00:00",
+     "region": "bangkok",
+     "title": "Khao San Road",
+     "source_url": "https://webcamera24.com/fr/camera/thailand/khaosan-road/",
+     "series_version": null,
+     "reason": "source_offline"
+    }
+   }
   }
  ],
  "collector_status": "partial",
  "collector_errors": [],
- "collected_at": "2026-09-10T01:08:15+00:00"
+ "collected_at": "2026-09-10T06:02:10+00:00"
 }
