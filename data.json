@@ -1,5 +1,5 @@
 {
- "built_at": "2026-09-14T07:03:23+00:00",
+ "built_at": "2026-09-14T07:29:08+00:00",
  "regions": {
   "bangkok": [
    {
@@ -14,7 +14,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 1.5,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    },
@@ -30,7 +30,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    },
@@ -46,7 +46,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 1.5,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    },
@@ -62,7 +62,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    },
@@ -78,7 +78,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    },
@@ -94,7 +94,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    },
@@ -110,7 +110,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 1.5,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    },
@@ -126,7 +126,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    }
@@ -144,7 +144,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 1.5,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    },
@@ -160,7 +160,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    },
@@ -176,7 +176,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 1.5,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    },
@@ -192,7 +192,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    },
@@ -208,7 +208,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    },
@@ -224,7 +224,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    },
@@ -240,7 +240,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 1.5,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    },
@@ -256,7 +256,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    }
@@ -274,7 +274,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 1.5,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    },
@@ -290,7 +290,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    },
@@ -306,7 +306,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 1.5,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    },
@@ -322,7 +322,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    },
@@ -338,7 +338,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    },
@@ -354,7 +354,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    },
@@ -370,7 +370,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 1.5,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    },
@@ -386,7 +386,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    }
@@ -404,7 +404,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 1.5,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    },
@@ -420,7 +420,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    },
@@ -436,7 +436,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 1.5,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    },
@@ -452,7 +452,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    },
@@ -468,7 +468,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    },
@@ -484,7 +484,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    },
@@ -500,7 +500,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 1.5,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    },
@@ -516,7 +516,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    }
@@ -534,7 +534,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 1.5,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    },
@@ -550,7 +550,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    },
@@ -566,7 +566,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 1.5,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    },
@@ -582,7 +582,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    },
@@ -598,7 +598,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    },
@@ -614,7 +614,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    },
@@ -630,7 +630,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 1.5,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    },
@@ -646,7 +646,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    }
@@ -664,7 +664,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 1.5,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    },
@@ -680,7 +680,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    },
@@ -696,7 +696,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 1.5,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    },
@@ -712,7 +712,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    },
@@ -728,7 +728,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    },
@@ -744,7 +744,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    },
@@ -760,7 +760,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 1.5,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    },
@@ -776,7 +776,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -3.0,
-     "fx": 0.9
+     "fx": 0.8
     },
     "event": null
    }
@@ -795,16 +795,16 @@
   "THB": 33.076908
  },
  "markets": {
-  "brent": 107.36,
-  "brent_delta": 0.0754,
+  "brent": 107.35,
+  "brent_delta": 0.0753,
   "usdthb": 33.17,
   "usdthb_delta": 0.006,
   "purchasing_power": {
    "CNY": {
     "name": "Китай",
     "share": 2.23,
-    "thb": 4.9463,
-    "delta": 0.0087
+    "thb": 4.9457,
+    "delta": 0.0086
    },
    "MYR": {
     "name": "Малайзия",
@@ -815,8 +815,8 @@
    "RUB": {
     "name": "Россия",
     "share": 1.02,
-    "thb": 0.3963,
-    "delta": 0.0054
+    "thb": 0.3958,
+    "delta": 0.0043
    },
    "INR": {
     "name": "Индия",
@@ -833,23 +833,23 @@
    "GBP": {
     "name": "Британия",
     "share": 0.5,
-    "thb": 44.7493,
-    "delta": 0.0016
+    "thb": 44.765,
+    "delta": 0.0019
    },
    "EUR": {
     "name": "Еврозона",
     "share": 0.5,
-    "thb": 38.3335,
-    "delta": 0.0014
+    "thb": 38.3424,
+    "delta": 0.0016
    },
    "AUD": {
     "name": "Австралия",
     "share": 0.5,
-    "thb": 23.681,
-    "delta": 0.007
+    "thb": 23.6945,
+    "delta": 0.0076
    }
   },
-  "pp_composite": 0.0071
+  "pp_composite": 0.007
  },
  "holidays": {
   "2026-09-14": [
