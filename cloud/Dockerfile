@@ -5,4 +5,5 @@ RUN pip install --no-cache-dir playwright==1.58.0 \
     && playwright install --with-deps chromium \
     && rm -rf /var/lib/apt/lists/*
 COPY probe.py /app/probe.py
-CMD ["python", "/app/probe.py"]
+COPY health.py /app/health.py
+CMD ["python", "/app/health.py"]
