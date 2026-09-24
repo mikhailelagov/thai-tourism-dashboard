@@ -49,14 +49,18 @@ async def probe(result):
                     result["http_errors"].append({"path": parts.path, "status": response.status})
 
             page.on("response", response_seen)
+            result["phase"] = "open_page"
             response = await page.goto(SOURCE, wait_until="domcontentloaded", timeout=30000)
             result["page_status"] = response.status if response else None
             result["page_title"] = await page.title()
             emit("page_loaded", status=result["page_status"], title=result["page_title"])
             # Normal public UI only: no CAPTCHA clicks, stealth, cookie import or API fallback.
+            result["phase"] = "fill_search"
             await page.get_by_role("textbox").fill("SC-088")
+            result["phase"] = "select_camera"
             await page.get_by_text(CAMERA_LABEL, exact=True).click()
             emit("camera_selected", camera="SC-088")
+            result["phase"] = "wait_for_video"
             await page.wait_for_function(
                 """() => [...document.querySelectorAll('video')].some(v =>
                   v.readyState >= 2 && v.videoWidth > 0 && !v.paused)""", timeout=45000)
@@ -68,6 +72,21 @@ async def probe(result):
                 emit("video_sample", **sample)
             result["status"] = "playback_verified" if video_progressed(result["samples"]) else "playback_unverified"
             result["reason"] = None if result["status"] == "playback_verified" else "video_clock_not_advancing"
+            result["phase"] = "finished"
+        except Exception:
+            # Public rendered UI only, no screenshots, cookies, network bodies or stream URLs.
+            if "page" in locals():
+                try:
+                    result["page_diagnostic"] = await page.evaluate("""() => ({
+                      text: document.body.innerText.slice(-3000),
+                      inputs: [...document.querySelectorAll('input')].map(x=>({
+                        type:x.type, placeholder:x.getAttribute('placeholder'),
+                        visible:!!(x.offsetWidth || x.offsetHeight)})),
+                      videos:document.querySelectorAll('video').length
+                    })""")
+                except Exception:
+                    result["page_diagnostic"] = {"unavailable": True}
+            raise
         finally:
             await browser.close()
 
