@@ -1,0 +1,20 @@
+{
+  "verified_at": "2026-09-24T07:32:34+00:00",
+  "project_id": "0e4fba51-80cb-46a3-9637-7e0883e3c2bb",
+  "service_id": "c84e6ac8-e91a-4a59-9a1e-dae023248321",
+  "service_name": "tourism-camera-probe",
+  "deployment_id": "41de5979-0aaf-4209-8d20-d898bd627a28",
+  "deployment_status": "Completed",
+  "kind": "synthetic_browser_health",
+  "status": "ok",
+  "browser_version": "145.0.7632.6",
+  "screenshot_bytes_in_memory": 6496,
+  "external_pages_opened": 0,
+  "camera_access": "not_attempted",
+  "people": null,
+  "images_saved": 0,
+  "elapsed_seconds": 0.53,
+  "browser_max_rss_kib": 134912,
+  "browser_cpu_seconds": 2.35,
+  "note": "Synthetic page only. These are process measurements, not whole-container usage or camera workload estimates. No recurring schedule. Camera deployment was blocked by approval review because provider authorization for business analytics is unconfirmed."
+}
