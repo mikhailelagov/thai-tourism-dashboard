@@ -1,0 +1,29 @@
+{
+  "purpose": "personal_noncommercial_tourism_research",
+  "deployment_id": "52be9c38-a305-4ac9-b4d5-b5c960e981d0",
+  "camera_id": "pattaya-balihai-sc088",
+  "source_url": "https://livestream.pattaya.go.th/",
+  "started_at": "2026-09-24T07:52:59+00:00",
+  "finished_at": "2026-09-24T07:53:51+00:00",
+  "region": "sfo",
+  "page_status": 200,
+  "camera_selected": true,
+  "phase": "wait_for_video",
+  "status": "unavailable",
+  "reason": "provider_access_denied",
+  "http_errors": [
+    {
+      "path": "/api/public-stream/c1c751d9-18e6-4160-b13a-f15dca79becc",
+      "status": 403
+    }
+  ],
+  "video_elements": 0,
+  "people": null,
+  "samples": [],
+  "images_saved": 0,
+  "elapsed_seconds": 52.58,
+  "browser_max_rss_kib": 151428,
+  "browser_cpu_seconds": 3.82,
+  "freshness": "unverified",
+  "note": "Normal public UI in Chromium; no screenshots, video recording, direct stream requests, cookie transfer, CAPTCHA solving or bypass. Service exits after the test."
+}
