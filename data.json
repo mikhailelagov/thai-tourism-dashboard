@@ -1,5 +1,5 @@
 {
- "built_at": "2026-09-28T07:36:17+00:00",
+ "built_at": "2026-09-28T08:07:46+00:00",
  "regions": {
   "bangkok": [
    {
@@ -795,61 +795,61 @@
   "THB": 33.416091
  },
  "markets": {
-  "brent": 99.17,
-  "brent_delta": -0.0389,
-  "usdthb": 33.57,
-  "usdthb_delta": 0.0074,
+  "brent": 99.13,
+  "brent_delta": -0.0393,
+  "usdthb": 33.55,
+  "usdthb_delta": 0.0068,
   "purchasing_power": {
    "CNY": {
     "name": "Китай",
     "share": 2.23,
-    "thb": 5.0007,
-    "delta": 0.0162
+    "thb": 4.9978,
+    "delta": 0.0156
    },
    "MYR": {
     "name": "Малайзия",
     "share": 1.55,
-    "thb": 8.2219,
-    "delta": 0.0082
+    "thb": 8.219,
+    "delta": 0.0078
    },
    "RUB": {
     "name": "Россия",
     "share": 1.02,
-    "thb": 0.398,
-    "delta": 0.0183
+    "thb": 0.3973,
+    "delta": 0.0165
    },
    "INR": {
     "name": "Индия",
     "share": 1.0,
-    "thb": 0.3499,
-    "delta": 0.0096
+    "thb": 0.3497,
+    "delta": 0.009
    },
    "KRW": {
     "name": "Южная Корея",
     "share": 0.6,
     "thb": 0.0247,
-    "delta": 0.0232
+    "delta": 0.0229
    },
    "GBP": {
     "name": "Британия",
     "share": 0.5,
-    "thb": 44.496,
-    "delta": -0.003
+    "thb": 44.5108,
+    "delta": -0.0027
    },
    "EUR": {
     "name": "Еврозона",
     "share": 0.5,
-    "thb": 38.2042,
-    "delta": -0.0016
+    "thb": 38.1988,
+    "delta": -0.0018
    },
    "AUD": {
     "name": "Австралия",
     "share": 0.5,
-    "thb": 23.5579,
-    "delta": -0.0021
+    "thb": 23.5687,
+    "delta": -0.0016
    }
   },
-  "pp_composite": 0.0111
+  "pp_composite": 0.0106
  },
  "holidays": {
   "2026-10-01": [
