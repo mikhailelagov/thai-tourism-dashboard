@@ -16,6 +16,14 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
+      - name: What DTAM returns to a runner
+        run: |
+          for u in "https://www.dtam.moph.go.th/feed/" "https://www.dtam.moph.go.th/wp-json/wp/v2/posts?per_page=1&_fields=id"; do
+            echo "== $u"
+            curl -sS -m 30 -A "thai-tourism-dashboard/1.0 (+https://github.com/mikhailelagov/thai-tourism-dashboard)" -D - -o body.bin "$u" | grep -i -E "^HTTP|^content-type|^server|^cf-|^location" || true
+            head -c 300 body.bin | tr -d '\000' | sed 's/[?&=]/ /g'; echo
+          done
+
       - name: Official statistics
         run: python3 scripts/collect_official.py || true
       - name: News
