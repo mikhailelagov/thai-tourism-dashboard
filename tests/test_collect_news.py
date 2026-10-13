@@ -275,8 +275,9 @@ class ParsingTests(unittest.TestCase):
 
 class FetchTests(unittest.TestCase):
     class Response:
-        def __init__(self, body):
-            self.body, self.headers = body, headers()
+        def __init__(self, body, content_type=None):
+            self.body = body
+            self.headers = headers(Content_Type=content_type) if content_type else headers()
 
         def read(self, limit):
             return self.body[:limit]
@@ -308,6 +309,18 @@ class FetchTests(unittest.TestCase):
         self.assertEqual(len(requests), 2)
         self.assertEqual(requests[0][0].get_header("User-agent"), news.USER_AGENT)
         self.assertEqual(requests[0][1], 30)
+
+    def test_web_page_instead_of_data_is_labelled_not_parsed(self):
+        page = FetchTests.Response(b'<html><head><META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">',
+                                   "text/html")
+
+        class Opener:
+            def open(self, request, timeout):
+                return page
+        with patch.object(news, "OPENER", Opener()):
+            with self.assertRaises(news.SourceError) as caught:
+                news.fetch("https://www.dtam.moph.go.th/feed/", news.XML_ACCEPT)
+        self.assertEqual(str(caught.exception), "html_instead_of_data")
 
     def test_truncated_response_is_retried_and_labelled(self):
         opener, requests = self.opener(news.http.client.IncompleteRead(b"<rss"),

@@ -63,8 +63,9 @@ SOURCES = [
     {"name": "Pattaya City Hall", "kind": "wp", "official": True,
      "endpoint": "https://pattaya.go.th/wp-json/wp/v2/posts"},
     # The search also matches body text, so the headline itself must be about cannabis.
-    # GitHub's runners got a non-JSON answer from the REST API on 2026-10-13;
-    # the site's RSS is the fallback.
+    # On 2026-10-13 GitHub's runners got a bot-protection page instead of data
+    # from both the REST API and the RSS; we do not work around it. The RSS
+    # fallback helps when only the API is refused.
     {"name": "DTAM (Ministry of Public Health)", "kind": "wp", "official": True,
      "endpoint": "https://www.dtam.moph.go.th/wp-json/wp/v2/posts",
      "search": "กัญชา", "require": "cannabis",
@@ -350,6 +351,10 @@ def fetch(url, accept):
                 headers = response.headers
             if len(body) > MAX_BYTES:
                 raise SourceError("response_too_large")
+            # A web page where data was asked for is a bot-protection or error
+            # page; label it so the log does not read as a format change.
+            if "text/html" in (headers.get("Content-Type") or "") and "html" not in accept:
+                raise SourceError("html_instead_of_data")
             if body.strip():
                 return body, headers
             error = SourceError("empty_response")
