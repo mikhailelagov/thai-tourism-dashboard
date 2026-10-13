@@ -1,0 +1,38 @@
+name: Probe data sources (temporary)
+
+# Checks that the new sources answer GitHub's runners, not only a Thai IP.
+# Commits nothing; delete before merging.
+on:
+  push:
+    branches: [fix/briefing-validity]
+    paths: [".github/workflows/probe-sources.yml"]
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Official statistics
+        run: python3 scripts/collect_official.py || true
+      - name: News
+        run: python3 scripts/collect_news.py || true
+      - name: Weather, holidays, ECB and FRED
+        run: python3 scripts/build_data.py || true
+      - name: Summary
+        run: |
+          python3 - <<'PY'
+          import json
+          o = json.load(open("tourism/official.json"))
+          print("official errors:", o.get("errors"))
+          for k in ("arrivals", "provinces", "bot"):
+              print(k, (o.get(k) or {}).get("retrieved_at"))
+          n = json.load(open("tourism/news.json"))
+          for s in n["sources"]:
+              print("news", s["name"], s["ok"], s["count"], s.get("error"))
+          d = json.load(open("data.json"))
+          print("data built_at", d.get("built_at"), "fx_time", d.get("fx_time"), "errors", d.get("errors"))
+          PY
