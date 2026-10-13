@@ -1,5 +1,5 @@
 {
- "built_at": "2026-10-13T03:30:54+00:00",
+ "built_at": "2026-10-13T03:58:58+00:00",
  "window_days": 10,
  "items": [
   {
@@ -1796,9 +1796,9 @@
   {
    "name": "DTAM (Ministry of Public Health)",
    "endpoint": "https://www.dtam.moph.go.th/wp-json/wp/v2/posts?search=กัญชา",
-   "ok": true,
+   "ok": false,
    "count": 0,
-   "error": null
+   "error": "html_instead_of_data"
   },
   {
    "name": "The Thaiger",
@@ -1829,5 +1829,7 @@
    "error": null
   }
  ],
- "errors": []
+ "errors": [
+  "DTAM (Ministry of Public Health): html_instead_of_data"
+ ]
 }

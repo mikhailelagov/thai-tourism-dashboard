@@ -1,9 +1,9 @@
 {
- "built_at": "2026-10-13T03:28:09+00:00",
+ "built_at": "2026-10-13T03:58:42+00:00",
  "score_kind": "weather_calendar_model",
- "score_note_ru": "Модель погодных и календарных условий, а не измерение спроса",
+ "score_note_ru": "Модель условий из погоды, праздников, цены нефти и курсов валют, а не измерение спроса",
  "stale": false,
- "updated_at": "2026-10-13T03:28:09+00:00",
+ "updated_at": "2026-10-13T03:58:42+00:00",
  "regions": {
   "bangkok": [
    {
@@ -1052,37 +1052,37 @@
    "name": "Open-Meteo forecast API (CC BY 4.0)",
    "url": "https://open-meteo.com/",
    "ok": true,
-   "retrieved_at": "2026-10-13T03:28:09+00:00"
+   "retrieved_at": "2026-10-13T03:58:42+00:00"
   },
   "holidays": {
    "name": "Google Calendar public holiday feeds",
    "url": "https://calendar.google.com/",
    "ok": true,
-   "retrieved_at": "2026-10-13T03:28:09+00:00"
+   "retrieved_at": "2026-10-13T03:58:42+00:00"
   },
   "fx": {
    "name": "ExchangeRate-API (open.er-api.com)",
    "url": "https://open.er-api.com/v6/latest/USD",
    "ok": true,
-   "retrieved_at": "2026-10-13T03:28:09+00:00"
+   "retrieved_at": "2026-10-13T03:58:42+00:00"
   },
   "ecb": {
    "name": "ECB euro reference rates",
    "url": "https://data.ecb.europa.eu/data/datasets/EXR",
    "ok": true,
-   "retrieved_at": "2026-10-13T03:28:09+00:00"
+   "retrieved_at": "2026-10-13T03:58:42+00:00"
   },
   "cbr": {
    "name": "Bank of Russia",
    "url": "https://www.cbr.ru/currency_base/dynamics/",
    "ok": true,
-   "retrieved_at": "2026-10-13T03:28:09+00:00"
+   "retrieved_at": "2026-10-13T03:58:42+00:00"
   },
   "brent": {
    "name": "FRED DCOILBRENTEU (U.S. EIA, Europe Brent spot FOB)",
    "url": "https://fred.stlouisfed.org/series/DCOILBRENTEU",
    "ok": true,
-   "retrieved_at": "2026-10-13T03:28:09+00:00"
+   "retrieved_at": "2026-10-13T03:58:42+00:00"
   }
  },
  "errors": []
