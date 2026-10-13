@@ -16,6 +16,7 @@ Standard library only.
 import getpass
 import json
 import os
+import pathlib
 import sys
 import urllib.error
 import urllib.parse
@@ -145,10 +146,14 @@ Telegram пока не показал ни одного чата.
         return 1
 
     print(f"\nНайдено чатов: {len(chats)}\n")
+    # Actions logs of a public repository are public: no names or titles there.
+    public_log = os.environ.get("GITHUB_ACTIONS") == "true"
     for c in chats:
         name = c.get("title") or " ".join(
             filter(None, [c.get("first_name"), c.get("last_name")])
         ) or c.get("username") or "без названия"
+        if public_log:
+            name = "(название скрыто в журнале GitHub)"
         print(f"  {KIND.get(c['type'], c['type']):<14} {name}")
         print(f"  TELEGRAM_CHAT_ID = {c['id']}\n")
 

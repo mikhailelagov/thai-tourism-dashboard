@@ -2,24 +2,37 @@ name: Weekly briefing
 
 on:
   schedule:
-    # Monday 02:00 UTC = 09:00 in Bangkok
-    - cron: "0 2 * * 1"
+    # Sunday 23:23 UTC = Monday 06:23 in Bangkok. GitHub starts scheduled jobs
+    # anywhere from minutes to ~6 h late, so start early and hold the post
+    # until morning (see "Wait for the morning") rather than land mid-afternoon.
+    - cron: "23 23 * * 0"
   # Touching .run-weekly publishes an issue on demand, so a run can be
   # triggered from git rather than only from the Actions tab.
   push:
+    branches: [main]
     paths: [".run-weekly"]
-  workflow_dispatch: {}
+  # A manual run sends the post to your personal chat only, so a new prompt
+  # or data source can be checked before readers see it.
+  workflow_dispatch:
+    inputs:
+      preview:
+        description: "Предпросмотр: отправить только в TELEGRAM_ADMIN_CHAT_ID, не в канал"
+        type: boolean
+        default: true
 
 permissions:
   contents: write
 
+# Shared with the daily refresh: both rewrite the same data files, and two
+# pushes of them at once would conflict on rebase.
 concurrency:
-  group: weekly-briefing
+  group: data-refresh
   cancel-in-progress: false
 
 jobs:
   publish:
     runs-on: ubuntu-latest
+    timeout-minutes: 150
     steps:
       - uses: actions/checkout@v4
 
@@ -42,7 +55,17 @@ jobs:
         run: python3 scripts/make_chart.py
         continue-on-error: true
 
-      # Writes the briefing with Claude, searching the web for current context.
+      # Fresh statistics and this week's headlines are the post's factual base.
+      - name: Collect official statistics
+        run: python3 scripts/collect_official.py
+        continue-on-error: true
+
+      - name: Collect this week's news
+        run: python3 scripts/collect_news.py
+        continue-on-error: true
+
+      # Writes the briefing with Claude from the collected material, opening
+      # the listed articles and searching only to fill gaps.
       # Allowed to fail: send_telegram.py falls back to a computed summary
       # rather than letting the week pass in silence.
       - name: Write the briefing
@@ -51,33 +74,68 @@ jobs:
         run: python3 scripts/write_post.py
         continue-on-error: true
 
+      # A post at 6 a.m. wakes readers; hold it until 08:00 Bangkok. Manual
+      # runs publish immediately.
+      - name: Wait for the morning
+        if: ${{ github.event_name == 'schedule' }}
+        run: |
+          wait=$(python3 -c "from datetime import datetime; from zoneinfo import ZoneInfo; n = datetime.now(ZoneInfo('Asia/Bangkok')); print(max(0, int((n.replace(hour=8, minute=0, second=0, microsecond=0) - n).total_seconds())))")
+          if [ "$wait" -gt 0 ]; then
+            echo "waiting $((wait / 60)) min until 08:00 Bangkok"
+            sleep "$wait"
+          fi
+
       - name: Publish to Telegram
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          CHANNEL_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           # Optional: your personal chat. Failure reasons go there, not to the channel.
           TELEGRAM_ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID }}
+          PREVIEW: ${{ github.event_name == 'workflow_dispatch' && inputs.preview }}
           # The Pages address is built from the repository owner, so publishing
           # it would put the account name in every post. Set DASHBOARD_URL to a
           # neutral address once the site has one.
           DASHBOARD_URL: ${{ vars.DASHBOARD_URL }}
-        run: python3 scripts/send_telegram.py
+        run: |
+          if [ "$PREVIEW" = "true" ]; then
+            # Never fall through to the channel when the personal chat is unset.
+            if [ -z "$TELEGRAM_ADMIN_CHAT_ID" ]; then
+              echo "::error::Предпросмотр требует секрет TELEGRAM_ADMIN_CHAT_ID"
+              exit 1
+            fi
+            export TELEGRAM_CHAT_ID="$TELEGRAM_ADMIN_CHAT_ID"
+          else
+            export TELEGRAM_CHAT_ID="$CHANNEL_CHAT_ID"
+          fi
+          python3 scripts/send_telegram.py
 
       - name: Commit refreshed data
+        if: ${{ always() }}
+        env:
+          PREVIEW: ${{ github.event_name == 'workflow_dispatch' && inputs.preview }}
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet -- data.json history.json; then
-            echo "data.json unchanged, nothing to commit"
+          # Next week's post is told not to repeat this one as news; a preview
+          # was never published, so it does not count.
+          if [ -s post.txt ] && [ "$PREVIEW" != "true" ]; then
+            cp post.txt reports/weekly-latest.txt
+          fi
+          for f in data.json history.json tourism/official.json tourism/news.json \
+                   tourism/indicators.jsonl reports/weekly-latest.txt; do
+            if [ -e "$f" ]; then git add "$f"; fi
+          done
+          if git diff --cached --quiet; then
+            echo "nothing to commit"
           else
-            git add data.json history.json
-            git commit -m "data: refresh $(date -u +%Y-%m-%d)"
-            # The daily and weekly jobs can finish together; rebase onto
-            # whichever pushed first instead of failing the run.
+            git commit -m "data: weekly refresh $(date -u +%Y-%m-%d)"
+            # The daily and hourly jobs push too; rebase onto whichever pushed
+            # first. A conflict fails the run rather than dropping either side.
             for i in 1 2 3; do
-              git push && break
-              git pull --rebase -X ours origin main
+              if git push; then exit 0; fi
+              git pull --rebase origin main || exit 1
             done
+            exit 1
           fi
 
       # The briefing step is allowed to fail so the channel still gets a

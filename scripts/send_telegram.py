@@ -19,15 +19,19 @@ import json
 import mimetypes
 import os
 import pathlib
+import re
 import sys
 import urllib.error
 import urllib.parse
 import urllib.request
 import uuid
 from datetime import date, datetime
+from html.parser import HTMLParser
+from zoneinfo import ZoneInfo
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = ROOT / "data.json"
+OFFICIAL = ROOT / "tourism" / "official.json"
 POST = ROOT / "post.txt"
 CHART = ROOT / "chart.png"
 POST_ERR = ROOT / "post_error.txt"
@@ -36,6 +40,11 @@ API = "https://api.telegram.org/bot{token}/{method}"
 CAPTION_LIMIT = 1024
 MESSAGE_LIMIT = 4096
 
+BANGKOK = ZoneInfo("Asia/Bangkok")
+# Telegram rejects the whole message on any other tag.
+TAGS = {"b", "strong", "i", "em", "u", "ins", "s", "strike", "del", "a", "code",
+        "pre", "blockquote", "tg-spoiler"}
+LEAD = "pattaya"
 DOW = ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"]
 ORDER = ["bangkok", "pattaya", "phuket", "krabi", "samui", "chiangmai"]
 NAMES = {"bangkok": "Бангкок", "pattaya": "Паттайя", "phuket": "Пхукет",
@@ -48,45 +57,132 @@ def esc(s):
 
 def tier(score):
     if score < 24:
-        return "🔴", "низкий"
+        return "🔴", "плохие"
     if score < 30:
         return "🟠", "ниже среднего"
     if score < 45:
-        return "⚪", "умеренный"
-    return "🟢", "хороший"
+        return "⚪", "средние"
+    return "🟢", "хорошие"
+
+
+def num(value):
+    return isinstance(value, (int, float)) and not isinstance(value, bool)
+
+
+def load(path):
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return None
+
+
+def measured_lines():
+    """Official monthly figures with their period and source, if collected."""
+    data, lines = load(OFFICIAL) or {}, []
+    arr = data.get("arrivals") or {}
+    total = arr.get("total") or {}
+    if num(total.get("value")):
+        yoy = f" ({total['yoy_pct']:+.1f}% г/г)" if num(total.get("yoy_pct")) else ""
+        link = arr.get("source_url") or arr.get("file_url")
+        lines += [f"✈️ Прибытия иностранцев, {esc(arr.get('period'))}: "
+                  f"<b>{total['value']:,}</b>{yoy}".replace(",", " ")
+                  + (f' — <a href="{esc(link)}">MOTS</a>' if link else "")]
+    row = ((data.get("provinces") or {}).get("rows") or {}).get(LEAD) or {}
+    if num(row.get("occupancy_pct")):
+        prov = data["provinces"]
+        change = (f" ({row['occupancy_change_pp']:+.1f} п.п. г/г)"
+                  if num(row.get("occupancy_change_pp")) else "")
+        link = prov.get("source_url") or prov.get("file_url")
+        lines += [f"🏨 Загрузка отелей, {esc(row.get('label_ru') or 'Чонбури')}, {esc(prov.get('period'))}: "
+                  f"<b>{row['occupancy_pct']:.1f}%</b>{change}"
+                  + (f' — <a href="{esc(link)}">MOTS</a>' if link else "")]
+    return lines
 
 
 def fallback_post(payload):
     """Compact summary used when the model-written briefing is unavailable."""
     regions = payload.get("regions", {})
-    lines = ["<b>Спрос на туризм в Таиланде</b>", ""]
+    today = datetime.now(BANGKOK).date().isoformat()
+    lines = ["<b>Туризм в Таиланде: короткая сводка</b>", ""]
+    measured = measured_lines()
+    if measured:
+        lines += measured + [""]
+    lines.append("<b>Условия для отдыха на улице сегодня</b> <i>(модель погоды и календаря, "
+                 "не измерение спроса)</i>")
     for rid in ORDER:
-        days = regions.get(rid)
-        if not days:
+        days = [d for d in regions.get(rid) or [] if d.get("iso", "") >= today]
+        if not days or not num(days[0].get("score")):
             continue
         d0 = days[0]
         dot, label = tier(d0["score"])
-        lines.append(f"{dot} <b>{esc(NAMES[rid])}</b> — {d0['score']}/100 "
-                     f"<i>({label})</i> · {d0['tmax']}° · {d0['mm']:.1f} мм")
+        rain = f"{d0['mm']:.1f} мм" if num(d0.get("mm")) else "осадки н/д"
+        lines.append(f"{dot} <b>{esc(NAMES[rid])}</b> — {label} · {d0.get('tmax')}° · {rain}")
 
-    lead = regions.get(ORDER[0])
-    if lead and len(lead) > 1:
-        fwd = lead[1:8]
-        best = max(fwd, key=lambda d: d["score"])
-        avg = round(sum(d["score"] for d in fwd) / len(fwd))
+    lead = [d for d in regions.get(LEAD) or [] if d.get("iso", "") > today and num(d.get("score"))][:7]
+    if lead:
+        best = max(lead, key=lambda d: d["score"])
         wd = DOW[date.fromisoformat(best["iso"]).weekday()]
-        lines += ["", f"<b>Неделя вперёд</b> — {esc(NAMES[ORDER[0]])}: "
-                      f"среднее {avg}, лучший день {wd} "
-                      f"{best['iso'][8:]}.{best['iso'][5:7]} ({best['score']})"]
+        lines += ["", f"<b>Неделя вперёд</b> — {esc(NAMES[LEAD])}: лучший по погоде день "
+                      f"{wd} {best['iso'][8:]}.{best['iso'][5:7]}"]
 
     fx = payload.get("fx") or {}
     if fx.get("THB"):
-        lines += ["", f"Бат за доллар: <b>{fx['THB']:.2f}</b>"]
+        lines += ["", f"Бат за доллар: <b>{fx['THB']:.2f}</b> <i>(справочный курс)</i>"]
+    built = str(payload.get("built_at") or "")[:10]
     # Readers get no technical reason: it is operator business and an API
     # error in a public channel reads as a broken product.
-    note = "Развёрнутая сводка на этой неделе недоступна — показаны расчётные показатели."
+    note = "Развёрнутая сводка на этой неделе недоступна — показаны собранные показатели."
+    if built:
+        note += f" Погода на {built}."
     lines += ["", f"<i>{note}</i>"]
     return "\n".join(lines)
+
+
+class TelegramHTML(HTMLParser):
+    """Keep the tags Telegram accepts, escape everything else, balance tags."""
+
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.out, self.open = [], []
+
+    def handle_starttag(self, tag, attrs):
+        if tag == "br":
+            self.out.append("\n")
+        elif tag in TAGS:
+            if tag == "a":
+                href = dict(attrs).get("href") or ""
+                if not href.startswith(("http://", "https://", "tg://")):
+                    return
+                self.out.append(f'<a href="{esc(href).replace(chr(34), "&quot;")}">')
+            else:
+                self.out.append(f"<{tag}>")
+            self.open.append(tag)
+
+    def handle_endtag(self, tag):
+        if tag in self.open:
+            while self.open:
+                last = self.open.pop()
+                self.out.append(f"</{last}>")
+                if last == tag:
+                    break
+
+    def handle_data(self, data):
+        self.out.append(esc(data))
+
+    def result(self):
+        self.close()
+        return "".join(self.out) + "".join(f"</{t}>" for t in reversed(self.open))
+
+
+def sanitize(text):
+    parser = TelegramHTML()
+    parser.feed(text)
+    return parser.result()
+
+
+def plain(text):
+    return re.sub(r"<[^>]+>", "", text).replace("&lt;", "<").replace("&gt;", ">") \
+        .replace("&quot;", '"').replace("&amp;", "&")
 
 
 def post_form(token, method, fields):
@@ -133,8 +229,8 @@ def failure_reason():
     return None
 
 
-def alert_admin(token, reason):
-    """Tell the operator, not the channel, why the briefing is missing."""
+def alert_admin(token, reason, consequence="В канал ушла короткая сводка без анализа."):
+    """Tell the operator, not the channel, what went wrong."""
     admin = os.environ.get("TELEGRAM_ADMIN_CHAT_ID", "").strip()
     run = ""
     if os.environ.get("GITHUB_RUN_ID"):
@@ -145,8 +241,7 @@ def alert_admin(token, reason):
     # so GitHub e-mails the owner.
     if not admin:
         return
-    text = (f"⚠️ <b>Еженедельная сводка не сформирована</b>\n"
-            f"Причина: {esc(reason)}\nВ канал ушла короткая расчётная сводка.{run}")
+    text = f"⚠️ <b>Еженедельная сводка</b>\nПричина: {esc(reason)}\n{consequence}{run}"
     try:
         post_form(token, "sendMessage", {"chat_id": admin, "text": text,
                                          "parse_mode": "HTML",
@@ -156,21 +251,50 @@ def alert_admin(token, reason):
 
 
 def chunk(text, limit):
-    """Split on paragraph breaks so a long post never cuts mid-sentence."""
-    if len(text) <= limit:
-        return [text]
+    """Split on paragraph breaks so a long post never cuts mid-sentence.
+
+    Each part is sanitized on its own, which closes tags left open at a cut.
+    """
+    if len(sanitize(text)) <= limit:
+        return [sanitize(text)]
+    # Room for the closing tags sanitize() adds at each cut.
+    limit -= 100
     out, buf = [], ""
+    pieces = []
     for para in text.split("\n\n"):
+        while len(para) > limit:
+            cut = para.rfind("\n", 0, limit)
+            cut = cut if cut > 0 else para.rfind(" ", 0, limit)
+            cut = cut if cut > 0 else limit
+            pieces.append(para[:cut])
+            para = para[cut:].lstrip()
+        pieces.append(para)
+    for para in pieces:
         candidate = f"{buf}\n\n{para}" if buf else para
         if len(candidate) <= limit:
             buf = candidate
         else:
             if buf:
                 out.append(buf)
-            buf = para[:limit]
+            buf = para
     if buf:
         out.append(buf)
-    return out
+    return [sanitize(part) for part in out]
+
+
+def send_text(token, chat_id, part):
+    """Send one message; on an HTML parse error resend it as plain text."""
+    fields = {"chat_id": chat_id, "text": part, "parse_mode": "HTML",
+              "disable_web_page_preview": "true"}
+    try:
+        return post_form(token, "sendMessage", fields)
+    except urllib.error.HTTPError as e:
+        body = e.read().decode(errors="replace")
+        if e.code != 400 or "parse entities" not in body:
+            raise RuntimeError(f"Telegram rejected the request: {body}") from e
+        print(f"HTML rejected, sending as plain text: {body}", file=sys.stderr)
+        fields = {"chat_id": chat_id, "text": plain(part), "disable_web_page_preview": "true"}
+        return post_form(token, "sendMessage", fields)
 
 
 def main():
@@ -196,27 +320,22 @@ def main():
         post += f'\n\n<a href="{esc(url)}">Полная сводка по регионам</a>'
 
     if os.environ.get("DRY_RUN"):
-        print(post)
+        print("\n---\n".join(chunk(post, MESSAGE_LIMIT)))
         return 0
 
     try:
         if CHART.exists():
-            stamp = datetime.now().strftime("%d.%m.%Y")
+            stamp = datetime.now(BANGKOK).strftime("%d.%m.%Y")
             post_photo(token, chat_id, CHART,
-                       f"<b>Спрос на туризм в Таиланде</b> · {stamp}")
+                       f"<b>Туризм в Таиланде</b> · {stamp}")
         for part in chunk(post, MESSAGE_LIMIT):
-            res = post_form(token, "sendMessage", {
-                "chat_id": chat_id, "text": part, "parse_mode": "HTML",
-                "disable_web_page_preview": "true",
-            })
+            res = send_text(token, chat_id, part)
             if not res.get("ok"):
-                print(f"Telegram returned an error: {res}", file=sys.stderr)
-                return 1
-    except urllib.error.HTTPError as e:
-        print(f"Telegram rejected the request: {e.read().decode()}", file=sys.stderr)
-        return 1
-    except (urllib.error.URLError, OSError) as e:
-        print(f"could not reach Telegram: {e}", file=sys.stderr)
+                raise RuntimeError(f"Telegram returned an error: {res}")
+    except (RuntimeError, urllib.error.URLError, OSError) as e:
+        print(f"could not publish: {e}", file=sys.stderr)
+        alert_admin(token, f"публикация в Telegram не удалась: {str(e)[:200]}",
+                    "Пост в канал не вышел.")
         return 1
 
     print(f"published ({source}, {len(post)} characters)")

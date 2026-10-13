@@ -62,9 +62,11 @@ def panel(fig, cell, rid, days):
     ax = fig.add_subplot(inner[0])
     rx = fig.add_subplot(inner[1], sharex=ax)
 
+    # A day without a forecast has no score; rain may be missing on its own.
+    days = [d for d in days if isinstance(d.get("score"), (int, float))]
     xs = list(range(len(days)))
     ys = [d["score"] for d in days]
-    mm = [d["mm"] for d in days]
+    mm = [d["mm"] if isinstance(d.get("mm"), (int, float)) else None for d in days]
     avg = sum(ys) / len(ys)
 
     ax.set_facecolor(SURFACE)
@@ -112,6 +114,10 @@ def panel(fig, cell, rid, days):
 
     # rainfall strip: darker cell = wetter day
     for i, v in enumerate(mm):
+        if v is None:
+            rx.axvspan(i - .5, i + .5, color=GRID, linewidth=0)
+            rx.text(i, .5, "—", ha="center", va="center", fontsize=7, color=MUTED)
+            continue
         rx.axvspan(i - .5, i + .5, color=RAIN(min(v, RAIN_MAX) / RAIN_MAX),
                    linewidth=0)
         if v >= 10:
@@ -165,14 +171,15 @@ def build():
     events = [f"{fmt(lo)} — {ev}" if lo == hi else f"{fmt(lo)}–{fmt(hi)} — {ev}"
               for ev, (lo, hi) in sorted(spans.items(), key=lambda kv: kv[1][0])]
 
-    fig.suptitle("Индекс спроса на неделю вперёд", x=.05, y=.965,
+    fig.suptitle("Условия для отдыха на неделю вперёд", x=.05, y=.965,
                  ha="left", fontsize=16, fontweight="bold", color=INK)
     fig.text(.05, .915,
              "Линия — индекс 0–100 · пунктир — среднее за неделю · "
              "полоса снизу — осадки, мм · вертикальный пунктир — событие",
              ha="left", fontsize=9, color=MUTED)
     fig.text(.05, .877,
-             "Закрашенная точка — сегодня · контурная — сильнейший день",
+             "Закрашенная точка — сегодня · контурная — лучший день · "
+             "модель погоды и календаря, не измерение спроса",
              ha="left", fontsize=9, color=MUTED)
 
     built = payload.get("built_at", "")

@@ -30,6 +30,16 @@ jobs:
         run: python3 scripts/build_history.py
         continue-on-error: true
 
+      # Official monthly statistics (MOTS, BOT) and reference rates. A source
+      # that fails keeps its previous data; the brief shows its age.
+      - name: Collect official statistics
+        run: python3 scripts/collect_official.py
+        continue-on-error: true
+
+      - name: Collect this week's news
+        run: python3 scripts/collect_news.py
+        continue-on-error: true
+
       - name: Prepare the morning tourism report
         if: ${{ always() }}
         run: python3 scripts/morning_brief.py
@@ -40,6 +50,9 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data.json history.json reports/
+          for f in tourism/official.json tourism/news.json tourism/indicators.jsonl; do
+            if [ -e "$f" ]; then git add "$f"; fi
+          done
           if git diff --cached --quiet; then
             echo "data.json unchanged, nothing to commit"
           else

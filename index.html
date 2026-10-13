@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Thailand Tourism Demand — Live Dashboard</title>
+<title>Thailand Tourism Data — Pattaya Dashboard</title>
 <style>
   :root{
     --bg:#F5F2EB; --card:#FFFFFF; --soft:#FAF8F2; --inset:#F0ECE2;
@@ -194,6 +194,65 @@
     h1{font-size:26px;}
     .tab{font-size:12.5px;padding:7px 11px;}
   }
+
+  /* data dates, shown up front so every figure can be judged by its age */
+  .datebar{display:flex;flex-wrap:wrap;gap:6px;margin-top:11px;}
+  .dchip{font-size:11.8px;line-height:1.35;border:1px solid var(--line);background:var(--card);
+    border-radius:8px;padding:4px 9px;color:var(--muted);}
+  .dchip b{color:var(--ink);font-weight:700;}
+  .dchip.old{border-color:color-mix(in srgb,var(--amber) 55%,var(--line));
+    background:color-mix(in srgb,var(--amber) 9%,var(--card));}
+  .dchip.none{color:var(--faint);}
+
+  .card{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:18px 20px;box-shadow:var(--sh);}
+  .meta{font-size:12.3px;color:var(--faint);margin:0 0 12px;line-height:1.6;}
+  .meta b{color:var(--muted);font-weight:700;}
+  .meta a,.note a,footer a{color:var(--teal-d);}
+  .note{font-size:12px;color:var(--faint);margin:11px 0 0;max-width:74ch;line-height:1.55;}
+  .warn{font-size:12.6px;color:var(--amber);margin:6px 0 10px;line-height:1.5;}
+  .tw{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  table.tb{width:100%;border-collapse:collapse;font-size:13.5px;}
+  .tb th{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);font-weight:700;
+    text-align:right;padding:6px 8px;border-bottom:1px solid var(--line);white-space:nowrap;}
+  .tb td{padding:7px 8px;border-bottom:1px dotted var(--line2);text-align:right;
+    font-variant-numeric:tabular-nums;white-space:nowrap;}
+  .tb th:first-child,.tb td:first-child{text-align:left;padding-left:0;}
+  .tb td:first-child{white-space:normal;min-width:120px;}
+  .tb tr:last-child td{border-bottom:0;}
+  .tb tr.total td{font-weight:700;border-top:1px solid var(--line2);}
+  .tb td.bc{width:30%;min-width:70px;}
+  .mbar{display:block;height:8px;border-radius:4px;background:var(--inset);overflow:hidden;}
+  .mbar>i{display:block;height:100%;border-radius:4px;background:var(--teal);opacity:.8;}
+  .tb .dim{color:var(--faint);font-weight:500;}
+  .seg{display:flex;gap:5px;flex-wrap:wrap;margin:0 0 12px;}
+  .seg button{appearance:none;border:1px solid var(--line);background:var(--soft);color:var(--muted);
+    font:inherit;font-size:12.5px;font-weight:600;padding:4px 10px;border-radius:7px;cursor:pointer;}
+  .seg button:hover{color:var(--ink);}
+  .seg button[aria-pressed="true"]{background:var(--teal);border-color:var(--teal);color:#fff;}
+  .seg button:focus-visible{outline:2px solid var(--teal);outline-offset:2px;}
+
+  .nl{list-style:none;margin:0;padding:0;}
+  .nl li{padding:10px 0;border-bottom:1px dotted var(--line2);}
+  .nl li:last-child{border-bottom:0;}
+  .nl .tt{font-size:14.4px;font-weight:600;line-height:1.42;overflow-wrap:anywhere;}
+  .nl .tt a{color:var(--ink);text-decoration:none;}
+  .nl .tt a:hover{color:var(--teal-d);text-decoration:underline;}
+  .nl .nm{font-size:11.8px;color:var(--faint);margin-top:4px;display:flex;flex-wrap:wrap;gap:4px 8px;align-items:center;}
+  .tag{font-size:10px;font-weight:700;letter-spacing:.03em;padding:1px 6px;border-radius:5px;
+    background:var(--inset);color:var(--muted);}
+  .tag.off{background:color-mix(in srgb,var(--teal) 16%,transparent);color:var(--teal-d);}
+
+  @media (max-width:640px){ .tb .bc,.tb .opt{display:none;} }
+  @media (max-width:480px){
+    .tb th{white-space:normal;vertical-align:bottom;}
+    .tb th,.tb td{padding-left:5px;padding-right:5px;font-size:12.5px;}
+    .tb th{font-size:9.5px;}
+    .tb td:first-child{min-width:92px;}
+  }
+  @media (max-width:560px){
+    .card{padding:15px 14px;}
+    .wrap{padding:20px 16px 48px;}
+  }
 </style>
 </head>
 <body>
@@ -208,6 +267,7 @@
     <h1 id="h1"></h1>
     <p class="lede" id="lede"></p>
     <div class="dateline"><span class="dot" id="statusDot"></span><span id="statusTxt"></span></div>
+    <div class="datebar" id="dates"></div>
   </header>
 
   <section class="summary">
@@ -217,6 +277,32 @@
   </section>
 
   <div class="facts" id="facts"></div>
+
+  <h3 class="sec" id="secArr"></h3>
+  <p class="sub" id="subArr"></p>
+  <div class="card">
+    <div class="meta" id="arrMeta"></div>
+    <div class="seg" id="arrSeg"></div>
+    <div class="tw"><table class="tb" id="arrTbl"></table></div>
+    <p class="note" id="arrNote"></p>
+  </div>
+
+  <h3 class="sec" id="secProv"></h3>
+  <p class="sub" id="subProv"></p>
+  <div class="card">
+    <div class="meta" id="provMeta"></div>
+    <div class="tw"><table class="tb" id="provTbl"></table></div>
+    <p class="note" id="provNote"></p>
+  </div>
+
+  <h3 class="sec" id="secNews"></h3>
+  <p class="sub" id="subNews"></p>
+  <div class="card">
+    <div class="meta" id="newsMeta"></div>
+    <div class="seg" id="newsSeg"></div>
+    <ul class="nl" id="newsList"></ul>
+    <p class="note" id="newsNote"></p>
+  </div>
 
   <h3 class="sec" id="secRegions"></h3>
   <p class="sub" id="subRegions"></p>
@@ -230,6 +316,7 @@
       </div>
       <div class="vt"><div class="st" id="vSt"></div><p id="vTx"></p></div>
     </div>
+    <div class="subh"><span id="pvH"></span></div>
     <div class="rows" id="rows"></div>
     <div class="subh"><span id="wkH"></span><span class="live-tag" id="wkLive"></span></div>
     <div class="week" id="week"></div>
@@ -265,123 +352,270 @@ const REGIONS=[
  {id:'chiangmai',en:'Chiang Mai', ru:'Чиангмай',  ap:'CNX',     lat:18.79, lon:98.98,  base:38, wsens:.30}
 ];
 
-/* known-date events; boost is additive to the demand score */
-const EVENTS=[
- {from:'2026-07-28',to:'2026-07-28',scope:'all',      boost:6,  en:'King’s Birthday',        ru:'День рождения короля'},
- {from:'2026-07-30',to:'2026-08-02',scope:'pattaya',  boost:18, en:'Fireworks Festival',     ru:'Фестиваль фейерверков'},
- {from:'2026-08-12',to:'2026-08-12',scope:'all',      boost:5,  en:'Mother’s Day',           ru:'День матери'}
+/* Measured data lives in tourism/official.json and tourism/news.json, written
+   by the collectors with periods and publication dates. Nothing below is a
+   hand-entered market figure: every number on the page comes from a dated file. */
+const PROVINCES=[
+ {id:'pattaya',  en:'Chonburi (incl. Pattaya)',  ru:'Чонбури (включая Паттайю)'},
+ {id:'bangkok',  en:'Bangkok',                   ru:'Бангкок'},
+ {id:'phuket',   en:'Phuket',                    ru:'Пхукет'},
+ {id:'krabi',    en:'Krabi',                     ru:'Краби'},
+ {id:'samui',    en:'Surat Thani (incl. Samui)', ru:'Сураттани (включая Самуи)'},
+ {id:'chiangmai',en:'Chiang Mai',                ru:'Чиангмай'},
+ {id:'thailand', en:'All Thailand',              ru:'Весь Таиланд', total:true}
 ];
-
-/* structural context — refreshed manually, changes monthly not daily */
-const CTX_DATE={en:'26 July 2026', ru:'26 июля 2026'};
-const ROWS={
- pattaya:[['Hotel occupancy','Загрузка отелей','15–20%','break-even from 40–50%','окупаемость от 40–50%','coral'],
-  ['Low-season norm','Норма низкого сезона','60–70%','deviation is severe','отклонение сильное','grey'],
-  ['City arrivals','Приезды по городу','−20–30%','industry estimate','оценка ассоциаций','coral'],
-  ['Forward bookings','Брони на будущее','−10–15%','y/y, eastern region','г/г, восточный регион','coral'],
-  ['Corporate seminars','Корпоративные семинары','collapsed','обвал','remote work + frozen budgets','удалёнка и бюджеты','coral'],
-  ['Air capacity','Авиапровозка','cut','срезана','~50 routes trimmed','~50 маршрутов','coral']],
- phuket:[['Seasonal driver','Сезонный фактор','monsoon','муссон','waves, red flags','волны, красные флаги','coral'],
-  ['Israeli market','Израильский рынок','lost','потерян','notable share of the south','заметная доля юга','coral'],
-  ['Fares to the south','Билеты на юг','up to +200%','до +200%','closed airspace','из-за закрытого неба','coral'],
-  ['Seminar dependence','Зависимость от семинаров','low','низкая','adds resilience','плюс к устойчивости','green'],
-  ['Long-haul flights','Дальние рейсы','reduced','сокращены','detours raise cost','облёты удорожают','coral'],
-  ['Chinese inflow','Китайский поток','growing','растёт','+28% nationally','+28% по стране','green']],
- bangkok:[['Seasonal dependence','Сезонная зависимость','low','низкая','runs all year','работает круглый год','green'],
-  ['Immigration','Паспортный контроль','queues','очереди','up to two hours at peak','до двух часов в пик','amber'],
-  ['China routes','Рейсы в Китай','partly cut','частично сняты','Beijing, Guangzhou','Пекин, Гуанчжоу','coral'],
-  ['National occupancy outlook','Прогноз загрузки','72–73%','for coming years','на ближайшие годы','green'],
-  ['Songkran bookings','Брони на Сонгкран','below last year','ниже прошлого','softening signal','сигнал ослабления','amber'],
-  ['Demand mix','Диверсификация','high','высокая','three sources at once','три источника сразу','green']],
- krabi:[['Early week','Начало недели','driest','самое сухое','among southern resorts','среди южных курортов','green'],
-  ['Weather dependence','Зависимость от погоды','high','высокая','beach-led demand','пляжный формат','amber'],
-  ['Long-haul fares','Дальние перелёты','pricier','дороже','hits long routes','бьёт по длинному плечу','coral'],
-  ['Long-haul interest','Интерес дальних рынков','steady','стабильный','south holds up','юг держится','green'],
-  ['Direct flights','Прямые рейсы','few','немного','exposed to cuts','уязвим к сокращениям','amber'],
-  ['Air capacity','Авиапровозка','cut','срезана','national trend','общий тренд','coral']],
- samui:[['Season','Сезон','offset from Phuket','не совпадает с Пхукетом','gulf vs Andaman','залив против Андаманы','green'],
-  ['Occupancy','Загрузка','above average','выше среднего','resort segment','по курортному сегменту','green'],
-  ['Direct flights','Прямые рейсы','few','мало','exposed to cuts','уязвим к сокращениям','coral'],
-  ['Airfare','Стоимость перелёта','high','высокая','limited competition','ограниченная конкуренция','amber'],
-  ['Weather dependence','Зависимость от погоды','high','высокая','beach-led demand','пляжный формат','amber'],
-  ['Air capacity','Авиапровозка','cut','срезана','national trend','общий тренд','coral']],
- chiangmai:[['Songkran bookings','Брони на Сонгкран','50–60%','weakest nationally','худший показатель страны','coral'],
-  ['Spring haze','Смог весной','hurt the season','подорвал сезон','reputational effect','репутационный эффект','coral'],
-  ['Cultural demand','Культурный спрос','resilient','устойчив','not beach-dependent','не зависит от пляжа','green'],
-  ['Israeli market','Израильский рынок','lost','потерян','was a notable share','был заметной долей','coral'],
-  ['AOT network airport','Аэропорт в сети AOT','yes','да','stats are public','статистика открыта','green'],
-  ['Weather dependence','Зависимость от погоды','moderate','средняя','indoor options exist','есть крытые форматы','amber']]
-};
-const VERDICT={
- pattaya:{en:['Weakest of the six','Two independent hits landed at once: fewer seats because of costlier fuel, and the collapse of the corporate segment that normally carries the low season.'],
-          ru:['Слабее всех из шести','Наложились два независимых удара: нехватка кресел из-за подорожавшего топлива и обвал корпоративного сегмента, который обычно держит низкий сезон.']},
- phuket:{en:['Below average, but a broader base','Monsoon on the Andaman coast plus the loss of the Israeli market. Unlike Pattaya it barely depends on corporate demand, which adds resilience.'],
-         ru:['Ниже среднего, но база шире','Сезон дождей на андаманском побережье плюс потеря израильского рынка. В отличие от Паттайи почти не зависит от корпоративного спроса — это добавляет устойчивости.']},
- bangkok:{en:['The most resilient of the six','The city runs year-round on a mixed demand base — business, transit and leisure at once. Weather barely matters; the hit lands on the transit leg.'],
-          ru:['Самый устойчивый из шести','Город живёт круглый год, спрос смешанный — бизнес, транзит и туризм сразу. Погода почти не влияет, удар приходится на транзитное плечо.']},
- krabi:{en:['Moderate, driven by the monsoon rhythm','Lives on the same monsoon cycle as Phuket. The early part of the week is the driest among southern destinations, then heavy rain arrives.'],
-        ru:['Умеренно, в муссонном ритме','Живёт в том же муссонном цикле, что и Пхукет. Первая половина недели самая сухая среди южных направлений, дальше приходят сильные дожди.']},
- samui:{en:['Its own seasonal rhythm','The gulf runs on a different calendar than the Andaman coast — when Phuket is soaked, Samui can still be workable. Direct-flight scarcity is the weak spot.'],
-        ru:['Свой сезонный ритм','Залив живёт по другому календарю, чем андаманское побережье — когда на Пхукете льёт, здесь может быть сносно. Слабое место — мало прямых рейсов.']},
- chiangmai:{en:['Weak — rain plus a reputational hit','Rainy season is in full swing. The market was already hurt in spring by haze and the loss of Israeli traffic, and recovery is slow.'],
-            ru:['Слабо — дожди и репутационный удар','Сезон дождей в разгаре. Весной рынок уже пострадал от смога и потери израильского потока, восстановление идёт медленно.']}
+const KEY_MARKETS=[
+ ['Russian Federation','Russia','Россия'],['China','China','Китай'],['India','India','Индия'],
+ ['Kazakhstan','Kazakhstan','Казахстан'],['Israel','Israel','Израиль'],
+ ['Korea (Republic of)','South Korea','Южная Корея'],['Malaysia','Malaysia','Малайзия'],
+ ['United Kingdom','United Kingdom','Великобритания'],['Germany','Germany','Германия']
+];
+const TOPICS=['cannabis','entry_rules','flights','statistics','alcohol','events','safety','weather'];
+/* Days after a month ends before the next MOTS release is overdue. */
+const OVERDUE={arrivals:40,provinces:50};
+const SRC={
+ arrivals:'https://www.mots.go.th/news/category/817',
+ provinces:'https://www.mots.go.th/news/category/820',
+ ecb:'https://data.ecb.europa.eu/currency-converter',
+ cbr:'https://www.cbr.ru/currency_base/daily/',
+ meteo:'https://open-meteo.com/',
+ erapi:'https://open.er-api.com/v6/latest/USD'
 };
 
 /* ---------------- i18n ---------------- */
 const T={
- en:{kicker:'Thailand · tourism demand',h1:'How many tourists are coming, and where',
-  lede:'Demand by destination, a week-ahead outlook, and the indirect indicators that reveal footfall before official statistics do.',
-  live:'Live data loaded',loading:'Loading live data…',failed:'Live data unavailable — showing cached context only',
-  ctxNote:'market context as of',
-  sumH:'The bottleneck right now is aircraft, not the season',
-  sumP1:'Escalation around Iran pushed jet fuel to <b>$149 a barrel (+18% in a week)</b> and carriers began pulling flights. Asia lost roughly <b>10% of its seats</b>, fares rose <b>15–26%</b>, and about <b>50 routes</b> serving Thailand were trimmed. This is <b>not a demand collapse</b> — people still want to fly, there are simply fewer seats.',
-  sumP2:'Nationally the flow holds up, but individual resorts have dropped sharply. <b>Pattaya</b> is worst hit, because a second cause piled on: remote work and frozen budgets wiped out the corporate seminars that normally carry the low season.',
-  facts:[['16.2M','arrived Jan 1 – Jul 4',''],['33M','2026 forecast (TAT)',''],['−10%','seats in Asia — flights pulled',''],['','THB per USD','live']],
-  secRegions:'Destinations',subRegions:'Demand index from 0 to 100 — a composite of structural conditions, live weather and the event calendar.',
-  vCap:'demand index',wkH:'Week ahead',wkLive:'live',
-  olH:'What to expect next week',
+ en:{kicker:'Thailand · tourism data for Pattaya businesses',
+  h1:'Official tourism statistics, news and outdoor conditions',
+  lede:'Monthly MOTS arrivals by market and provincial hotel occupancy, recent news from official and local sources, and a weather model of outdoor conditions. Every figure carries its period and publication date.',
+  title:'Thailand Tourism Data — Pattaya Dashboard',
+  live:'Data loaded',loading:'Loading data…',failed:'Weather unavailable — showing whatever else could be loaded',
+  dWx:'Weather',dArr:'Arrivals',dProv:'Provinces',dNews:'News',dFx:'Rates',
+  built:'built',fetchedNow:'fetched in your browser',notLoaded:'not loaded',
+  published:'published',retrieved:'retrieved',collected:'collected',
+  prelim:'preliminary',revised:'revised',
+  agoToday:'today',ago1:'yesterday',agoN:'{n} days ago',
+  sumH:'What the latest official data shows',
+  sumNone:'Official statistics are not loaded yet. Each section below shows the date of its data or says that it is missing.',
+  sumArr:(p,n,y,st,pub,mk)=>`In <b>${p}</b> Thailand recorded <b>${n}</b> foreign arrivals${y?`, <b>${y}</b> year on year`:''} (MOTS, ${st}, published ${pub}).${mk?` Markets that matter for Pattaya: ${mk}.`:''}`,
+  sumProv:(name,p,occ,d,f,fy)=>`Hotel occupancy in <b>${name}</b> for ${p}: <b>${occ}</b>${d?` (${d} y/y)`:''}${f?`; foreign visitors ${f}${fy?` (${fy} y/y)`:''}`:''}. The province is wider than the resort.`,
+  fArr:p=>`foreign arrivals, ${p} (MOTS)`,fYtd:(a,b)=>`arrivals year to date, ${a} – ${b}`,
+  fOcc:p=>`hotel occupancy, Chonburi incl. Pattaya, ${p}`,
+  fFx:d=>`THB per USD · ECB reference, ${d}`,fFxOld:d=>`THB per USD · ExchangeRate-API snapshot, ${d}`,
+  fRub:(v,d)=>`1 THB = ${v} RUB · Bank of Russia, ${d}`,
+  yoy:'y/y',pp:' pp',noData:'no data',
+  secArr:'Foreign arrivals by market',
+  subArr:'Monthly arrivals to Thailand as a whole, by nationality, from the Ministry of Tourism and Sports (MOTS). These are entries, not unique people, and they are not split by city.',
+  mkKey:'Key for Pattaya',mkTop:'Top 20',
+  thMarket:'Market',thArr:'Arrivals',thPrev:'Year before',thYoy:'y/y',
+  allMarkets:'All markets',
+  ytd:(a,b,n,y,prev)=>`Year to date (${a} – ${b}): <b>${n}</b>${y?`, ${y} y/y`:''}${prev?` (a year earlier: ${prev})`:''}.`,
+  arrNone:'MOTS arrivals are not loaded.',
+  overdue:n=>`${n} days have passed since the end of this period; MOTS usually publishes the next month by now, but newer data has not been received.`,
+  refreshFailed:(src,at,err)=>`Last refresh of ${src} failed (${at}): ${err}. Showing the last data received, if any.`,
+  srcNames:{arrivals:'MOTS (arrivals)',provinces:'MOTS (provinces)',bot:'BOT',ecb:'ECB',cbr:'Bank of Russia'},
+  secProv:'Provincial hotel occupancy and visitors',
+  subProv:'MOTS monthly provincial statistics for our six destinations and the national total.',
+  thProv:'Province',thOcc:'Occupancy',thOccD:'Δ y/y',thForeign:'Foreign visitors',thRev:'Revenue y/y',
+  provNone:'MOTS provincial data is not loaded.',
+  provNote:'A province is wider than the resort; provincial visits cannot be added up or compared with arrivals to the country. Visits and revenue are MOTS estimates from accommodation data, not till receipts.',
+  secNews:'Latest news',
+  subNews:'Headlines from TAT, Pattaya City Hall, the Ministry of Public Health and local media, tagged by topic.',
+  window:'window',daysUnit:'days',sourcesOk:'sources OK',failedSrc:'not refreshed',all:'All',
+  official:'official',newsNone:'News is not loaded.',newsEmpty:'No news for this topic in the window.',
+  newsOld:'The news file is older than 36 hours.',
+  newsNote:'Headlines are shown as published by each source and are not fact-checked.',
+  topics:{cannabis:'Cannabis',entry_rules:'Entry rules',flights:'Flights',statistics:'Statistics',events:'Events',
+    alcohol:'Alcohol',safety:'Safety',weather:'Weather'},
+  secRegions:'Destinations: weather model and provincial figures',
+  subRegions:'The 0–100 score is a model: a hand-set level per destination, lowered by forecast rain, plus points for holidays and events and small oil-price and exchange-rate terms. It is not a measure of demand, and scores of different destinations are not comparable. The measured figures in each tab are MOTS monthly provincial statistics.',
+  vCap:'outdoor conditions (model)',condToday:'Outdoor conditions today',
+  wxToday:(tp,mm,pop)=>`Forecast for today: up to ${tp}°, ${mm} mm of rain, ${pop}% chance of rain. The score is a model, not a measurement of how many tourists are coming.`,
+  wxStale:'The weather file does not cover today, so no score is shown.',
+  pvH:(name,p,st,pub)=>`MOTS · ${name} · ${p} · ${st} · published ${pub}`,pvNone:'MOTS provincial data is not loaded for this destination.',
+  pvOcc:'Hotel occupancy',pvOccPrev:'Occupancy a year earlier',pvForeign:'Foreign visitors',pvThai:'Thai visitors',
+  pvRev:'Revenue, million THB',pvRevF:'Revenue from foreigners, million THB',
+  wkH:'Outdoor conditions, week ahead (model)',wkLive:'forecast',
+  olH:'Outdoor conditions next week',
   olBest:'Best day',olWorst:'Weakest day',olAvg:'Week average',
-  ftSrc:'Sources: TAT arrivals forecast · Forbes on jet fuel · AeroRoutes route cuts · Bangkok Post on Pattaya hotels · AOT passenger traffic · weather by Open-Meteo · rates by ExchangeRate-API.',
-  ftDis:'Weather and currency update automatically on every visit. Market context is a manual snapshot and carries its own date. The demand index is a composite estimate — an orientation tool, not a measurement.',
+  ftSrc:'Sources',srcArr:'MOTS arrivals',srcProv:'MOTS provinces',fallbackFx:'fallback rates',weather:'weather',news:'news',
+  ftDis:'Figures are shown as published, with their period and publication date; preliminary figures get revised. The outdoor-conditions score is a model, not a measurement of demand. Webcam counts are people in one frame, not tourists in the city.',
   today:'today',ftH:'Latest count in the observed area',ftLive:'webcams',ftVs:'vs same hour last week',ftAt:'counted at',
   hiH:'The same week in past years',
   hiNote:'Weather only - holidays move around the calendar, so events are excluded and the years compare conditions rather than dates.',
   hiNone:'Past-year data is not loaded.',hiNow:'now',hiWet:'wet days',
   days:['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],
-  tones:['Low','Below average','Moderate','Good'],
+  tones:['Poor','Fair','Moderate','Good'],
   noEvent:'no notable events',rain:'mm'},
- ru:{kicker:'Таиланд · спрос на туризм',h1:'Сколько туристов едет и куда',
-  lede:'Спрос по направлениям, прогноз на неделю вперёд и косвенные индикаторы, по которым загруженность видна раньше официальной статистики.',
-  live:'Живые данные загружены',loading:'Загружаю живые данные…',failed:'Живые данные недоступны — показан только сохранённый контекст',
-  ctxNote:'рыночный контекст на',
-  sumH:'Узкое место сейчас — самолёты, а не сезон',
-  sumP1:'Обострение вокруг Ирана подняло авиатопливо до <b>$149 за баррель (+18% за неделю)</b>, и перевозчики начали снимать рейсы. Кресел в Азии стало меньше примерно на <b>10%</b>, билеты подорожали на <b>15–26%</b>, по Таиланду сокращено около <b>50 маршрутов</b>. Это <b>не падение спроса</b> — лететь хотят, но мест физически меньше.',
-  sumP2:'По стране поток держится, а отдельные курорты просели заметно. Сильнее всех <b>Паттайя</b>: там добавилась вторая причина — удалёнка и заморозка бюджетов убили корпоративные семинары, кормившие низкий сезон.',
-  facts:[['16,2 млн','приехало с 1 января по 4 июля',''],['33 млн','прогноз на 2026 год (TAT)',''],['−10%','кресел в Азии — рейсы сняты',''],['','бат за доллар','живое']],
-  secRegions:'Направления',subRegions:'Индекс спроса от 0 до 100 — сводная оценка: структурная ситуация, живая погода и календарь событий.',
-  vCap:'индекс спроса',wkH:'Неделя вперёд',wkLive:'живое',
-  olH:'Чего ждать на следующей неделе',
-  olBest:'Лучший день',olWorst:'Слабейший день',olAvg:'Среднее за неделю',
-  ftSrc:'Источники: прогноз приездов TAT · Forbes о цене авиатоплива · AeroRoutes о сокращении маршрутов · Bangkok Post об отелях Паттайи · пассажиропоток AOT · погода Open-Meteo · курсы ExchangeRate-API.',
-  ftDis:'Погода и валюта обновляются автоматически при каждом заходе. Рыночный контекст — ручной снимок, у него своя дата. Индекс спроса — сводная оценка, инструмент ориентации, а не измерение.',
+ ru:{kicker:'Таиланд · данные о туризме для бизнеса Паттайи',
+  h1:'Официальная статистика туризма, новости и погода',
+  lede:'Ежемесячные прибытия по странам и загрузка отелей по провинциям от MOTS, свежие новости официальных и местных источников и погодная модель условий для отдыха. У каждой цифры указаны период и дата публикации.',
+  title:'Туризм в Таиланде — данные для Паттайи',
+  live:'Данные загружены',loading:'Загружаю данные…',failed:'Погода недоступна — показано то, что удалось загрузить',
+  dWx:'Погода',dArr:'Прибытия',dProv:'Провинции',dNews:'Новости',dFx:'Курсы',
+  built:'собрано',fetchedNow:'получено в браузере',notLoaded:'не загружено',
+  published:'опубликовано',retrieved:'получено',collected:'собрано',
+  prelim:'предварительные данные',revised:'уточнённые данные',
+  agoToday:'сегодня',ago1:'вчера',agoN:'{n} дн. назад',
+  sumH:'Что показывают последние официальные данные',
+  sumNone:'Официальная статистика пока не загружена. В каждом разделе ниже указана дата данных или сказано, что их нет.',
+  sumArr:(p,n,y,st,pub,mk)=>`За <b>${p}</b> зафиксировано <b>${n}</b> прибытий иностранцев${y?`, <b>${y}</b> год к году`:''} (MOTS, ${st}, опубликовано ${pub}).${mk?` Рынки, важные для Паттайи: ${mk}.`:''}`,
+  sumProv:(name,p,occ,d,f,fy)=>`Загрузка отелей в провинции <b>${name}</b> за ${p}: <b>${occ}</b>${d?` (${d} г/г)`:''}${f?`; иностранные посещения ${f}${fy?` (${fy} г/г)`:''}`:''}. Провинция шире курорта.`,
+  fArr:p=>`прибытий иностранцев, ${p} (MOTS)`,fYtd:(a,b)=>`прибытий с начала года, ${a} – ${b}`,
+  fOcc:p=>`загрузка отелей, Чонбури с Паттайей, ${p}`,
+  fFx:d=>`бат за доллар · справочный курс ЕЦБ, ${d}`,fFxOld:d=>`бат за доллар · снимок ExchangeRate-API, ${d}`,
+  fRub:(v,d)=>`1 бат = ${v} руб. · Банк России, ${d}`,
+  yoy:'г/г',pp:' п.п.',noData:'нет данных',
+  secArr:'Прибытия иностранцев по странам',
+  subArr:'Ежемесячные прибытия в Таиланд в целом по гражданству, данные Министерства туризма и спорта (MOTS). Это въезды, а не уникальные люди, и они не разделены по городам.',
+  mkKey:'Важные для Паттайи',mkTop:'Топ-20',
+  thMarket:'Страна',thArr:'Прибытия',thPrev:'Год назад',thYoy:'г/г',
+  allMarkets:'Все страны',
+  ytd:(a,b,n,y,prev)=>`С начала года (${a} – ${b}): <b>${n}</b>${y?`, ${y} г/г`:''}${prev?` (годом ранее: ${prev})`:''}.`,
+  arrNone:'Данные MOTS о прибытиях не загружены.',
+  overdue:n=>`От конца периода прошло ${n} дн.; обычно MOTS к этому сроку уже публикует следующий месяц, но более свежие данные не получены.`,
+  refreshFailed:(src,at,err)=>`Последнее обновление источника ${src} не удалось (${at}): ${err}. Показаны последние успешно полученные данные, если они есть.`,
+  srcNames:{arrivals:'MOTS (прибытия)',provinces:'MOTS (провинции)',bot:'BOT',ecb:'ЕЦБ',cbr:'Банк России'},
+  secProv:'Загрузка отелей и посещения по провинциям',
+  subProv:'Месячная статистика MOTS по провинциям наших шести направлений и по стране в целом.',
+  thProv:'Провинция',thOcc:'Загрузка',thOccD:'Δ г/г',thForeign:'Иностранные посещения',thRev:'Доход г/г',
+  provNone:'Данные MOTS по провинциям не загружены.',
+  provNote:'',
+  secNews:'Последние новости',
+  subNews:'Заголовки TAT, мэрии Паттайи, Минздрава и местных СМИ с разметкой по темам.',
+  window:'окно',daysUnit:'дн.',sourcesOk:'источников в порядке',failedSrc:'не обновились',all:'Все',
+  official:'официально',newsNone:'Новости не загружены.',newsEmpty:'По этой теме в окне новостей нет.',
+  newsOld:'Файл новостей старше 36 часов.',
+  newsNote:'Заголовки приведены как у источника, факты не проверялись.',
+  topics:{cannabis:'Каннабис',entry_rules:'Въезд и визы',flights:'Авиасообщение',statistics:'Статистика',events:'События',
+    alcohol:'Алкоголь',safety:'Безопасность',weather:'Погода'},
+  secRegions:'Направления: погодная модель и данные провинций',
+  subRegions:'Оценка 0–100 — модель: заданный вручную уровень для каждого направления, сниженный по прогнозу дождя, плюс баллы за праздники и события и небольшие поправки на цену нефти и курсы валют. Это не измерение спроса, и оценки разных направлений нельзя сравнивать между собой. Измеренные данные во вкладках — месячная статистика MOTS по провинции.',
+  vCap:'условия для отдыха на улице (модель)',condToday:'Условия на улице сегодня',
+  wxToday:(tp,mm,pop)=>`Прогноз на сегодня: до ${tp}°, осадки ${mm} мм, вероятность дождя ${pop}%. Оценка — модель, а не измерение числа туристов.`,
+  wxStale:'Файл погоды не покрывает сегодняшний день, поэтому оценка не показана.',
+  pvH:(name,p,st,pub)=>`MOTS · ${name} · ${p} · ${st} · опубликовано ${pub}`,pvNone:'Данные MOTS по этой провинции не загружены.',
+  pvOcc:'Загрузка отелей',pvOccPrev:'Загрузка годом ранее',pvForeign:'Иностранные посещения',pvThai:'Тайские посещения',
+  pvRev:'Доход, млн бат',pvRevF:'Доход от иностранцев, млн бат',
+  wkH:'Условия на улице на неделю вперёд (модель)',wkLive:'прогноз',
+  olH:'Условия на улице на следующей неделе',
+  olBest:'Лучший день',olWorst:'Худший день',olAvg:'Среднее за неделю',
+  ftSrc:'Источники',srcArr:'MOTS: прибытия',srcProv:'MOTS: провинции',fallbackFx:'резервные курсы',weather:'погода',news:'новости',
+  ftDis:'Цифры приведены как опубликованы, с периодом и датой публикации; предварительные данные потом уточняются. Оценка условий на улице — модель, а не измерение спроса. Камеры показывают людей в одном кадре, а не туристов в городе.',
   today:'сегодня',ftH:'Последний замер людей в кадре',ftLive:'камеры',ftVs:'к тому же часу неделю назад',ftAt:'снято',
   hiH:'Эта же неделя в прошлые годы',
   hiNote:'Только погода — праздники сдвигаются по календарю, поэтому события исключены: годы сравниваются по условиям, а не по датам.',
   hiNone:'Данные прошлых лет не загружены.',hiNow:'сейчас',hiWet:'мокрых дней',
   days:['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
-  tones:['Низкий','Ниже среднего','Умеренный','Хороший'],
+  tones:['Неблагоприятные','Ниже среднего','Умеренные','Благоприятные'],
   noEvent:'без заметных событий',rain:'мм'}
 };
 
 /* ---------------- state ---------------- */
-let LANG='en', CUR=0, DATA=null, FX=null, BUILT=null, HIST=null, FOOT=null, STATUS='loading';
+let LANG=/^ru\b/i.test(navigator.language||'')?'ru':'en', CUR=1, DATA=null, FX=null, BUILT=null, HIST=null, FOOT=null, STATUS='loading';
+let OFF=null, NEWS=null, MK_MODE='key', NEWS_TOPIC='all', FX_AT=null;
 const $=s=>document.querySelector(s);
 const CL={coral:'var(--coral)',amber:'var(--amber)',green:'var(--green)',grey:'var(--grey)'};
 
+/* ---------------- safe formatting ----------------
+   Everything read from JSON is escaped before it reaches innerHTML:
+   news titles come from third-party sites and are untrusted.        */
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const isNum=v=>typeof v==='number'&&Number.isFinite(v);
+const obj=v=>v&&typeof v==='object'&&!Array.isArray(v)?v:{};
+const LOC=()=>LANG==='ru'?'ru-RU':'en-GB';
+function safeUrl(u){
+  if(typeof u!=='string')return null;
+  try{const x=new URL(u);return x.protocol==='https:'||x.protocol==='http:'?x.href:null;}catch(e){return null;}
+}
+function link(text,url){
+  const u=safeUrl(url);
+  return u?`<a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(text)}</a>`:esc(text);
+}
+function num(v,d=0){return isNum(v)?v.toLocaleString(LOC(),{minimumFractionDigits:d,maximumFractionDigits:d}):'—';}
+function upTo(v,d=2){return isNum(v)?v.toLocaleString(LOC(),{maximumFractionDigits:d}):'—';}
+function signed(v,d=1,unit='%'){
+  if(!isNum(v))return '';
+  const r=Math.round(v*10**d)/10**d;
+  return (r>0?'+':r<0?'−':'')+Math.abs(r).toLocaleString(LOC(),{minimumFractionDigits:d,maximumFractionDigits:d})+unit;
+}
+function col(v){return !isNum(v)?'var(--faint)':v>0?'var(--green)':v<0?'var(--coral)':'var(--muted)';}
+function chg(v,d=1,unit='%'){return isNum(v)?`<span style="color:${col(v)}">${signed(v,d,unit)}</span>`:'<span class="dim">—</span>';}
+function compact(v){
+  if(!isNum(v))return '—';
+  return v>=1e6?(v/1e6).toLocaleString(LOC(),{maximumFractionDigits:2})+(LANG==='ru'?' млн':'M'):num(v);
+}
+function when(s){if(typeof s!=='string')return null;const d=new Date(s);return isNaN(d)?null:d;}
+function dateText(d,time){
+  if(!d)return '—';
+  const o={timeZone:'Asia/Bangkok',day:'numeric',month:'short',year:'numeric'};
+  if(time){o.hour='2-digit';o.minute='2-digit';}
+  return d.toLocaleString(LOC(),o);
+}
+function ymd(s){const m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(typeof s==='string'?s:'');return m?new Date(Date.UTC(+m[1],+m[2]-1,+m[3],12)):null;}
+function dayText(s){const d=ymd(s);return d?d.toLocaleDateString(LOC(),{timeZone:'UTC',day:'numeric',month:'short',year:'numeric'}):'—';}
+function bkkDate(d){
+  // YYYY-MM-DD in Bangkok, built from parts: locale date formats are not stable across browsers.
+  const p={};
+  new Intl.DateTimeFormat('en-US',{timeZone:'Asia/Bangkok',year:'numeric',month:'2-digit',day:'2-digit'})
+    .formatToParts(d).forEach(x=>{p[x.type]=x.value;});
+  return `${p.year}-${p.month}-${p.day}`;
+}
+function ago(d){
+  // Calendar days in Bangkok, the same count the morning brief prints.
+  if(!d)return '';
+  const t=T[LANG], n=Math.round((Date.parse(bkkDate(new Date()))-Date.parse(bkkDate(d)))/864e5);
+  return n<=0?t.agoToday:n===1?t.ago1:t.agoN.replace('{n}',n);
+}
+function period(p){const m=/^(\d{4})-(\d{2})$/.exec(typeof p==='string'?p:'');return m?{y:+m[1],m:+m[2]}:null;}
+function periodText(p){
+  const x=period(p);
+  return x?new Date(Date.UTC(x.y,x.m-1,1)).toLocaleDateString(LOC(),{timeZone:'UTC',month:'long',year:'numeric'}):'—';
+}
+function monthText(p){
+  const x=period(p);
+  return x?new Date(Date.UTC(x.y,x.m-1,1)).toLocaleDateString(LOC(),{timeZone:'UTC',month:'long'}):'—';
+}
+/* Calendar days in Bangkok from the last day of the period, as in the morning brief. */
+function daysSinceEnd(p){const x=period(p);return x?Math.round((Date.parse(bkkDate(new Date()))-Date.UTC(x.y,x.m,0))/864e5):null;}
+function statusText(s){const t=T[LANG];return s==='preliminary'?t.prelim:s==='revised'?t.revised:'—';}
+function bkkToday(){return bkkDate(new Date());}
+function topicName(k){
+  const t=T[LANG], r=REGIONS.find(x=>x.id===k);
+  return t.topics[k]||(r?r[LANG]:String(k));
+}
+function errorsFor(...names){
+  const t=T[LANG], list=OFF&&Array.isArray(OFF.errors)?OFF.errors:[];
+  return list.filter(e=>e&&names.includes(e.source)).map(e=>
+    `<p class="warn">⚠ ${t.refreshFailed(esc(t.srcNames[e.source]),esc(dateText(when(e.at),true)),esc(e.error||'—'))}</p>`).join('');
+}
+function overdueFor(kind,p){
+  const n=daysSinceEnd(p);
+  return n!=null&&n>OVERDUE[kind]?`<p class="warn">⚠ ${T[LANG].overdue(n)}</p>`:'';
+}
+function blockMeta(b,url){
+  const t=T[LANG], pub=when(b.published_at), got=when(b.retrieved_at);
+  return [`<b>${esc(periodText(b.period))}</b>`, esc(statusText(b.status)),
+    `${t.published} ${esc(dateText(pub))}${pub?` (${esc(ago(pub))})`:''}`,
+    `${t.retrieved} ${esc(dateText(got,true))}`,
+    link('MOTS',b.source_url||url)+(safeUrl(b.file_url)?' · '+link('XLSX',b.file_url):'')].join(' · ');
+}
+function occDelta(r){
+  return isNum(r.occupancy_change_pp)?r.occupancy_change_pp
+    :isNum(r.occupancy_pct)&&isNum(r.occupancy_prev_pct)?r.occupancy_pct-r.occupancy_prev_pct:null;
+}
+function marketKey(s){return String(s||'').toLowerCase().replace(/[^a-z]/g,'');}
+function marketName(m){
+  const known=KEY_MARKETS.find(k=>marketKey(k[0])===marketKey(m.name));
+  if(LANG==='ru')return m.ru||(known?known[2]:m.name);
+  return known?known[1]:m.name;
+}
+
 /* ---------------- data loading ----------------
    Primary source is data.json, rebuilt by the daily job.
-   If it is missing or stale, the page falls back to calling
-   the open APIs directly so it is never blank.            */
+   If it is missing, the page falls back to calling the open
+   weather API directly so the forecast is never blank. The
+   measured statistics have no such fallback: they are shown
+   only from the collected, dated files.                    */
 function fromOpenMeteo(w){
   const arr=Array.isArray(w)?w:[w], out={};
   REGIONS.forEach((r,i)=>{
@@ -400,37 +634,41 @@ async function fetchDirect(){
     `&timezone=Asia%2FBangkok&forecast_days=8`;
   const [w,f]=await Promise.all([
     fetch(wxUrl).then(r=>{if(!r.ok)throw 0;return r.json()}),
-    fetch('https://open.er-api.com/v6/latest/USD').then(r=>r.ok?r.json():null).catch(()=>null)
+    fetch(SRC.erapi).then(r=>r.ok?r.json():null).catch(()=>null)
   ]);
   DATA=fromOpenMeteo(w);
   FX=f&&f.rates?f.rates:null;
-  BUILT=null;
+  // The provider's own update time, not the moment the browser asked.
+  FX_AT=f&&isNum(f.time_last_update_unix)?new Date(f.time_last_update_unix*1000).toISOString():null;
+  BUILT=new Date().toISOString();
+}
+async function getJson(url){
+  try{
+    const r=await fetch(url+'?_='+Date.now(),{cache:'no-store'});
+    const d=r.ok?await r.json():null;
+    return d&&typeof d==='object'&&!Array.isArray(d)?d:null;
+  }catch(e){return null;}
 }
 async function loadLive(){
-  try{
-    const d=await fetch('data.json?_='+Date.now(),{cache:'no-store'})
-      .then(r=>r.ok?r.json():null);
-    if(d&&d.regions&&Object.keys(d.regions).length){
-      DATA=d.regions; FX=d.fx||null; BUILT=d.built_at||null;
-      HIST=await fetch('history.json').then(r=>r.ok?r.json():null).catch(()=>null);
-      FOOT=await fetch('footfall.json').then(r=>r.ok?r.json():null).catch(()=>null);
+  const d=await getJson('data.json');
+  if(d&&d.regions&&Object.keys(d.regions).length){
+    DATA=d.regions; FX=d.fx||null; FX_AT=d.fx_time||null; BUILT=d.built_at||null;
+    [HIST,FOOT]=await Promise.all([getJson('history.json'),getJson('footfall.json')]);
     STATUS='live'; render(); return;
-    }
-  }catch(e){/* fall through to direct fetch */}
+  }
   try{ await fetchDirect(); STATUS='live'; }
   catch(e){ STATUS='failed'; }
   render();
 }
+async function loadMeasured(){
+  [OFF,NEWS]=await Promise.all([getJson('tourism/official.json'),getJson('tourism/news.json')]);
+  render();
+}
 
 /* ---------------- scoring ---------------- */
-function eventsFor(regionId,iso){
-  return EVENTS.filter(e=>(e.scope==='all'||e.scope===regionId)&&iso>=e.from&&iso<=e.to);
-}
-function scoreFor(region,iso,mm,pop){
+function scoreFor(region,mm,pop){
   const rain=Math.min(1,(mm/28)*0.75+(pop/100)*0.25);
-  let s=region.base*(1-rain*region.wsens);
-  eventsFor(region.id,iso).forEach(e=>s+=e.boost);
-  return Math.max(0,Math.min(100,Math.round(s)));
+  return Math.max(0,Math.min(100,Math.round(region.base*(1-rain*region.wsens))));
 }
 function tone(s){const t=T[LANG].tones;
   return s<24?[CL.coral,t[0]]:s<30?[CL.amber,t[1]]:s<45?[CL.grey,t[2]]:[CL.green,t[3]];}
@@ -439,37 +677,181 @@ function tone(s){const t=T[LANG].tones;
 function render(){
   const t=T[LANG];
   document.documentElement.lang=LANG;
-  document.title=LANG==='en'?'Thailand Tourism Demand — Live Dashboard':'Спрос на туризм в Таиланде — живая сводка';
+  document.title=t.title;
   $('#btnEn').setAttribute('aria-pressed',LANG==='en');
   $('#btnRu').setAttribute('aria-pressed',LANG==='ru');
 
   $('#kicker').textContent=t.kicker; $('#h1').textContent=t.h1; $('#lede').textContent=t.lede;
   const dot=$('#statusDot');
   dot.className='dot'+(STATUS==='live'?' live':STATUS==='failed'?' err':'');
-  $('#statusTxt').textContent=
-    (STATUS==='live'?t.live:STATUS==='failed'?t.failed:t.loading)+' · '+t.ctxNote+' '+CTX_DATE[LANG];
+  $('#statusTxt').textContent=STATUS==='live'?t.live:STATUS==='failed'?t.failed:t.loading;
 
-  $('#sumH').textContent=t.sumH; $('#sumP1').innerHTML=t.sumP1; $('#sumP2').innerHTML=t.sumP2;
-
-  const thb=FX&&FX.THB?FX.THB.toFixed(2):'—';
-  $('#facts').innerHTML=t.facts.map((f,i)=>{
-    const val=i===3?thb:f[0];
-    const col=i===0?'color:var(--teal-d)':i===2?'color:var(--coral)':'';
-    return `<div class="fact"><div class="big n" style="${col}">${val}</div>
-      <div class="lb">${f[1]}</div>${f[2]?`<div class="tagl">${f[2]}</div>`:''}</div>`;}).join('');
-
-  $('#secRegions').textContent=t.secRegions; $('#subRegions').textContent=t.subRegions;
-  $('#vCap').textContent=t.vCap; $('#wkH').textContent=t.wkH;
+  ['secArr','subArr','secProv','subProv','secNews','subNews','secRegions','subRegions','vCap','wkH','olH','hiH','ftH','ftLive']
+    .forEach(k=>{$('#'+k).textContent=t[k];});
   $('#wkLive').textContent=STATUS==='live'?t.wkLive:'';
   $('#wkLive').style.display=STATUS==='live'?'':'none';
-  $('#ftSrc').innerHTML=t.ftSrc; $('#ftDis').textContent=t.ftDis;
-  $('#olH').textContent=t.olH; $('#hiH').textContent=t.hiH; $('#ftH').textContent=t.ftH; $('#ftLive').textContent=t.ftLive;
+  $('#ftDis').textContent=t.ftDis;
+
+  renderDates(); renderSummary(); renderFacts(); renderArrivals(); renderProvinces(); renderNews(); renderSources();
 
   $('#tabs').innerHTML=REGIONS.map((r,i)=>
     `<button class="tab" role="tab" data-i="${i}" aria-selected="${i===CUR}">${r[LANG]}<i>${r.ap}</i></button>`).join('');
   document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{CUR=+b.dataset.i;render();}));
 
   renderRegion();
+}
+
+function renderDates(){
+  const t=T[LANG], o=obj(OFF), a=obj(o.arrivals), p=obj(o.provinces), fx=obj(o.fx), ecb=obj(fx.ecb), cbr=obj(fx.cbr);
+  const chip=(label,value,old)=>`<span class="dchip${value?old?' old':'':' none'}">${esc(label)}: ${value||esc(t.notLoaded)}</span>`;
+  const built=when(BUILT), newsBuilt=NEWS?when(NEWS.built_at):null, ecbDay=ymd(ecb.date);
+  const fxFailed=Array.isArray(o.errors)&&o.errors.some(e=>e&&(e.source==='ecb'||e.source==='cbr'));
+  const chips=[
+    chip(t.dWx,built?`<b>${esc(dateText(built,true))}</b>`:STATUS==='live'?esc(t.fetchedNow):'',built&&Date.now()-built>36*36e5),
+    chip(t.dArr,period(a.period)?`<b>${esc(periodText(a.period))}</b> · ${t.published} ${esc(dateText(when(a.published_at)))}`:'',daysSinceEnd(a.period)>OVERDUE.arrivals),
+    chip(t.dProv,period(p.period)?`<b>${esc(periodText(p.period))}</b> · ${t.published} ${esc(dateText(when(p.published_at)))}`:'',daysSinceEnd(p.period)>OVERDUE.provinces),
+    chip(t.dNews,newsBuilt?`${t.collected} <b>${esc(dateText(newsBuilt,true))}</b>`:'',newsBuilt&&Date.now()-newsBuilt>36*36e5),
+    chip(t.dFx,ecbDay||ymd(cbr.date)?[ecbDay?`ECB <b>${esc(dayText(ecb.date))}</b>`:'',ymd(cbr.date)?`CBR <b>${esc(dayText(cbr.date))}</b>`:''].filter(Boolean).join(' · '):'',
+      (ecbDay&&Date.now()-ecbDay>4*864e5)||fxFailed)
+  ];
+  $('#dates').innerHTML=chips.join('');
+}
+
+function keyMarkets(){
+  const a=obj(obj(OFF).arrivals), list=Array.isArray(a.markets)?a.markets.filter(m=>m&&typeof m==='object'):[];
+  return KEY_MARKETS.map(k=>list.find(m=>marketKey(m.name)===marketKey(k[0]))||{name:k[0]});
+}
+
+function renderSummary(){
+  const t=T[LANG], o=obj(OFF), a=obj(o.arrivals), total=obj(a.total), p=obj(o.provinces), row=obj(obj(p.rows).pattaya);
+  $('#sumH').textContent=t.sumH;
+  let p1='', p2='';
+  if(period(a.period)&&isNum(total.value)){
+    const mk=keyMarkets().slice(0,5).filter(m=>isNum(m.yoy_pct))
+      .map(m=>`${esc(marketName(m))} ${signed(m.yoy_pct)}`).join(', ');
+    p1=t.sumArr(esc(periodText(a.period)),num(total.value),signed(total.yoy_pct),esc(statusText(a.status)),
+      esc(dateText(when(a.published_at))),mk);
+  }
+  if(period(p.period)&&isNum(row.occupancy_pct)){
+    p2=t.sumProv(esc(LANG==='ru'?(row.label_ru||PROVINCES[0].ru):PROVINCES[0].en),esc(periodText(p.period)),
+      upTo(row.occupancy_pct)+'%',signed(occDelta(row),2,t.pp),
+      isNum(row.foreign_visitors)?num(row.foreign_visitors):'',signed(row.foreign_yoy_pct));
+  }
+  $('#sumP1').innerHTML=p1||esc(t.sumNone);
+  $('#sumP2').innerHTML=p2;
+  $('#sumP2').hidden=!p2;
+}
+
+function renderFacts(){
+  const t=T[LANG], o=obj(OFF), a=obj(o.arrivals), total=obj(a.total), ytd=obj(a.ytd);
+  const p=obj(o.provinces), row=obj(obj(p.rows).pattaya), fx=obj(o.fx), ecb=obj(fx.ecb), cbr=obj(fx.cbr);
+  const usd=obj(ecb.thb_per).USD;
+  const tile=(big,lb,tag,tagCol,bigCol)=>`<div class="fact"><div class="big n"${bigCol?` style="color:${bigCol}"`:''}>${big}</div>
+      <div class="lb">${lb}</div>${tag?`<div class="tagl" style="text-transform:none;letter-spacing:0;font-size:11.5px;color:${tagCol||'var(--muted)'}">${tag}</div>`:''}</div>`;
+  const tiles=[];
+  tiles.push(period(a.period)&&isNum(total.value)
+    ? tile(compact(total.value),esc(t.fArr(periodText(a.period))),isNum(total.yoy_pct)?`${signed(total.yoy_pct)} ${t.yoy}`:'',col(total.yoy_pct),'var(--teal-d)')
+    : tile('—',esc(t.arrNone)));
+  tiles.push(period(ytd.from)&&period(ytd.to)&&isNum(ytd.value)
+    ? tile(compact(ytd.value),esc(t.fYtd(monthText(ytd.from),periodText(ytd.to))),isNum(ytd.yoy_pct)?`${signed(ytd.yoy_pct)} ${t.yoy}`:'',col(ytd.yoy_pct))
+    : tile('—',esc(t.arrNone)));
+  tiles.push(period(p.period)&&isNum(row.occupancy_pct)
+    ? tile(upTo(row.occupancy_pct)+'%',esc(t.fOcc(periodText(p.period))),isNum(occDelta(row))?`${signed(occDelta(row),2,t.pp)} ${t.yoy}`:'',col(occDelta(row)))
+    : tile('—',esc(t.provNone)));
+  const rub=isNum(cbr.rub_per_thb)&&cbr.rub_per_thb>0?esc(t.fRub(num(cbr.rub_per_thb,4),dayText(cbr.date))):'';
+  if(isNum(usd)&&usd>0) tiles.push(tile(num(usd,2),esc(t.fFx(dayText(ecb.date))),rub));
+  else if(FX&&isNum(FX.THB)) tiles.push(tile(num(FX.THB,2),esc(t.fFxOld(dateText(when(FX_AT),true))),rub));
+  else tiles.push(tile('—',esc(t.fFx('—')),rub));
+  $('#facts').innerHTML=tiles.join('');
+}
+
+function renderArrivals(){
+  const t=T[LANG], a=obj(obj(OFF).arrivals), total=obj(a.total), ytd=obj(a.ytd);
+  const errs=errorsFor('arrivals');
+  if(!period(a.period)||!isNum(total.value)){
+    $('#arrMeta').innerHTML=esc(t.arrNone)+errs; $('#arrSeg').innerHTML=''; $('#arrTbl').innerHTML=''; $('#arrNote').innerHTML='';
+    return;
+  }
+  $('#arrMeta').innerHTML=blockMeta(a,SRC.arrivals)+overdueFor('arrivals',a.period)+errs;
+  $('#arrSeg').innerHTML=[['key',t.mkKey],['top',t.mkTop]].map(([k,l])=>
+    `<button type="button" data-k="${k}" aria-pressed="${k===MK_MODE}">${esc(l)}</button>`).join('');
+  $('#arrSeg').querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{MK_MODE=b.dataset.k;renderArrivals();}));
+  const list=Array.isArray(a.markets)?a.markets.filter(m=>m&&typeof m==='object'):[];
+  const rows=MK_MODE==='key'?keyMarkets()
+    :list.filter(m=>isNum(m.value)&&!/total/i.test(String(m.name))).sort((x,y)=>y.value-x.value).slice(0,20);
+  const top=Math.max(1,...rows.map(m=>isNum(m.value)?m.value:0));
+  $('#arrTbl').innerHTML=`<thead><tr><th>${esc(t.thMarket)}</th><th class="bc"></th><th>${esc(t.thArr)}</th>
+      <th class="opt">${esc(t.thPrev)}</th><th>${esc(t.thYoy)}</th></tr></thead><tbody>`+
+    rows.map(m=>`<tr><td>${esc(marketName(m))}</td>
+      <td class="bc"><span class="mbar"><i style="width:${isNum(m.value)?Math.max(1,Math.round(m.value/top*100)):0}%"></i></span></td>
+      <td>${isNum(m.value)?num(m.value):`<span class="dim">${esc(t.noData)}</span>`}</td>
+      <td class="opt dim">${num(m.prev_year)}</td><td>${chg(m.yoy_pct)}</td></tr>`).join('')+
+    `<tr class="total"><td>${esc(t.allMarkets)}</td><td class="bc"></td><td>${num(total.value)}</td>
+      <td class="opt dim">${num(total.prev_year)}</td><td>${chg(total.yoy_pct)}</td></tr></tbody>`;
+  $('#arrNote').innerHTML=period(ytd.from)&&period(ytd.to)&&isNum(ytd.value)
+    ?t.ytd(esc(monthText(ytd.from)),esc(periodText(ytd.to)),num(ytd.value),signed(ytd.yoy_pct),isNum(ytd.prev_year)?num(ytd.prev_year):''):'';
+}
+
+function renderProvinces(){
+  const t=T[LANG], p=obj(obj(OFF).provinces), rows=obj(p.rows), errs=errorsFor('provinces');
+  if(!period(p.period)||!Object.keys(rows).length){
+    $('#provMeta').innerHTML=esc(t.provNone)+errs; $('#provTbl').innerHTML=''; $('#provNote').textContent='';
+    return;
+  }
+  $('#provMeta').innerHTML=blockMeta(p,SRC.provinces)+overdueFor('provinces',p.period)+errs;
+  $('#provTbl').innerHTML=`<thead><tr><th>${esc(t.thProv)}</th><th>${esc(t.thOcc)}</th><th>${esc(t.thOccD)}</th>
+      <th>${esc(t.thForeign)}</th><th>${esc(t.thYoy)}</th><th class="opt">${esc(t.thRev)}</th></tr></thead><tbody>`+
+    PROVINCES.map(pr=>{
+      const r=obj(rows[pr.id]), name=LANG==='ru'?(r.label_ru||pr.ru):pr.en;
+      return `<tr${pr.total?' class="total"':''}><td>${esc(name)}</td>
+        <td>${isNum(r.occupancy_pct)?upTo(r.occupancy_pct)+'%':`<span class="dim">${esc(t.noData)}</span>`}</td>
+        <td>${chg(occDelta(r),2,t.pp)}</td><td>${num(r.foreign_visitors)}</td>
+        <td>${chg(r.foreign_yoy_pct)}</td><td class="opt">${chg(r.revenue_yoy_pct)}</td></tr>`;}).join('')+'</tbody>';
+  $('#provNote').textContent=LANG==='ru'
+    ?(typeof p.note_ru==='string'&&p.note_ru.trim()?p.note_ru.trim()+' ':'Провинция шире курорта. ')+'Посещения и доход — оценки MOTS по данным размещения, а не кассовые данные.'
+    :t.provNote;
+}
+
+function renderNews(){
+  const t=T[LANG], meta=$('#newsMeta'), seg=$('#newsSeg'), box=$('#newsList');
+  $('#newsNote').textContent=NEWS?t.newsNote:'';
+  if(!NEWS){ meta.textContent=t.newsNone; seg.innerHTML=''; box.innerHTML=''; return; }
+  const items=(Array.isArray(NEWS.items)?NEWS.items:[]).filter(i=>i&&typeof i==='object'&&safeUrl(i.url)
+    &&typeof i.title==='string'&&i.title.trim()&&when(i.published_at));
+  const srcs=Array.isArray(NEWS.sources)?NEWS.sources.filter(s=>s&&typeof s==='object'):[];
+  const failed=srcs.filter(s=>s.ok===false), built=when(NEWS.built_at);
+  meta.innerHTML=[`${t.collected} <b>${esc(dateText(built,true))}</b>`,
+      `${t.window} ${isNum(NEWS.window_days)?NEWS.window_days:'—'} ${t.daysUnit}`,
+      `${t.sourcesOk} ${srcs.length-failed.length}/${srcs.length}`].join(' · ')+
+    (failed.length?`<br>${t.failedSrc}: `+failed.map(s=>esc(s.name||'?')+(s.error?` (${esc(s.error)})`:'')).join(', '):'')+
+    (!built||Date.now()-built>36*36e5?`<p class="warn">⚠ ${esc(t.newsOld)}</p>`:'');
+  const tagged=i=>Array.isArray(i.topics)?i.topics.filter(k=>typeof k==='string'):[];
+  const present=TOPICS.filter(k=>items.some(i=>tagged(i).includes(k)));
+  if(NEWS_TOPIC!=='all'&&!present.includes(NEWS_TOPIC)) NEWS_TOPIC='all';
+  seg.innerHTML=['all',...present].map(k=>
+    `<button type="button" data-k="${k}" aria-pressed="${k===NEWS_TOPIC}">${esc(k==='all'?t.all:topicName(k))}</button>`).join('');
+  seg.querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{NEWS_TOPIC=b.dataset.k;renderNews();}));
+  const list=items.filter(i=>NEWS_TOPIC==='all'||tagged(i).includes(NEWS_TOPIC))
+    .sort((x,y)=>when(y.published_at)-when(x.published_at)).slice(0,30);
+  box.innerHTML=list.length?list.map(i=>{
+    const d=when(i.published_at);
+    return `<li><div class="tt">${link(i.title.trim(),i.url)}</div><div class="nm">
+      <span>${esc(i.source||'—')}</span><span>${esc(dateText(d,true))} · ${esc(ago(d))}</span>
+      ${i.official===true?`<span class="tag off">${esc(t.official)}</span>`:''}${i.lang==='th'?'<span class="tag">TH</span>':''}
+      ${tagged(i).map(k=>`<span class="tag">${esc(topicName(k))}</span>`).join('')}</div></li>`;}).join('')
+    :`<li class="skel">${esc(t.newsEmpty)}</li>`;
+}
+
+function renderSources(){
+  const t=T[LANG], o=obj(OFF), fx=obj(o.fx);
+  const names=NEWS&&Array.isArray(NEWS.sources)?NEWS.sources.filter(s=>s&&s.name).map(s=>esc(s.name)):[];
+  $('#ftSrc').innerHTML=`${esc(t.ftSrc)}: `+[
+    link(t.srcArr,obj(o.arrivals).source_url||SRC.arrivals),link(t.srcProv,obj(o.provinces).source_url||SRC.provinces),
+    link('ECB',obj(fx.ecb).source_url||SRC.ecb), link(LANG==='ru'?'Банк России':'Bank of Russia',obj(fx.cbr).source_url||SRC.cbr),
+    `${esc(t.weather)} ${link('Open-Meteo',SRC.meteo)}`,
+    names.length?`${esc(t.news)}: ${names.join(', ')}`:'',
+    `${esc(t.fallbackFx)} ${link('ExchangeRate-API',SRC.erapi)}`
+  ].filter(Boolean).join(' · ')+'.';
 }
 
 function renderFootfall(rid){
@@ -496,11 +878,11 @@ function renderFootfall(rid){
     const dc=d==null?'var(--faint)':d>=0?'var(--green)':'var(--coral)';
     const dtxt=d==null?'—':(d>=0?'+':'')+d+'% '+t.ftVs;
     return `<div class="frow"><div>
-        <div class="fn">${cur.title||slot}</div>
-        <div class="fs">${t.ftAt} ${lastT.toLocaleString(LANG==='ru'?'ru-RU':'en-GB',{timeZone:'Asia/Bangkok',hour:'2-digit',minute:'2-digit',day:'2-digit',month:'2-digit'})}</div>
+        <div class="fn">${esc(cur.title||slot)}</div>
+        <div class="fs">${t.ftAt} ${esc(lastT.toLocaleString(LOC(),{timeZone:'Asia/Bangkok',hour:'2-digit',minute:'2-digit',day:'2-digit',month:'2-digit'}))}</div>
         <div class="spark">${series.map((v,i)=>`<i class="${i===series.length-1?'now':''}" style="height:${v===null?0:Math.max(2,Math.round(v/mx*100))}%;opacity:${v===null?0:1}"></i>`).join('')}</div>
       </div>
-      <div class="fv">${cur.people}<small style="color:${dc}">${dtxt}</small></div></div>`;
+      <div class="fv">${num(cur.people)}<small style="color:${dc}">${esc(dtxt)}</small></div></div>`;
   }).join('');
   $('#footfall').innerHTML=html;
 }
@@ -511,15 +893,16 @@ function renderHistory(rid, days){
 
   const rows=[];
   if(days&&days.length){
-    const w=days.slice(0,7);
-    rows.push({year:new Date().getFullYear(), now:true,
-      score:Math.round(w.reduce((a,b)=>a+b.score,0)/w.length),
+    // Only complete days, so a missing forecast is not counted as a dry one.
+    const w=days.slice(0,7).filter(d=>isNum(d.wx)&&isNum(d.mm));
+    if(w.length) rows.push({year:new Date().getFullYear(), now:true,
+      score:Math.round(w.reduce((a,b)=>a+b.wx,0)/w.length),
       mm:Math.round(w.reduce((a,b)=>a+b.mm,0)*10)/10,
       wet:w.filter(d=>d.mm>=15).length});
   }
   Object.keys(HIST.years).sort().reverse().forEach(y=>{
-    const d=HIST.years[y][rid];
-    if(d) rows.push({year:y, score:d.avg_score, mm:d.mm_total, wet:d.wet_days});
+    const d=obj(HIST.years[y])[rid];
+    if(d&&isNum(d.avg_score)) rows.push({year:y, score:d.avg_score, mm:d.mm_total, wet:d.wet_days});
   });
   if(!rows.length){ box.innerHTML=`<p class="skel" style="margin:0;font-size:13px">${t.hiNone}</p>`; return; }
 
@@ -527,86 +910,105 @@ function renderHistory(rid, days){
   box.innerHTML=rows.map(r=>{
     const [c]=tone(r.score);
     return `<div class="hrow${r.now?' now':''}">
-      <span class="yr">${r.year}${r.now?'*':''}</span>
+      <span class="yr">${esc(r.year)}${r.now?'*':''}</span>
       <span class="hbar"><i style="width:${Math.round(r.score/top*100)}%;background:${c}"></i></span>
-      <span class="hv"><b>${r.score}</b> · ${r.mm} ${t.rain} · ${r.wet} ${t.hiWet}</span>
+      <span class="hv"><b>${num(r.score)}</b> · ${upTo(r.mm,1)} ${t.rain} · ${num(r.wet)} ${t.hiWet}</span>
     </div>`;}).join('')
     +`<p style="font-size:11.5px;color:var(--faint);margin:9px 0 0">* ${t.hiNow}. ${t.hiNote}</p>`;
 }
 
+function renderProvinceRows(r){
+  const t=T[LANG], p=obj(obj(OFF).provinces), pr=PROVINCES.find(x=>x.id===r.id), row=obj(obj(p.rows)[r.id]);
+  if(!period(p.period)||!Object.keys(row).length){
+    $('#pvH').textContent=t.pvNone; $('#rows').innerHTML=''; return;
+  }
+  const name=LANG==='ru'?(row.label_ru||pr.ru):pr.en;
+  $('#pvH').textContent=t.pvH(name,periodText(p.period),statusText(p.status),dateText(when(p.published_at)));
+  const cell=(k,v,sub,c)=>`<div class="r"><span class="k">${esc(k)}</span>
+      <span class="v"${c?` style="color:${c}"`:''}>${v}<small>${sub}</small></span></div>`;
+  const y=v=>isNum(v)?`${signed(v)} ${t.yoy}`:'';
+  $('#rows').innerHTML=[
+    cell(t.pvOcc,isNum(row.occupancy_pct)?upTo(row.occupancy_pct)+'%':'—',isNum(occDelta(row))?`${signed(occDelta(row),2,t.pp)} ${t.yoy}`:'',col(occDelta(row))),
+    cell(t.pvOccPrev,isNum(row.occupancy_prev_pct)?upTo(row.occupancy_prev_pct)+'%':'—',''),
+    cell(t.pvForeign,num(row.foreign_visitors),y(row.foreign_yoy_pct),col(row.foreign_yoy_pct)),
+    cell(t.pvThai,num(row.thai_visitors),y(row.thai_yoy_pct),col(row.thai_yoy_pct)),
+    cell(t.pvRev,num(row.revenue_mb),y(row.revenue_yoy_pct),col(row.revenue_yoy_pct)),
+    cell(t.pvRevF,num(row.revenue_foreign_mb),y(row.revenue_foreign_yoy_pct),col(row.revenue_foreign_yoy_pct))
+  ].join('');
+}
+
 function renderRegion(){
-  const t=T[LANG], r=REGIONS[CUR], v=VERDICT[r.id][LANG];
-  const rows=ROWS[r.id];
+  const t=T[LANG], r=REGIONS[CUR];
+  renderProvinceRows(r);
 
-  $('#rows').innerHTML=rows.map(row=>{
-    const k=LANG==='en'?row[0]:row[1];
-    let val,sub,c;
-    if(row.length===6){ val=row[2]; sub=LANG==='en'?row[3]:row[4]; c=row[5]; }
-    else { val=LANG==='en'?row[2]:row[3]; sub=LANG==='en'?row[4]:row[5]; c=row[6]; }
-    return `<div class="r"><span class="k">${k}</span>
-      <span class="v" style="color:${CL[c]}">${val}<small>${sub}</small></span></div>`;}).join('');
-
-  if(!DATA||!DATA[r.id]){
-    $('#vNum').textContent='—'; $('#vSt').textContent=v[0]; $('#vTx').textContent=v[1];
-    $('#week').innerHTML=`<p class="skel" style="grid-column:1/-1;margin:0">${t.loading}</p>`;
+  // Only days from today on: an old data.json must not pass yesterday off as today.
+  const todayIso=bkkToday();
+  const raw=DATA&&Array.isArray(DATA[r.id])?DATA[r.id].filter(x=>x&&/^\d{4}-\d{2}-\d{2}$/.test(x.iso)&&x.iso>=todayIso):[];
+  if(!raw.length){
+    $('#vNum').textContent='—'; $('#vNum').style.color=''; $('#vRail').style.width='0';
+    $('#vSt').textContent=t.condToday; $('#vTx').textContent=DATA?t.wxStale:t.loading;
+    $('#week').innerHTML=`<p class="skel" style="grid-column:1/-1;margin:0">${esc(DATA?t.wxStale:t.loading)}</p>`;
     $('#olP').textContent=''; $('#olGrid').innerHTML=''; renderHistory(r.id,null); renderFootfall(r.id); return;
   }
 
-  const days=DATA[r.id].map(x=>{
-    const evs=eventsFor(r.id,x.iso);
-    const ev=x.event?(x.event[LANG]||null):(evs.length?evs[0][LANG]:null);
-    return {iso:x.iso,dow:new Date(x.iso+'T00:00:00').getDay(),
+  const days=raw.map(x=>({iso:x.iso,dow:new Date(x.iso+'T00:00:00').getDay(),
       dd:x.iso.slice(8)+'.'+x.iso.slice(5,7),
-      tp:x.tmax,mm:x.mm,pop:x.pop,
-      score:x.score??scoreFor(r,x.iso,x.mm,x.pop),ev};
-  });
+      // Missing rain stays unknown: treating it as 0 mm would read as a dry day.
+      tp:isNum(x.tmax)?x.tmax:null,mm:isNum(x.mm)?x.mm:null,pop:isNum(x.pop)?x.pop:0,
+      score:isNum(x.score)?x.score:(isNum(x.mm)?scoreFor(r,x.mm,isNum(x.pop)?x.pop:0):null),
+      // Weather term alone, to compare with the weather-only history.
+      wx:isNum(obj(x.parts).weather)?x.parts.weather:(isNum(x.mm)?scoreFor(r,x.mm,isNum(x.pop)?x.pop:0):null),
+      ev:x.event&&typeof x.event==='object'?(x.event[LANG]||null):null})).filter(x=>x.score!=null);
+  if(!days.length){
+    $('#vNum').textContent='—'; $('#vSt').textContent=t.condToday; $('#vTx').textContent=t.wxStale;
+    $('#week').innerHTML=''; $('#olP').textContent=''; $('#olGrid').innerHTML=''; return;
+  }
 
   const today=days[0], [tc,tl]=tone(today.score);
   $('#vNum').textContent=today.score; $('#vNum').style.color=tc;
   $('#vRail').style.width=today.score+'%'; $('#vRail').style.background=tc;
-  $('#vSt').textContent=v[0]; $('#vTx').textContent=v[1];
+  $('#vSt').textContent=`${t.condToday}: ${tl.toLowerCase()}`;
+  $('#vTx').textContent=t.wxToday(today.tp==null?'—':num(today.tp),today.mm==null?'—':upTo(today.mm,1),num(today.pop));
 
-  const best=days.reduce((a,b)=>b.score>a.score?b:a);
   $('#week').innerHTML=days.map((x,i)=>{
     const [c]=tone(x.score);
-    // Droplet darkens with rainfall, independent of the demand colour.
+    // Droplet darkens with rainfall, independent of the score colour.
     const wet=Math.round(Math.min(1,x.mm/25)*100);
     const flag=i===0
       ? `<div class="flag" style="color:var(--teal-d)">${t.today}</div>`
-      : x.ev ? `<div class="flag" style="color:var(--amber)">${x.ev}</div>` : '';
+      : x.ev ? `<div class="flag" style="color:var(--amber)">${esc(x.ev)}</div>` : '';
     return `<div class="dy${i===0?' today':''}">
       <div class="hd"><div class="dw">${t.days[x.dow]}</div><div class="dd">${x.dd}</div></div>
       <div class="bd">
-        <div class="tp">${x.tp}°</div>
-        <div class="rain"><span class="drop" style="background:color-mix(in srgb,var(--teal) ${wet}%,var(--line2))"></span>${x.mm.toFixed(1)}</div>
+        <div class="tp">${x.tp==null?'—':num(x.tp)}°</div>
+        <div class="rain"><span class="drop" style="background:color-mix(in srgb,var(--teal) ${wet}%,var(--line2))"></span>${x.mm==null?'—':upTo(x.mm,1)}</div>
         <div class="chip" style="background:color-mix(in srgb,${c} 16%,transparent);color:${c}">${x.score}</div>
         ${flag}
       </div></div>`;}).join('');
 
-
-
   renderHistory(r.id, days);
   renderFootfall(r.id);
 
-  /* week-ahead outlook, generated from the data */
+  /* week-ahead outlook, generated from the forecast */
   const fwd=days.slice(1);
+  if(!fwd.length){ $('#olP').textContent=''; $('#olGrid').innerHTML=''; return; }
   const worst=fwd.reduce((a,b)=>b.score<a.score?b:a);
   const bestF=fwd.reduce((a,b)=>b.score>a.score?b:a);
   const avg=Math.round(fwd.reduce((s,x)=>s+x.score,0)/fwd.length);
   const [ac,al]=tone(avg);
-  const evList=[...new Set(fwd.filter(x=>x.ev).map(x=>x.ev))];
+  const evList=[...new Set(fwd.filter(x=>x.ev).map(x=>esc(x.ev)))];
   const wet=fwd.filter(x=>x.mm>=15).length;
 
   $('#olP').innerHTML = LANG==='en'
-    ? `Over the next seven days the index averages <b>${avg}</b> (${al.toLowerCase()}). The strongest day is <b>${t.days[bestF.dow]} ${bestF.dd}</b> at ${bestF.score}, the weakest <b>${t.days[worst.dow]} ${worst.dd}</b> at ${worst.score}. ${wet?`Heavy rain is forecast on <b>${wet}</b> of them.`:'No heavy-rain days are forecast.'} ${evList.length?`Events in the window: <b>${evList.join(', ')}</b>.`:`Calendar is clear — ${t.noEvent}.`}`
-    : `На ближайшие семь дней индекс в среднем <b>${avg}</b> (${al.toLowerCase()}). Сильнейший день — <b>${t.days[bestF.dow]} ${bestF.dd}</b> с ${bestF.score}, слабейший — <b>${t.days[worst.dow]} ${worst.dd}</b> с ${worst.score}. ${wet?`Сильный дождь ожидается в <b>${wet}</b> из них.`:'Дней с сильным дождём не ожидается.'} ${evList.length?`События в окне: <b>${evList.join(', ')}</b>.`:`Календарь пуст — ${t.noEvent}.`}`;
+    ? `Over the next ${fwd.length} days the outdoor-conditions score averages <b>${avg}</b> (${al.toLowerCase()}). The best day is <b>${t.days[bestF.dow]} ${bestF.dd}</b> at ${bestF.score}, the weakest <b>${t.days[worst.dow]} ${worst.dd}</b> at ${worst.score}. ${wet?`Heavy rain is forecast on <b>${wet}</b> of them.`:'No heavy-rain days are forecast.'} ${evList.length?`Calendar: <b>${evList.join(', ')}</b>.`:`Calendar is clear — ${t.noEvent}.`}`
+    : `На ближайшие ${fwd.length} дн. оценка условий на улице в среднем <b>${avg}</b> (${al.toLowerCase()}). Лучший день — <b>${t.days[bestF.dow]} ${bestF.dd}</b> с ${bestF.score}, худший — <b>${t.days[worst.dow]} ${worst.dd}</b> с ${worst.score}. ${wet?`Сильный дождь ожидается в <b>${wet}</b> из них.`:'Дней с сильным дождём не ожидается.'} ${evList.length?`Календарь: <b>${evList.join(', ')}</b>.`:`Календарь пуст — ${t.noEvent}.`}`;
 
   $('#olGrid').innerHTML=[
     [t.olBest,`${t.days[bestF.dow]} ${bestF.dd}`,`${bestF.score} / 100`,tone(bestF.score)[0]],
     [t.olWorst,`${t.days[worst.dow]} ${worst.dd}`,`${worst.score} / 100`,tone(worst.score)[0]],
     [t.olAvg,String(avg),al,ac]
-  ].map(([a,b,c,col])=>`<div class="ol"><div class="t">${a}</div>
-    <div class="v" style="color:${col}">${b}</div><div class="s">${c}</div></div>`).join('');
+  ].map(([a,b,c,colr])=>`<div class="ol"><div class="t">${a}</div>
+    <div class="v" style="color:${colr}">${b}</div><div class="s">${c}</div></div>`).join('');
 }
 
 /* ---------------- init ---------------- */
@@ -614,6 +1016,7 @@ $('#btnEn').addEventListener('click',()=>{LANG='en';render();});
 $('#btnRu').addEventListener('click',()=>{LANG='ru';render();});
 render();
 loadLive();
+loadMeasured();
 </script>
 </body>
 </html>

@@ -1,0 +1,337 @@
+{
+ "built_at": "2026-10-13T03:31:19+00:00",
+ "arrivals": {
+  "source": "MOTS",
+  "source_url": "https://www.mots.go.th/news/category/817",
+  "file_url": "https://www.mots.go.th/images/v2022_cf32d908-111e-4269-802d-18807cd65884.xlsx",
+  "published_at": "2026-10-01T03:40:30+00:00",
+  "retrieved_at": "2026-10-13T03:31:19+00:00",
+  "period": "2026-09",
+  "status": "preliminary",
+  "total": {
+   "value": 2000339,
+   "prev_year": 2235852,
+   "yoy_pct": -10.53
+  },
+  "ytd": {
+   "from": "2026-01",
+   "to": "2026-09",
+   "value": 23199306,
+   "prev_year": 24115325,
+   "yoy_pct": -3.8
+  },
+  "markets": [
+   {
+    "name": "China",
+    "ru": "Китай",
+    "value": 349182,
+    "prev_year": 321309,
+    "yoy_pct": 8.67
+   },
+   {
+    "name": "Malaysia",
+    "ru": "Малайзия",
+    "value": 261325,
+    "prev_year": 428712,
+    "yoy_pct": -39.04
+   },
+   {
+    "name": "India",
+    "ru": "Индия",
+    "value": 166849,
+    "prev_year": 207195,
+    "yoy_pct": -19.47
+   },
+   {
+    "name": "Japan",
+    "ru": "Япония",
+    "value": 96460,
+    "prev_year": 91610,
+    "yoy_pct": 5.29
+   },
+   {
+    "name": "Russian Federation",
+    "ru": "Россия",
+    "value": 81744,
+    "prev_year": 76907,
+    "yoy_pct": 6.29
+   },
+   {
+    "name": "Taiwan",
+    "ru": "Тайвань",
+    "value": 79641,
+    "prev_year": 66878,
+    "yoy_pct": 19.08
+   },
+   {
+    "name": "Korea (Republic of)",
+    "ru": "Южная Корея",
+    "value": 70997,
+    "prev_year": 101672,
+    "yoy_pct": -30.17
+   },
+   {
+    "name": "Singapore",
+    "ru": "Сингапур",
+    "value": 69101,
+    "prev_year": 73522,
+    "yoy_pct": -6.01
+   },
+   {
+    "name": "Australia",
+    "ru": "Австралия",
+    "value": 62513,
+    "prev_year": 60191,
+    "yoy_pct": 3.86
+   },
+   {
+    "name": "The United States of America",
+    "ru": "США",
+    "value": 56761,
+    "prev_year": 54398,
+    "yoy_pct": 4.34
+   },
+   {
+    "name": "Laos",
+    "ru": "Лаос",
+    "value": 52362,
+    "prev_year": 55279,
+    "yoy_pct": -5.28
+   },
+   {
+    "name": "Myanmar",
+    "ru": "Мьянма",
+    "value": 50709,
+    "prev_year": 53325,
+    "yoy_pct": -4.91
+   },
+   {
+    "name": "United Kingdom",
+    "ru": "Великобритания",
+    "value": 46676,
+    "prev_year": 49031,
+    "yoy_pct": -4.8
+   },
+   {
+    "name": "Israel",
+    "ru": "Израиль",
+    "value": 44797,
+    "prev_year": 45182,
+    "yoy_pct": -0.85
+   },
+   {
+    "name": "Hong Kong (China)",
+    "ru": "Гонконг (Китай)",
+    "value": 43576,
+    "prev_year": 40295,
+    "yoy_pct": 8.14
+   },
+   {
+    "name": "Philippines",
+    "ru": "Филиппины",
+    "value": 42983,
+    "prev_year": 55080,
+    "yoy_pct": -21.96
+   },
+   {
+    "name": "Germany",
+    "ru": "Германия",
+    "value": 42454,
+    "prev_year": 45952,
+    "yoy_pct": -7.61
+   },
+   {
+    "name": "Vietnam",
+    "ru": "Вьетнам",
+    "value": 37573,
+    "prev_year": 37973,
+    "yoy_pct": -1.05
+   },
+   {
+    "name": "Indonesia",
+    "ru": "Индонезия",
+    "value": 37355,
+    "prev_year": 55300,
+    "yoy_pct": -32.45
+   },
+   {
+    "name": "France",
+    "ru": "Франция",
+    "value": 29211,
+    "prev_year": 29166,
+    "yoy_pct": 0.15
+   },
+   {
+    "name": "Kazakhstan",
+    "ru": "Казахстан",
+    "value": 6371,
+    "prev_year": 4929,
+    "yoy_pct": 29.26
+   },
+   {
+    "name": "Ukraine",
+    "ru": "Украина",
+    "value": 3024,
+    "prev_year": 2964,
+    "yoy_pct": 2.02
+   }
+  ],
+  "sha256": "325e6ef29fa01281301a0cddde1b8683aab4e7f2256fa29d3405fa9e2861478e"
+ },
+ "provinces": {
+  "source": "MOTS",
+  "source_url": "https://www.mots.go.th/news/category/820",
+  "file_url": "https://www.mots.go.th/images/v2022_84449624-a42a-4e8b-8c2f-eb983373f91b.xlsx",
+  "published_at": "2026-09-14T08:46:04+00:00",
+  "retrieved_at": "2026-10-13T03:31:19+00:00",
+  "period": "2026-08",
+  "status": "preliminary",
+  "sheet": "ส.ค.2569p",
+  "rows": {
+   "bangkok": {
+    "province_th": "กรุงเทพมหานคร",
+    "label_ru": "Бангкок",
+    "occupancy_pct": 76.38,
+    "occupancy_prev_pct": 77.58,
+    "occupancy_change_pp": -1.2,
+    "foreign_visitors": 1972588,
+    "foreign_yoy_pct": -3.85,
+    "thai_visitors": 2686123,
+    "thai_yoy_pct": 0.23,
+    "revenue_mb": 71915.94,
+    "revenue_yoy_pct": -1.68,
+    "revenue_foreign_mb": 46738.65,
+    "revenue_foreign_yoy_pct": -2.68
+   },
+   "pattaya": {
+    "province_th": "ชลบุรี",
+    "label_ru": "Чонбури (включая Паттайю)",
+    "occupancy_pct": 74.99,
+    "occupancy_prev_pct": 77.7,
+    "occupancy_change_pp": -2.71,
+    "foreign_visitors": 804858,
+    "foreign_yoy_pct": -4.64,
+    "thai_visitors": 1420939,
+    "thai_yoy_pct": -5.37,
+    "revenue_mb": 25276.67,
+    "revenue_yoy_pct": -4.47,
+    "revenue_foreign_mb": 16330.19,
+    "revenue_foreign_yoy_pct": -4.83
+   },
+   "phuket": {
+    "province_th": "ภูเก็ต",
+    "label_ru": "Пхукет",
+    "occupancy_pct": 70.01,
+    "occupancy_prev_pct": 68.9,
+    "occupancy_change_pp": 1.11,
+    "foreign_visitors": 835622,
+    "foreign_yoy_pct": -2.25,
+    "thai_visitors": 266485,
+    "thai_yoy_pct": -6.97,
+    "revenue_mb": 45253.19,
+    "revenue_yoy_pct": -2.82,
+    "revenue_foreign_mb": 41756.13,
+    "revenue_foreign_yoy_pct": -2.25
+   },
+   "krabi": {
+    "province_th": "กระบี่",
+    "label_ru": "Краби",
+    "occupancy_pct": 61.85,
+    "occupancy_prev_pct": 63.05,
+    "occupancy_change_pp": -1.2,
+    "foreign_visitors": 238703,
+    "foreign_yoy_pct": -2.89,
+    "thai_visitors": 209719,
+    "thai_yoy_pct": -2.32,
+    "revenue_mb": 7795.3,
+    "revenue_yoy_pct": -3.26,
+    "revenue_foreign_mb": 5182.56,
+    "revenue_foreign_yoy_pct": -3.73
+   },
+   "samui": {
+    "province_th": "สุราษฎร์ธานี",
+    "label_ru": "Сураттани (включая Самуи)",
+    "occupancy_pct": 76.7,
+    "occupancy_prev_pct": 76.61,
+    "occupancy_change_pp": 0.09,
+    "foreign_visitors": 367997,
+    "foreign_yoy_pct": -2.78,
+    "thai_visitors": 400369,
+    "thai_yoy_pct": 3.33,
+    "revenue_mb": 10780.56,
+    "revenue_yoy_pct": -0.73,
+    "revenue_foreign_mb": 7542.03,
+    "revenue_foreign_yoy_pct": -2.76
+   },
+   "chiangmai": {
+    "province_th": "เชียงใหม่",
+    "label_ru": "Чиангмай",
+    "occupancy_pct": 70.02,
+    "occupancy_prev_pct": 68.53,
+    "occupancy_change_pp": 1.49,
+    "foreign_visitors": 252928,
+    "foreign_yoy_pct": 7.49,
+    "thai_visitors": 583031,
+    "thai_yoy_pct": -0.36,
+    "revenue_mb": 8450.02,
+    "revenue_yoy_pct": 2.79,
+    "revenue_foreign_mb": 3334.42,
+    "revenue_foreign_yoy_pct": 7.68
+   },
+   "thailand": {
+    "province_th": "รวมทั้งหมด",
+    "label_ru": "Весь Таиланд",
+    "occupancy_pct": 68.5,
+    "occupancy_prev_pct": 68.27,
+    "occupancy_change_pp": 0.23,
+    "foreign_visitors": 6153669,
+    "foreign_yoy_pct": -2.62,
+    "thai_visitors": 22496883,
+    "thai_yoy_pct": 1.67,
+    "revenue_mb": 230432.34,
+    "revenue_yoy_pct": -1.15,
+    "revenue_foreign_mb": 132549.85,
+    "revenue_foreign_yoy_pct": -2.53
+   }
+  },
+  "note_ru": "Провинция шире курорта; посещения провинций нельзя складывать и сравнивать с прибытиями в страну.",
+  "sha256": "11ec7972dd9f06da031d4835bafb21f9c240516f213408df425de4bb6244162e"
+ },
+ "bot": {
+  "source": "BOT",
+  "source_url": "https://app.bot.or.th/BTWS_STAT/statistics/ReportPage.aspx?language=eng&reportID=875",
+  "file_url": "https://app.bot.or.th/BTWS_STAT/statistics/DownloadFile.aspx?file=EC_EI_028_S2_ENG_ALL.XLSX",
+  "retrieved_at": "2026-10-13T03:31:19+00:00",
+  "published_at": "2026-10-05T15:34:00+07:00",
+  "latest_period": "2026-08",
+  "rows_written": 0,
+  "sha256": "bc0b31d0693be43c946dd52f06a487a27e0028aeaa358370b0a4779c866ebc24"
+ },
+ "fx": {
+  "ecb": {
+   "source": "ECB",
+   "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+   "data_url": "https://data-api.ecb.europa.eu/service/data/EXR/D.THB+USD+CNY+INR+KRW+MYR+GBP.EUR.SP00.A?lastNObservations=5&format=csvdata",
+   "retrieved_at": "2026-10-13T03:31:19+00:00",
+   "date": "2026-10-12",
+   "thb_per": {
+    "USD": 33.6151,
+    "EUR": 37.585,
+    "CNY": 5.02258,
+    "INR": 0.35098,
+    "KRW": 0.0252159,
+    "MYR": 8.23095,
+    "GBP": 44.4909
+   }
+  },
+  "cbr": {
+   "source": "Bank of Russia",
+   "source_url": "https://www.cbr.ru/currency_base/daily/",
+   "data_url": "https://www.cbr.ru/scripts/XML_daily.asp",
+   "retrieved_at": "2026-10-13T03:31:19+00:00",
+   "date": "2026-10-13",
+   "rub_per_thb": 2.50337
+  }
+ },
+ "errors": []
+}
