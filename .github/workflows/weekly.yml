@@ -55,6 +55,8 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          # Optional: your personal chat. Failure reasons go there, not to the channel.
+          TELEGRAM_ADMIN_CHAT_ID: ${{ secrets.TELEGRAM_ADMIN_CHAT_ID }}
           # The Pages address is built from the repository owner, so publishing
           # it would put the account name in every post. Set DASHBOARD_URL to a
           # neutral address once the site has one.
@@ -76,4 +78,14 @@ jobs:
               git push && break
               git pull --rebase -X ours origin main
             done
+          fi
+
+      # The briefing step is allowed to fail so the channel still gets a
+      # summary; fail the run afterwards so GitHub e-mails the owner.
+      - name: Report a missing briefing
+        if: ${{ always() }}
+        run: |
+          if [ -f post_error.txt ]; then
+            echo "::error title=Сводка не сформирована::$(cat post_error.txt)"
+            exit 1
           fi

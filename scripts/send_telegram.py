@@ -9,6 +9,7 @@ Credentials come from the environment, never from the code:
 
     TELEGRAM_BOT_TOKEN   from @BotFather
     TELEGRAM_CHAT_ID     your chat, group, or channel id
+    TELEGRAM_ADMIN_CHAT_ID  optional, your personal chat for failure alerts
     DASHBOARD_URL        optional, appends a link to the full dashboard
 
 Standard library only.
@@ -81,11 +82,9 @@ def fallback_post(payload):
     fx = payload.get("fx") or {}
     if fx.get("THB"):
         lines += ["", f"Бат за доллар: <b>{fx['THB']:.2f}</b>"]
+    # Readers get no technical reason: it is operator business and an API
+    # error in a public channel reads as a broken product.
     note = "Развёрнутая сводка на этой неделе недоступна — показаны расчётные показатели."
-    if POST_ERR.exists():
-        reason = POST_ERR.read_text(encoding="utf-8").strip()
-        if reason:
-            note += f"\nПричина: {esc(reason)}"
     lines += ["", f"<i>{note}</i>"]
     return "\n".join(lines)
 
@@ -126,6 +125,34 @@ def post_photo(token, chat_id, photo, caption):
     )
     with urllib.request.urlopen(req, timeout=60) as r:
         return json.loads(r.read().decode("utf-8"))
+
+
+def failure_reason():
+    if POST_ERR.exists():
+        return POST_ERR.read_text(encoding="utf-8").strip() or "причина не записана"
+    return None
+
+
+def alert_admin(token, reason):
+    """Tell the operator, not the channel, why the briefing is missing."""
+    admin = os.environ.get("TELEGRAM_ADMIN_CHAT_ID", "").strip()
+    run = ""
+    if os.environ.get("GITHUB_RUN_ID"):
+        run = (f'\n<a href="{os.environ.get("GITHUB_SERVER_URL", "https://github.com")}/'
+               f'{os.environ.get("GITHUB_REPOSITORY", "")}/actions/runs/'
+               f'{os.environ["GITHUB_RUN_ID"]}">Журнал запуска</a>')
+    # Without an admin chat the workflow's last step still fails the run,
+    # so GitHub e-mails the owner.
+    if not admin:
+        return
+    text = (f"⚠️ <b>Еженедельная сводка не сформирована</b>\n"
+            f"Причина: {esc(reason)}\nВ канал ушла короткая расчётная сводка.{run}")
+    try:
+        post_form(token, "sendMessage", {"chat_id": admin, "text": text,
+                                         "parse_mode": "HTML",
+                                         "disable_web_page_preview": "true"})
+    except (urllib.error.URLError, OSError) as e:
+        print(f"could not alert the admin chat: {e}", file=sys.stderr)
 
 
 def chunk(text, limit):
@@ -193,6 +220,9 @@ def main():
         return 1
 
     print(f"published ({source}, {len(post)} characters)")
+    reason = failure_reason()
+    if reason:
+        alert_admin(token, reason)
     return 0
 
 

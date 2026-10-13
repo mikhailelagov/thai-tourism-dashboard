@@ -21,7 +21,9 @@ FOOTFALL = ROOT / "footfall.json"
 OUT = ROOT / "post.txt"
 ERR = ROOT / "post_error.txt"
 
-MODEL = "claude-opus-5"
+MODEL = "claude-opus-5-5"
+# Each search is billed; a cap keeps one run from draining the API balance.
+MAX_SEARCHES = 12
 # Telegram splits a message past 4096 characters; stop well short of it so a
 # post always arrives in one piece.
 MAX_CHARS = 3400
@@ -226,19 +228,21 @@ def generate(digest):
         f"курс бата, крупные события. Затем напиши пост."
     )
 
-    # Thinking is on by default on this model and shares the max_tokens budget
+    # Thinking is always on for this model and shares the max_tokens budget
     # with the response text, so a tight limit truncates the post mid-sentence.
+    # Effort defaults to medium on Opus 5.5; the briefing needs high.
     kwargs = dict(
         model=MODEL,
         max_tokens=16000,
         system=SYSTEM,
         thinking={"type": "adaptive"},
         output_config={"effort": "high"},
-        tools=[{"type": "web_search_20260209", "name": "web_search"}],
+        tools=[{"type": "web_search_20260209", "name": "web_search",
+                "max_uses": MAX_SEARCHES}],
         messages=[{"role": "user", "content": prompt}],
     )
 
-    # Claude Opus 5 can decline a request; a server-side fallback re-runs it on
+    # Claude Opus 5.5 can decline a request; a server-side fallback re-runs it on
     # another model in the same call rather than returning an empty result.
     try:
         message = client.beta.messages.create(
@@ -298,14 +302,38 @@ def shorten(create, kwargs, text):
 
 
 def fail(reason):
-    """Record why the briefing is missing so Telegram can say so.
+    """Record why the briefing is missing so the operator can be told.
 
     The workflow step is non-blocking, which makes it green even when it
     fails - without this the only symptom is a short summary and no clue why.
+    The reason goes to the admin chat and the job log, never to the channel.
     """
     print(reason, file=sys.stderr)
     ERR.write_text(reason, encoding="utf-8")
     return 1
+
+
+def explain(error):
+    """Turn an API failure into an actionable reason; raw text stays in the log."""
+    import anthropic
+
+    message = str(getattr(error, "message", error)).lower()
+    if isinstance(error, anthropic.BadRequestError) and "credit balance" in message:
+        return ("закончились кредиты Anthropic API — пополните баланс: "
+                "console.anthropic.com → Settings → Billing")
+    if isinstance(error, anthropic.AuthenticationError):
+        return "ключ ANTHROPIC_API_KEY недействителен или отозван"
+    if isinstance(error, anthropic.PermissionDeniedError):
+        return "ключ ANTHROPIC_API_KEY не имеет доступа к модели или функции"
+    if isinstance(error, anthropic.NotFoundError):
+        return f"модель {MODEL} недоступна для этого ключа"
+    if isinstance(error, anthropic.RateLimitError):
+        return "превышен лимит запросов Anthropic API"
+    if isinstance(error, anthropic.APIStatusError) and error.status_code >= 500:
+        return f"сервис Anthropic временно недоступен (HTTP {error.status_code})"
+    if isinstance(error, anthropic.APIConnectionError):
+        return "нет связи с Anthropic API"
+    return f"{type(error).__name__}: {error}"[:300]
 
 
 def main():
@@ -320,7 +348,8 @@ def main():
     try:
         post = generate(digest)
     except Exception as e:
-        return fail(f"{type(e).__name__}: {e}"[:300])
+        print(f"{type(e).__name__}: {e}", file=sys.stderr)
+        return fail(explain(e))
 
     OUT.write_text(post, encoding="utf-8")
     print(f"wrote {OUT.relative_to(ROOT)} - {len(post)} characters")
