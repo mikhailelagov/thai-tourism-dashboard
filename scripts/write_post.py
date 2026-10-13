@@ -347,7 +347,7 @@ def news_digest(today):
         published = stamp(item.get("published_at"))
         if published and published >= since and item.get("url") and item.get("title"):
             items.append((published, item))
-    if not items:
+    if not items and not any(not s.get("ok") for s in data.get("sources") or []):
         return []
 
     def rank(entry):
@@ -357,6 +357,10 @@ def news_digest(today):
 
     out = ["", f"Новости за {NEWS_DAYS} дней (дата публикации · источник · заголовок · ссылка · темы). "
                "Подробности открывай через web_fetch:"]
+    failed = [clean(s.get("name"), 60) for s in data.get("sources") or [] if not s.get("ok")]
+    if failed:
+        out.append("Не ответили при последнем сборе (их новостей может не быть в списке; "
+                   "важное проверь поиском): " + ", ".join(failed))
     for published, item in sorted(items, key=rank)[:30]:
         mark = " [официальный]" if item.get("official") else ""
         out.append(f"— {published.astimezone(BANGKOK).strftime('%d.%m')} · {clean(item.get('source'), 60)}{mark} · "

@@ -5,7 +5,7 @@ name: Probe data sources (temporary)
 on:
   push:
     branches: [fix/briefing-validity]
-    paths: [".github/workflows/probe-sources.yml"]
+    paths: [".github/workflows/probe-sources.yml", "scripts/collect_*.py"]
 
 permissions:
   contents: read

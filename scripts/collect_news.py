@@ -63,9 +63,12 @@ SOURCES = [
     {"name": "Pattaya City Hall", "kind": "wp", "official": True,
      "endpoint": "https://pattaya.go.th/wp-json/wp/v2/posts"},
     # The search also matches body text, so the headline itself must be about cannabis.
+    # GitHub's runners got a non-JSON answer from the REST API on 2026-10-13;
+    # the site's RSS is the fallback.
     {"name": "DTAM (Ministry of Public Health)", "kind": "wp", "official": True,
      "endpoint": "https://www.dtam.moph.go.th/wp-json/wp/v2/posts",
-     "search": "กัญชา", "require": "cannabis"},
+     "search": "กัญชา", "require": "cannabis",
+     "fallback_feed": "https://www.dtam.moph.go.th/feed/"},
     {"name": "The Thaiger", "kind": "wp", "official": False,
      "endpoint": "https://thethaiger.com/wp-json/wp/v2/posts"},
     # Khaosod's REST API sits behind a bot challenge; its RSS does not.
@@ -453,7 +456,14 @@ def collect_source(source, cutoff):
         # A day of margin: some sites apply "after" in local time. The window is
         # enforced on date_gmt below.
         after = (cutoff - timedelta(days=1)).strftime("%Y-%m-%dT%H:%M:%SZ")
-        entries, partial = wp_entries(source, after)
+        try:
+            entries, partial = wp_entries(source, after)
+        except Exception as exc:
+            if not source.get("fallback_feed"):
+                raise
+            body, _ = fetch(source["fallback_feed"], XML_ACCEPT)
+            entries = feed_entries(body)
+            partial = "REST %s, RSS used" % error_label(exc)
     else:
         parse = sitemap_entries if source["kind"] == "sitemap" else feed_entries
         entries, partial = [], None
