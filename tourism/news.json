@@ -1,7 +1,121 @@
 {
- "built_at": "2026-10-13T03:58:58+00:00",
+ "built_at": "2026-10-13T08:24:50+00:00",
  "window_days": 10,
  "items": [
+  {
+   "source": "Nation Thailand",
+   "title": "Thai police report 39 scam arrests at October 13 briefing",
+   "url": "https://www.nationthailand.com/news/general/40072206",
+   "published_at": "2026-10-13T07:27:00+00:00",
+   "lang": "en",
+   "topics": [
+    "safety"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Thailand’s fruit carts showcase soft power at IMF–World Bank meetings",
+   "url": "https://www.nationthailand.com/news/general/40072204",
+   "published_at": "2026-10-13T07:15:00+00:00",
+   "lang": "en",
+   "topics": [
+    "events"
+   ],
+   "official": false
+  },
+  {
+   "source": "Khaosod English",
+   "title": "IMF chief warns of AI tsunami as entry-level jobs face disruption",
+   "url": "https://www.khaosodenglish.com/tech/2026/10/13/imf-chief-warns-of-ai-tsunami-as-entry-level-jobs-face-disruption/",
+   "published_at": "2026-10-13T07:01:24+00:00",
+   "lang": "en",
+   "topics": [
+    "safety"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Small plane crashes in Chonburi, one foreign national injured",
+   "url": "https://www.nationthailand.com/news/general/40072203",
+   "published_at": "2026-10-13T06:28:00+00:00",
+   "lang": "en",
+   "topics": [
+    "flights",
+    "safety"
+   ],
+   "official": false
+  },
+  {
+   "source": "Khaosod English",
+   "title": "From 7-Eleven to clothing shop: Phuket tourists linked to second theft",
+   "url": "https://www.khaosodenglish.com/news/crimecourtscalamity/2026/10/13/from-7-eleven-to-clothing-shop-phuket-tourists-linked-to-second-theft/",
+   "published_at": "2026-10-13T06:11:58+00:00",
+   "lang": "en",
+   "topics": [
+    "safety",
+    "phuket"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "BOT to present Bangkok Blueprint on fraud at 2026 IMF–World Bank meetings",
+   "url": "https://www.nationthailand.com/business/banking-finance/40072202",
+   "published_at": "2026-10-13T05:54:00+00:00",
+   "lang": "en",
+   "topics": [
+    "safety",
+    "bangkok"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Behind the Care Home Bars | The Disclosed EP.26",
+   "url": "https://www.nationthailand.com/vdo/the-disclosed/40072195",
+   "published_at": "2026-10-13T04:50:00+00:00",
+   "lang": "en",
+   "topics": [
+    "alcohol"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Seven Myanmar children rescued in Bangkok trafficking raid",
+   "url": "https://www.nationthailand.com/news/general/40072194",
+   "published_at": "2026-10-13T04:46:00+00:00",
+   "lang": "en",
+   "topics": [
+    "safety",
+    "bangkok"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Batik from Pattani joins 37-design showcase at IMF–World Bank meetings",
+   "url": "https://www.nationthailand.com/life/art-culture/40072193",
+   "published_at": "2026-10-13T04:26:00+00:00",
+   "lang": "en",
+   "topics": [
+    "events"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Thai finance ministry backs 1,000-baht departure tax plan",
+   "url": "https://www.nationthailand.com/news/general/40072190",
+   "published_at": "2026-10-13T03:48:00+00:00",
+   "lang": "en",
+   "topics": [
+    "entry_rules"
+   ],
+   "official": false
+  },
   {
    "source": "Nation Thailand",
    "title": "ONWR warns of heavy rain as Thai reservoirs reach 82% capacity",
@@ -1783,7 +1897,7 @@
    "name": "The Pattaya News",
    "endpoint": "https://thepattayanews.com/wp-json/wp/v2/posts",
    "ok": true,
-   "count": 78,
+   "count": 76,
    "error": null
   },
   {
@@ -1804,14 +1918,14 @@
    "name": "The Thaiger",
    "endpoint": "https://thethaiger.com/wp-json/wp/v2/posts",
    "ok": true,
-   "count": 93,
+   "count": 96,
    "error": null
   },
   {
    "name": "Khaosod English",
    "endpoint": "https://www.khaosodenglish.com/feed/",
    "ok": true,
-   "count": 4,
+   "count": 6,
    "error": null
   },
   {
@@ -1825,7 +1939,7 @@
    "name": "Nation Thailand",
    "endpoint": "https://api.nationthailand.com/sitemap/latest",
    "ok": true,
-   "count": 27,
+   "count": 35,
    "error": null
   }
  ],
