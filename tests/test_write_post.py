@@ -68,6 +68,19 @@ class DigestTest(Files):
         self.assertIn("https://www.mots.go.th/images/v2022_x.xlsx", text)
         self.assertIn("1 THB = 2.5034 RUB", text)
 
+    def test_us_market_and_past_holidays(self):
+        self.write("OFFICIAL", {"arrivals": {"period": "2026-09", "total": {"value": 1},
+                                             "markets": [{"name": f"M{i}", "value": 100 - i} for i in range(8)]
+                                             + [{"name": "The United States of America", "ru": "США",
+                                                 "value": 56761, "yoy_pct": 4.3}]}})
+        payload = weather(f"{TODAY.isoformat()}T01:00:00+00:00", TODAY - timedelta(days=1))
+        payload["regions"]["pattaya"][0]["event"] = {"ru": "Вчерашний праздник"}
+        payload["regions"]["pattaya"][0]["alcohol_ban"] = True
+        text = w.summarize(payload, TODAY)
+        self.assertIn("США: 56 761 (+4.3% г/г)", text)
+        self.assertNotIn("Вчерашний праздник", text)
+        self.assertNotIn("запретом продажи алкоголя", text)
+
     def test_weather_is_labelled_a_model_and_missing_rain_is_not_dry(self):
         text = w.summarize(weather(f"{TODAY.isoformat()}T01:00:00+00:00"), TODAY)
         self.assertIn("НЕ измерение спроса", text)
@@ -118,6 +131,12 @@ class ResponseTest(unittest.TestCase):
         self.assertEqual(w.strip_unseen_links(post, allowed),
                          '<a href="https://ok.example/a">есть</a> и нет '
                          '<a href="https://ok.example/b?x=1&amp;y=2">экранированная</a>')
+
+    def test_links_are_filtered_however_they_are_written(self):
+        post = ("<a href='https://made.up/1'>a</a> <A HREF=\"https://made.up/2\" rel=\"x\">b</A> "
+                '<a title="t" href="https://ok.example/a">c</a> 5 &lt; 7')
+        self.assertEqual(w.strip_unseen_links(post, {"https://ok.example/a"}),
+                         'a b <a title="t" href="https://ok.example/a">c</a> 5 &lt; 7')
 
     def test_known_urls_drop_trailing_punctuation(self):
         self.assertEqual(w.known_urls("источник https://x.example/f.xlsx: и https://y.example."),

@@ -255,6 +255,16 @@ class ParsingTests(unittest.TestCase):
         self.assertEqual(items[0]["lang"], "th")
         self.assertIsNone(items[1])
 
+    def test_no_fallback_after_a_refusal(self):
+        source = SOURCES["DTAM (Ministry of Public Health)"]
+        for refusal in (news.SourceError("html_instead_of_data"), news.SourceError("paywall_redirect"),
+                        urllib.error.HTTPError(source["endpoint"], 403, "Forbidden", headers(), None)):
+            fetch, calls = fake_fetch({source["endpoint"]: refusal, source["fallback_feed"]: b"<rss/>"})
+            with patch.object(news, "fetch", fetch):
+                with self.assertRaises(Exception):
+                    news.collect_source(source, CUTOFF)
+            self.assertFalse(any(c.startswith(source["fallback_feed"]) for c in calls))
+
     def test_dtam_falls_back_to_rss_when_rest_is_not_json(self):
         source = SOURCES["DTAM (Ministry of Public Health)"]
         rss = ("""<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel>
@@ -263,7 +273,7 @@ class ParsingTests(unittest.TestCase):
             <item><title>ประกาศรายชื่อผู้สอบผ่าน</title><link>https://www.dtam.moph.go.th/a/2/</link>
             <pubDate>Sat, 10 Oct 2026 03:00:00 +0000</pubDate></item>
             </channel></rss>""").encode("utf-8")
-        fetch, calls = fake_fetch({source["endpoint"]: b"<html>blocked</html>",
+        fetch, calls = fake_fetch({source["endpoint"]: b"{not json",
                                    source["fallback_feed"]: rss})
         with patch.object(news, "fetch", fetch):
             entries, partial = news.collect_source(source, CUTOFF)

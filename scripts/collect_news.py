@@ -35,6 +35,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
+import xml.parsers.expat
 from datetime import datetime, timedelta, timezone
 
 
@@ -55,6 +56,10 @@ REPOST_GAP = timedelta(days=3)
 JSON_ACCEPT = "application/json"
 XML_ACCEPT = "application/rss+xml, application/atom+xml, application/xml;q=0.9, text/xml;q=0.8"
 
+# Failures where a site's own feed may stand in for its API.
+FALLBACK_ON = {"invalid_response", "timeout", "network_error", "empty_response",
+               "http_500", "http_502", "http_503", "http_504"}
+
 SOURCES = [
     {"name": "TAT Newsroom", "kind": "wp", "official": True,
      "endpoint": "https://www.tatnews.org/wp-json/wp/v2/posts"},
@@ -65,7 +70,7 @@ SOURCES = [
     # The search also matches body text, so the headline itself must be about cannabis.
     # On 2026-10-13 GitHub's runners got a bot-protection page instead of data
     # from both the REST API and the RSS; we do not work around it. The RSS
-    # fallback helps when only the API is refused.
+    # stands in only when the API itself is broken.
     {"name": "DTAM (Ministry of Public Health)", "kind": "wp", "official": True,
      "endpoint": "https://www.dtam.moph.go.th/wp-json/wp/v2/posts",
      "search": "กัญชา", "require": "cannabis",
@@ -375,8 +380,19 @@ def fetch(url, accept):
 
 
 def parse_xml(body):
-    # Feeds never need a DTD; refusing one avoids entity-expansion attacks.
-    if re.search(rb"<!(?:DOCTYPE|ENTITY)", body, re.IGNORECASE):
+    """Feeds never need a DTD; refusing one avoids entity-expansion attacks.
+
+    expat honours the declared encoding, so a UTF-16 feed cannot hide a
+    <!DOCTYPE> from this check.
+    """
+    def refuse(*_):
+        raise SourceError("invalid_response")
+    scanner = xml.parsers.expat.ParserCreate()
+    scanner.StartDoctypeDeclHandler = refuse
+    scanner.EntityDeclHandler = refuse
+    try:
+        scanner.Parse(body, True)
+    except xml.parsers.expat.ExpatError:
         raise SourceError("invalid_response")
     return ET.fromstring(body)
 
@@ -464,11 +480,16 @@ def collect_source(source, cutoff):
         try:
             entries, partial = wp_entries(source, after)
         except Exception as exc:
-            if not source.get("fallback_feed"):
+            # The feed stands in for a broken API, never for a refusal: a
+            # challenge, paywall or 4xx means the site said no.
+            label = error_label(exc)
+            if not source.get("fallback_feed") or label not in FALLBACK_ON:
                 raise
             body, _ = fetch(source["fallback_feed"], XML_ACCEPT)
             entries = feed_entries(body)
-            partial = "REST %s, RSS used" % error_label(exc)
+            if not entries:
+                raise SourceError("no_entries")
+            partial = "REST %s, RSS used" % label
     else:
         parse = sitemap_entries if source["kind"] == "sitemap" else feed_entries
         entries, partial = [], None

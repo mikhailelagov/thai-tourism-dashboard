@@ -561,12 +561,15 @@ def currency_lines(data, now, official=None):
             rates.append(f"1 {code} = {fmt(thb / value)} THB")
     if not rates:
         return ["## Курсы", "Доступных наблюдений курса нет."] + errors
-    built = stamp(data.get("built_at"))
+    # The provider's own update time; build_data carries an old snapshot
+    # forward when the provider fails, so built_at would date it wrongly.
+    quoted = stamp(data.get("fx_time"))
+    when = (f"Котировка поставщика: {local(quoted)}, Бангкок." if quoted
+            else "Время котировки в файле не сохранено.")
     lines = ["## Курсы", "; ".join(rates) + ". "
              "[ExchangeRate-API](https://open.er-api.com/v6/latest/USD), неофициальный агрегатор: "
-             "официальные курсы ЕЦБ и Банка России недоступны. "
-             f"Снимок сборщика: {local(built)}, Бангкок; точное время котировки в файле не сохранено."]
-    if built is None or built > now or now - built > timedelta(hours=36):
+             f"официальные курсы ЕЦБ и Банка России недоступны. {when}"]
+    if quoted is None or quoted > now or now - quoted > timedelta(hours=36):
         lines.append("⚠ Свежесть курсов не подтверждена; это не текущая котировка обменника.")
     return lines + errors
 

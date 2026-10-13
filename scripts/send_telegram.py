@@ -76,6 +76,15 @@ def load(path):
         return None
 
 
+def bangkok_day(value):
+    """dd.mm.yyyy in Bangkok for an ISO timestamp, or None."""
+    try:
+        parsed = datetime.fromisoformat(str(value).replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    return parsed.astimezone(BANGKOK).strftime("%d.%m.%Y") if parsed.tzinfo else None
+
+
 def measured_lines():
     """Official monthly figures with their period and source, if collected."""
     data, lines = load(OFFICIAL) or {}, []
@@ -107,8 +116,8 @@ def fallback_post(payload):
     measured = measured_lines()
     if measured:
         lines += measured + [""]
-    lines.append("<b>Условия для отдыха на улице сегодня</b> <i>(модель погоды и календаря, "
-                 "не измерение спроса)</i>")
+    lines.append("<b>Условия для отдыха на улице сегодня</b> <i>(модель: погода, праздники, "
+                 "нефть и курсы — не измерение спроса)</i>")
     for rid in ORDER:
         days = [d for d in regions.get(rid) or [] if d.get("iso", "") >= today]
         if not days or not num(days[0].get("score")):
@@ -118,22 +127,26 @@ def fallback_post(payload):
         rain = f"{d0['mm']:.1f} мм" if num(d0.get("mm")) else "осадки н/д"
         lines.append(f"{dot} <b>{esc(NAMES[rid])}</b> — {label} · {d0.get('tmax')}° · {rain}")
 
-    lead = [d for d in regions.get(LEAD) or [] if d.get("iso", "") > today and num(d.get("score"))][:7]
+    # "Best by weather" must rank on the weather term alone, not on oil and FX.
+    lead = [d for d in regions.get(LEAD) or [] if d.get("iso", "") > today
+            and num((d.get("parts") or {}).get("weather"))][:7]
     if lead:
-        best = max(lead, key=lambda d: d["score"])
+        best = max(lead, key=lambda d: d["parts"]["weather"])
         wd = DOW[date.fromisoformat(best["iso"]).weekday()]
         lines += ["", f"<b>Неделя вперёд</b> — {esc(NAMES[LEAD])}: лучший по погоде день "
                       f"{wd} {best['iso'][8:]}.{best['iso'][5:7]}"]
 
     fx = payload.get("fx") or {}
     if fx.get("THB"):
-        lines += ["", f"Бат за доллар: <b>{fx['THB']:.2f}</b> <i>(справочный курс)</i>"]
-    built = str(payload.get("built_at") or "")[:10]
+        quoted = bangkok_day(payload.get("fx_time"))
+        lines += ["", f"Бат за доллар: <b>{fx['THB']:.2f}</b> <i>(справочный курс"
+                      + (f" на {quoted}" if quoted else "") + ")</i>"]
+    built = bangkok_day(payload.get("built_at"))
     # Readers get no technical reason: it is operator business and an API
     # error in a public channel reads as a broken product.
     note = "Развёрнутая сводка на этой неделе недоступна — показаны собранные показатели."
     if built:
-        note += f" Погода на {built}."
+        note += f" Прогноз погоды от {built}."
     lines += ["", f"<i>{note}</i>"]
     return "\n".join(lines)
 
@@ -303,7 +316,8 @@ def main():
     if not token or not chat_id:
         print("TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID must be set; skipping.",
               file=sys.stderr)
-        return 0
+        # In CI a missing secret means nothing was published; say so.
+        return 1 if os.environ.get("GITHUB_ACTIONS") == "true" else 0
 
     if POST.exists() and POST.read_text(encoding="utf-8").strip():
         post = POST.read_text(encoding="utf-8").strip()

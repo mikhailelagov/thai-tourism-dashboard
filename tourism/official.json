@@ -1,5 +1,5 @@
 {
- "built_at": "2026-10-13T03:31:19+00:00",
+ "built_at": "2026-10-13T03:52:32+00:00",
  "arrivals": {
   "source": "MOTS",
   "source_url": "https://www.mots.go.th/news/category/817",
@@ -328,7 +328,7 @@
    "source": "Bank of Russia",
    "source_url": "https://www.cbr.ru/currency_base/daily/",
    "data_url": "https://www.cbr.ru/scripts/XML_daily.asp",
-   "retrieved_at": "2026-10-13T03:31:19+00:00",
+   "retrieved_at": "2026-10-13T03:52:32+00:00",
    "date": "2026-10-13",
    "rub_per_thb": 2.50337
   }

@@ -10,9 +10,11 @@ Reads data.json, writes chart.png.
 """
 
 import json
+import math
 import pathlib
 import sys
-from datetime import date
+from datetime import date, datetime
+from zoneinfo import ZoneInfo
 
 import matplotlib
 
@@ -62,20 +64,22 @@ def panel(fig, cell, rid, days):
     ax = fig.add_subplot(inner[0])
     rx = fig.add_subplot(inner[1], sharex=ax)
 
-    # A day without a forecast has no score; rain may be missing on its own.
-    days = [d for d in days if isinstance(d.get("score"), (int, float))]
+    # A day without a complete forecast has no score: it stays a gap in the
+    # line, so the first point is still today and nothing reads as dry.
     xs = list(range(len(days)))
-    ys = [d["score"] for d in days]
+    ys = [d["score"] if isinstance(d.get("score"), (int, float)) else math.nan for d in days]
     mm = [d["mm"] if isinstance(d.get("mm"), (int, float)) else None for d in days]
-    avg = sum(ys) / len(ys)
+    scored = [y for y in ys if not math.isnan(y)]
+    avg = sum(scored) / len(scored) if scored else math.nan
 
     ax.set_facecolor(SURFACE)
     ax.plot(xs, ys, color=ACCENT, linewidth=2, solid_capstyle="round", zorder=4)
     ax.fill_between(xs, 0, ys, color=ACCENT, alpha=.10, zorder=2)
-    ax.axhline(avg, color=MUTED, linewidth=1, linestyle=(0, (4, 3)),
-               alpha=.55, zorder=3)
+    if scored:
+        ax.axhline(avg, color=MUTED, linewidth=1, linestyle=(0, (4, 3)),
+                   alpha=.55, zorder=3)
 
-    top = max(60, max(ys) + 16)
+    top = max(60, max(scored, default=0) + 16)
 
     # event days explain why the line moves - mark them, then name them below
     for i, d in enumerate(days):
@@ -83,24 +87,28 @@ def panel(fig, cell, rid, days):
             ax.axvline(i, color=EVENT, linewidth=1, linestyle=(0, (2, 2)),
                        alpha=.7, zorder=1)
 
-    colour, label = tier(ys[0])
-    ax.plot([0], [ys[0]], "o", markersize=8, color=colour,
-            markeredgecolor=SURFACE, markeredgewidth=2, zorder=5)
+    if math.isnan(ys[0]):
+        colour, label, today = MUTED, "нет данных", "—"
+    else:
+        colour, label = tier(ys[0])
+        today = f"{ys[0]:.0f}"
+        ax.plot([0], [ys[0]], "o", markersize=8, color=colour,
+                markeredgecolor=SURFACE, markeredgewidth=2, zorder=5)
 
-    fwd = ys[1:]
+    fwd = [(y, i) for i, y in enumerate(ys) if i > 0 and not math.isnan(y)]
     if fwd:
-        bi = ys.index(max(fwd), 1)
-        ax.plot([bi], [ys[bi]], "o", markersize=6.5, color=SURFACE,
+        best, bi = max(fwd)
+        ax.plot([bi], [best], "o", markersize=6.5, color=SURFACE,
                 markeredgecolor=ACCENT, markeredgewidth=2, zorder=5)
-        ax.annotate(f"{ys[bi]}", (bi, ys[bi]), textcoords="offset points",
+        ax.annotate(f"{best:.0f}", (bi, best), textcoords="offset points",
                     xytext=(0, 9), ha="center", fontsize=8,
                     color=ACCENT, fontweight="bold", zorder=6)
 
     ax.set_title(NAMES.get(rid, rid), loc="left", fontsize=11.5,
                  fontweight="bold", color=INK, pad=23)
-    ax.text(0, 1.10, f"{ys[0]} · {label}", transform=ax.transAxes,
+    ax.text(0, 1.10, f"{today} · {label}", transform=ax.transAxes,
             fontsize=9, color=colour, fontweight="bold", va="bottom")
-    ax.text(1, 1.10, f"среднее {round(avg)}", transform=ax.transAxes,
+    ax.text(1, 1.10, f"среднее {round(avg)}" if scored else "", transform=ax.transAxes,
             fontsize=8.5, color=MUTED, va="bottom", ha="right")
 
     ax.set_ylim(0, top)
@@ -179,12 +187,17 @@ def build():
              ha="left", fontsize=9, color=MUTED)
     fig.text(.05, .877,
              "Закрашенная точка — сегодня · контурная — лучший день · "
-             "модель погоды и календаря, не измерение спроса",
+             "модель: погода, праздники, нефть и курсы — не измерение спроса",
              ha="left", fontsize=9, color=MUTED)
 
-    built = payload.get("built_at", "")
-    if built:
-        fig.text(.98, .915, built[:10], ha="right", fontsize=9, color=MUTED)
+    # The post goes out in the Bangkok morning; a UTC date would read as yesterday.
+    try:
+        built = datetime.fromisoformat(str(payload.get("built_at")).replace("Z", "+00:00"))
+        stamp = built.astimezone(ZoneInfo("Asia/Bangkok")).strftime("%d.%m.%Y")
+    except ValueError:
+        stamp = ""
+    if stamp:
+        fig.text(.98, .915, f"данные на {stamp}", ha="right", fontsize=9, color=MUTED)
 
     if events:
         fig.text(.05, .045, "События:  " + "   ·   ".join(events[:4]),

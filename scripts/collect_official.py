@@ -33,6 +33,7 @@ import time
 import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
+import xml.parsers.expat
 import zipfile
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
@@ -298,10 +299,28 @@ def remember(fetch):
 
 # ---------------------------------------------------------------- XLSX
 
+def parse_xml_safely(blob):
+    """ElementTree root of downloaded XML, refusing any DTD first.
+
+    expat honours the declared encoding, so a UTF-16 document cannot hide a
+    <!DOCTYPE> from this check, and entity expansion never starts.
+    """
+    def refuse(*_):
+        raise ValueError("XML with a DTD refused")
+    scanner = xml.parsers.expat.ParserCreate()
+    scanner.StartDoctypeDeclHandler = refuse
+    scanner.EntityDeclHandler = refuse
+    try:
+        scanner.Parse(blob, True)
+    except xml.parsers.expat.ExpatError as exc:
+        raise ValueError("malformed XML: %s" % exc)
+    return ET.fromstring(blob)
+
+
 def xml_part(book, name):
     if book.getinfo(name).file_size > MAX_PART:
         raise ValueError("%s is too large" % name)
-    return ET.fromstring(book.read(name))
+    return parse_xml_safely(book.read(name))
 
 
 def open_xlsx(blob):
@@ -842,7 +861,7 @@ def parse_ecb(blob):
 
 def parse_cbr(blob):
     """RUB per 1 THB from the Bank of Russia daily XML (windows-1251, comma decimals)."""
-    root = ET.fromstring(blob)
+    root = parse_xml_safely(blob)
     day = datetime.strptime(root.get("Date") or "", "%d.%m.%Y").date().isoformat()
     for valute in root.iter("Valute"):
         if valute.findtext("CharCode") == "THB":

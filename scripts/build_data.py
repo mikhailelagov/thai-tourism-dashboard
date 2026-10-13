@@ -41,6 +41,7 @@ import time
 import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
+import xml.parsers.expat
 from datetime import date, datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 
@@ -56,7 +57,8 @@ RETRIES = 1
 BANGKOK = timezone(timedelta(hours=7))
 
 SCORE_KIND = "weather_calendar_model"
-SCORE_NOTE_RU = "Модель погодных и календарных условий, а не измерение спроса"
+SCORE_NOTE_RU = ("Модель условий из погоды, праздников, цены нефти и курсов валют, "
+                 "а не измерение спроса")
 
 # base = hand-set starting level per region and wsens = how much rain moves
 # it. Both are model constants, not measurements.
@@ -481,6 +483,24 @@ def thb_crosses(per_eur):
     return out
 
 
+def parse_xml_safely(blob):
+    """ElementTree root of downloaded XML, refusing any DTD first.
+
+    expat honours the declared encoding, so a UTF-16 document cannot hide a
+    <!DOCTYPE> from this check, and entity expansion never starts.
+    """
+    def refuse(*_):
+        raise ValueError("XML with a DTD refused")
+    scanner = xml.parsers.expat.ParserCreate()
+    scanner.StartDoctypeDeclHandler = refuse
+    scanner.EntityDeclHandler = refuse
+    try:
+        scanner.Parse(blob, True)
+    except xml.parsers.expat.ExpatError as exc:
+        raise ValueError("malformed XML: %s" % exc)
+    return ET.fromstring(blob)
+
+
 def parse_cbr_dynamic(raw):
     """{iso_date: THB per RUB} from the Bank of Russia XML_dynamic feed.
 
@@ -488,7 +508,7 @@ def parse_cbr_dynamic(raw):
     XML declaration carries the encoding, so ElementTree reads the bytes.
     """
     out = {}
-    for rec in ET.fromstring(raw).iter("Record"):
+    for rec in parse_xml_safely(raw).iter("Record"):
         try:
             d = datetime.strptime(rec.get("Date", ""), "%d.%m.%Y").date().isoformat()
             rub = float(rec.findtext("Value").replace(",", ".")) / int(rec.findtext("Nominal"))

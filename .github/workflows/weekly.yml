@@ -23,10 +23,11 @@ on:
 permissions:
   contents: write
 
-# Shared with the daily refresh: both rewrite the same data files, and two
-# pushes of them at once would conflict on rebase.
+# Its own group: sharing one with the daily refresh would let a queued daily
+# replace a pending weekly. Only the daily commits the data files, so the two
+# never push the same file.
 concurrency:
-  group: data-refresh
+  group: weekly-briefing
   cancel-in-progress: false
 
 jobs:
@@ -86,6 +87,7 @@ jobs:
           fi
 
       - name: Publish to Telegram
+        id: publish
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           CHANNEL_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
@@ -109,34 +111,31 @@ jobs:
           fi
           python3 scripts/send_telegram.py
 
-      - name: Commit refreshed data
-        if: ${{ always() }}
-        env:
-          PREVIEW: ${{ github.event_name == 'workflow_dispatch' && inputs.preview }}
+      # Only the post itself is committed here: the daily run owns data.json,
+      # history.json and tourism/*, so the two jobs never conflict on a push.
+      - name: Record the published post
+        # A preview went to the admin chat only, so it is not a published issue.
+        if: ${{ always() && steps.publish.outcome == 'success' && !(github.event_name == 'workflow_dispatch' && inputs.preview) }}
         run: |
+          # Next week's post is told not to repeat this one as news.
+          if [ ! -s post.txt ]; then
+            echo "no model-written post to record"
+            exit 0
+          fi
+          cp post.txt reports/weekly-latest.txt
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          # Next week's post is told not to repeat this one as news; a preview
-          # was never published, so it does not count.
-          if [ -s post.txt ] && [ "$PREVIEW" != "true" ]; then
-            cp post.txt reports/weekly-latest.txt
-          fi
-          for f in data.json history.json tourism/official.json tourism/news.json \
-                   tourism/indicators.jsonl reports/weekly-latest.txt; do
-            if [ -e "$f" ]; then git add "$f"; fi
-          done
+          git add reports/weekly-latest.txt
           if git diff --cached --quiet; then
             echo "nothing to commit"
-          else
-            git commit -m "data: weekly refresh $(date -u +%Y-%m-%d)"
-            # The daily and hourly jobs push too; rebase onto whichever pushed
-            # first. A conflict fails the run rather than dropping either side.
-            for i in 1 2 3; do
-              if git push; then exit 0; fi
-              git pull --rebase origin main || exit 1
-            done
-            exit 1
+            exit 0
           fi
+          git commit -m "data: weekly post $(date -u +%Y-%m-%d)"
+          for i in 1 2 3; do
+            if git push; then exit 0; fi
+            git pull --rebase origin main || exit 1
+          done
+          exit 1
 
       # The briefing step is allowed to fail so the channel still gets a
       # summary; fail the run afterwards so GitHub e-mails the owner.

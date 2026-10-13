@@ -274,10 +274,17 @@ class OfficialDataTests(unittest.TestCase):
         self.assertIn("Курс Банка России недоступен", text)
         self.assertIn("источника Банк России не удалось", text)
         fallback = "\n".join(currency_lines({"built_at": "2026-10-13T02:00:00+00:00",
+                                               "fx_time": "2026-10-12T23:57:31+00:00",
                                                "fx": {"THB": 33.5, "USD": 1, "RUB": 85}}, OCTOBER, {}))
         self.assertIn("ExchangeRate-API", fallback)
         self.assertIn("1 USD = 33,5 THB", fallback)
+        self.assertIn("Котировка поставщика: 13.10.2026 06:57", fallback)
         self.assertNotIn("⚠", fallback)
+        # A snapshot carried forward from an old run keeps its old quote time.
+        carried = "\n".join(currency_lines({"built_at": "2026-10-13T02:00:00+00:00",
+                                              "fx_time": "2026-10-09T23:57:31+00:00",
+                                              "fx": {"THB": 33.5, "USD": 1}}, OCTOBER, {}))
+        self.assertIn("⚠", carried)
 
 
 class NewsTests(unittest.TestCase):

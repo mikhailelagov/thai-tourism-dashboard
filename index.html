@@ -429,7 +429,7 @@ const T={
   secRegions:'Destinations: weather model and provincial figures',
   subRegions:'The 0–100 score is a model: a hand-set level per destination, lowered by forecast rain, plus points for holidays and events and small oil-price and exchange-rate terms. It is not a measure of demand, and scores of different destinations are not comparable. The measured figures in each tab are MOTS monthly provincial statistics.',
   vCap:'outdoor conditions (model)',condToday:'Outdoor conditions today',
-  wxToday:(tp,mm,pop)=>`Forecast for today: up to ${tp}°, ${mm} mm of rain, ${pop}% chance of rain. The score is a model, not a measurement of how many tourists are coming.`,
+  wxToday:(tp,mm,pop)=>`Forecast for today: up to ${tp}°, ${mm==='—'?'rain unknown':mm+' mm of rain'}, ${pop==='—'?'rain chance unknown':pop+'% chance of rain'}. The score is a model, not a measurement of how many tourists are coming.`,
   wxStale:'The weather file does not cover today, so no score is shown.',
   pvH:(name,p,st,pub)=>`MOTS · ${name} · ${p} · ${st} · published ${pub}`,pvNone:'MOTS provincial data is not loaded for this destination.',
   pvOcc:'Hotel occupancy',pvOccPrev:'Occupancy a year earlier',pvForeign:'Foreign visitors',pvThai:'Thai visitors',
@@ -491,7 +491,7 @@ const T={
   secRegions:'Направления: погодная модель и данные провинций',
   subRegions:'Оценка 0–100 — модель: заданный вручную уровень для каждого направления, сниженный по прогнозу дождя, плюс баллы за праздники и события и небольшие поправки на цену нефти и курсы валют. Это не измерение спроса, и оценки разных направлений нельзя сравнивать между собой. Измеренные данные во вкладках — месячная статистика MOTS по провинции.',
   vCap:'условия для отдыха на улице (модель)',condToday:'Условия на улице сегодня',
-  wxToday:(tp,mm,pop)=>`Прогноз на сегодня: до ${tp}°, осадки ${mm} мм, вероятность дождя ${pop}%. Оценка — модель, а не измерение числа туристов.`,
+  wxToday:(tp,mm,pop)=>`Прогноз на сегодня: до ${tp}°, ${mm==='—'?'осадки неизвестны':'осадки '+mm+' мм'}, ${pop==='—'?'вероятность дождя неизвестна':'вероятность дождя '+pop+'%'}. Оценка — модель, а не измерение числа туристов.`,
   wxStale:'Файл погоды не покрывает сегодняшний день, поэтому оценка не показана.',
   pvH:(name,p,st,pub)=>`MOTS · ${name} · ${p} · ${st} · опубликовано ${pub}`,pvNone:'Данные MOTS по этой провинции не загружены.',
   pvOcc:'Загрузка отелей',pvOccPrev:'Загрузка годом ранее',pvForeign:'Иностранные посещения',pvThai:'Тайские посещения',
@@ -954,35 +954,42 @@ function renderRegion(){
   const days=raw.map(x=>({iso:x.iso,dow:new Date(x.iso+'T00:00:00').getDay(),
       dd:x.iso.slice(8)+'.'+x.iso.slice(5,7),
       // Missing rain stays unknown: treating it as 0 mm would read as a dry day.
-      tp:isNum(x.tmax)?x.tmax:null,mm:isNum(x.mm)?x.mm:null,pop:isNum(x.pop)?x.pop:0,
-      score:isNum(x.score)?x.score:(isNum(x.mm)?scoreFor(r,x.mm,isNum(x.pop)?x.pop:0):null),
+      tp:isNum(x.tmax)?x.tmax:null,mm:isNum(x.mm)?x.mm:null,pop:isNum(x.pop)?x.pop:null,
+      // build_data leaves score null when the forecast is incomplete; only the
+      // direct Open-Meteo fallback (no score field at all) is scored here.
+      score:('score' in x)?(isNum(x.score)?x.score:null)
+        :(isNum(x.mm)&&isNum(x.pop)?scoreFor(r,x.mm,x.pop):null),
       // Weather term alone, to compare with the weather-only history.
-      wx:isNum(obj(x.parts).weather)?x.parts.weather:(isNum(x.mm)?scoreFor(r,x.mm,isNum(x.pop)?x.pop:0):null),
-      ev:x.event&&typeof x.event==='object'?(x.event[LANG]||null):null})).filter(x=>x.score!=null);
-  if(!days.length){
-    $('#vNum').textContent='—'; $('#vSt').textContent=t.condToday; $('#vTx').textContent=t.wxStale;
-    $('#week').innerHTML=''; $('#olP').textContent=''; $('#olGrid').innerHTML=''; return;
-  }
+      wx:isNum(obj(x.parts).weather)?x.parts.weather
+        :(!('score' in x)&&isNum(x.mm)&&isNum(x.pop)?scoreFor(r,x.mm,x.pop):null),
+      ev:x.event&&typeof x.event==='object'?(x.event[LANG]||null):null}));
 
-  const today=days[0], [tc,tl]=tone(today.score);
-  $('#vNum').textContent=today.score; $('#vNum').style.color=tc;
-  $('#vRail').style.width=today.score+'%'; $('#vRail').style.background=tc;
-  $('#vSt').textContent=`${t.condToday}: ${tl.toLowerCase()}`;
-  $('#vTx').textContent=t.wxToday(today.tp==null?'—':num(today.tp),today.mm==null?'—':upTo(today.mm,1),num(today.pop));
+  // The big number is today's only; a missing day shows a dash, not tomorrow.
+  const today=days[0], isToday=today.iso===todayIso;
+  if(isToday&&today.score!=null){
+    const [tc,tl]=tone(today.score);
+    $('#vNum').textContent=today.score; $('#vNum').style.color=tc;
+    $('#vRail').style.width=today.score+'%'; $('#vRail').style.background=tc;
+    $('#vSt').textContent=`${t.condToday}: ${tl.toLowerCase()}`;
+  } else {
+    $('#vNum').textContent='—'; $('#vNum').style.color=''; $('#vRail').style.width='0';
+    $('#vSt').textContent=t.condToday;
+  }
+  $('#vTx').textContent=t.wxToday(today.tp==null?'—':num(today.tp),today.mm==null?'—':upTo(today.mm,1),today.pop==null?'—':num(today.pop));
 
   $('#week').innerHTML=days.map((x,i)=>{
-    const [c]=tone(x.score);
+    const c=x.score==null?'var(--muted)':tone(x.score)[0];
     // Droplet darkens with rainfall, independent of the score colour.
-    const wet=Math.round(Math.min(1,x.mm/25)*100);
-    const flag=i===0
+    const wet=x.mm==null?0:Math.round(Math.min(1,x.mm/25)*100);
+    const flag=i===0&&isToday
       ? `<div class="flag" style="color:var(--teal-d)">${t.today}</div>`
       : x.ev ? `<div class="flag" style="color:var(--amber)">${esc(x.ev)}</div>` : '';
-    return `<div class="dy${i===0?' today':''}">
+    return `<div class="dy${i===0&&isToday?' today':''}">
       <div class="hd"><div class="dw">${t.days[x.dow]}</div><div class="dd">${x.dd}</div></div>
       <div class="bd">
         <div class="tp">${x.tp==null?'—':num(x.tp)}°</div>
         <div class="rain"><span class="drop" style="background:color-mix(in srgb,var(--teal) ${wet}%,var(--line2))"></span>${x.mm==null?'—':upTo(x.mm,1)}</div>
-        <div class="chip" style="background:color-mix(in srgb,${c} 16%,transparent);color:${c}">${x.score}</div>
+        <div class="chip" style="background:color-mix(in srgb,${c} 16%,transparent);color:${c}">${x.score==null?'—':x.score}</div>
         ${flag}
       </div></div>`;}).join('');
 
@@ -990,7 +997,7 @@ function renderRegion(){
   renderFootfall(r.id);
 
   /* week-ahead outlook, generated from the forecast */
-  const fwd=days.slice(1);
+  const fwd=days.slice(1).filter(x=>x.score!=null);
   if(!fwd.length){ $('#olP').textContent=''; $('#olGrid').innerHTML=''; return; }
   const worst=fwd.reduce((a,b)=>b.score<a.score?b:a);
   const bestF=fwd.reduce((a,b)=>b.score>a.score?b:a);

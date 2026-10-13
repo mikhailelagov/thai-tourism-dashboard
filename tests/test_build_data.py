@@ -322,7 +322,7 @@ class BuildTests(unittest.TestCase):
         self.assertEqual(ok, 5 + len(bd.HOLIDAY_FEEDS))
         self.assertEqual(data["score_kind"], "weather_calendar_model")
         self.assertEqual(data["score_note_ru"],
-                         "Модель погодных и календарных условий, а не измерение спроса")
+                         "Модель условий из погоды, праздников, цены нефти и курсов валют, а не измерение спроса")
         for key in ("built_at", "regions", "fx", "markets", "holidays"):
             self.assertIn(key, data)
         self.assertEqual(data["fx_time"], "2026-10-12T23:57:31+00:00")
