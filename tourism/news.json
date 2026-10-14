@@ -1,7 +1,451 @@
 {
- "built_at": "2026-10-13T08:24:50+00:00",
+ "built_at": "2026-10-14T06:41:10+00:00",
  "window_days": 10,
  "items": [
+  {
+   "source": "Nation Thailand",
+   "title": "Thailand joins IMF, World Bank in global fight against digital scams",
+   "url": "https://www.nationthailand.com/business/economy/40072251",
+   "published_at": "2026-10-14T06:17:00+00:00",
+   "lang": "en",
+   "topics": [
+    "safety"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Thaiger",
+   "title": "5 things to do in Bangkok this weekend (October 16 to 18)",
+   "url": "https://thethaiger.com/guides/best-of/things-to-do/things-to-do-bangkok-october-16-to-18",
+   "published_at": "2026-10-14T06:05:18+00:00",
+   "lang": "en",
+   "topics": [
+    "events",
+    "bangkok"
+   ],
+   "official": false
+  },
+  {
+   "source": "Khaosod English",
+   "title": "Tuk-tuk driver faces backlash over 4,000-baht fare after The Weeknd concert",
+   "url": "https://www.khaosodenglish.com/news/2026/10/14/tuk-tuk-driver-faces-backlash-over-4000-baht-fare-after-the-weeknd-concert/",
+   "published_at": "2026-10-14T06:00:50+00:00",
+   "lang": "en",
+   "topics": [
+    "events"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Floods hit 4,635 businesses with losses at THB18.2 billion",
+   "url": "https://www.nationthailand.com/business/economy/40072248",
+   "published_at": "2026-10-14T05:59:00+00:00",
+   "lang": "en",
+   "topics": [
+    "weather"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "TAT turns to events for 33m foreign tourists in 2026",
+   "url": "https://www.nationthailand.com/news/tourism/40072247",
+   "published_at": "2026-10-14T05:51:00+00:00",
+   "lang": "en",
+   "topics": [
+    "events"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Thaiger",
+   "title": "Thailand video news | Australian accused of killing Thai teenager to face trial in Pattaya this December, Thailand defends proposed 1,000-baht airport departure tax despite tourism opposition",
+   "url": "https://thethaiger.com/video-podcasts/thailand-video-news-14-10-2026",
+   "published_at": "2026-10-14T04:39:18+00:00",
+   "lang": "en",
+   "topics": [
+    "entry_rules",
+    "flights",
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Pattaya Officials Inspect Vegetarian Festival Kitchens to Ensure Food Safety and Hygiene",
+   "url": "https://thepattayanews.com/2026/10/14/pattaya-officials-inspect-vegetarian-festival-kitchens-to-ensure-food-safety-and-hygiene/",
+   "published_at": "2026-10-14T04:38:12+00:00",
+   "lang": "en",
+   "topics": [
+    "events",
+    "safety",
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Thaiger",
+   "title": "Foreigners face 4,000-baht tuk tuk fare after The Weeknd concert",
+   "url": "https://thethaiger.com/news/bangkok/foreigners-4000-baht-bangkok-tuk-tuk-fare-weeknd-concert",
+   "published_at": "2026-10-14T04:08:35+00:00",
+   "lang": "en",
+   "topics": [
+    "events"
+   ],
+   "official": false
+  },
+  {
+   "source": "Khaosod English",
+   "title": "Rescue volunteer alleges assault by man resembling police officer in Udon Thani",
+   "url": "https://www.khaosodenglish.com/news/2026/10/14/rescue-volunteer-alleges-assault-by-man-resembling-police-officer-in-udon-thani/",
+   "published_at": "2026-10-14T03:56:19+00:00",
+   "lang": "en",
+   "topics": [
+    "safety"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Thaiger",
+   "title": "Thailand domestic flights get 500-baht discount from Oct 15",
+   "url": "https://thethaiger.com/news/world/aviation/thailand-domestic-flights-get-500-baht-discount-from-oct-15",
+   "published_at": "2026-10-14T03:31:43+00:00",
+   "lang": "en",
+   "topics": [
+    "flights"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Thai weather agency outlines 3 winter criteria for 2026",
+   "url": "https://www.nationthailand.com/news/general/40072237",
+   "published_at": "2026-10-14T03:11:00+00:00",
+   "lang": "en",
+   "topics": [
+    "weather"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Thaiger",
+   "title": "Long-stay visa checks help uncover Thai scam network, 39 arrested",
+   "url": "https://thethaiger.com/hot-news/crime/long-stay-visa-checks-help-uncover-thai-scam-network",
+   "published_at": "2026-10-14T03:06:41+00:00",
+   "lang": "en",
+   "topics": [
+    "entry_rules",
+    "safety"
+   ],
+   "official": false
+  },
+  {
+   "source": "Pattaya City Hall",
+   "title": "รายงานคุณภาพอากาศในเขตเมืองพัทยา (บริเวณสวนสาธารณเฉลิมพระเกียรติเขา สทร. 5) ประจำวันที่ 14 ตุลาคม 2569 เมื่อเวลา 06.00 น.",
+   "url": "https://pattaya.go.th/2026/10/14/%e2%9b%85%ef%b8%8f%e0%b8%a3%e0%b8%b2%e0%b8%a2%e0%b8%87%e0%b8%b2%e0%b8%99%e0%b8%84%e0%b8%b8%e0%b8%93%e0%b8%a0%e0%b8%b2%e0%b8%9e%e0%b8%ad%e0%b8%b2%e0%b8%81%e0%b8%b2%e0%b8%a8%e0%b9%83%e0%b8%99-57/",
+   "published_at": "2026-10-14T02:47:25+00:00",
+   "lang": "th",
+   "topics": [
+    "weather",
+    "pattaya"
+   ],
+   "official": true
+  },
+  {
+   "source": "The Thaiger",
+   "title": "Pattaya plane crash damages scrap business, injures pilot",
+   "url": "https://thethaiger.com/news/pattaya/pattaya-plane-crash-damages-scrap-business-injures-pilot",
+   "published_at": "2026-10-14T02:27:34+00:00",
+   "lang": "en",
+   "topics": [
+    "flights",
+    "safety",
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Thai Airways sets 30-day probe into baggage crisis as Chai suspended",
+   "url": "https://www.nationthailand.com/business/corporate/40072235",
+   "published_at": "2026-10-14T01:59:00+00:00",
+   "lang": "en",
+   "topics": [
+    "flights"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Bangkok condos squeezed by floods, weak demand and 65,300-unit glut",
+   "url": "https://www.nationthailand.com/business/property/40072232",
+   "published_at": "2026-10-14T00:59:00+00:00",
+   "lang": "en",
+   "topics": [
+    "weather",
+    "bangkok"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Highlights of the IMF-World Bank Meeting, Oct 14, 2026: Launch of \"Bangkok Blueprint\" to Combat Global Financial Fraud",
+   "url": "https://www.nationthailand.com/business/banking-finance/40072231",
+   "published_at": "2026-10-14T00:32:00+00:00",
+   "lang": "en",
+   "topics": [
+    "safety",
+    "bangkok"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Rain forecast for 70% of central Thailand on October 14",
+   "url": "https://www.nationthailand.com/news/general/40072229",
+   "published_at": "2026-10-14T00:04:00+00:00",
+   "lang": "en",
+   "topics": [
+    "weather"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Drug Suspect Rams Pattaya Gas Station Office Fleeing From Police, Escapes Police Roadblock, Arrested After Tires Shot Out, Caught with 20 Grams of Meth",
+   "url": "https://thepattayanews.com/2026/10/14/drug-suspect-rams-pattaya-gas-station-office-fleeing-from-police-escapes-police-roadblock-arrested-after-tires-shot-out-caught-with-20-grams-of-meth/",
+   "published_at": "2026-10-13T21:32:31+00:00",
+   "lang": "en",
+   "topics": [
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Three People Arrested in Pattaya Call Centre Raid Over Alleged Fake Cyber Police Recovery Scam",
+   "url": "https://thepattayanews.com/2026/10/14/three-people-arrested-in-pattaya-call-centre-raid-over-alleged-fake-cyber-police-recovery-scam/",
+   "published_at": "2026-10-13T18:30:13+00:00",
+   "lang": "en",
+   "topics": [
+    "safety",
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Myanmar Worker Arrested After Allegedly Stabbing Friend During Drinking Dispute in Pattaya Area",
+   "url": "https://thepattayanews.com/2026/10/14/myanmar-worker-arrested-after-allegedly-stabbing-friend-during-drinking-dispute-in-pattaya-area/",
+   "published_at": "2026-10-13T18:05:28+00:00",
+   "lang": "en",
+   "topics": [
+    "alcohol",
+    "safety",
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Pattaya Restaurant Owner and Family Give Away Free Meals for Eighth Consecutive Year in Tribute to His Royal Majesty King Rama IX The Great",
+   "url": "https://thepattayanews.com/2026/10/14/pattaya-restaurant-owner-and-family-give-away-free-meals-for-eighth-consecutive-year-in-tribute-to-his-royal-majesty-king-rama-ix-the-great/",
+   "published_at": "2026-10-13T17:23:55+00:00",
+   "lang": "en",
+   "topics": [
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Pattaya Som Tam Vendor Chases Necklace Snatcher, Crashes, and Is Saved by a Passer-By",
+   "url": "https://thepattayanews.com/2026/10/13/pattaya-som-tam-vendor-chases-necklace-snatcher-crashes-and-is-saved-by-a-passer-by/",
+   "published_at": "2026-10-13T15:57:05+00:00",
+   "lang": "en",
+   "topics": [
+    "safety",
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Japan’s Kumamoto rail lines reopen after earthquake damage",
+   "url": "https://www.nationthailand.com/news/world/40072227",
+   "published_at": "2026-10-13T15:12:00+00:00",
+   "lang": "en",
+   "topics": [
+    "safety"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Three-Year-Old Girl Dies After a Reversing Truck Driver Hits Her at a Thepprasit Work Camp in Jomtien",
+   "url": "https://thepattayanews.com/2026/10/13/three-year-old-girl-dies-after-a-reversing-truck-driver-hits-her-at-a-thepprasit-work-camp-in-jomtien/",
+   "published_at": "2026-10-13T14:43:12+00:00",
+   "lang": "en",
+   "topics": [
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Family Party, World-Class Tennis and Spa Escapes: Royal Cliff’s Exciting Autumn in Pattaya",
+   "url": "https://thepattayanews.com/2026/10/13/family-party-world-class-tennis-and-spa-escapes-royal-cliffs-exciting-autumn-in-pattaya/",
+   "published_at": "2026-10-13T12:06:50+00:00",
+   "lang": "en",
+   "topics": [
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "Khaosod English",
+   "title": "Three arrested over Pattaya call-centre scam targeting previous fraud victims",
+   "url": "https://www.khaosodenglish.com/news/crimecourtscalamity/2026/10/13/three-arrested-over-pattaya-call-centre-scam-targeting-previous-fraud-victims/",
+   "published_at": "2026-10-13T11:33:52+00:00",
+   "lang": "en",
+   "topics": [
+    "safety",
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "TMD forecasts 70% rain coverage in Bangkok on October 13–14",
+   "url": "https://www.nationthailand.com/news/general/40072220",
+   "published_at": "2026-10-13T11:24:00+00:00",
+   "lang": "en",
+   "topics": [
+    "weather",
+    "bangkok"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Thaiger",
+   "title": "Hlun Solo autopsy finds alcohol but no signs of assault",
+   "url": "https://thethaiger.com/news/national/hlun-solo-cause-of-death-unclear-new-test-results",
+   "published_at": "2026-10-13T10:41:47+00:00",
+   "lang": "en",
+   "topics": [
+    "alcohol",
+    "safety"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Singapore AQI hits 194 amid Indonesian haze on October 13",
+   "url": "https://www.nationthailand.com/news/asean/40072215",
+   "published_at": "2026-10-13T10:29:00+00:00",
+   "lang": "en",
+   "topics": [
+    "weather"
+   ],
+   "official": false
+  },
+  {
+   "source": "Khaosod English",
+   "title": "Thai-German pilot injured in small plane crash near Pattaya airfield",
+   "url": "https://www.khaosodenglish.com/news/2026/10/13/thai-german-pilot-injured-in-small-plane-crash-near-pattaya-airfield/",
+   "published_at": "2026-10-13T10:15:03+00:00",
+   "lang": "en",
+   "topics": [
+    "flights",
+    "safety",
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Pickup Truck Crashes into Streetlight in Pattaya, Driver Leaves Scene Before Returning in Fresh Clothes",
+   "url": "https://thepattayanews.com/2026/10/13/pickup-truck-crashes-into-streetlight-in-pattaya-driver-leaves-scene-before-returning-in-fresh-clothes/",
+   "published_at": "2026-10-13T10:05:46+00:00",
+   "lang": "en",
+   "topics": [
+    "safety",
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Pattaya Police Sweep 10 Abandoned Buildings in Soi Thepprasit, Detain 24 People",
+   "url": "https://thepattayanews.com/2026/10/13/pattaya-police-sweep-10-abandoned-buildings-in-soi-thepprasit-detain-24-people/",
+   "published_at": "2026-10-13T09:39:45+00:00",
+   "lang": "en",
+   "topics": [
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Thaiger",
+   "title": "Finance Ministry defends 1,000-baht departure tax amid backlash",
+   "url": "https://thethaiger.com/news/national/finance-ministry-defends-1000-baht-departure-tax-backlash",
+   "published_at": "2026-10-13T09:31:13+00:00",
+   "lang": "en",
+   "topics": [
+    "entry_rules"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Thailand’s inbound flights to rise 5.8% and domestic fare cuts to start",
+   "url": "https://www.nationthailand.com/news/tourism/40072211",
+   "published_at": "2026-10-13T09:18:00+00:00",
+   "lang": "en",
+   "topics": [
+    "flights"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Floods still hit 20 provinces and Bangkok, affecting 2.45m people",
+   "url": "https://www.nationthailand.com/news/general/40072210",
+   "published_at": "2026-10-13T08:47:00+00:00",
+   "lang": "en",
+   "topics": [
+    "weather",
+    "bangkok"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Small Plane Crashes Off the End of Burapha Thit Runway Near Pattaya, Thai/German Pilot Hurt",
+   "url": "https://thepattayanews.com/2026/10/13/small-plane-crashes-off-the-end-of-burapha-thit-runway-near-pattaya-thai-german-pilot-hurt/",
+   "published_at": "2026-10-13T08:41:06+00:00",
+   "lang": "en",
+   "topics": [
+    "flights",
+    "safety",
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Suvarnabhumi and Don Mueang end free flood parking on October 13–14",
+   "url": "https://www.nationthailand.com/news/general/40072209",
+   "published_at": "2026-10-13T08:07:00+00:00",
+   "lang": "en",
+   "topics": [
+    "flights",
+    "weather",
+    "bangkok"
+   ],
+   "official": false
+  },
   {
    "source": "Nation Thailand",
    "title": "Thai police report 39 scam arrests at October 13 briefing",
@@ -72,6 +516,17 @@
    "official": false
   },
   {
+   "source": "The Phuket News",
+   "title": "Samkong Shrine deity procession draws crowds",
+   "url": "https://www.thephuketnews.com/samkong-shrine-deity-procession-draws-crowds-101902.php",
+   "published_at": "2026-10-13T04:51:00+00:00",
+   "lang": "en",
+   "topics": [
+    "events"
+   ],
+   "official": false
+  },
+  {
    "source": "Nation Thailand",
    "title": "Behind the Care Home Bars | The Disclosed EP.26",
    "url": "https://www.nationthailand.com/vdo/the-disclosed/40072195",
@@ -102,6 +557,18 @@
    "lang": "en",
    "topics": [
     "events"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Phuket News",
+   "title": "Police seize 22 motorbikes in Veg Fest youth crackdown",
+   "url": "https://www.thephuketnews.com/police-seize-22-motorbikes-in-veg-fest-youth-crackdown-101901.php",
+   "published_at": "2026-10-13T04:26:00+00:00",
+   "lang": "en",
+   "topics": [
+    "events",
+    "safety"
    ],
    "official": false
   },
@@ -540,28 +1007,6 @@
   },
   {
    "source": "Nation Thailand",
-   "title": "TMD forecasts rain in 70% of southern Thailand on October 12",
-   "url": "https://www.nationthailand.com/news/general/40072132",
-   "published_at": "2026-10-12T00:03:00+00:00",
-   "lang": "en",
-   "topics": [
-    "weather"
-   ],
-   "official": false
-  },
-  {
-   "source": "Nation Thailand",
-   "title": "Government warns 15 provinces of flash floods on October 11–13",
-   "url": "https://www.nationthailand.com/news/general/40072130",
-   "published_at": "2026-10-11T11:00:00+00:00",
-   "lang": "en",
-   "topics": [
-    "weather"
-   ],
-   "official": false
-  },
-  {
-   "source": "Nation Thailand",
    "title": "Yemen’s Houthis renew warning to avoid Saudi Arabia’s airports",
    "url": "https://www.nationthailand.com/news/world/40072129",
    "published_at": "2026-10-11T10:51:00+00:00",
@@ -580,18 +1025,6 @@
    "topics": [
     "events",
     "phuket"
-   ],
-   "official": false
-  },
-  {
-   "source": "Nation Thailand",
-   "title": "Thai floods still affect 3.14 million people in 21 provinces and Bangkok as of October 11",
-   "url": "https://www.nationthailand.com/news/general/40072128",
-   "published_at": "2026-10-11T09:45:00+00:00",
-   "lang": "en",
-   "topics": [
-    "weather",
-    "bangkok"
    ],
    "official": false
   },
@@ -653,17 +1086,6 @@
    "official": false
   },
   {
-   "source": "Nation Thailand",
-   "title": "Thailand issues flash flood alerts for Phetchaburi and Ratchaburi",
-   "url": "https://www.nationthailand.com/news/general/40072122",
-   "published_at": "2026-10-11T07:15:00+00:00",
-   "lang": "en",
-   "topics": [
-    "weather"
-   ],
-   "official": false
-  },
-  {
    "source": "The Thaiger",
    "title": "Two Nigerian men arrested after cocaine found in Pattaya condo",
    "url": "https://thethaiger.com/news/pattaya/two-nigerian-men-arrested-cocaine-pattaya-condo",
@@ -686,18 +1108,6 @@
    "official": false
   },
   {
-   "source": "Nation Thailand",
-   "title": "TMD advisory No 9 warns 5 Thai provinces of very heavy rain on October 11",
-   "url": "https://www.nationthailand.com/news/general/40072117",
-   "published_at": "2026-10-11T06:24:00+00:00",
-   "lang": "en",
-   "topics": [
-    "safety",
-    "weather"
-   ],
-   "official": false
-  },
-  {
    "source": "The Thaiger",
    "title": "31 test positive for drugs in Khao San Road bar raid",
    "url": "https://thethaiger.com/hot-news/crime/31-test-positive-for-drugs-in-khao-san-road-bar-raid",
@@ -707,41 +1117,6 @@
     "alcohol",
     "safety",
     "bangkok"
-   ],
-   "official": false
-  },
-  {
-   "source": "Nation Thailand",
-   "title": "Heavy rain hits southern Thailand as western reservoirs reach 96%",
-   "url": "https://www.nationthailand.com/news/general/40072114",
-   "published_at": "2026-10-11T03:36:00+00:00",
-   "lang": "en",
-   "topics": [
-    "weather"
-   ],
-   "official": false
-  },
-  {
-   "source": "Nation Thailand",
-   "title": "Bangkok air quality remains good as Chatuchak records highest PM2.5",
-   "url": "https://www.nationthailand.com/thailand/bangkok/40072112",
-   "published_at": "2026-10-11T02:33:00+00:00",
-   "lang": "en",
-   "topics": [
-    "weather",
-    "bangkok"
-   ],
-   "official": false
-  },
-  {
-   "source": "Nation Thailand",
-   "title": "Singapore air quality deteriorates due to Indonesian forest fires",
-   "url": "https://www.nationthailand.com/news/world/40072110",
-   "published_at": "2026-10-11T02:21:00+00:00",
-   "lang": "en",
-   "topics": [
-    "safety",
-    "weather"
    ],
    "official": false
   },
@@ -776,17 +1151,6 @@
    "lang": "en",
    "topics": [
     "flights"
-   ],
-   "official": false
-  },
-  {
-   "source": "Nation Thailand",
-   "title": "Thailand forecasts unsettled weather and heavy to very heavy rain",
-   "url": "https://www.nationthailand.com/news/general/40072104",
-   "published_at": "2026-10-11T00:15:00+00:00",
-   "lang": "en",
-   "topics": [
-    "weather"
    ],
    "official": false
   },
@@ -930,39 +1294,6 @@
    "official": false
   },
   {
-   "source": "The Pattaya News",
-   "title": "Pattaya Reviews a Naklua Market Redesign and a 30-Rai Stray-Dog Shelter",
-   "url": "https://thepattayanews.com/2026/10/10/pattaya-reviews-a-naklua-market-redesign-and-a-30-rai-stray-dog-shelter/",
-   "published_at": "2026-10-09T17:00:41+00:00",
-   "lang": "en",
-   "topics": [
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Pattaya News",
-   "title": "Pattaya Mayor Checks Underground-Cable Work, a Four-Lane Overlay, and School Footbridges",
-   "url": "https://thepattayanews.com/2026/10/09/pattaya-mayor-checks-underground-cable-work-a-four-lane-overlay-and-school-footbridges/",
-   "published_at": "2026-10-09T16:52:02+00:00",
-   "lang": "en",
-   "topics": [
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Pattaya News",
-   "title": "Pattaya Surveys About 70 Rai of Encroached Public Land for a Community Park",
-   "url": "https://thepattayanews.com/2026/10/09/pattaya-surveys-about-70-rai-of-encroached-public-land-for-a-community-park/",
-   "published_at": "2026-10-09T16:41:38+00:00",
-   "lang": "en",
-   "topics": [
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
    "source": "TAT Newsroom",
    "title": "TAT welcomes Thai Vietjet Air inaugural Kuala Lumpur-Bangkok service",
    "url": "https://www.tatnews.org/2026/10/tat-welcomes-thai-vietjet-air-inaugural-kuala-lumpur-bangkok-service/",
@@ -987,18 +1318,6 @@
    "official": false
   },
   {
-   "source": "The Pattaya News",
-   "title": "Pattaya Mayor Orders 24-Hour Watch as Heavy-Rain Alert Covers Chonburi",
-   "url": "https://thepattayanews.com/2026/10/09/pattaya-mayor-orders-24-hour-watch-as-heavy-rain-alert-covers-chonburi/",
-   "published_at": "2026-10-09T08:49:23+00:00",
-   "lang": "en",
-   "topics": [
-    "weather",
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
    "source": "Pattaya City Hall",
    "title": "เมืองพัทยาเดินหน้าพัฒนาที่ดินสาธารณะนาเกลือกว่า 70 ไร่ มุ่งสร้างพื้นที่สันทนาการเพื่อชุมชนและเยาวชน(9 ตุลาคม 2569)",
    "url": "https://pattaya.go.th/2026/10/09/%e0%b9%80%e0%b8%a1%e0%b8%b7%e0%b8%ad%e0%b8%87%e0%b8%9e%e0%b8%b1%e0%b8%97%e0%b8%a2%e0%b8%b2%e0%b9%80%e0%b8%94%e0%b8%b4%e0%b8%99%e0%b8%ab%e0%b8%99%e0%b9%89%e0%b8%b2%e0%b8%9e%e0%b8%b1%e0%b8%92%e0%b8%99-3/",
@@ -1008,18 +1327,6 @@
     "pattaya"
    ],
    "official": true
-  },
-  {
-   "source": "The Pattaya News",
-   "title": "Pattaya Police Oversight Panel Donates Flood Supplies Worth More Than 30,000 Baht",
-   "url": "https://thepattayanews.com/2026/10/09/pattaya-police-oversight-panel-donates-flood-supplies-worth-more-than-30000-baht/",
-   "published_at": "2026-10-09T08:18:48+00:00",
-   "lang": "en",
-   "topics": [
-    "weather",
-    "pattaya"
-   ],
-   "official": false
   },
   {
    "source": "TAT Newsroom",
@@ -1055,17 +1362,6 @@
    "official": false
   },
   {
-   "source": "The Pattaya News",
-   "title": "What Makes Learning at MIS International School Pattaya Different?",
-   "url": "https://thepattayanews.com/2026/10/09/what-makes-learning-at-mis-different/",
-   "published_at": "2026-10-09T07:03:52+00:00",
-   "lang": "en",
-   "topics": [
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
    "source": "Pattaya City Hall",
    "title": "นายกเมืองพัทยาต้อนรับผู้บริหารแกร็บ ประเทศไทย ร่วมขับเคลื่อนการเดินทางและการท่องเที่ยวสู่ Smart City",
    "url": "https://pattaya.go.th/2026/10/09/%e2%9d%87%ef%b8%8f-%e0%b8%99%e0%b8%b2%e0%b8%a2%e0%b8%81%e0%b9%80%e0%b8%a1%e0%b8%b7%e0%b8%ad%e0%b8%87%e0%b8%9e%e0%b8%b1%e0%b8%97%e0%b8%a2%e0%b8%b2%e0%b8%95%e0%b9%89%e0%b8%ad%e0%b8%99%e0%b8%a3%e0%b8%b1/",
@@ -1075,17 +1371,6 @@
     "pattaya"
    ],
    "official": true
-  },
-  {
-   "source": "The Pattaya News",
-   "title": "Royal Thai Immigration Arrests Wanted Fugitive Chinese Bank Manager in Pattaya Condo After Seven-year Overstay",
-   "url": "https://thepattayanews.com/2026/10/09/royal-thai-immigration-arrests-wanted-fugitive-chinese-bank-manager-in-pattaya-condo-after-seven-year-overstay/",
-   "published_at": "2026-10-09T06:55:04+00:00",
-   "lang": "en",
-   "topics": [
-    "pattaya"
-   ],
-   "official": false
   },
   {
    "source": "The Thaiger",
@@ -1146,17 +1431,6 @@
    "official": false
   },
   {
-   "source": "The Pattaya News",
-   "title": "Pattaya Motorcycle Taxi Driver Says Sedan Driver Followed Him and Raised a Gun-Like Object",
-   "url": "https://thepattayanews.com/2026/10/09/pattaya-motorcycle-taxi-driver-says-sedan-driver-followed-him-and-raised-a-gun-like-object/",
-   "published_at": "2026-10-08T17:53:02+00:00",
-   "lang": "en",
-   "topics": [
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
    "source": "The Thaiger",
    "title": "Thai candy floss wrapped mid-flight draws Peking duck jokes",
    "url": "https://thethaiger.com/news/roti-sai-mai-mistaken-for-peking-duck-draws-laughs",
@@ -1164,41 +1438,6 @@
    "lang": "en",
    "topics": [
     "flights"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Pattaya News",
-   "title": "Six-Wheel Truck Rear-Ends Sidecar Motorcycle Near Pattaya, Injuring Two People",
-   "url": "https://thepattayanews.com/2026/10/08/six-wheel-truck-rear-ends-sidecar-motorcycle-near-pattaya-injuring-two-people/",
-   "published_at": "2026-10-08T11:12:34+00:00",
-   "lang": "en",
-   "topics": [
-    "safety",
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Pattaya News",
-   "title": "Pattaya Police Raid Seafood Restaurant, Arrest 18 People in Upstairs Gambling Den",
-   "url": "https://thepattayanews.com/2026/10/08/pattaya-police-raid-seafood-restaurant-arrest-18-people-in-upstairs-gambling-den/",
-   "published_at": "2026-10-08T10:29:14+00:00",
-   "lang": "en",
-   "topics": [
-    "safety",
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Pattaya News",
-   "title": "Tyson Fury Inspiration for Young Fighters: Meliá Pattaya Hotel Packs a Punch with Muay Thai",
-   "url": "https://thepattayanews.com/2026/10/08/tyson-fury-inspiration-for-young-fighters-melia-pattaya-hotel-packs-a-punch-with-muay-thai/",
-   "published_at": "2026-10-08T09:59:56+00:00",
-   "lang": "en",
-   "topics": [
-    "pattaya"
    ],
    "official": false
   },
@@ -1415,29 +1654,6 @@
    "topics": [
     "cannabis",
     "bangkok"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Thaiger",
-   "title": "Pattaya opens more public spaces to street performers",
-   "url": "https://thethaiger.com/news/pattaya/pattaya-opens-more-public-spaces-street-performers",
-   "published_at": "2026-10-07T04:38:09+00:00",
-   "lang": "en",
-   "topics": [
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Thaiger",
-   "title": "Gunmen raid foreigner’s Pattaya home, steal nearly 30m baht",
-   "url": "https://thethaiger.com/news/pattaya/gunmen-raid-foreigner-chon-buri-home-steal-30m-baht",
-   "published_at": "2026-10-07T02:56:36+00:00",
-   "lang": "en",
-   "topics": [
-    "safety",
-    "pattaya"
    ],
    "official": false
   },
@@ -1703,17 +1919,6 @@
   },
   {
    "source": "The Thaiger",
-   "title": "Pattaya vendor reports gunfire after sexual advance rejected",
-   "url": "https://thethaiger.com/news/pattaya/pattaya-vendor-reports-gunfire-after-sexual-advance-rejected",
-   "published_at": "2026-10-05T06:43:28+00:00",
-   "lang": "en",
-   "topics": [
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Thaiger",
    "title": "Suvarnabhumi Airport customs officers uncover millions hidden in luggage",
    "url": "https://thethaiger.com/news/bangkok/suvarnabhumi-airport-seizes-56-million-baht-from-2-foreigners",
    "published_at": "2026-10-05T06:41:07+00:00",
@@ -1743,18 +1948,6 @@
    "lang": "en",
    "topics": [
     "statistics"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Thaiger",
-   "title": "Heavy rain warning for Pattaya, with risk of flash floods",
-   "url": "https://thethaiger.com/news/pattaya/heavy-rain-warning-pattaya-east-thailand-flash-floods",
-   "published_at": "2026-10-05T05:05:04+00:00",
-   "lang": "en",
-   "topics": [
-    "weather",
-    "pattaya"
    ],
    "official": false
   },
@@ -1838,51 +2031,6 @@
     "bangkok"
    ],
    "official": false
-  },
-  {
-   "source": "The Thaiger",
-   "title": "Pattaya rider returns Indian tourist’s wallet with 16,000 baht",
-   "url": "https://thethaiger.com/news/pattaya/pattaya-rider-returns-indian-tourist-wallet-16000-baht",
-   "published_at": "2026-10-04T08:52:14+00:00",
-   "lang": "en",
-   "topics": [
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Thaiger",
-   "title": "Pattaya Russian siblings’ mother says police kept her in the dark",
-   "url": "https://thethaiger.com/news/national/russian-siblings-mother-police-kept-dark",
-   "published_at": "2026-10-04T06:57:32+00:00",
-   "lang": "en",
-   "topics": [
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Thaiger",
-   "title": "AirAsia CEO admits cash squeeze but says airline is not closing",
-   "url": "https://thethaiger.com/news/business/airasia-ceo-admits-cash-squeeze-but-says-airline-is-not-closing",
-   "published_at": "2026-10-04T05:00:04+00:00",
-   "lang": "en",
-   "topics": [
-    "flights"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Thaiger",
-   "title": "Suvarnabhumi baggage backlog tied to outsourced ground staff",
-   "url": "https://thethaiger.com/news/national/suvarnabhumi-baggage-backlog-tied-to-outsourced-ground-staff",
-   "published_at": "2026-10-04T02:00:26+00:00",
-   "lang": "en",
-   "topics": [
-    "flights",
-    "bangkok"
-   ],
-   "official": false
   }
  ],
  "sources": [
@@ -1897,14 +2045,14 @@
    "name": "The Pattaya News",
    "endpoint": "https://thepattayanews.com/wp-json/wp/v2/posts",
    "ok": true,
-   "count": 76,
+   "count": 82,
    "error": null
   },
   {
    "name": "Pattaya City Hall",
    "endpoint": "https://pattaya.go.th/wp-json/wp/v2/posts",
    "ok": true,
-   "count": 31,
+   "count": 32,
    "error": null
   },
   {
@@ -1918,28 +2066,28 @@
    "name": "The Thaiger",
    "endpoint": "https://thethaiger.com/wp-json/wp/v2/posts",
    "ok": true,
-   "count": 96,
+   "count": 100,
    "error": null
   },
   {
    "name": "Khaosod English",
    "endpoint": "https://www.khaosodenglish.com/feed/",
    "ok": true,
-   "count": 6,
+   "count": 7,
    "error": null
   },
   {
    "name": "The Phuket News",
    "endpoint": "https://www.thephuketnews.com/rss-xml/news.xml",
    "ok": true,
-   "count": 4,
+   "count": 6,
    "error": null
   },
   {
    "name": "Nation Thailand",
    "endpoint": "https://api.nationthailand.com/sitemap/latest",
    "ok": true,
-   "count": 35,
+   "count": 38,
    "error": null
   }
  ],

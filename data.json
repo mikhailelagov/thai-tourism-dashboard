@@ -1,45 +1,24 @@
 {
- "built_at": "2026-10-13T08:24:34+00:00",
+ "built_at": "2026-10-14T06:40:53+00:00",
  "score_kind": "weather_calendar_model",
  "score_note_ru": "Модель условий из погоды, праздников, цены нефти и курсов валют, а не измерение спроса",
  "stale": false,
- "updated_at": "2026-10-13T08:24:34+00:00",
+ "updated_at": "2026-10-14T06:40:53+00:00",
  "regions": {
   "bangkok": [
    {
-    "iso": "2026-10-13",
-    "tmax": 32,
-    "mm": 8.2,
-    "pop": 63,
-    "score": 51,
-    "parts": {
-     "weather": 45.3,
-     "event": 0.0,
-     "holiday_th": 6.0,
-     "holiday_abroad": 0.0,
-     "fuel": -1.4,
-     "fx": 0.7
-    },
-    "event": {
-     "en": "Anniversary of the Death of King Bhumibol",
-     "ru": "День памяти короля Пхумипона"
-    },
-    "missing": false,
-    "alcohol_ban": false
-   },
-   {
     "iso": "2026-10-14",
     "tmax": 31,
-    "mm": 13.6,
-    "pop": 85,
-    "score": 43,
+    "mm": 7.4,
+    "pop": 96,
+    "score": 44,
     "parts": {
-     "weather": 43.8,
+     "weather": 44.8,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -1.4,
-     "fx": 0.7
+     "fx": 0.6
     },
     "event": null,
     "missing": false,
@@ -48,16 +27,16 @@
    {
     "iso": "2026-10-15",
     "tmax": 31,
-    "mm": 15.3,
-    "pop": 87,
-    "score": 43,
+    "mm": 3.1,
+    "pop": 83,
+    "score": 45,
     "parts": {
-     "weather": 43.5,
+     "weather": 45.9,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -1.4,
-     "fx": 0.7
+     "fx": 0.6
     },
     "event": null,
     "missing": false,
@@ -65,17 +44,17 @@
    },
    {
     "iso": "2026-10-16",
-    "tmax": 31,
-    "mm": 11.4,
-    "pop": 94,
-    "score": 43,
+    "tmax": 32,
+    "mm": 8.8,
+    "pop": 83,
+    "score": 44,
     "parts": {
-     "weather": 44.1,
+     "weather": 44.8,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -1.4,
-     "fx": 0.7
+     "fx": 0.6
     },
     "event": null,
     "missing": false,
@@ -84,26 +63,8 @@
    {
     "iso": "2026-10-17",
     "tmax": 31,
-    "mm": 9.1,
-    "pop": 86,
-    "score": 44,
-    "parts": {
-     "weather": 44.7,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": -1.4,
-     "fx": 0.7
-    },
-    "event": null,
-    "missing": false,
-    "alcohol_ban": false
-   },
-   {
-    "iso": "2026-10-18",
-    "tmax": 31,
-    "mm": 7.3,
-    "pop": 82,
+    "mm": 6.6,
+    "pop": 89,
     "score": 44,
     "parts": {
      "weather": 45.1,
@@ -111,7 +72,25 @@
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -1.4,
-     "fx": 0.7
+     "fx": 0.6
+    },
+    "event": null,
+    "missing": false,
+    "alcohol_ban": false
+   },
+   {
+    "iso": "2026-10-18",
+    "tmax": 32,
+    "mm": 5.2,
+    "pop": 82,
+    "score": 45,
+    "parts": {
+     "weather": 45.5,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": -1.4,
+     "fx": 0.6
     },
     "event": null,
     "missing": false,
@@ -120,16 +99,16 @@
    {
     "iso": "2026-10-19",
     "tmax": 31,
-    "mm": 3.0,
-    "pop": 73,
-    "score": 45,
+    "mm": 5.5,
+    "pop": 92,
+    "score": 44,
     "parts": {
-     "weather": 46.1,
+     "weather": 45.3,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -1.4,
-     "fx": 0.7
+     "fx": 0.6
     },
     "event": null,
     "missing": false,
@@ -137,17 +116,35 @@
    },
    {
     "iso": "2026-10-20",
-    "tmax": 30,
-    "mm": 5.4,
+    "tmax": 31,
+    "mm": 2.6,
     "pop": 73,
-    "score": 46,
+    "score": 47,
     "parts": {
-     "weather": 45.6,
+     "weather": 46.2,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 1.5,
      "fuel": -1.4,
-     "fx": 0.7
+     "fx": 0.6
+    },
+    "event": null,
+    "missing": false,
+    "alcohol_ban": false
+   },
+   {
+    "iso": "2026-10-21",
+    "tmax": 32,
+    "mm": 1.2,
+    "pop": 73,
+    "score": 46,
+    "parts": {
+     "weather": 46.5,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": -1.4,
+     "fx": 0.6
     },
     "event": null,
     "missing": false,
@@ -156,39 +153,18 @@
   ],
   "pattaya": [
    {
-    "iso": "2026-10-13",
-    "tmax": 31,
-    "mm": 2.6,
-    "pop": 69,
-    "score": 32,
-    "parts": {
-     "weather": 26.7,
-     "event": 0.0,
-     "holiday_th": 6.0,
-     "holiday_abroad": 0.0,
-     "fuel": -1.4,
-     "fx": 0.7
-    },
-    "event": {
-     "en": "Anniversary of the Death of King Bhumibol",
-     "ru": "День памяти короля Пхумипона"
-    },
-    "missing": false,
-    "alcohol_ban": false
-   },
-   {
     "iso": "2026-10-14",
-    "tmax": 29,
-    "mm": 12.9,
-    "pop": 100,
-    "score": 21,
+    "tmax": 30,
+    "mm": 18.3,
+    "pop": 98,
+    "score": 19,
     "parts": {
-     "weather": 22.0,
+     "weather": 20.1,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -1.4,
-     "fx": 0.7
+     "fx": 0.6
     },
     "event": null,
     "missing": false,
@@ -197,16 +173,16 @@
    {
     "iso": "2026-10-15",
     "tmax": 30,
-    "mm": 9.8,
+    "mm": 8.7,
     "pop": 96,
-    "score": 22,
+    "score": 23,
     "parts": {
-     "weather": 23.2,
+     "weather": 23.6,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -1.4,
-     "fx": 0.7
+     "fx": 0.6
     },
     "event": null,
     "missing": false,
@@ -215,62 +191,8 @@
    {
     "iso": "2026-10-16",
     "tmax": 30,
-    "mm": 13.3,
+    "mm": 6.7,
     "pop": 100,
-    "score": 21,
-    "parts": {
-     "weather": 21.8,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": -1.4,
-     "fx": 0.7
-    },
-    "event": null,
-    "missing": false,
-    "alcohol_ban": false
-   },
-   {
-    "iso": "2026-10-17",
-    "tmax": 29,
-    "mm": 10.6,
-    "pop": 98,
-    "score": 22,
-    "parts": {
-     "weather": 22.9,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": -1.4,
-     "fx": 0.7
-    },
-    "event": null,
-    "missing": false,
-    "alcohol_ban": false
-   },
-   {
-    "iso": "2026-10-18",
-    "tmax": 29,
-    "mm": 14.4,
-    "pop": 92,
-    "score": 21,
-    "parts": {
-     "weather": 21.7,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": -1.4,
-     "fx": 0.7
-    },
-    "event": null,
-    "missing": false,
-    "alcohol_ban": false
-   },
-   {
-    "iso": "2026-10-19",
-    "tmax": 28,
-    "mm": 7.0,
-    "pop": 96,
     "score": 23,
     "parts": {
      "weather": 24.2,
@@ -278,7 +200,61 @@
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -1.4,
-     "fx": 0.7
+     "fx": 0.6
+    },
+    "event": null,
+    "missing": false,
+    "alcohol_ban": false
+   },
+   {
+    "iso": "2026-10-17",
+    "tmax": 30,
+    "mm": 8.6,
+    "pop": 100,
+    "score": 23,
+    "parts": {
+     "weather": 23.5,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": -1.4,
+     "fx": 0.6
+    },
+    "event": null,
+    "missing": false,
+    "alcohol_ban": false
+   },
+   {
+    "iso": "2026-10-18",
+    "tmax": 30,
+    "mm": 13.1,
+    "pop": 95,
+    "score": 21,
+    "parts": {
+     "weather": 22.1,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": -1.4,
+     "fx": 0.6
+    },
+    "event": null,
+    "missing": false,
+    "alcohol_ban": false
+   },
+   {
+    "iso": "2026-10-19",
+    "tmax": 30,
+    "mm": 7.8,
+    "pop": 100,
+    "score": 23,
+    "parts": {
+     "weather": 23.8,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": -1.4,
+     "fx": 0.6
     },
     "event": null,
     "missing": false,
@@ -286,17 +262,35 @@
    },
    {
     "iso": "2026-10-20",
-    "tmax": 27,
-    "mm": 9.2,
+    "tmax": 29,
+    "mm": 6.7,
     "pop": 90,
-    "score": 24,
+    "score": 25,
     "parts": {
-     "weather": 23.6,
+     "weather": 24.5,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 1.5,
      "fuel": -1.4,
-     "fx": 0.7
+     "fx": 0.6
+    },
+    "event": null,
+    "missing": false,
+    "alcohol_ban": false
+   },
+   {
+    "iso": "2026-10-21",
+    "tmax": 29,
+    "mm": 3.6,
+    "pop": 88,
+    "score": 25,
+    "parts": {
+     "weather": 25.7,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": -1.4,
+     "fx": 0.6
     },
     "event": null,
     "missing": false,
@@ -305,39 +299,18 @@
   ],
   "phuket": [
    {
-    "iso": "2026-10-13",
-    "tmax": 31,
-    "mm": 5.4,
-    "pop": 100,
-    "score": 40,
-    "parts": {
-     "weather": 35.0,
-     "event": 0.0,
-     "holiday_th": 6.0,
-     "holiday_abroad": 0.0,
-     "fuel": -1.4,
-     "fx": 0.7
-    },
-    "event": {
-     "en": "Anniversary of the Death of King Bhumibol",
-     "ru": "День памяти короля Пхумипона"
-    },
-    "missing": false,
-    "alcohol_ban": false
-   },
-   {
     "iso": "2026-10-14",
-    "tmax": 29,
-    "mm": 9.0,
-    "pop": 92,
-    "score": 33,
+    "tmax": 28,
+    "mm": 14.0,
+    "pop": 78,
+    "score": 31,
     "parts": {
-     "weather": 33.7,
+     "weather": 31.9,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -1.4,
-     "fx": 0.7
+     "fx": 0.6
     },
     "event": null,
     "missing": false,
@@ -346,16 +319,16 @@
    {
     "iso": "2026-10-15",
     "tmax": 30,
-    "mm": 3.3,
-    "pop": 82,
+    "mm": 4.1,
+    "pop": 78,
     "score": 36,
     "parts": {
-     "weather": 36.8,
+     "weather": 36.6,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -1.4,
-     "fx": 0.7
+     "fx": 0.6
     },
     "event": null,
     "missing": false,
@@ -363,17 +336,17 @@
    },
    {
     "iso": "2026-10-16",
-    "tmax": 31,
-    "mm": 2.9,
-    "pop": 78,
-    "score": 36,
+    "tmax": 30,
+    "mm": 11.7,
+    "pop": 82,
+    "score": 32,
     "parts": {
-     "weather": 37.2,
+     "weather": 32.9,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -1.4,
-     "fx": 0.7
+     "fx": 0.6
     },
     "event": null,
     "missing": false,
@@ -381,17 +354,17 @@
    },
    {
     "iso": "2026-10-17",
-    "tmax": 29,
-    "mm": 13.8,
-    "pop": 81,
-    "score": 31,
+    "tmax": 30,
+    "mm": 16.1,
+    "pop": 98,
+    "score": 29,
     "parts": {
-     "weather": 31.9,
+     "weather": 30.1,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -1.4,
-     "fx": 0.7
+     "fx": 0.6
     },
     "event": null,
     "missing": false,
@@ -399,17 +372,17 @@
    },
    {
     "iso": "2026-10-18",
-    "tmax": 29,
-    "mm": 15.2,
-    "pop": 91,
-    "score": 30,
+    "tmax": 30,
+    "mm": 10.0,
+    "pop": 92,
+    "score": 32,
     "parts": {
-     "weather": 30.8,
+     "weather": 33.2,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -1.4,
-     "fx": 0.7
+     "fx": 0.6
     },
     "event": null,
     "missing": false,
@@ -418,16 +391,16 @@
    {
     "iso": "2026-10-19",
     "tmax": 29,
-    "mm": 28.4,
-    "pop": 91,
+    "mm": 30.8,
+    "pop": 94,
     "score": 24,
     "parts": {
-     "weather": 24.6,
+     "weather": 24.4,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -1.4,
-     "fx": 0.7
+     "fx": 0.6
     },
     "event": null,
     "missing": false,
@@ -435,17 +408,35 @@
    },
    {
     "iso": "2026-10-20",
-    "tmax": 28,
-    "mm": 14.8,
-    "pop": 81,
+    "tmax": 29,
+    "mm": 14.6,
+    "pop": 90,
     "score": 32,
     "parts": {
-     "weather": 31.4,
+     "weather": 31.1,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 1.5,
      "fuel": -1.4,
-     "fx": 0.7
+     "fx": 0.6
+    },
+    "event": null,
+    "missing": false,
+    "alcohol_ban": false
+   },
+   {
+    "iso": "2026-10-21",
+    "tmax": 29,
+    "mm": 4.7,
+    "pop": 77,
+    "score": 36,
+    "parts": {
+     "weather": 36.4,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": -1.4,
+     "fx": 0.6
     },
     "event": null,
     "missing": false,
@@ -454,39 +445,18 @@
   ],
   "krabi": [
    {
-    "iso": "2026-10-13",
-    "tmax": 32,
-    "mm": 12.8,
-    "pop": 100,
-    "score": 38,
-    "parts": {
-     "weather": 32.5,
-     "event": 0.0,
-     "holiday_th": 6.0,
-     "holiday_abroad": 0.0,
-     "fuel": -1.4,
-     "fx": 0.7
-    },
-    "event": {
-     "en": "Anniversary of the Death of King Bhumibol",
-     "ru": "День памяти короля Пхумипона"
-    },
-    "missing": false,
-    "alcohol_ban": false
-   },
-   {
     "iso": "2026-10-14",
-    "tmax": 31,
-    "mm": 9.7,
-    "pop": 100,
-    "score": 33,
+    "tmax": 28,
+    "mm": 13.1,
+    "pop": 96,
+    "score": 32,
     "parts": {
-     "weather": 34.1,
+     "weather": 32.6,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -1.4,
-     "fx": 0.7
+     "fx": 0.6
     },
     "event": null,
     "missing": false,
@@ -494,17 +464,17 @@
    },
    {
     "iso": "2026-10-15",
-    "tmax": 30,
-    "mm": 9.1,
+    "tmax": 31,
+    "mm": 8.5,
     "pop": 100,
     "score": 34,
     "parts": {
-     "weather": 34.4,
+     "weather": 34.8,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -1.4,
-     "fx": 0.7
+     "fx": 0.6
     },
     "event": null,
     "missing": false,
@@ -513,16 +483,16 @@
    {
     "iso": "2026-10-16",
     "tmax": 32,
-    "mm": 9.2,
-    "pop": 98,
+    "mm": 8.1,
+    "pop": 100,
     "score": 34,
     "parts": {
-     "weather": 34.5,
+     "weather": 35.0,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -1.4,
-     "fx": 0.7
+     "fx": 0.6
     },
     "event": null,
     "missing": false,
@@ -531,16 +501,16 @@
    {
     "iso": "2026-10-17",
     "tmax": 31,
-    "mm": 11.6,
-    "pop": 98,
-    "score": 32,
+    "mm": 15.0,
+    "pop": 100,
+    "score": 31,
     "parts": {
-     "weather": 33.2,
+     "weather": 31.4,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -1.4,
-     "fx": 0.7
+     "fx": 0.6
     },
     "event": null,
     "missing": false,
@@ -548,17 +518,17 @@
    },
    {
     "iso": "2026-10-18",
-    "tmax": 30,
-    "mm": 17.2,
+    "tmax": 31,
+    "mm": 21.8,
     "pop": 100,
-    "score": 29,
+    "score": 27,
     "parts": {
-     "weather": 30.2,
+     "weather": 27.9,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -1.4,
-     "fx": 0.7
+     "fx": 0.6
     },
     "event": null,
     "missing": false,
@@ -567,16 +537,16 @@
    {
     "iso": "2026-10-19",
     "tmax": 30,
-    "mm": 28.7,
-    "pop": 96,
-    "score": 24,
+    "mm": 23.7,
+    "pop": 98,
+    "score": 26,
     "parts": {
-     "weather": 24.6,
+     "weather": 27.0,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -1.4,
-     "fx": 0.7
+     "fx": 0.6
     },
     "event": null,
     "missing": false,
@@ -584,17 +554,35 @@
    },
    {
     "iso": "2026-10-20",
-    "tmax": 26,
-    "mm": 23.2,
+    "tmax": 29,
+    "mm": 26.1,
     "pop": 98,
-    "score": 28,
+    "score": 26,
     "parts": {
-     "weather": 27.2,
+     "weather": 25.7,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 1.5,
      "fuel": -1.4,
-     "fx": 0.7
+     "fx": 0.6
+    },
+    "event": null,
+    "missing": false,
+    "alcohol_ban": false
+   },
+   {
+    "iso": "2026-10-21",
+    "tmax": 29,
+    "mm": 6.6,
+    "pop": 98,
+    "score": 35,
+    "parts": {
+     "weather": 35.8,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": -1.4,
+     "fx": 0.6
     },
     "event": null,
     "missing": false,
@@ -603,39 +591,18 @@
   ],
   "samui": [
    {
-    "iso": "2026-10-13",
-    "tmax": 29,
-    "mm": 7.9,
-    "pop": 91,
-    "score": 42,
-    "parts": {
-     "weather": 36.7,
-     "event": 0.0,
-     "holiday_th": 6.0,
-     "holiday_abroad": 0.0,
-     "fuel": -1.4,
-     "fx": 0.7
-    },
-    "event": {
-     "en": "Anniversary of the Death of King Bhumibol",
-     "ru": "День памяти короля Пхумипона"
-    },
-    "missing": false,
-    "alcohol_ban": false
-   },
-   {
     "iso": "2026-10-14",
-    "tmax": 29,
-    "mm": 7.2,
-    "pop": 90,
-    "score": 36,
+    "tmax": 30,
+    "mm": 5.1,
+    "pop": 95,
+    "score": 37,
     "parts": {
-     "weather": 37.1,
+     "weather": 37.9,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -1.4,
-     "fx": 0.7
+     "fx": 0.6
     },
     "event": null,
     "missing": false,
@@ -643,17 +610,17 @@
    },
    {
     "iso": "2026-10-15",
-    "tmax": 29,
-    "mm": 8.8,
-    "pop": 99,
-    "score": 35,
+    "tmax": 30,
+    "mm": 4.0,
+    "pop": 86,
+    "score": 38,
     "parts": {
-     "weather": 35.9,
+     "weather": 38.9,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -1.4,
-     "fx": 0.7
+     "fx": 0.6
     },
     "event": null,
     "missing": false,
@@ -662,16 +629,16 @@
    {
     "iso": "2026-10-16",
     "tmax": 30,
-    "mm": 5.3,
-    "pop": 84,
+    "mm": 3.9,
+    "pop": 90,
     "score": 38,
     "parts": {
-     "weather": 38.3,
+     "weather": 38.8,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -1.4,
-     "fx": 0.7
+     "fx": 0.6
     },
     "event": null,
     "missing": false,
@@ -679,17 +646,17 @@
    },
    {
     "iso": "2026-10-17",
-    "tmax": 29,
-    "mm": 4.7,
-    "pop": 98,
+    "tmax": 30,
+    "mm": 6.2,
+    "pop": 90,
     "score": 37,
     "parts": {
-     "weather": 38.0,
+     "weather": 37.6,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -1.4,
-     "fx": 0.7
+     "fx": 0.6
     },
     "event": null,
     "missing": false,
@@ -698,16 +665,16 @@
    {
     "iso": "2026-10-18",
     "tmax": 29,
-    "mm": 11.4,
-    "pop": 97,
+    "mm": 10.4,
+    "pop": 98,
     "score": 34,
     "parts": {
-     "weather": 34.6,
+     "weather": 35.1,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -1.4,
-     "fx": 0.7
+     "fx": 0.6
     },
     "event": null,
     "missing": false,
@@ -716,16 +683,16 @@
    {
     "iso": "2026-10-19",
     "tmax": 28,
-    "mm": 9.6,
+    "mm": 10.9,
     "pop": 96,
-    "score": 35,
+    "score": 34,
     "parts": {
-     "weather": 35.6,
+     "weather": 34.9,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -1.4,
-     "fx": 0.7
+     "fx": 0.6
     },
     "event": null,
     "missing": false,
@@ -734,16 +701,34 @@
    {
     "iso": "2026-10-20",
     "tmax": 28,
-    "mm": 8.0,
+    "mm": 12.3,
     "pop": 86,
-    "score": 38,
+    "score": 35,
     "parts": {
-     "weather": 36.9,
+     "weather": 34.7,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 1.5,
      "fuel": -1.4,
-     "fx": 0.7
+     "fx": 0.6
+    },
+    "event": null,
+    "missing": false,
+    "alcohol_ban": false
+   },
+   {
+    "iso": "2026-10-21",
+    "tmax": 29,
+    "mm": 4.3,
+    "pop": 83,
+    "score": 38,
+    "parts": {
+     "weather": 38.9,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": -1.4,
+     "fx": 0.6
     },
     "event": null,
     "missing": false,
@@ -752,39 +737,18 @@
   ],
   "chiangmai": [
    {
-    "iso": "2026-10-13",
-    "tmax": 31,
-    "mm": 0.6,
-    "pop": 75,
-    "score": 41,
-    "parts": {
-     "weather": 35.7,
-     "event": 0.0,
-     "holiday_th": 6.0,
-     "holiday_abroad": 0.0,
-     "fuel": -1.4,
-     "fx": 0.7
-    },
-    "event": {
-     "en": "Anniversary of the Death of King Bhumibol",
-     "ru": "День памяти короля Пхумипона"
-    },
-    "missing": false,
-    "alcohol_ban": false
-   },
-   {
     "iso": "2026-10-14",
     "tmax": 30,
-    "mm": 5.0,
-    "pop": 92,
-    "score": 33,
+    "mm": 1.5,
+    "pop": 88,
+    "score": 34,
     "parts": {
-     "weather": 33.9,
+     "weather": 35.0,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -1.4,
-     "fx": 0.7
+     "fx": 0.6
     },
     "event": null,
     "missing": false,
@@ -793,8 +757,8 @@
    {
     "iso": "2026-10-15",
     "tmax": 30,
-    "mm": 1.1,
-    "pop": 53,
+    "mm": 2.5,
+    "pop": 35,
     "score": 35,
     "parts": {
      "weather": 36.2,
@@ -802,7 +766,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -1.4,
-     "fx": 0.7
+     "fx": 0.6
     },
     "event": null,
     "missing": false,
@@ -810,17 +774,17 @@
    },
    {
     "iso": "2026-10-16",
-    "tmax": 30,
-    "mm": 0.7,
-    "pop": 47,
+    "tmax": 31,
+    "mm": 1.4,
+    "pop": 37,
     "score": 36,
     "parts": {
-     "weather": 36.4,
+     "weather": 36.5,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -1.4,
-     "fx": 0.7
+     "fx": 0.6
     },
     "event": null,
     "missing": false,
@@ -829,16 +793,16 @@
    {
     "iso": "2026-10-17",
     "tmax": 30,
-    "mm": 3.9,
+    "mm": 3.6,
     "pop": 52,
     "score": 35,
     "parts": {
-     "weather": 35.3,
+     "weather": 35.4,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -1.4,
-     "fx": 0.7
+     "fx": 0.6
     },
     "event": null,
     "missing": false,
@@ -847,16 +811,16 @@
    {
     "iso": "2026-10-18",
     "tmax": 30,
-    "mm": 0.6,
-    "pop": 35,
-    "score": 36,
+    "mm": 0.0,
+    "pop": 22,
+    "score": 37,
     "parts": {
-     "weather": 36.8,
+     "weather": 37.4,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -1.4,
-     "fx": 0.7
+     "fx": 0.6
     },
     "event": null,
     "missing": false,
@@ -866,15 +830,15 @@
     "iso": "2026-10-19",
     "tmax": 31,
     "mm": 0.0,
-    "pop": 9,
-    "score": 37,
+    "pop": 25,
+    "score": 36,
     "parts": {
-     "weather": 37.7,
+     "weather": 37.3,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -1.4,
-     "fx": 0.7
+     "fx": 0.6
     },
     "event": null,
     "missing": false,
@@ -883,16 +847,34 @@
    {
     "iso": "2026-10-20",
     "tmax": 31,
-    "mm": 0.0,
+    "mm": 1.2,
     "pop": 20,
     "score": 38,
     "parts": {
-     "weather": 37.4,
+     "weather": 37.1,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 1.5,
      "fuel": -1.4,
-     "fx": 0.7
+     "fx": 0.6
+    },
+    "event": null,
+    "missing": false,
+    "alcohol_ban": false
+   },
+   {
+    "iso": "2026-10-21",
+    "tmax": 32,
+    "mm": 0.0,
+    "pop": 37,
+    "score": 36,
+    "parts": {
+     "weather": 36.9,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": -1.4,
+     "fx": 0.6
     },
     "event": null,
     "missing": false,
@@ -902,17 +884,17 @@
  },
  "fx": {
   "USD": 1,
-  "AUD": 1.436501,
-  "CNY": 6.70582,
-  "EUR": 0.895156,
-  "GBP": 0.756615,
-  "INR": 95.90693,
-  "KRW": 1333.744079,
-  "MYR": 4.083336,
-  "RUB": 84.043643,
-  "THB": 33.618266
+  "AUD": 1.432809,
+  "CNY": 6.705025,
+  "EUR": 0.893421,
+  "GBP": 0.754721,
+  "INR": 95.319179,
+  "KRW": 1340.880416,
+  "MYR": 4.08583,
+  "RUB": 83.733665,
+  "THB": 33.576409
  },
- "fx_time": "2026-10-12T23:57:31+00:00",
+ "fx_time": "2026-10-14T00:02:32+00:00",
  "fx_source": "ExchangeRate-API (open.er-api.com)",
  "fx_source_url": "https://open.er-api.com/v6/latest/USD",
  "fx_note_ru": "Справочный курс (mid-market), не курс обменника",
@@ -922,77 +904,77 @@
   "brent_source": "FRED DCOILBRENTEU (U.S. EIA, Europe Brent spot FOB)",
   "brent_source_url": "https://fred.stlouisfed.org/series/DCOILBRENTEU",
   "brent_delta": 0.0355,
-  "usdthb": 33.615,
-  "usdthb_date": "2026-10-12",
+  "usdthb": 33.59,
+  "usdthb_date": "2026-10-13",
   "usdthb_source": "ECB euro reference rates (cross via EUR)",
-  "usdthb_delta": -0.0006,
+  "usdthb_delta": -0.0009,
   "purchasing_power": {
    "CNY": {
     "name": "Китай",
     "share": 17.46,
-    "thb": 5.022584,
-    "delta": 0.0067,
-    "date": "2026-10-12",
+    "thb": 5.018026,
+    "delta": 0.0055,
+    "date": "2026-10-13",
     "source": "ECB"
    },
    "MYR": {
     "name": "Малайзия",
     "share": 13.06,
-    "thb": 8.230953,
-    "delta": 0.0048,
-    "date": "2026-10-12",
+    "thb": 8.220676,
+    "delta": 0.0033,
+    "date": "2026-10-13",
     "source": "ECB"
    },
    "RUB": {
     "name": "Россия",
     "share": 4.09,
-    "thb": 0.399462,
-    "delta": 0.0081,
-    "date": "2026-10-13",
+    "thb": 0.39969,
+    "delta": 0.0083,
+    "date": "2026-10-14",
     "source": "Bank of Russia"
    },
    "INR": {
     "name": "Индия",
     "share": 8.34,
-    "thb": 0.35098,
-    "delta": 0.0081,
-    "date": "2026-10-12",
+    "thb": 0.352533,
+    "delta": 0.0122,
+    "date": "2026-10-13",
     "source": "ECB"
    },
    "KRW": {
     "name": "Южная Корея",
     "share": 3.55,
-    "thb": 0.025216,
-    "delta": 0.0229,
-    "date": "2026-10-12",
+    "thb": 0.02504,
+    "delta": 0.0147,
+    "date": "2026-10-13",
     "source": "ECB"
    },
    "GBP": {
     "name": "Британия",
     "share": 2.33,
-    "thb": 44.490873,
+    "thb": 44.494435,
     "delta": 0.0,
-    "date": "2026-10-12",
+    "date": "2026-10-13",
     "source": "ECB"
    },
    "EUR": {
     "name": "Еврозона",
     "share": 3.58,
-    "thb": 37.585,
-    "delta": -0.0116,
-    "date": "2026-10-12",
+    "thb": 37.58,
+    "delta": -0.0111,
+    "date": "2026-10-13",
     "source": "ECB"
    },
    "AUD": {
     "name": "Австралия",
     "share": 3.13,
-    "thb": 23.443738,
+    "thb": 23.439157,
     "delta": -0.0037,
-    "date": "2026-10-12",
+    "date": "2026-10-13",
     "source": "ECB"
    }
   },
-  "pp_composite": 0.0056,
+  "pp_composite": 0.005,
   "weights": {
    "kind": "arrivals_share_pct",
    "unit": "% of international arrivals",
@@ -1005,14 +987,6 @@
   }
  },
  "holidays": {
-  "2026-10-13": [
-   {
-    "country": "TH",
-    "name": "Anniversary of the Death of King Bhumibol",
-    "type": "public_holiday",
-    "ru": "День памяти короля Пхумипона"
-   }
-  ],
   "2026-10-18": [
    {
     "country": "CN",
@@ -1052,37 +1026,37 @@
    "name": "Open-Meteo forecast API (CC BY 4.0)",
    "url": "https://open-meteo.com/",
    "ok": true,
-   "retrieved_at": "2026-10-13T08:24:34+00:00"
+   "retrieved_at": "2026-10-14T06:40:53+00:00"
   },
   "holidays": {
    "name": "Google Calendar public holiday feeds",
    "url": "https://calendar.google.com/",
    "ok": true,
-   "retrieved_at": "2026-10-13T08:24:34+00:00"
+   "retrieved_at": "2026-10-14T06:40:53+00:00"
   },
   "fx": {
    "name": "ExchangeRate-API (open.er-api.com)",
    "url": "https://open.er-api.com/v6/latest/USD",
    "ok": true,
-   "retrieved_at": "2026-10-13T08:24:34+00:00"
+   "retrieved_at": "2026-10-14T06:40:53+00:00"
   },
   "ecb": {
    "name": "ECB euro reference rates",
    "url": "https://data.ecb.europa.eu/data/datasets/EXR",
    "ok": true,
-   "retrieved_at": "2026-10-13T08:24:34+00:00"
+   "retrieved_at": "2026-10-14T06:40:53+00:00"
   },
   "cbr": {
    "name": "Bank of Russia",
    "url": "https://www.cbr.ru/currency_base/dynamics/",
    "ok": true,
-   "retrieved_at": "2026-10-13T08:24:34+00:00"
+   "retrieved_at": "2026-10-14T06:40:53+00:00"
   },
   "brent": {
    "name": "FRED DCOILBRENTEU (U.S. EIA, Europe Brent spot FOB)",
    "url": "https://fred.stlouisfed.org/series/DCOILBRENTEU",
    "ok": true,
-   "retrieved_at": "2026-10-13T08:24:34+00:00"
+   "retrieved_at": "2026-10-14T06:40:53+00:00"
   }
  },
  "errors": []
