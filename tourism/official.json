@@ -1,11 +1,11 @@
 {
- "built_at": "2026-10-16T06:20:14+00:00",
+ "built_at": "2026-10-16T15:50:29+00:00",
  "arrivals": {
   "source": "MOTS",
   "source_url": "https://www.mots.go.th/news/category/817",
   "file_url": "https://www.mots.go.th/images/v2022_cf32d908-111e-4269-802d-18807cd65884.xlsx",
   "published_at": "2026-10-01T03:40:30+00:00",
-  "retrieved_at": "2026-10-16T06:20:14+00:00",
+  "retrieved_at": "2026-10-16T15:50:29+00:00",
   "period": "2026-09",
   "status": "preliminary",
   "total": {
@@ -183,7 +183,7 @@
   "source_url": "https://www.mots.go.th/news/category/820",
   "file_url": "https://www.mots.go.th/images/v2022_ad5f0d02-7a0f-4036-9373-77b1e974802d.xlsx",
   "published_at": "2026-10-13T08:30:37+00:00",
-  "retrieved_at": "2026-10-16T06:20:14+00:00",
+  "retrieved_at": "2026-10-16T15:50:29+00:00",
   "period": "2026-09",
   "status": "preliminary",
   "sheet": "ก.ย.2569p",
@@ -301,7 +301,7 @@
   "source": "BOT",
   "source_url": "https://app.bot.or.th/BTWS_STAT/statistics/ReportPage.aspx?language=eng&reportID=875",
   "file_url": "https://app.bot.or.th/BTWS_STAT/statistics/DownloadFile.aspx?file=EC_EI_028_S2_ENG_ALL.XLSX",
-  "retrieved_at": "2026-10-16T06:20:14+00:00",
+  "retrieved_at": "2026-10-16T15:50:29+00:00",
   "published_at": "2026-10-14T10:39:00+07:00",
   "latest_period": "2026-08",
   "rows_written": 0,
@@ -312,25 +312,25 @@
    "source": "ECB",
    "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
    "data_url": "https://data-api.ecb.europa.eu/service/data/EXR/D.THB+USD+CNY+INR+KRW+MYR+GBP.EUR.SP00.A?lastNObservations=5&format=csvdata",
-   "retrieved_at": "2026-10-16T06:20:14+00:00",
-   "date": "2026-10-15",
+   "retrieved_at": "2026-10-16T15:50:29+00:00",
+   "date": "2026-10-16",
    "thb_per": {
-    "USD": 33.5403,
-    "EUR": 37.592,
-    "CNY": 5.01273,
-    "INR": 0.352841,
-    "KRW": 0.0249204,
-    "MYR": 8.21557,
-    "GBP": 44.4297
+    "USD": 33.4151,
+    "EUR": 37.602,
+    "CNY": 4.99761,
+    "INR": 0.351868,
+    "KRW": 0.0250846,
+    "MYR": 8.18698,
+    "GBP": 44.5601
    }
   },
   "cbr": {
    "source": "Bank of Russia",
    "source_url": "https://www.cbr.ru/currency_base/daily/",
    "data_url": "https://www.cbr.ru/scripts/XML_daily.asp",
-   "retrieved_at": "2026-10-16T06:20:14+00:00",
-   "date": "2026-10-16",
-   "rub_per_thb": 2.49724
+   "retrieved_at": "2026-10-16T15:50:29+00:00",
+   "date": "2026-10-17",
+   "rub_per_thb": 2.493
   }
  },
  "errors": []
