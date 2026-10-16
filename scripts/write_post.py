@@ -621,9 +621,9 @@ def generate(digest, usage, today=None):
         thinking={"type": "adaptive"},
         output_config={"effort": "high"},
         tools=[
-            {"type": "web_search_20260209", "name": "web_search", "max_uses": MAX_SEARCHES,
-             "user_location": {"type": "approximate", "country": "TH", "city": "Pattaya",
-                               "timezone": "Asia/Bangkok"}},
+            # No user_location: the API rejects country TH ("Country code TH is
+            # not supported", 2026-10-16); the material already sets the place.
+            {"type": "web_search_20260209", "name": "web_search", "max_uses": MAX_SEARCHES},
             {"type": "web_fetch_20260209", "name": "web_fetch", "max_uses": MAX_FETCHES,
              "max_content_tokens": 8000},
         ],
