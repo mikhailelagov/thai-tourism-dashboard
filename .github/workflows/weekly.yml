@@ -100,10 +100,12 @@ jobs:
           DASHBOARD_URL: ${{ vars.DASHBOARD_URL }}
         run: |
           if [ "$PREVIEW" = "true" ]; then
-            # Never fall through to the channel when the personal chat is unset.
+            # Never fall through to the channel when the personal chat is unset:
+            # print the post to this log instead and send nothing.
             if [ -z "$TELEGRAM_ADMIN_CHAT_ID" ]; then
-              echo "::error::Предпросмотр требует секрет TELEGRAM_ADMIN_CHAT_ID"
-              exit 1
+              echo "::notice::TELEGRAM_ADMIN_CHAT_ID не задан: пост выведен в журнал, в Telegram ничего не отправлено"
+              DRY_RUN=1 TELEGRAM_CHAT_ID=preview python3 scripts/send_telegram.py
+              exit 0
             fi
             export TELEGRAM_CHAT_ID="$TELEGRAM_ADMIN_CHAT_ID"
           else
