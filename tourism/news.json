@@ -1,7 +1,110 @@
 {
- "built_at": "2026-10-16T15:54:04+00:00",
+ "built_at": "2026-10-17T06:08:54+00:00",
  "window_days": 10,
  "items": [
+  {
+   "source": "Nation Thailand",
+   "title": "Thai Airways approves compensation for 3 passenger groups hit by September 26–30 floods",
+   "url": "https://www.nationthailand.com/business/corporate/40072401",
+   "published_at": "2026-10-17T04:49:00+00:00",
+   "lang": "en",
+   "topics": [
+    "flights",
+    "weather"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Team Europe backs 20-year plan to cut Bangkok and Chao Phraya flood risks",
+   "url": "https://www.nationthailand.com/sustaination/40072396",
+   "published_at": "2026-10-17T03:22:00+00:00",
+   "lang": "en",
+   "topics": [
+    "weather",
+    "bangkok"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "TMD issues fresh warning for heavy to very heavy rain across parts of Thailand on October 18–25",
+   "url": "https://www.nationthailand.com/news/general/40072395",
+   "published_at": "2026-10-17T03:09:00+00:00",
+   "lang": "en",
+   "topics": [
+    "weather"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Thaiger",
+   "title": "Students arrive for China trip to find no flight tickets booked",
+   "url": "https://thethaiger.com/news/bangkok/students-arrive-for-china-trip-to-find-no-flight-tickets-booked",
+   "published_at": "2026-10-17T02:00:35+00:00",
+   "lang": "en",
+   "topics": [
+    "flights"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Rayong raid finds at least 2,500 tonnes of e-waste and scrap",
+   "url": "https://www.nationthailand.com/news/general/40072391",
+   "published_at": "2026-10-17T01:35:00+00:00",
+   "lang": "en",
+   "topics": [
+    "safety"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Thai scam crackdown and Bangkok Blueprint impress US Fed chief Kevin Warsh",
+   "url": "https://www.nationthailand.com/business/economy/40072390",
+   "published_at": "2026-10-17T01:15:00+00:00",
+   "lang": "en",
+   "topics": [
+    "safety",
+    "bangkok"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Region 2 Police Inspect Large Pattaya Nightclub, Six Patrons Test Positive for Drugs",
+   "url": "https://thepattayanews.com/2026/10/17/region-2-police-inspect-large-pattaya-nightclub-six-patrons-test-positive-for-drugs/",
+   "published_at": "2026-10-17T00:14:42+00:00",
+   "lang": "en",
+   "topics": [
+    "alcohol",
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "TMD forecasts heavy rain in 3 Thai regions on October 17, with wider downpours expected on October 21–25",
+   "url": "https://www.nationthailand.com/news/general/40072387",
+   "published_at": "2026-10-16T23:12:00+00:00",
+   "lang": "en",
+   "topics": [
+    "weather"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Indonesia to accept foreign assistance to fight forest fires",
+   "url": "https://www.nationthailand.com/news/world/40072384",
+   "published_at": "2026-10-16T15:56:00+00:00",
+   "lang": "en",
+   "topics": [
+    "safety"
+   ],
+   "official": false
+  },
   {
    "source": "The Pattaya News",
    "title": "Banglamung Switches Motorcycle Taxi Vests from Orange to Blue for 5,281 Drivers",
@@ -22,6 +125,18 @@
    "topics": [
     "safety",
     "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Phuket News",
+   "title": "PHUKET XTRA: VIDEO: New Airport Baggage Search Rules Now In Effect Nationwide || Oct 16",
+   "url": "https://www.thephuketnews.com/phuket-xtra-video-new-airport-baggage-search-rules-now-in-effect-nationwide-oct-16-101944.php",
+   "published_at": "2026-10-16T11:15:00+00:00",
+   "lang": "en",
+   "topics": [
+    "flights",
+    "phuket"
    ],
    "official": false
   },
@@ -212,7 +327,7 @@
    "source": "The Phuket News",
    "title": "Ratsada signs flood prevention pact with seven agencies",
    "url": "https://www.thephuketnews.com/ratsada-signs-flood-prevention-pact-with-seven-agencies-101938.php",
-   "published_at": "2026-10-16T04:37:00+00:00",
+   "published_at": "2026-10-16T04:53:00+00:00",
    "lang": "en",
    "topics": [
     "weather"
@@ -246,7 +361,7 @@
    "source": "The Phuket News",
    "title": "More than 2,000 spirit mediums join Jui Tui procession",
    "url": "https://www.thephuketnews.com/more-than-2-000-spirit-mediums-join-jui-tui-procession-101934.php",
-   "published_at": "2026-10-16T03:38:00+00:00",
+   "published_at": "2026-10-16T03:52:00+00:00",
    "lang": "en",
    "topics": [
     "events"
@@ -262,6 +377,17 @@
    "topics": [
     "weather",
     "chiangmai"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Phuket News",
+   "title": "Death toll attributed to floods at 76 since mid-September",
+   "url": "https://www.thephuketnews.com/death-toll-attributed-to-floods-at-76-since-mid-september-101930.php",
+   "published_at": "2026-10-16T03:00:00+00:00",
+   "lang": "en",
+   "topics": [
+    "weather"
    ],
    "official": false
   },
@@ -354,17 +480,6 @@
    "lang": "en",
    "topics": [
     "pattaya"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Phuket News",
-   "title": "Death toll attributed to floods at 76 since mid-September",
-   "url": "https://www.thephuketnews.com/death-toll-attributed-to-floods-at-76-since-mid-september-101930.php",
-   "published_at": "2026-10-15T12:17:00+00:00",
-   "lang": "en",
-   "topics": [
-    "weather"
    ],
    "official": false
   },
@@ -651,29 +766,6 @@
    "official": false
   },
   {
-   "source": "Nation Thailand",
-   "title": "Water Office monitors 3 eastern dams ahead of October 15–16 rain",
-   "url": "https://www.nationthailand.com/news/general/40072294",
-   "published_at": "2026-10-15T01:09:00+00:00",
-   "lang": "en",
-   "topics": [
-    "weather"
-   ],
-   "official": false
-  },
-  {
-   "source": "Nation Thailand",
-   "title": "TMD forecasts rain over 60% of Bangkok and nearby areas on October 15–16",
-   "url": "https://www.nationthailand.com/news/general/40072290",
-   "published_at": "2026-10-15T00:04:00+00:00",
-   "lang": "en",
-   "topics": [
-    "weather",
-    "bangkok"
-   ],
-   "official": false
-  },
-  {
    "source": "The Pattaya News",
    "title": "Woman, 25, Swept into Drain While Riding Motorcycle Through Floodwater Near Pattaya, Survives Uninjured",
    "url": "https://thepattayanews.com/2026/10/15/woman-25-swept-into-drain-while-riding-motorcycle-through-floodwater-near-pattaya-survives-uninjured/",
@@ -709,29 +801,6 @@
   },
   {
    "source": "Nation Thailand",
-   "title": "IMF–World Bank talks address growth challenges and online fraud",
-   "url": "https://www.nationthailand.com/business/economy/40072281",
-   "published_at": "2026-10-14T11:49:00+00:00",
-   "lang": "en",
-   "topics": [
-    "safety"
-   ],
-   "official": false
-  },
-  {
-   "source": "Nation Thailand",
-   "title": "Heavy rain forecast for Bangkok and central Thailand according to TMD",
-   "url": "https://www.nationthailand.com/news/general/40072279",
-   "published_at": "2026-10-14T11:22:00+00:00",
-   "lang": "en",
-   "topics": [
-    "weather",
-    "bangkok"
-   ],
-   "official": false
-  },
-  {
-   "source": "Nation Thailand",
    "title": "Siam Piwat joins FUTURE-READY ECONOMY 2026 as strategic partner for an official side event of the 2026 IMF-World Bank Annual Meetings",
    "url": "https://www.nationthailand.com/pr-news/40072274",
    "published_at": "2026-10-14T10:22:00+00:00",
@@ -754,18 +823,6 @@
    "official": false
   },
   {
-   "source": "Nation Thailand",
-   "title": "Global finance leaders discuss Bangkok Blueprint on digital fraud",
-   "url": "https://www.nationthailand.com/business/economy/40072269",
-   "published_at": "2026-10-14T09:27:00+00:00",
-   "lang": "en",
-   "topics": [
-    "safety",
-    "bangkok"
-   ],
-   "official": false
-  },
-  {
    "source": "Khaosod English",
    "title": "Man in “Udon Police” shirt seen assaulting rescue volunteer was air-con technician, police say",
    "url": "https://www.khaosodenglish.com/featured/2026/10/14/man-in-udon-police-shirt-seen-assaulting-rescue-volunteer-was-air-con-technician-police-say/",
@@ -773,18 +830,6 @@
    "lang": "en",
    "topics": [
     "safety"
-   ],
-   "official": false
-  },
-  {
-   "source": "Nation Thailand",
-   "title": "Thailand launches Bangkok Blueprint to curb digital financial fraud",
-   "url": "https://www.nationthailand.com/business/economy/40072261",
-   "published_at": "2026-10-14T08:03:00+00:00",
-   "lang": "en",
-   "topics": [
-    "safety",
-    "bangkok"
    ],
    "official": false
   },
@@ -807,17 +852,6 @@
    "lang": "en",
    "topics": [
     "weather"
-   ],
-   "official": false
-  },
-  {
-   "source": "Nation Thailand",
-   "title": "OpenAI links Asia’s AI growth to local languages and safety",
-   "url": "https://www.nationthailand.com/business/tech/40072260",
-   "published_at": "2026-10-14T07:50:00+00:00",
-   "lang": "en",
-   "topics": [
-    "safety"
    ],
    "official": false
   },
@@ -1047,18 +1081,6 @@
    "published_at": "2026-10-13T21:32:31+00:00",
    "lang": "en",
    "topics": [
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Pattaya News",
-   "title": "Three People Arrested in Pattaya Call Centre Raid Over Alleged Fake Cyber Police Recovery Scam",
-   "url": "https://thepattayanews.com/2026/10/14/three-people-arrested-in-pattaya-call-centre-raid-over-alleged-fake-cyber-police-recovery-scam/",
-   "published_at": "2026-10-13T18:30:13+00:00",
-   "lang": "en",
-   "topics": [
-    "safety",
     "pattaya"
    ],
    "official": false
@@ -2087,38 +2109,6 @@
     "bangkok"
    ],
    "official": false
-  },
-  {
-   "source": "TAT Newsroom",
-   "title": "Gilded Barges on the River of Kings",
-   "url": "https://www.tatnews.org/2026/10/gilded-barges-on-the-river-of-kings/",
-   "published_at": "2026-10-07T02:55:03+00:00",
-   "lang": "en",
-   "topics": [],
-   "official": true
-  },
-  {
-   "source": "The Thaiger",
-   "title": "Thai passenger recalls terrifying Flydubai flight",
-   "url": "https://thethaiger.com/news/world/aviation/thai-passenger-recalls-flydubai-cockpit-attack-ordeal",
-   "published_at": "2026-10-07T02:42:24+00:00",
-   "lang": "en",
-   "topics": [
-    "flights"
-   ],
-   "official": false
-  },
-  {
-   "source": "Pattaya City Hall",
-   "title": "รายงานคุณภาพอากาศในเขตเมืองพัทยา (บริเวณสวนสาธารณเฉลิมพระเกียรติเขา สทร. 5) ประจำวันที่ 7 ตุลาคม 2569 เมื่อเวลา 06.00 น.",
-   "url": "https://pattaya.go.th/2026/10/07/%e2%9b%85%ef%b8%8f%e0%b8%a3%e0%b8%b2%e0%b8%a2%e0%b8%87%e0%b8%b2%e0%b8%99%e0%b8%84%e0%b8%b8%e0%b8%93%e0%b8%a0%e0%b8%b2%e0%b8%9e%e0%b8%ad%e0%b8%b2%e0%b8%81%e0%b8%b2%e0%b8%a8%e0%b9%83%e0%b8%99-55/",
-   "published_at": "2026-10-07T02:31:21+00:00",
-   "lang": "th",
-   "topics": [
-    "weather",
-    "pattaya"
-   ],
-   "official": true
   }
  ],
  "sources": [
@@ -2126,7 +2116,7 @@
    "name": "TAT Newsroom",
    "endpoint": "https://www.tatnews.org/wp-json/wp/v2/posts",
    "ok": true,
-   "count": 10,
+   "count": 9,
    "error": null
   },
   {
@@ -2154,14 +2144,14 @@
    "name": "The Thaiger",
    "endpoint": "https://thethaiger.com/wp-json/wp/v2/posts",
    "ok": true,
-   "count": 104,
+   "count": 99,
    "error": null
   },
   {
    "name": "Khaosod English",
    "endpoint": "https://www.khaosodenglish.com/feed/",
    "ok": true,
-   "count": 6,
+   "count": 5,
    "error": null
   },
   {
@@ -2175,7 +2165,7 @@
    "name": "Nation Thailand",
    "endpoint": "https://api.nationthailand.com/sitemap/latest",
    "ok": true,
-   "count": 32,
+   "count": 23,
    "error": null
   }
  ],
