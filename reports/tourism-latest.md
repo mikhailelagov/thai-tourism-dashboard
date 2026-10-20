@@ -1,8 +1,8 @@
-# Утренняя сводка по Таиланду — 19.10.2026
-Составлено 19.10.2026 13:48, Asia/Bangkok.
+# Утренняя сводка по Таиланду — 20.10.2026
+Составлено 20.10.2026 13:35, Asia/Bangkok.
 
 ## Камеры за последние 24 часа
-Окно: 18.10.2026 13:48 — 19.10.2026 13:48, Бангкок. Учитываются только проверенные кадры; отсутствие замера не равно нулю.
+Окно: 19.10.2026 13:35 — 20.10.2026 13:35, Бангкок. Учитываются только проверенные кадры; отсутствие замера не равно нулю.
 
 | Направление | Покрытие проверенными кадрами | Последний проверенный кадр | Состояние камер |
 |---|---|---|---|
@@ -13,19 +13,19 @@
 Число людей в отдельном кадре не показывает количество туристов в городе. Прогноз численности и проценты изменения не рассчитываются: нужна сопоставимая история проверенных камер.
 
 ## Погода: сегодня и следующие два дня
-Период 19.10–21.10. [Open-Meteo](https://open-meteo.com/): сбор данных 19.10.2026 13:46, Бангкок; время выпуска модели в файле не сохранено.
+Период 20.10–22.10. [Open-Meteo](https://open-meteo.com/): сбор данных 20.10.2026 13:34, Бангкок; время выпуска модели в файле не сохранено.
 
-- **Паттайя:** 19.10: дождь может мешать прогулкам; нужен вариант под крышей, до 32 °C; 20.10: дождь может мешать прогулкам; нужен вариант под крышей, до 30 °C; 21.10: дождь может мешать прогулкам; нужен вариант под крышей, до 29 °C.
-- **Пхукет:** 19.10: дождь может мешать прогулкам; нужен вариант под крышей, до 29 °C; 20.10: дождь может мешать прогулкам; нужен вариант под крышей, до 29 °C; 21.10: дождь может мешать прогулкам; нужен вариант под крышей, до 29 °C.
-- **Бангкок:** 19.10: дождь может мешать прогулкам; нужен вариант под крышей, до 33 °C; 20.10: дождь может мешать прогулкам; нужен вариант под крышей, до 32 °C; 21.10: дождь может мешать прогулкам; нужен вариант под крышей, до 31 °C.
-- **Краби:** 19.10: дождь может мешать прогулкам; нужен вариант под крышей, до 30 °C; 20.10: дождь может мешать прогулкам; нужен вариант под крышей, до 29 °C; 21.10: дождь может мешать прогулкам; нужен вариант под крышей, до 30 °C.
-- **Самуи:** 19.10: дождь может мешать прогулкам; нужен вариант под крышей, до 29 °C; 20.10: дождь может мешать прогулкам; нужен вариант под крышей, до 30 °C; 21.10: дождь может мешать прогулкам; нужен вариант под крышей, до 29 °C.
-- **Чиангмай:** 19.10: осадки мало ограничивают прогулки, до 32 °C; 20.10: осадки мало ограничивают прогулки, до 32 °C; 21.10: осадки мало ограничивают прогулки, до 32 °C.
+- **Паттайя:** 20.10: дождь может мешать прогулкам; нужен вариант под крышей, до 30 °C; 21.10: дождь может мешать прогулкам; нужен вариант под крышей, до 30 °C; 22.10: дождь может мешать прогулкам; нужен вариант под крышей, до 31 °C.
+- **Пхукет:** 20.10: дождь может мешать прогулкам; нужен вариант под крышей, до 30 °C; 21.10: дождь может мешать прогулкам; нужен вариант под крышей, до 30 °C; 22.10: дождь может мешать прогулкам; нужен вариант под крышей, до 31 °C.
+- **Бангкок:** 20.10: дождь может мешать прогулкам; нужен вариант под крышей, до 33 °C; 21.10: возможны дожди; планировать укрытие, до 32 °C; 22.10: возможны дожди; планировать укрытие, до 32 °C.
+- **Краби:** 20.10: дождь может мешать прогулкам; нужен вариант под крышей, до 29 °C; 21.10: дождь может мешать прогулкам; нужен вариант под крышей, до 31 °C; 22.10: дождь может мешать прогулкам; нужен вариант под крышей, до 32 °C.
+- **Самуи:** 20.10: дождь может мешать прогулкам; нужен вариант под крышей, до 29 °C; 21.10: дождь может мешать прогулкам; нужен вариант под крышей, до 29 °C; 22.10: дождь может мешать прогулкам; нужен вариант под крышей, до 30 °C.
+- **Чиангмай:** 20.10: осадки мало ограничивают прогулки, до 32 °C; 21.10: осадки мало ограничивают прогулки, до 32 °C; 22.10: осадки мало ограничивают прогулки, до 32 °C.
 
 Это условия для активности на улице, а не прогноз туристического спроса.
 
 ## Прибытия иностранцев (MOTS)
-[MOTS](https://www.mots.go.th/news/category/817), [файл XLSX](https://www.mots.go.th/images/v2022_cf32d908-111e-4269-802d-18807cd65884.xlsx): период сентябрь 2026 (2026-09), предварительные данные; опубликовано 01.10.2026 10:40 (Бангкок), 18 дн. назад; задержка публикации 1 дн.; от конца периода до отчёта 19 дн. Получено 19.10.2026 13:46 (Бангкок).
+[MOTS](https://www.mots.go.th/news/category/817), [файл XLSX](https://www.mots.go.th/images/v2022_cf32d908-111e-4269-802d-18807cd65884.xlsx): период сентябрь 2026 (2026-09), предварительные данные; опубликовано 01.10.2026 10:40 (Бангкок), 19 дн. назад; задержка публикации 1 дн.; от конца периода до отчёта 20 дн. Получено 20.10.2026 13:34 (Бангкок).
 
 - **Сентябрь 2026: 2 000 339** прибытий, −10,5% г/г (2025: 2 235 852).
 - **С начала года (01–09.2026): 23 199 306**, −3,8% г/г (2025: 24 115 325).
@@ -47,7 +47,7 @@
 Прибытия — въезды иностранцев в Таиланд в целом, а не в Паттайю; один человек может въехать несколько раз.
 
 ## Провинции (MOTS)
-[MOTS](https://www.mots.go.th/news/category/820), [файл XLSX](https://www.mots.go.th/images/v2022_ad5f0d02-7a0f-4036-9373-77b1e974802d.xlsx): период сентябрь 2026 (2026-09), предварительные данные; опубликовано 13.10.2026 15:30 (Бангкок), 6 дн. назад; задержка публикации 13 дн.; от конца периода до отчёта 19 дн. Получено 19.10.2026 13:46 (Бангкок).
+[MOTS](https://www.mots.go.th/news/category/820), [файл XLSX](https://www.mots.go.th/images/v2022_ad5f0d02-7a0f-4036-9373-77b1e974802d.xlsx): период сентябрь 2026 (2026-09), предварительные данные; опубликовано 13.10.2026 15:30 (Бангкок), 7 дн. назад; задержка публикации 13 дн.; от конца периода до отчёта 20 дн. Получено 20.10.2026 13:34 (Бангкок).
 
 | Провинция | Загрузка отелей | Иностранные посещения | Доход от посетителей |
 |---|---|---|---|
@@ -62,50 +62,50 @@
 Провинция шире курорта; посещения провинций нельзя складывать и сравнивать с прибытиями в страну. Посещения и доход — оценки MOTS по данным размещения, а не кассовые данные.
 
 ## Опубликованная статистика отелей
-Последняя проверка [BOT](https://app.bot.or.th/BTWS_STAT/statistics/ReportPage.aspx?language=eng&reportID=875): 19.10.2026 13:46 (Бангкок); последний период в отчёте: 2026-08.
+Последняя проверка [BOT](https://app.bot.or.th/BTWS_STAT/statistics/ReportPage.aspx?language=eng&reportID=875): 20.10.2026 13:34 (Бангкок); последний период в отчёте: 2026-08.
 Месячные данные BOT/MOTS; это опубликованные наблюдения, а не оценка сегодняшнего дня.
 
-- **Фактическая загрузка отелей — Центральный регион, включая Бангкок: 70,77%**, период 2026-08; [BOT](https://app.bot.or.th/BTWS_STAT/statistics/ReportPage.aspx?language=eng&reportID=875), отметка публикации/обновления 05.10.2026 15:34 (Бангкок); задержка публикации 35 дн., от конца периода до отчёта 49 дн.; предварительные данные.
-- **Фактическая загрузка отелей — Северный регион: 60,25%**, период 2026-08; [BOT](https://app.bot.or.th/BTWS_STAT/statistics/ReportPage.aspx?language=eng&reportID=875), отметка публикации/обновления 05.10.2026 15:34 (Бангкок); задержка публикации 35 дн., от конца периода до отчёта 49 дн.; предварительные данные.
-- **Фактическая загрузка отелей — Южный регион: 70,3%**, период 2026-08; [BOT](https://app.bot.or.th/BTWS_STAT/statistics/ReportPage.aspx?language=eng&reportID=875), отметка публикации/обновления 05.10.2026 15:34 (Бангкок); задержка публикации 35 дн., от конца периода до отчёта 49 дн.; предварительные данные.
-- **Фактическая загрузка отелей — Весь Таиланд: 68,5%**, период 2026-08; [BOT](https://app.bot.or.th/BTWS_STAT/statistics/ReportPage.aspx?language=eng&reportID=875), отметка публикации/обновления 05.10.2026 15:34 (Бангкок); задержка публикации 35 дн., от конца периода до отчёта 49 дн.; предварительные данные.
-- **Предварительное бронирование на 3 месяца — Центральный регион, включая Бангкок: 24,59%**, период 2026-08; [BOT](https://app.bot.or.th/BTWS_STAT/statistics/ReportPage.aspx?language=eng&reportID=875), отметка публикации/обновления 05.10.2026 15:34 (Бангкок); задержка публикации 35 дн., от конца периода до отчёта 49 дн.; предварительные данные.
-- **Предварительное бронирование на 3 месяца — Северный регион: 12,68%**, период 2026-08; [BOT](https://app.bot.or.th/BTWS_STAT/statistics/ReportPage.aspx?language=eng&reportID=875), отметка публикации/обновления 05.10.2026 15:34 (Бангкок); задержка публикации 35 дн., от конца периода до отчёта 49 дн.; предварительные данные.
-- **Предварительное бронирование на 3 месяца — Южный регион: 22,29%**, период 2026-08; [BOT](https://app.bot.or.th/BTWS_STAT/statistics/ReportPage.aspx?language=eng&reportID=875), отметка публикации/обновления 05.10.2026 15:34 (Бангкок); задержка публикации 35 дн., от конца периода до отчёта 49 дн.; предварительные данные.
-- **Предварительное бронирование на 3 месяца — Весь Таиланд: 18,63%**, период 2026-08; [BOT](https://app.bot.or.th/BTWS_STAT/statistics/ReportPage.aspx?language=eng&reportID=875), отметка публикации/обновления 05.10.2026 15:34 (Бангкок); задержка публикации 35 дн., от конца периода до отчёта 49 дн.; предварительные данные.
+- **Фактическая загрузка отелей — Центральный регион, включая Бангкок: 70,77%**, период 2026-08; [BOT](https://app.bot.or.th/BTWS_STAT/statistics/ReportPage.aspx?language=eng&reportID=875), отметка публикации/обновления 05.10.2026 15:34 (Бангкок); задержка публикации 35 дн., от конца периода до отчёта 50 дн.; предварительные данные.
+- **Фактическая загрузка отелей — Северный регион: 60,25%**, период 2026-08; [BOT](https://app.bot.or.th/BTWS_STAT/statistics/ReportPage.aspx?language=eng&reportID=875), отметка публикации/обновления 05.10.2026 15:34 (Бангкок); задержка публикации 35 дн., от конца периода до отчёта 50 дн.; предварительные данные.
+- **Фактическая загрузка отелей — Южный регион: 70,3%**, период 2026-08; [BOT](https://app.bot.or.th/BTWS_STAT/statistics/ReportPage.aspx?language=eng&reportID=875), отметка публикации/обновления 05.10.2026 15:34 (Бангкок); задержка публикации 35 дн., от конца периода до отчёта 50 дн.; предварительные данные.
+- **Фактическая загрузка отелей — Весь Таиланд: 68,5%**, период 2026-08; [BOT](https://app.bot.or.th/BTWS_STAT/statistics/ReportPage.aspx?language=eng&reportID=875), отметка публикации/обновления 05.10.2026 15:34 (Бангкок); задержка публикации 35 дн., от конца периода до отчёта 50 дн.; предварительные данные.
+- **Предварительное бронирование на 3 месяца — Центральный регион, включая Бангкок: 24,59%**, период 2026-08; [BOT](https://app.bot.or.th/BTWS_STAT/statistics/ReportPage.aspx?language=eng&reportID=875), отметка публикации/обновления 05.10.2026 15:34 (Бангкок); задержка публикации 35 дн., от конца периода до отчёта 50 дн.; предварительные данные.
+- **Предварительное бронирование на 3 месяца — Северный регион: 12,68%**, период 2026-08; [BOT](https://app.bot.or.th/BTWS_STAT/statistics/ReportPage.aspx?language=eng&reportID=875), отметка публикации/обновления 05.10.2026 15:34 (Бангкок); задержка публикации 35 дн., от конца периода до отчёта 50 дн.; предварительные данные.
+- **Предварительное бронирование на 3 месяца — Южный регион: 22,29%**, период 2026-08; [BOT](https://app.bot.or.th/BTWS_STAT/statistics/ReportPage.aspx?language=eng&reportID=875), отметка публикации/обновления 05.10.2026 15:34 (Бангкок); задержка публикации 35 дн., от конца периода до отчёта 50 дн.; предварительные данные.
+- **Предварительное бронирование на 3 месяца — Весь Таиланд: 18,63%**, период 2026-08; [BOT](https://app.bot.or.th/BTWS_STAT/statistics/ReportPage.aspx?language=eng&reportID=875), отметка публикации/обновления 05.10.2026 15:34 (Бангкок); задержка публикации 35 дн., от конца периода до отчёта 50 дн.; предварительные данные.
 
 Широкие регионы статистики нельзя приравнивать к отдельным городам: «Юг» не означает отдельно Пхукет, Самуи или Краби; «Север» — отдельно Чиангмай; «Центр» — отдельно Паттайю или Бангкок. Бронирование на 3 месяца — показатель опубликованного периода, не обещанная будущая загрузка.
 
 ## Новости за 7 дней
-Окно: 12.10.2026 13:48 — 19.10.2026 13:48, Бангкок. Сбор новостей: 19.10.2026 13:46.
-Не обновились: The Pattaya News (timeout); Pattaya City Hall (network\_error); DTAM (Ministry of Public Health) (html\_instead\_of\_data).
+Окно: 13.10.2026 13:35 — 20.10.2026 13:35, Бангкок. Сбор новостей: 20.10.2026 13:34.
+Не обновились: Pattaya City Hall (network\_error); DTAM (Ministry of Public Health) (html\_instead\_of\_data).
 
 **Каннабис**
+- [Bangkok cannabis raid seizes over 5 tonnes, arrests five](https://thethaiger.com/news/bangkok/bangkok-cannabis-raid-seizes-over-5-tonnes-arrests-five) — The Thaiger, 20.10.2026
 - [Man killed in shooting outside Bangkok cannabis shop](https://thethaiger.com/news/bangkok/bangkok-cannabis-shop-shooting-kills-man-suspects-flee) — The Thaiger, 16.10.2026
 
 **Въезд и визы**
+- [Top National Thailand Stories From the Past Week: Departure Tax Proposal Anger Rises, Nene Royal Trademark, and More](https://thepattayanews.com/2026/10/19/top-national-thailand-stories-from-the-past-week-departure-tax-proposal-anger-rises-nene-royal-trademark-and-more/) — The Pattaya News, 19.10.2026
 - [British baby’s UK trip from Koh Tao hit by visa refusal](https://thethaiger.com/news/national/british-babys-uk-trip-from-koh-tao-hit-by-visa-refusal) — The Thaiger, 19.10.2026
 - [Chinese suspect held in Bangkok after 100,000-baht border crossing](https://thethaiger.com/news/bangkok/chinese-suspect-held-in-bangkok-after-illegal-border-crossing) — The Thaiger, 19.10.2026
-- [Five African women arrested for visa overstays on Koh Samui](https://thethaiger.com/hot-news/crime/five-african-women-arrested-visa-overstays-koh-samui) — The Thaiger, 16.10.2026
 
 **Авиасообщение**
+- [TAT welcomes Virgin Atlantic inaugural London Heathrow–Phuket flight](https://www.tatnews.org/2026/10/tat-welcomes-virgin-atlantic-inaugural-london-heathrow-phuket-flight/) — TAT Newsroom, 19.10.2026, официальный источник
+- [Virgin Atlantic begins London–Phuket flights to boost Thai tourism](https://www.nationthailand.com/news/tourism/40072487) — Nation Thailand, 19.10.2026
 - [Affected Thai Airways passengers can now apply for compensation](https://thethaiger.com/news/world/aviation/thai-airways-flood-compensation-claims-open-from-october-16) — The Thaiger, 19.10.2026
-- [AOT signs 25-year deals worth 67.305 billion baht to ease Suvarnabhumi baggage delays](https://www.nationthailand.com/news/tourism/40072443) — Nation Thailand, 18.10.2026
-- [Thai Airways approves compensation for 3 passenger groups hit by September 26–30 floods](https://www.nationthailand.com/business/corporate/40072401) — Nation Thailand, 17.10.2026
 
 **Статистика**
 - [TAT expands ASEAN India+ Shoppers in Thailand 2026 to drive tourism spending](https://www.tatnews.org/2026/10/tat-expands-asean-india-shoppers-in-thailand-2026-to-drive-tourism-spending/) — TAT Newsroom, 16.10.2026, официальный источник
-- [Thailand video news / Thailand falls nearly 13 million tourists short of annual target, Netflix sees Thailand as potential global entertainment powerhouse](https://thethaiger.com/video-podcasts/thailand-video-news-15-10-2026) — The Thaiger, 15.10.2026
-- [Thailand tourist arrivals reach 23.94 million, target still distant](https://thethaiger.com/news/national/thailand-is-12-76-million-visitors-short-of-its-36-7-million-arrival-target) — The Thaiger, 14.10.2026
+- [EV import tax plan tipped to trigger year-end booking rush](https://www.nationthailand.com/business/automobile/40072500) — Nation Thailand, 20.10.2026
+- [Thailand’s foreign arrivals fall 4.12% in year to October 17](https://www.nationthailand.com/news/tourism/40072479) — Nation Thailand, 19.10.2026
 
 **Алкоголь**
 - [Thailand video news / Thailand seeks another 10.5 billion baht for flood victims, Pattaya cafe owner buys suspected burglar a beer before police arrest](https://thethaiger.com/video-podcasts/thailand-video-news-19-10-2026) — The Thaiger, 19.10.2026
-- [Pattaya cafe owner buys suspected burglar beer until police arrive](https://thethaiger.com/news/pattaya/pattaya-cafe-owner-buys-suspected-burglar-beer) — The Thaiger, 18.10.2026
 
-Показано 12 из 137 новостей по темам; заголовки — как у источника, без проверки фактов.
+Показано 12 из 138 новостей по темам; заголовки — как у источника, без проверки фактов.
 
 ## Курсы
-- [ЕЦБ](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html), справочные курсы на 16.10.2026 (пересчёт через евро): 1 USD = 33,42 THB; 1 EUR = 37,6 THB; 1 CNY = 5 THB; 1 INR = 0,3519 THB; 100 KRW = 2,51 THB; 1 MYR = 8,19 THB; 1 GBP = 44,56 THB.
-- [Банк России](https://www.cbr.ru/currency_base/daily/), официальный курс на 17.10.2026: 1 THB = 2,493 RUB (1 RUB = 0,4011 THB).
+- [ЕЦБ](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html), справочные курсы на 19.10.2026 (пересчёт через евро): 1 USD = 33,55 THB; 1 EUR = 37,66 THB; 1 CNY = 5,02 THB; 1 INR = 0,3535 THB; 100 KRW = 2,52 THB; 1 MYR = 8,22 THB; 1 GBP = 44,73 THB.
+- [Банк России](https://www.cbr.ru/currency_base/daily/), официальный курс на 20.10.2026: 1 THB = 2,4708 RUB (1 RUB = 0,4047 THB).
 
 Это официальные справочные курсы, а не котировки обменников.
