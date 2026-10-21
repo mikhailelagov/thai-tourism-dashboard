@@ -1,12 +1,284 @@
 {
- "built_at": "2026-10-20T06:34:58+00:00",
+ "built_at": "2026-10-21T06:33:05+00:00",
  "window_days": 10,
  "items": [
   {
+   "source": "Khaosod English",
+   "title": "Suvarnabhumi denies staff searched passenger’s bag after complaint",
+   "url": "https://www.khaosodenglish.com/featured/2026/10/21/suvarnabhumi-denies-staff-searched-passengers-bag-after-complaint/",
+   "published_at": "2026-10-21T05:26:10+00:00",
+   "lang": "en",
+   "topics": [
+    "flights",
+    "bangkok"
+   ],
+   "official": false
+  },
+  {
    "source": "Nation Thailand",
-   "title": "Thai tourism minister responds to Chinese embassy safety advisory",
-   "url": "https://www.nationthailand.com/news/general/40072511",
-   "published_at": "2026-10-20T05:17:00+00:00",
+   "title": "Chud Thai promoted at Paris airport before UNESCO heritage review",
+   "url": "https://www.nationthailand.com/news/general/40072566",
+   "published_at": "2026-10-21T05:03:00+00:00",
+   "lang": "en",
+   "topics": [
+    "flights"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Sihasak asks Chinese Embassy to keep travel warnings proportionate",
+   "url": "https://www.nationthailand.com/news/tourism/40072565",
+   "published_at": "2026-10-21T04:54:00+00:00",
+   "lang": "en",
+   "topics": [
+    "safety"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Thaiger",
+   "title": "UK court freeze VietJet’s global assets over $250m lease debt",
+   "url": "https://thethaiger.com/news/world/aviation/uk-court-freezes-vietjets-global-assets-over-250m-lease-debt",
+   "published_at": "2026-10-21T04:33:39+00:00",
+   "lang": "en",
+   "topics": [
+    "flights"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Thaiger",
+   "title": "Pattaya motorcyclist killed by train after ignoring railway barrier",
+   "url": "https://thethaiger.com/hot-news/road-deaths/pattaya-motorcyclist-killed-train-railway-barrier",
+   "published_at": "2026-10-21T04:26:24+00:00",
+   "lang": "en",
+   "topics": [
+    "safety",
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Chiang Mai tops 2026 Southeast Asia safety index at 77.9 points",
+   "url": "https://www.nationthailand.com/news/tourism/40072563",
+   "published_at": "2026-10-21T04:07:00+00:00",
+   "lang": "en",
+   "topics": [
+    "safety",
+    "chiangmai"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Vietjet faces worldwide asset freeze over US$250m aircraft leasing debt",
+   "url": "https://www.nationthailand.com/business/corporate/40072556",
+   "published_at": "2026-10-21T01:45:00+00:00",
+   "lang": "en",
+   "topics": [
+    "flights"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Public invited to first full-dress Royal Barge Procession rehearsal",
+   "url": "https://www.nationthailand.com/news/general/40072555",
+   "published_at": "2026-10-21T01:34:00+00:00",
+   "lang": "en",
+   "topics": [
+    "events"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Vibharam Laemchabang Opens International Clinic at Royal Garden Plaza Pattaya",
+   "url": "https://thepattayanews.com/2026/10/21/vibharam-laemchabang-opens-international-clinic-at-royal-garden-plaza-pattaya/",
+   "published_at": "2026-10-20T20:52:42+00:00",
+   "lang": "en",
+   "topics": [
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Piluna Presents Decorative Lighting Concept for Pattaya Parks to Mayor",
+   "url": "https://thepattayanews.com/2026/10/21/piluna-presents-decorative-lighting-concept-for-pattaya-parks-to-mayor/",
+   "published_at": "2026-10-20T19:34:53+00:00",
+   "lang": "en",
+   "topics": [
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Pattaya Officials Meet Naklua Market Vendors on Lighting, Committee, and Major Upgrades",
+   "url": "https://thepattayanews.com/2026/10/21/pattaya-officials-meet-naklua-market-vendors-on-lighting-committee-and-major-upgrades/",
+   "published_at": "2026-10-20T19:29:31+00:00",
+   "lang": "en",
+   "topics": [
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Two Thai Men Plead Guilty to All Charges in Killing of Russian Siblings Near Pattaya, Changing Prior Not Guilty Pleas",
+   "url": "https://thepattayanews.com/2026/10/21/two-thai-men-plead-guilty-to-all-charges-in-killing-of-russian-siblings-near-pattaya-changing-prior-not-guilty-pleas/",
+   "published_at": "2026-10-20T17:10:28+00:00",
+   "lang": "en",
+   "topics": [
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Driver Who Hit About Ten Vehicles at North Pattaya Red Light Tests Negative for Alcohol, Says He Fell Asleep",
+   "url": "https://thepattayanews.com/2026/10/20/driver-who-hit-about-ten-vehicles-at-north-pattaya-red-light-tests-negative-for-alcohol-says-he-fell-asleep/",
+   "published_at": "2026-10-20T16:04:33+00:00",
+   "lang": "en",
+   "topics": [
+    "alcohol",
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Pattaya Advances Plans for His Royal Majesty King Bhumibol Adulyadej the Great Monument at Beachfront Yacht Club Memorial",
+   "url": "https://thepattayanews.com/2026/10/20/pattaya-advances-plans-for-his-royal-majesty-king-bhumibol-adulyadej-the-great-monument-at-beachfront-yacht-club-memorial/",
+   "published_at": "2026-10-20T12:40:37+00:00",
+   "lang": "en",
+   "topics": [
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Local Residents Raise Concerns Over Aggressive Homeless Behaviour in Jomtien and Pattaya",
+   "url": "https://thepattayanews.com/2026/10/20/local-residents-raise-concerns-over-aggressive-homeless-behaviour-in-jomtien-and-pattaya/",
+   "published_at": "2026-10-20T12:23:24+00:00",
+   "lang": "en",
+   "topics": [
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Phuket News",
+   "title": "PHUKET XTRA: VIDEO: Forced Sales Of Foreign Property? 6 Injured In Karon Crash, Cop Hurt In Hit-And-Run || Oct 20",
+   "url": "https://www.thephuketnews.com/phuket-xtra-video-forced-sales-of-foreign-property-6-injured-in-karon-crash-cop-hurt-in-hit-and-run-oct-20-101972.php",
+   "published_at": "2026-10-20T11:57:00+00:00",
+   "lang": "en",
+   "topics": [
+    "safety",
+    "phuket"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Happitat Reinforces Its Position as “The Magical Destination of Happiness” with Six Major Festivals from Halloween to Songkran, Attracting Thai and International Visitors to Celebrate Happiness Throughout the Year",
+   "url": "https://thepattayanews.com/2026/10/20/happitat-reinforces-its-position-as-the-magical-destination-of-happiness-with-six-major-festivals-from-halloween-to-songkran-attracting-thai-and-international-visitors-to-celebrate/",
+   "published_at": "2026-10-20T11:44:37+00:00",
+   "lang": "en",
+   "topics": [
+    "events"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "“Amazing Thailand Global Thai Silk Exhibition” Brings Thai Silk to the Fashion Runway Showcasing Creations by International Designers from Six Regions",
+   "url": "https://thepattayanews.com/2026/10/20/amazing-thailand-global-thai-silk-exhibition-brings-thai-silk-to-the-fashion-runway-showcasing-creations-by-international-designers-from-six-regions/",
+   "published_at": "2026-10-20T11:36:24+00:00",
+   "lang": "en",
+   "topics": [
+    "events"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Pattaya Officials Inspect Three Entertainment Venues and Find No Violations",
+   "url": "https://thepattayanews.com/2026/10/20/pattaya-officials-inspect-three-entertainment-venues-and-find-no-violations/",
+   "published_at": "2026-10-20T11:22:58+00:00",
+   "lang": "en",
+   "topics": [
+    "alcohol",
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Pattaya Police Offer 20,000 Baht Reward for Thief Who Escaped Court Custody",
+   "url": "https://thepattayanews.com/2026/10/20/pattaya-police-offer-20000-baht-reward-for-thief-who-escaped-court-custody/",
+   "published_at": "2026-10-20T10:59:36+00:00",
+   "lang": "en",
+   "topics": [
+    "safety",
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Thaiger",
+   "title": "Two plead guilty in Pattaya Russian siblings murder case",
+   "url": "https://thethaiger.com/news/pattaya/two-plead-guilty-in-pattaya-russian-siblings-murder-case",
+   "published_at": "2026-10-20T10:22:43+00:00",
+   "lang": "en",
+   "topics": [
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Thailand fits royal regalia to Suphannahong for barge procession",
+   "url": "https://www.nationthailand.com/news/general/40072528",
+   "published_at": "2026-10-20T09:54:00+00:00",
+   "lang": "en",
+   "topics": [
+    "events"
+   ],
+   "official": false
+  },
+  {
+   "source": "Khaosod English",
+   "title": "Royal Barge Suphannahong prepared for royal kathin ceremony in Bangkok",
+   "url": "https://www.khaosodenglish.com/life/arts/2026/10/20/royal-barge-suphannahong-prepared-for-royal-kathin-ceremony-in-bangkok/",
+   "published_at": "2026-10-20T08:25:51+00:00",
+   "lang": "en",
+   "topics": [
+    "events",
+    "bangkok"
+   ],
+   "official": false
+  },
+  {
+   "source": "Khaosod English",
+   "title": "Pattaya motorbike taxi riders say blue vests confuse tourists",
+   "url": "https://www.khaosodenglish.com/news/transpo/2026/10/20/pattaya-motorbike-taxi-riders-say-blue-vests-confuse-tourists/",
+   "published_at": "2026-10-20T08:06:51+00:00",
+   "lang": "en",
+   "topics": [
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "Khaosod English",
+   "title": "Nurse found dead after fire destroys hospital staff housing in Uttaradit",
+   "url": "https://www.khaosodenglish.com/featured/2026/10/20/nurse-found-dead-after-fire-destroys-hospital-staff-housing-in-uttaradit/",
+   "published_at": "2026-10-20T07:24:37+00:00",
    "lang": "en",
    "topics": [
     "safety"
@@ -35,13 +307,37 @@
    "official": false
   },
   {
-   "source": "The Thaiger",
-   "title": "Pattaya motorcycle taxis say new blue vests cost them passengers",
-   "url": "https://thethaiger.com/news/pattaya/pattaya-motorcycle-taxis-say-new-blue-vests-cost-them-passengers",
-   "published_at": "2026-10-20T02:59:06+00:00",
+   "source": "The Phuket News",
+   "title": "Phuket Governor sets 2027 agenda, warns of drought",
+   "url": "https://www.thephuketnews.com/phuket-governor-sets-2027-agenda-warns-of-drought-101959.php",
+   "published_at": "2026-10-20T03:19:00+00:00",
    "lang": "en",
    "topics": [
-    "pattaya"
+    "weather",
+    "phuket"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Phuket News",
+   "title": "Karon crash injures six, including three German tourists",
+   "url": "https://www.thephuketnews.com/karon-crash-injures-six-including-three-german-tourists-101961.php",
+   "published_at": "2026-10-20T03:17:00+00:00",
+   "lang": "en",
+   "topics": [
+    "safety",
+    "phuket"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Phuket News",
+   "title": "Forced sales eyed in foreign property crackdown",
+   "url": "https://www.thephuketnews.com/forced-sales-eyed-in-foreign-property-crackdown-101962.php",
+   "published_at": "2026-10-20T03:16:00+00:00",
+   "lang": "en",
+   "topics": [
+    "safety"
    ],
    "official": false
   },
@@ -70,35 +366,14 @@
    "official": false
   },
   {
-   "source": "Nation Thailand",
-   "title": "Sukhothai records magnitude 2.0 earthquake with no damage reported",
-   "url": "https://www.nationthailand.com/news/general/40072504",
-   "published_at": "2026-10-20T02:20:00+00:00",
+   "source": "The Phuket News",
+   "title": "Virgin Atlantic launches direct London-Phuket flights",
+   "url": "https://www.thephuketnews.com/virgin-atlantic-launches-direct-london-phuket-flights-101958.php",
+   "published_at": "2026-10-20T01:45:00+00:00",
    "lang": "en",
    "topics": [
-    "safety"
-   ],
-   "official": false
-  },
-  {
-   "source": "Nation Thailand",
-   "title": "Khao Banthat closes five nature trails over monsoon flood risk",
-   "url": "https://www.nationthailand.com/news/general/40072503",
-   "published_at": "2026-10-20T02:12:00+00:00",
-   "lang": "en",
-   "topics": [
-    "weather"
-   ],
-   "official": false
-  },
-  {
-   "source": "Nation Thailand",
-   "title": "Thai police arrest 8 South Korean and 2 Chinese scam suspects",
-   "url": "https://www.nationthailand.com/news/general/40072502",
-   "published_at": "2026-10-20T02:00:00+00:00",
-   "lang": "en",
-   "topics": [
-    "safety"
+    "flights",
+    "phuket"
    ],
    "official": false
   },
@@ -246,17 +521,6 @@
    "lang": "en",
    "topics": [
     "safety"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Thaiger",
-   "title": "Viral footage shows woman clinging to car near Pattaya Walking Street",
-   "url": "https://thethaiger.com/news/pattaya/woman-climbs-onto-car-near-pattaya-walking-street",
-   "published_at": "2026-10-19T06:41:25+00:00",
-   "lang": "en",
-   "topics": [
-    "pattaya"
    ],
    "official": false
   },
@@ -1094,39 +1358,6 @@
    "official": false
   },
   {
-   "source": "The Pattaya News",
-   "title": "Pattaya Inspects Children’s Playground at Lan Pho Naklua Park, Plans Repairs and New Equipment",
-   "url": "https://thepattayanews.com/2026/10/15/pattaya-inspects-childrens-playground-at-lan-pho-naklua-park-plans-repairs-and-new-equipment/",
-   "published_at": "2026-10-15T11:06:50+00:00",
-   "lang": "en",
-   "topics": [
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Pattaya News",
-   "title": "Pattaya City Meets Community Leaders to Address Local Issues and Improve Residents’ Quality of Life",
-   "url": "https://thepattayanews.com/2026/10/15/pattaya-city-meets-community-leaders-to-address-local-issues-and-improve-residents-quality-of-life/",
-   "published_at": "2026-10-15T11:02:02+00:00",
-   "lang": "en",
-   "topics": [
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Pattaya News",
-   "title": "Pattaya Deputy Mayor Visits Bedridden Patients and Delivers Adult Diapers in Local Community",
-   "url": "https://thepattayanews.com/2026/10/15/pattaya-deputy-mayor-visits-bedridden-patients-and-delivers-adult-diapers-in-local-community/",
-   "published_at": "2026-10-15T10:57:07+00:00",
-   "lang": "en",
-   "topics": [
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
    "source": "Nation Thailand",
    "title": "One Bangkok invites everyone to celebrate “ONE OKTOBERFEST” from 28 October to 1 November",
    "url": "https://www.nationthailand.com/pr-news/40072324",
@@ -1229,18 +1460,6 @@
    "official": false
   },
   {
-   "source": "The Pattaya News",
-   "title": "Russian Rider Dies After Crashing Big Bike Into Median on Sukhumvit Road in Pattaya",
-   "url": "https://thepattayanews.com/2026/10/15/russian-rider-dies-after-crashing-big-bike-into-median-on-sukhumvit-road-in-pattaya/",
-   "published_at": "2026-10-15T03:39:07+00:00",
-   "lang": "en",
-   "topics": [
-    "safety",
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
    "source": "The Thaiger",
    "title": "Thai pilgrims get new flights after Riyadh airport strike",
    "url": "https://thethaiger.com/news/bangkok/thai-pilgrims-get-new-flights-after-riyadh-airport-strike",
@@ -1304,40 +1523,6 @@
    "lang": "en",
    "topics": [
     "flights"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Pattaya News",
-   "title": "Woman, 25, Swept into Drain While Riding Motorcycle Through Floodwater Near Pattaya, Survives Uninjured",
-   "url": "https://thepattayanews.com/2026/10/15/woman-25-swept-into-drain-while-riding-motorcycle-through-floodwater-near-pattaya-survives-uninjured/",
-   "published_at": "2026-10-14T18:39:00+00:00",
-   "lang": "en",
-   "topics": [
-    "weather",
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Pattaya News",
-   "title": "Pattaya Hosts Southern Thai Youth as Part of Cultural Exchange Project",
-   "url": "https://thepattayanews.com/2026/10/15/pattaya-hosts-southern-thai-youth-as-part-of-cultural-exchange-project/",
-   "published_at": "2026-10-14T18:38:18+00:00",
-   "lang": "en",
-   "topics": [
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Pattaya News",
-   "title": "Nongnooch World Pattaya Signs Marketing Deal with Ctrip to Target Family Tourists",
-   "url": "https://thepattayanews.com/2026/10/15/nongnooch-world-pattaya-signs-marketing-deal-with-ctrip-to-target-family-tourists/",
-   "published_at": "2026-10-14T17:25:45+00:00",
-   "lang": "en",
-   "topics": [
-    "pattaya"
    ],
    "official": false
   },
@@ -1840,18 +2025,6 @@
    "official": false
   },
   {
-   "source": "Khaosod English",
-   "title": "Foreign tourists caught stealing goods at Phuket 7-Eleven",
-   "url": "https://www.khaosodenglish.com/news/crimecourtscalamity/2026/10/12/foreign-tourists-caught-stealing-goods-at-phuket-7-eleven/",
-   "published_at": "2026-10-12T12:21:26+00:00",
-   "lang": "en",
-   "topics": [
-    "safety",
-    "phuket"
-   ],
-   "official": false
-  },
-  {
    "source": "The Pattaya News",
    "title": "Takhian Tia Municipality Holds Ceremony to Commemorate His Royal Majesty King Bhumibol Adulyadej The Great on Nawaminthara Maharaj Day",
    "url": "https://thepattayanews.com/2026/10/12/takhian-tia-municipality-holds-ceremony-to-commemorate-his-royal-majesty-king-bhumibol-adulyadej-the-great-on-nawaminthara-maharaj-day/",
@@ -1897,18 +2070,6 @@
    "official": false
   },
   {
-   "source": "The Phuket News",
-   "title": "Deputy Interior Minister inspects Phuket flood defences",
-   "url": "https://www.thephuketnews.com/deputy-interior-minister-inspects-phuket-flood-defences-101898.php",
-   "published_at": "2026-10-12T09:09:00+00:00",
-   "lang": "en",
-   "topics": [
-    "weather",
-    "phuket"
-   ],
-   "official": false
-  },
-  {
    "source": "Khaosod English",
    "title": "The Weeknd concertgoers complain of shocking behavior at Rajamangala",
    "url": "https://www.khaosodenglish.com/featured/2026/10/12/the-weeknd-concertgoers-complain-of-shocking-behavior-at-rajamangala/",
@@ -1927,17 +2088,6 @@
    "lang": "en",
    "topics": [
     "flights",
-    "safety"
-   ],
-   "official": false
-  },
-  {
-   "source": "Khaosod English",
-   "title": "American man, 69, killed in collision with ice delivery truck in Nakhon Phanom",
-   "url": "https://www.khaosodenglish.com/news/2026/10/12/american-man-69-killed-in-collision-with-ice-delivery-truck-in-nakhon-phanom/",
-   "published_at": "2026-10-12T08:04:28+00:00",
-   "lang": "en",
-   "topics": [
     "safety"
    ],
    "official": false
@@ -2036,17 +2186,6 @@
    "official": false
   },
   {
-   "source": "Khaosod English",
-   "title": "Livestream clash raises questions over tourist conduct, filming, and violence in Thailand",
-   "url": "https://www.khaosodenglish.com/life/socialmedia/2026/10/12/livestream-clash-raises-questions-over-tourist-conduct-filming-and-violence-in-thailand/",
-   "published_at": "2026-10-12T05:24:23+00:00",
-   "lang": "en",
-   "topics": [
-    "safety"
-   ],
-   "official": false
-  },
-  {
    "source": "The Thaiger",
    "title": "Thailand clarifies rules for opening checked bags without passengers present",
    "url": "https://thethaiger.com/news/thailand-clarifies-rules-for-opening-checked-bags-without-passengers-present",
@@ -2088,17 +2227,6 @@
    "topics": [
     "events",
     "pattaya"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Phuket News",
-   "title": "Thaksin cites personal safety in tax challenge",
-   "url": "https://www.thephuketnews.com/thaksin-cites-personal-safety-in-tax-challenge-101880.php",
-   "published_at": "2026-10-12T03:00:00+00:00",
-   "lang": "en",
-   "topics": [
-    "safety"
    ],
    "official": false
   },
@@ -2168,89 +2296,6 @@
     "flights"
    ],
    "official": false
-  },
-  {
-   "source": "Nation Thailand",
-   "title": "Thai embassy urges Thai nationals to avoid Riyadh airport after attacks",
-   "url": "https://www.nationthailand.com/news/general/40072118",
-   "published_at": "2026-10-11T06:30:00+00:00",
-   "lang": "en",
-   "topics": [
-    "flights"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Thaiger",
-   "title": "31 test positive for drugs in Khao San Road bar raid",
-   "url": "https://thethaiger.com/hot-news/crime/31-test-positive-for-drugs-in-khao-san-road-bar-raid",
-   "published_at": "2026-10-11T04:00:00+00:00",
-   "lang": "en",
-   "topics": [
-    "alcohol",
-    "safety",
-    "bangkok"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Pattaya News",
-   "title": "Attack on Riyadh Airport Kills 12 and Injures More Than 300 as Saudi Coalition Vows Response",
-   "url": "https://thepattayanews.com/2026/10/11/attack-on-riyadh-airport-kills-12-and-injures-more-than-300-as-saudi-coalition-vows-response/",
-   "published_at": "2026-10-11T02:20:58+00:00",
-   "lang": "en",
-   "topics": [
-    "flights",
-    "safety"
-   ],
-   "official": false
-  },
-  {
-   "source": "Nation Thailand",
-   "title": "Saudi Arabia airspace warning widened after Houthi airport attacks",
-   "url": "https://www.nationthailand.com/news/world/40072105",
-   "published_at": "2026-10-11T00:42:00+00:00",
-   "lang": "en",
-   "topics": [
-    "flights"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Pattaya News",
-   "title": "Thai Hotels Association Officially Objects to Proposed 1,000-Baht Air Departure Tax Joining Growing Amount of Opposition",
-   "url": "https://thepattayanews.com/2026/10/10/thai-hotels-association-officially-objects-to-proposed-1000-baht-air-departure-tax-joining-growing-amount-of-opposition/",
-   "published_at": "2026-10-10T16:11:37+00:00",
-   "lang": "en",
-   "topics": [
-    "entry_rules"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Pattaya News",
-   "title": "Thirty-One People Test Positive for Drugs After Khao San Bar Raid Finds Underage Patrons, Suspected Drugs, No License, and Suspicious Payments",
-   "url": "https://thepattayanews.com/2026/10/10/thirty-one-people-test-positive-for-drugs-after-khao-san-bar-raid-finds-underage-patrons-suspected-drugs-no-license-and-suspicious-payments/",
-   "published_at": "2026-10-10T10:39:36+00:00",
-   "lang": "en",
-   "topics": [
-    "alcohol",
-    "safety",
-    "bangkok"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Pattaya News",
-   "title": "Delivery Rider Says Pattaya Bar Owner and Friends Beat Him Twice in Soi Nongprue, and Police Have Yet to Take Action",
-   "url": "https://thepattayanews.com/2026/10/10/delivery-rider-says-pattaya-bar-owner-and-friends-beat-him-twice-in-soi-nongprue-and-police-have-yet-to-take-action/",
-   "published_at": "2026-10-10T06:54:06+00:00",
-   "lang": "en",
-   "topics": [
-    "alcohol",
-    "pattaya"
-   ],
-   "official": false
   }
  ],
  "sources": [
@@ -2293,7 +2338,7 @@
    "name": "Khaosod English",
    "endpoint": "https://www.khaosodenglish.com/feed/",
    "ok": true,
-   "count": 5,
+   "count": 4,
    "error": null
   },
   {
@@ -2307,7 +2352,7 @@
    "name": "Nation Thailand",
    "endpoint": "https://api.nationthailand.com/sitemap/latest",
    "ok": true,
-   "count": 27,
+   "count": 33,
    "error": null
   }
  ],
