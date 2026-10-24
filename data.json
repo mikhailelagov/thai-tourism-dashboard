@@ -1,45 +1,24 @@
 {
- "built_at": "2026-10-23T06:27:39+00:00",
+ "built_at": "2026-10-24T06:25:59+00:00",
  "score_kind": "weather_calendar_model",
  "score_note_ru": "Модель условий из погоды, праздников, цены нефти и курсов валют, а не измерение спроса",
  "stale": false,
- "updated_at": "2026-10-23T06:27:39+00:00",
+ "updated_at": "2026-10-24T06:25:59+00:00",
  "regions": {
   "bangkok": [
    {
-    "iso": "2026-10-23",
-    "tmax": 33,
-    "mm": 3.0,
-    "pop": 73,
-    "score": 56,
-    "parts": {
-     "weather": 46.1,
-     "event": 0.0,
-     "holiday_th": 6.0,
-     "holiday_abroad": 0.0,
-     "fuel": 2.6,
-     "fx": 1.5
-    },
-    "event": {
-     "en": "Chulalongkorn Day",
-     "ru": "День Чулалонгкорна"
-    },
-    "missing": false,
-    "alcohol_ban": false
-   },
-   {
     "iso": "2026-10-24",
     "tmax": 32,
-    "mm": 1.7,
-    "pop": 82,
+    "mm": 5.0,
+    "pop": 73,
     "score": 50,
     "parts": {
-     "weather": 46.2,
+     "weather": 45.7,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": 2.6,
-     "fx": 1.5
+     "fx": 1.4
     },
     "event": null,
     "missing": false,
@@ -48,16 +27,16 @@
    {
     "iso": "2026-10-25",
     "tmax": 32,
-    "mm": 4.0,
-    "pop": 73,
+    "mm": 3.5,
+    "pop": 84,
     "score": 50,
     "parts": {
-     "weather": 45.9,
+     "weather": 45.8,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": 2.6,
-     "fx": 1.5
+     "fx": 1.4
     },
     "event": null,
     "missing": false,
@@ -66,16 +45,16 @@
    {
     "iso": "2026-10-26",
     "tmax": 32,
-    "mm": 9.9,
-    "pop": 84,
-    "score": 49,
+    "mm": 3.6,
+    "pop": 92,
+    "score": 50,
     "parts": {
-     "weather": 44.6,
+     "weather": 45.6,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": 2.6,
-     "fx": 1.5
+     "fx": 1.4
     },
     "event": {
      "en": "Ok Phansa (End of Buddhist Lent)",
@@ -88,17 +67,17 @@
    },
    {
     "iso": "2026-10-27",
-    "tmax": 31,
-    "mm": 5.8,
-    "pop": 82,
+    "tmax": 32,
+    "mm": 5.6,
+    "pop": 80,
     "score": 50,
     "parts": {
-     "weather": 45.4,
+     "weather": 45.5,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": 2.6,
-     "fx": 1.5
+     "fx": 1.4
     },
     "event": null,
     "missing": false,
@@ -107,16 +86,16 @@
    {
     "iso": "2026-10-28",
     "tmax": 32,
-    "mm": 3.9,
-    "pop": 47,
+    "mm": 1.2,
+    "pop": 39,
     "score": 51,
     "parts": {
-     "weather": 46.4,
+     "weather": 47.1,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": 2.6,
-     "fx": 1.5
+     "fx": 1.4
     },
     "event": null,
     "missing": false,
@@ -124,17 +103,17 @@
    },
    {
     "iso": "2026-10-29",
-    "tmax": 33,
-    "mm": 0.6,
-    "pop": 33,
-    "score": 51,
+    "tmax": 32,
+    "mm": 3.7,
+    "pop": 60,
+    "score": 50,
     "parts": {
-     "weather": 47.3,
+     "weather": 46.2,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": 2.6,
-     "fx": 1.5
+     "fx": 1.4
     },
     "event": null,
     "missing": false,
@@ -142,17 +121,35 @@
    },
    {
     "iso": "2026-10-30",
-    "tmax": 33,
-    "mm": 4.2,
-    "pop": 67,
-    "score": 50,
+    "tmax": 32,
+    "mm": 10.4,
+    "pop": 75,
+    "score": 49,
     "parts": {
-     "weather": 46.0,
+     "weather": 44.6,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": 2.6,
-     "fx": 1.5
+     "fx": 1.4
+    },
+    "event": null,
+    "missing": false,
+    "alcohol_ban": false
+   },
+   {
+    "iso": "2026-10-31",
+    "tmax": 32,
+    "mm": 5.2,
+    "pop": 75,
+    "score": 50,
+    "parts": {
+     "weather": 45.6,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": 2.6,
+     "fx": 1.4
     },
     "event": null,
     "missing": false,
@@ -161,39 +158,18 @@
   ],
   "pattaya": [
    {
-    "iso": "2026-10-23",
-    "tmax": 31,
-    "mm": 2.7,
-    "pop": 93,
-    "score": 36,
-    "parts": {
-     "weather": 25.9,
-     "event": 0.0,
-     "holiday_th": 6.0,
-     "holiday_abroad": 0.0,
-     "fuel": 2.6,
-     "fx": 1.5
-    },
-    "event": {
-     "en": "Chulalongkorn Day",
-     "ru": "День Чулалонгкорна"
-    },
-    "missing": false,
-    "alcohol_ban": false
-   },
-   {
     "iso": "2026-10-24",
-    "tmax": 31,
-    "mm": 1.1,
-    "pop": 98,
-    "score": 30,
+    "tmax": 32,
+    "mm": 3.9,
+    "pop": 100,
+    "score": 29,
     "parts": {
-     "weather": 26.3,
+     "weather": 25.2,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": 2.6,
-     "fx": 1.5
+     "fx": 1.4
     },
     "event": null,
     "missing": false,
@@ -202,16 +178,16 @@
    {
     "iso": "2026-10-25",
     "tmax": 31,
-    "mm": 3.7,
-    "pop": 100,
-    "score": 29,
+    "mm": 1.4,
+    "pop": 92,
+    "score": 30,
     "parts": {
-     "weather": 25.3,
+     "weather": 26.4,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": 2.6,
-     "fx": 1.5
+     "fx": 1.4
     },
     "event": null,
     "missing": false,
@@ -219,17 +195,17 @@
    },
    {
     "iso": "2026-10-26",
-    "tmax": 30,
-    "mm": 11.2,
-    "pop": 100,
-    "score": 27,
+    "tmax": 31,
+    "mm": 7.1,
+    "pop": 96,
+    "score": 28,
     "parts": {
-     "weather": 22.6,
+     "weather": 24.2,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": 2.6,
-     "fx": 1.5
+     "fx": 1.4
     },
     "event": {
      "en": "Ok Phansa (End of Buddhist Lent)",
@@ -242,17 +218,17 @@
    },
    {
     "iso": "2026-10-27",
-    "tmax": 30,
-    "mm": 5.1,
-    "pop": 76,
+    "tmax": 31,
+    "mm": 1.9,
+    "pop": 96,
     "score": 30,
     "parts": {
-     "weather": 25.6,
+     "weather": 26.1,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": 2.6,
-     "fx": 1.5
+     "fx": 1.4
     },
     "event": null,
     "missing": false,
@@ -261,16 +237,16 @@
    {
     "iso": "2026-10-28",
     "tmax": 31,
-    "mm": 3.0,
-    "pop": 59,
-    "score": 31,
+    "mm": 5.1,
+    "pop": 75,
+    "score": 30,
     "parts": {
-     "weather": 26.9,
+     "weather": 25.6,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": 2.6,
-     "fx": 1.5
+     "fx": 1.4
     },
     "event": null,
     "missing": false,
@@ -279,16 +255,16 @@
    {
     "iso": "2026-10-29",
     "tmax": 32,
-    "mm": 3.6,
-    "pop": 63,
-    "score": 31,
+    "mm": 12.0,
+    "pop": 84,
+    "score": 27,
     "parts": {
-     "weather": 26.6,
+     "weather": 22.8,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": 2.6,
-     "fx": 1.5
+     "fx": 1.4
     },
     "event": null,
     "missing": false,
@@ -297,16 +273,34 @@
    {
     "iso": "2026-10-30",
     "tmax": 31,
-    "mm": 5.4,
-    "pop": 90,
-    "score": 29,
+    "mm": 9.6,
+    "pop": 92,
+    "score": 27,
     "parts": {
-     "weather": 25.0,
+     "weather": 23.4,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": 2.6,
-     "fx": 1.5
+     "fx": 1.4
+    },
+    "event": null,
+    "missing": false,
+    "alcohol_ban": false
+   },
+   {
+    "iso": "2026-10-31",
+    "tmax": 30,
+    "mm": 13.2,
+    "pop": 88,
+    "score": 26,
+    "parts": {
+     "weather": 22.3,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": 2.6,
+     "fx": 1.4
     },
     "event": null,
     "missing": false,
@@ -315,39 +309,18 @@
   ],
   "phuket": [
    {
-    "iso": "2026-10-23",
-    "tmax": 31,
-    "mm": 14.3,
-    "pop": 90,
-    "score": 41,
-    "parts": {
-     "weather": 31.3,
-     "event": 0.0,
-     "holiday_th": 6.0,
-     "holiday_abroad": 0.0,
-     "fuel": 2.6,
-     "fx": 1.5
-    },
-    "event": {
-     "en": "Chulalongkorn Day",
-     "ru": "День Чулалонгкорна"
-    },
-    "missing": false,
-    "alcohol_ban": false
-   },
-   {
     "iso": "2026-10-24",
-    "tmax": 30,
-    "mm": 11.7,
-    "pop": 88,
-    "score": 37,
+    "tmax": 29,
+    "mm": 18.5,
+    "pop": 100,
+    "score": 33,
     "parts": {
-     "weather": 32.6,
+     "weather": 28.8,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": 2.6,
-     "fx": 1.5
+     "fx": 1.4
     },
     "event": null,
     "missing": false,
@@ -356,16 +329,16 @@
    {
     "iso": "2026-10-25",
     "tmax": 30,
-    "mm": 16.3,
-    "pop": 90,
-    "score": 34,
+    "mm": 28.9,
+    "pop": 97,
+    "score": 28,
     "parts": {
-     "weather": 30.3,
+     "weather": 24.4,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": 2.6,
-     "fx": 1.5
+     "fx": 1.4
     },
     "event": null,
     "missing": false,
@@ -374,16 +347,16 @@
    {
     "iso": "2026-10-26",
     "tmax": 26,
-    "mm": 35.1,
-    "pop": 84,
-    "score": 28,
+    "mm": 26.0,
+    "pop": 96,
+    "score": 30,
     "parts": {
-     "weather": 24.4,
+     "weather": 25.5,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": 2.6,
-     "fx": 1.5
+     "fx": 1.4
     },
     "event": {
      "en": "Ok Phansa (End of Buddhist Lent)",
@@ -396,17 +369,17 @@
    },
    {
     "iso": "2026-10-27",
-    "tmax": 29,
-    "mm": 26.4,
-    "pop": 69,
-    "score": 31,
+    "tmax": 28,
+    "mm": 34.5,
+    "pop": 90,
+    "score": 28,
     "parts": {
-     "weather": 26.5,
+     "weather": 24.4,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": 2.6,
-     "fx": 1.5
+     "fx": 1.4
     },
     "event": null,
     "missing": false,
@@ -415,16 +388,16 @@
    {
     "iso": "2026-10-28",
     "tmax": 30,
-    "mm": 25.4,
-    "pop": 71,
-    "score": 31,
+    "mm": 2.7,
+    "pop": 69,
+    "score": 42,
     "parts": {
-     "weather": 26.9,
+     "weather": 37.7,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": 2.6,
-     "fx": 1.5
+     "fx": 1.4
     },
     "event": null,
     "missing": false,
@@ -432,17 +405,17 @@
    },
    {
     "iso": "2026-10-29",
-    "tmax": 29,
-    "mm": 4.8,
-    "pop": 72,
+    "tmax": 28,
+    "mm": 3.0,
+    "pop": 76,
     "score": 41,
     "parts": {
-     "weather": 36.6,
+     "weather": 37.2,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": 2.6,
-     "fx": 1.5
+     "fx": 1.4
     },
     "event": null,
     "missing": false,
@@ -450,17 +423,35 @@
    },
    {
     "iso": "2026-10-30",
-    "tmax": 30,
-    "mm": 8.7,
-    "pop": 82,
-    "score": 38,
+    "tmax": 29,
+    "mm": 10.6,
+    "pop": 84,
+    "score": 37,
     "parts": {
-     "weather": 34.3,
+     "weather": 33.3,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": 2.6,
-     "fx": 1.5
+     "fx": 1.4
+    },
+    "event": null,
+    "missing": false,
+    "alcohol_ban": false
+   },
+   {
+    "iso": "2026-10-31",
+    "tmax": 30,
+    "mm": 5.8,
+    "pop": 78,
+    "score": 40,
+    "parts": {
+     "weather": 35.8,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": 2.6,
+     "fx": 1.4
     },
     "event": null,
     "missing": false,
@@ -469,39 +460,18 @@
   ],
   "krabi": [
    {
-    "iso": "2026-10-23",
-    "tmax": 32,
-    "mm": 4.6,
-    "pop": 96,
-    "score": 47,
-    "parts": {
-     "weather": 37.0,
-     "event": 0.0,
-     "holiday_th": 6.0,
-     "holiday_abroad": 0.0,
-     "fuel": 2.6,
-     "fx": 1.5
-    },
-    "event": {
-     "en": "Chulalongkorn Day",
-     "ru": "День Чулалонгкорна"
-    },
-    "missing": false,
-    "alcohol_ban": false
-   },
-   {
     "iso": "2026-10-24",
-    "tmax": 32,
-    "mm": 12.6,
+    "tmax": 30,
+    "mm": 13.6,
     "pop": 100,
-    "score": 37,
+    "score": 36,
     "parts": {
-     "weather": 32.6,
+     "weather": 32.1,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": 2.6,
-     "fx": 1.5
+     "fx": 1.4
     },
     "event": null,
     "missing": false,
@@ -509,17 +479,17 @@
    },
    {
     "iso": "2026-10-25",
-    "tmax": 30,
-    "mm": 16.1,
+    "tmax": 29,
+    "mm": 36.4,
     "pop": 100,
-    "score": 35,
+    "score": 29,
     "parts": {
-     "weather": 30.8,
+     "weather": 24.6,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": 2.6,
-     "fx": 1.5
+     "fx": 1.4
     },
     "event": null,
     "missing": false,
@@ -528,170 +498,16 @@
    {
     "iso": "2026-10-26",
     "tmax": 28,
-    "mm": 20.7,
-    "pop": 94,
-    "score": 33,
+    "mm": 30.7,
+    "pop": 98,
+    "score": 29,
     "parts": {
-     "weather": 28.7,
+     "weather": 24.6,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": 2.6,
-     "fx": 1.5
-    },
-    "event": {
-     "en": "Ok Phansa (End of Buddhist Lent)",
-     "ru": "Окончание буддийского поста (Ок Пханса)",
-     "alcohol_ban": true
-    },
-    "missing": false,
-    "alcohol_ban": true,
-    "alcohol_note_ru": "Запрет продажи алкоголя (буддийский праздник, 00:00–24:00). Исключения по уведомлению канцелярии премьер-министра 2025 г.: международные терминалы аэропортов, заведения с лицензией по закону о местах развлечений и аналогичные в туристических зонах, отели, особые мероприятия."
-   },
-   {
-    "iso": "2026-10-27",
-    "tmax": 30,
-    "mm": 21.3,
-    "pop": 77,
-    "score": 33,
-    "parts": {
-     "weather": 29.2,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": 2.6,
-     "fx": 1.5
-    },
-    "event": null,
-    "missing": false,
-    "alcohol_ban": false
-   },
-   {
-    "iso": "2026-10-28",
-    "tmax": 30,
-    "mm": 7.6,
-    "pop": 80,
-    "score": 40,
-    "parts": {
-     "weather": 36.2,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": 2.6,
-     "fx": 1.5
-    },
-    "event": null,
-    "missing": false,
-    "alcohol_ban": false
-   },
-   {
-    "iso": "2026-10-29",
-    "tmax": 29,
-    "mm": 2.5,
-    "pop": 80,
-    "score": 43,
-    "parts": {
-     "weather": 38.8,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": 2.6,
-     "fx": 1.5
-    },
-    "event": null,
-    "missing": false,
-    "alcohol_ban": false
-   },
-   {
-    "iso": "2026-10-30",
-    "tmax": 31,
-    "mm": 6.6,
-    "pop": 92,
-    "score": 40,
-    "parts": {
-     "weather": 36.1,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": 2.6,
-     "fx": 1.5
-    },
-    "event": null,
-    "missing": false,
-    "alcohol_ban": false
-   }
-  ],
-  "samui": [
-   {
-    "iso": "2026-10-23",
-    "tmax": 30,
-    "mm": 5.5,
-    "pop": 90,
-    "score": 48,
-    "parts": {
-     "weather": 38.0,
-     "event": 0.0,
-     "holiday_th": 6.0,
-     "holiday_abroad": 0.0,
-     "fuel": 2.6,
-     "fx": 1.5
-    },
-    "event": {
-     "en": "Chulalongkorn Day",
-     "ru": "День Чулалонгкорна"
-    },
-    "missing": false,
-    "alcohol_ban": false
-   },
-   {
-    "iso": "2026-10-24",
-    "tmax": 30,
-    "mm": 12.8,
-    "pop": 70,
-    "score": 39,
-    "parts": {
-     "weather": 35.2,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": 2.6,
-     "fx": 1.5
-    },
-    "event": null,
-    "missing": false,
-    "alcohol_ban": false
-   },
-   {
-    "iso": "2026-10-25",
-    "tmax": 29,
-    "mm": 9.4,
-    "pop": 80,
-    "score": 41,
-    "parts": {
-     "weather": 36.5,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": 2.6,
-     "fx": 1.5
-    },
-    "event": null,
-    "missing": false,
-    "alcohol_ban": false
-   },
-   {
-    "iso": "2026-10-26",
-    "tmax": 29,
-    "mm": 5.8,
-    "pop": 84,
-    "score": 42,
-    "parts": {
-     "weather": 38.1,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": 2.6,
-     "fx": 1.5
+     "fx": 1.4
     },
     "event": {
      "en": "Ok Phansa (End of Buddhist Lent)",
@@ -705,16 +521,16 @@
    {
     "iso": "2026-10-27",
     "tmax": 27,
-    "mm": 8.2,
-    "pop": 80,
-    "score": 41,
+    "mm": 16.2,
+    "pop": 86,
+    "score": 35,
     "parts": {
-     "weather": 37.1,
+     "weather": 31.4,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": 2.6,
-     "fx": 1.5
+     "fx": 1.4
     },
     "event": null,
     "missing": false,
@@ -722,122 +538,9 @@
    },
    {
     "iso": "2026-10-28",
-    "tmax": 28,
-    "mm": 4.8,
-    "pop": 88,
-    "score": 43,
-    "parts": {
-     "weather": 38.4,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": 2.6,
-     "fx": 1.5
-    },
-    "event": null,
-    "missing": false,
-    "alcohol_ban": false
-   },
-   {
-    "iso": "2026-10-29",
-    "tmax": 28,
-    "mm": 7.7,
-    "pop": 86,
-    "score": 41,
-    "parts": {
-     "weather": 37.0,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": 2.6,
-     "fx": 1.5
-    },
-    "event": null,
-    "missing": false,
-    "alcohol_ban": false
-   },
-   {
-    "iso": "2026-10-30",
-    "tmax": 28,
-    "mm": 5.4,
-    "pop": 90,
-    "score": 42,
-    "parts": {
-     "weather": 38.0,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": 2.6,
-     "fx": 1.5
-    },
-    "event": null,
-    "missing": false,
-    "alcohol_ban": false
-   }
-  ],
-  "chiangmai": [
-   {
-    "iso": "2026-10-23",
     "tmax": 32,
-    "mm": 0.0,
-    "pop": 0,
-    "score": 48,
-    "parts": {
-     "weather": 38.0,
-     "event": 0.0,
-     "holiday_th": 6.0,
-     "holiday_abroad": 0.0,
-     "fuel": 2.6,
-     "fx": 1.5
-    },
-    "event": {
-     "en": "Chulalongkorn Day",
-     "ru": "День Чулалонгкорна"
-    },
-    "missing": false,
-    "alcohol_ban": false
-   },
-   {
-    "iso": "2026-10-24",
-    "tmax": 33,
-    "mm": 0.1,
-    "pop": 10,
-    "score": 42,
-    "parts": {
-     "weather": 37.7,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": 2.6,
-     "fx": 1.5
-    },
-    "event": null,
-    "missing": false,
-    "alcohol_ban": false
-   },
-   {
-    "iso": "2026-10-25",
-    "tmax": 33,
-    "mm": 0.0,
-    "pop": 10,
-    "score": 42,
-    "parts": {
-     "weather": 37.7,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": 2.6,
-     "fx": 1.5
-    },
-    "event": null,
-    "missing": false,
-    "alcohol_ban": false
-   },
-   {
-    "iso": "2026-10-26",
-    "tmax": 33,
-    "mm": 2.1,
-    "pop": 82,
+    "mm": 9.6,
+    "pop": 84,
     "score": 39,
     "parts": {
      "weather": 35.0,
@@ -845,7 +548,117 @@
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": 2.6,
-     "fx": 1.5
+     "fx": 1.4
+    },
+    "event": null,
+    "missing": false,
+    "alcohol_ban": false
+   },
+   {
+    "iso": "2026-10-29",
+    "tmax": 29,
+    "mm": 2.7,
+    "pop": 98,
+    "score": 42,
+    "parts": {
+     "weather": 37.9,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": 2.6,
+     "fx": 1.4
+    },
+    "event": null,
+    "missing": false,
+    "alcohol_ban": false
+   },
+   {
+    "iso": "2026-10-30",
+    "tmax": 29,
+    "mm": 12.6,
+    "pop": 92,
+    "score": 37,
+    "parts": {
+     "weather": 33.0,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": 2.6,
+     "fx": 1.4
+    },
+    "event": null,
+    "missing": false,
+    "alcohol_ban": false
+   },
+   {
+    "iso": "2026-10-31",
+    "tmax": 31,
+    "mm": 17.4,
+    "pop": 92,
+    "score": 35,
+    "parts": {
+     "weather": 30.5,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": 2.6,
+     "fx": 1.4
+    },
+    "event": null,
+    "missing": false,
+    "alcohol_ban": false
+   }
+  ],
+  "samui": [
+   {
+    "iso": "2026-10-24",
+    "tmax": 30,
+    "mm": 4.2,
+    "pop": 86,
+    "score": 43,
+    "parts": {
+     "weather": 38.8,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": 2.6,
+     "fx": 1.4
+    },
+    "event": null,
+    "missing": false,
+    "alcohol_ban": false
+   },
+   {
+    "iso": "2026-10-25",
+    "tmax": 29,
+    "mm": 6.2,
+    "pop": 92,
+    "score": 42,
+    "parts": {
+     "weather": 37.5,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": 2.6,
+     "fx": 1.4
+    },
+    "event": null,
+    "missing": false,
+    "alcohol_ban": false
+   },
+   {
+    "iso": "2026-10-26",
+    "tmax": 28,
+    "mm": 9.2,
+    "pop": 86,
+    "score": 40,
+    "parts": {
+     "weather": 36.3,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": 2.6,
+     "fx": 1.4
     },
     "event": {
      "en": "Ok Phansa (End of Buddhist Lent)",
@@ -858,17 +671,17 @@
    },
    {
     "iso": "2026-10-27",
-    "tmax": 30,
-    "mm": 5.9,
-    "pop": 76,
-    "score": 38,
+    "tmax": 26,
+    "mm": 41.9,
+    "pop": 87,
+    "score": 30,
     "parts": {
-     "weather": 34.0,
+     "weather": 26.1,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": 2.6,
-     "fx": 1.5
+     "fx": 1.4
     },
     "event": null,
     "missing": false,
@@ -877,16 +690,16 @@
    {
     "iso": "2026-10-28",
     "tmax": 30,
-    "mm": 1.9,
-    "pop": 47,
-    "score": 40,
+    "mm": 2.4,
+    "pop": 77,
+    "score": 44,
     "parts": {
-     "weather": 36.1,
+     "weather": 40.1,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": 2.6,
-     "fx": 1.5
+     "fx": 1.4
     },
     "event": null,
     "missing": false,
@@ -894,17 +707,17 @@
    },
    {
     "iso": "2026-10-29",
-    "tmax": 30,
-    "mm": 0.0,
-    "pop": 6,
-    "score": 42,
+    "tmax": 28,
+    "mm": 7.3,
+    "pop": 92,
+    "score": 41,
     "parts": {
-     "weather": 37.8,
+     "weather": 37.0,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": 2.6,
-     "fx": 1.5
+     "fx": 1.4
     },
     "event": null,
     "missing": false,
@@ -912,7 +725,45 @@
    },
    {
     "iso": "2026-10-30",
-    "tmax": 31,
+    "tmax": 27,
+    "mm": 16.8,
+    "pop": 99,
+    "score": 36,
+    "parts": {
+     "weather": 31.8,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": 2.6,
+     "fx": 1.4
+    },
+    "event": null,
+    "missing": false,
+    "alcohol_ban": false
+   },
+   {
+    "iso": "2026-10-31",
+    "tmax": 29,
+    "mm": 10.4,
+    "pop": 94,
+    "score": 39,
+    "parts": {
+     "weather": 35.3,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": 2.6,
+     "fx": 1.4
+    },
+    "event": null,
+    "missing": false,
+    "alcohol_ban": false
+   }
+  ],
+  "chiangmai": [
+   {
+    "iso": "2026-10-24",
+    "tmax": 33,
     "mm": 0.0,
     "pop": 2,
     "score": 42,
@@ -922,7 +773,138 @@
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": 2.6,
-     "fx": 1.5
+     "fx": 1.4
+    },
+    "event": null,
+    "missing": false,
+    "alcohol_ban": false
+   },
+   {
+    "iso": "2026-10-25",
+    "tmax": 32,
+    "mm": 0.0,
+    "pop": 29,
+    "score": 41,
+    "parts": {
+     "weather": 37.2,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": 2.6,
+     "fx": 1.4
+    },
+    "event": null,
+    "missing": false,
+    "alcohol_ban": false
+   },
+   {
+    "iso": "2026-10-26",
+    "tmax": 32,
+    "mm": 3.3,
+    "pop": 96,
+    "score": 38,
+    "parts": {
+     "weather": 34.3,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": 2.6,
+     "fx": 1.4
+    },
+    "event": {
+     "en": "Ok Phansa (End of Buddhist Lent)",
+     "ru": "Окончание буддийского поста (Ок Пханса)",
+     "alcohol_ban": true
+    },
+    "missing": false,
+    "alcohol_ban": true,
+    "alcohol_note_ru": "Запрет продажи алкоголя (буддийский праздник, 00:00–24:00). Исключения по уведомлению канцелярии премьер-министра 2025 г.: международные терминалы аэропортов, заведения с лицензией по закону о местах развлечений и аналогичные в туристических зонах, отели, особые мероприятия."
+   },
+   {
+    "iso": "2026-10-27",
+    "tmax": 29,
+    "mm": 7.1,
+    "pop": 78,
+    "score": 38,
+    "parts": {
+     "weather": 33.6,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": 2.6,
+     "fx": 1.4
+    },
+    "event": null,
+    "missing": false,
+    "alcohol_ban": false
+   },
+   {
+    "iso": "2026-10-28",
+    "tmax": 30,
+    "mm": 0.6,
+    "pop": 47,
+    "score": 41,
+    "parts": {
+     "weather": 36.5,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": 2.6,
+     "fx": 1.4
+    },
+    "event": null,
+    "missing": false,
+    "alcohol_ban": false
+   },
+   {
+    "iso": "2026-10-29",
+    "tmax": 31,
+    "mm": 0.0,
+    "pop": 6,
+    "score": 42,
+    "parts": {
+     "weather": 37.8,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": 2.6,
+     "fx": 1.4
+    },
+    "event": null,
+    "missing": false,
+    "alcohol_ban": false
+   },
+   {
+    "iso": "2026-10-30",
+    "tmax": 31,
+    "mm": 0.0,
+    "pop": 4,
+    "score": 42,
+    "parts": {
+     "weather": 37.9,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": 2.6,
+     "fx": 1.4
+    },
+    "event": null,
+    "missing": false,
+    "alcohol_ban": false
+   },
+   {
+    "iso": "2026-10-31",
+    "tmax": 31,
+    "mm": 0.0,
+    "pop": 24,
+    "score": 41,
+    "parts": {
+     "weather": 37.3,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": 2.6,
+     "fx": 1.4
     },
     "event": null,
     "missing": false,
@@ -932,17 +914,17 @@
  },
  "fx": {
   "USD": 1,
-  "AUD": 1.425307,
-  "CNY": 6.688225,
-  "EUR": 0.891529,
-  "GBP": 0.746661,
-  "INR": 94.901331,
-  "KRW": 1324.953768,
-  "MYR": 4.08304,
-  "RUB": 81.520547,
-  "THB": 33.729084
+  "AUD": 1.422888,
+  "CNY": 6.684864,
+  "EUR": 0.892784,
+  "GBP": 0.747655,
+  "INR": 95.036492,
+  "KRW": 1324.702169,
+  "MYR": 4.084687,
+  "RUB": 81.296693,
+  "THB": 33.758724
  },
- "fx_time": "2026-10-23T00:02:31+00:00",
+ "fx_time": "2026-10-24T00:02:31+00:00",
  "fx_source": "ExchangeRate-API (open.er-api.com)",
  "fx_source_url": "https://open.er-api.com/v6/latest/USD",
  "fx_note_ru": "Справочный курс (mid-market), не курс обменника",
@@ -953,76 +935,76 @@
   "brent_source_url": "https://fred.stlouisfed.org/series/DCOILBRENTEU",
   "brent_delta": -0.066,
   "usdthb": 33.745,
-  "usdthb_date": "2026-10-22",
+  "usdthb_date": "2026-10-23",
   "usdthb_source": "ECB euro reference rates (cross via EUR)",
-  "usdthb_delta": 0.0059,
+  "usdthb_delta": 0.0047,
   "purchasing_power": {
    "CNY": {
     "name": "Китай",
     "share": 17.46,
-    "thb": 5.055893,
-    "delta": 0.0097,
-    "date": "2026-10-22",
+    "thb": 5.059068,
+    "delta": 0.0094,
+    "date": "2026-10-23",
     "source": "ECB"
    },
    "MYR": {
     "name": "Малайзия",
     "share": 13.06,
-    "thb": 8.263616,
-    "delta": 0.006,
-    "date": "2026-10-22",
+    "thb": 8.259748,
+    "delta": 0.0048,
+    "date": "2026-10-23",
     "source": "ECB"
    },
    "RUB": {
     "name": "Россия",
     "share": 4.09,
-    "thb": 0.41479,
-    "delta": 0.0398,
-    "date": "2026-10-23",
+    "thb": 0.417814,
+    "delta": 0.0451,
+    "date": "2026-10-24",
     "source": "Bank of Russia"
    },
    "INR": {
     "name": "Индия",
     "share": 8.34,
-    "thb": 0.355872,
-    "delta": 0.0162,
-    "date": "2026-10-22",
+    "thb": 0.355418,
+    "delta": 0.0137,
+    "date": "2026-10-23",
     "source": "ECB"
    },
    "KRW": {
     "name": "Южная Корея",
     "share": 3.55,
-    "thb": 0.025475,
-    "delta": 0.0219,
-    "date": "2026-10-22",
+    "thb": 0.025479,
+    "delta": 0.0201,
+    "date": "2026-10-23",
     "source": "ECB"
    },
    "GBP": {
     "name": "Британия",
     "share": 2.33,
-    "thb": 45.136684,
-    "delta": 0.0144,
-    "date": "2026-10-22",
+    "thb": 45.111552,
+    "delta": 0.0129,
+    "date": "2026-10-23",
     "source": "ECB"
    },
    "EUR": {
     "name": "Еврозона",
     "share": 3.58,
-    "thb": 37.811,
-    "delta": 0.0001,
-    "date": "2026-10-22",
+    "thb": 37.771,
+    "delta": -0.0007,
+    "date": "2026-10-23",
     "source": "ECB"
    },
    "AUD": {
     "name": "Австралия",
     "share": 3.13,
-    "thb": 23.661452,
-    "delta": 0.0094,
-    "date": "2026-10-22",
+    "thb": 23.697221,
+    "delta": 0.0107,
+    "date": "2026-10-23",
     "source": "ECB"
    }
   },
-  "pp_composite": 0.0124,
+  "pp_composite": 0.0118,
   "weights": {
    "kind": "arrivals_share_pct",
    "unit": "% of international arrivals",
@@ -1035,14 +1017,6 @@
   }
  },
  "holidays": {
-  "2026-10-23": [
-   {
-    "country": "TH",
-    "name": "Chulalongkorn Day",
-    "type": "public_holiday",
-    "ru": "День Чулалонгкорна"
-   }
-  ],
   "2026-10-26": [
    {
     "country": "TH",
@@ -1067,6 +1041,24 @@
     "type": "observance"
    }
   ],
+  "2026-10-31": [
+   {
+    "country": "GB",
+    "name": "Halloween",
+    "type": "observance"
+   },
+   {
+    "country": "DE",
+    "name": "Halloween",
+    "type": "observance"
+   },
+   {
+    "country": "DE",
+    "name": "Reformation Day (regional holiday)",
+    "type": "regional_holiday",
+    "where": "Brandenburg, Mecklenburg-Western Pomerania, Saxony, Saxony-Anhalt, Thuringia, Schleswig-Holstein, Hamburg, Lower Saxony, Bremen"
+   }
+  ],
   "2026-10-25": [
    {
     "country": "GB",
@@ -1085,37 +1077,37 @@
    "name": "Open-Meteo forecast API (CC BY 4.0)",
    "url": "https://open-meteo.com/",
    "ok": true,
-   "retrieved_at": "2026-10-23T06:27:39+00:00"
+   "retrieved_at": "2026-10-24T06:25:59+00:00"
   },
   "holidays": {
    "name": "Google Calendar public holiday feeds",
    "url": "https://calendar.google.com/",
    "ok": true,
-   "retrieved_at": "2026-10-23T06:27:39+00:00"
+   "retrieved_at": "2026-10-24T06:25:59+00:00"
   },
   "fx": {
    "name": "ExchangeRate-API (open.er-api.com)",
    "url": "https://open.er-api.com/v6/latest/USD",
    "ok": true,
-   "retrieved_at": "2026-10-23T06:27:39+00:00"
+   "retrieved_at": "2026-10-24T06:25:59+00:00"
   },
   "ecb": {
    "name": "ECB euro reference rates",
    "url": "https://data.ecb.europa.eu/data/datasets/EXR",
    "ok": true,
-   "retrieved_at": "2026-10-23T06:27:39+00:00"
+   "retrieved_at": "2026-10-24T06:25:59+00:00"
   },
   "cbr": {
    "name": "Bank of Russia",
    "url": "https://www.cbr.ru/currency_base/dynamics/",
    "ok": true,
-   "retrieved_at": "2026-10-23T06:27:39+00:00"
+   "retrieved_at": "2026-10-24T06:25:59+00:00"
   },
   "brent": {
    "name": "FRED DCOILBRENTEU (U.S. EIA, Europe Brent spot FOB)",
    "url": "https://fred.stlouisfed.org/series/DCOILBRENTEU",
    "ok": true,
-   "retrieved_at": "2026-10-23T06:27:39+00:00"
+   "retrieved_at": "2026-10-24T06:25:59+00:00"
   }
  },
  "errors": []
