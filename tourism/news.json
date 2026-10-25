@@ -1,7 +1,107 @@
 {
- "built_at": "2026-10-24T06:26:12+00:00",
+ "built_at": "2026-10-25T06:48:44+00:00",
  "window_days": 10,
  "items": [
+  {
+   "source": "Nation Thailand",
+   "title": "Riyadh airport faces fresh Houthi warning ahead of reopening",
+   "url": "https://www.nationthailand.com/news/world/40072715",
+   "published_at": "2026-10-25T05:56:00+00:00",
+   "lang": "en",
+   "topics": [
+    "flights"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Thai visitor arrivals in Japan rise 2.4% in first nine months of 2026",
+   "url": "https://www.nationthailand.com/business/economy/40072706",
+   "published_at": "2026-10-25T02:14:00+00:00",
+   "lang": "en",
+   "topics": [
+    "statistics"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Doi Luang Chiang Dao opens online bookings for 2026–27 treks",
+   "url": "https://www.nationthailand.com/news/tourism/40072703",
+   "published_at": "2026-10-25T01:12:00+00:00",
+   "lang": "en",
+   "topics": [
+    "statistics"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Pattaya-Area Social Media Personality Admits Meth Use After Arrest Over Drug-Related Livestream",
+   "url": "https://thepattayanews.com/2026/10/25/pattaya-area-social-media-personality-admits-meth-use-after-arrest-over-drug-related-livestream/",
+   "published_at": "2026-10-24T17:41:21+00:00",
+   "lang": "en",
+   "topics": [
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "Khaosod English",
+   "title": "Dutch TV host reported missing in Thailand left country in 2025, police say",
+   "url": "https://www.khaosodenglish.com/featured/2026/10/24/dutch-tv-host-reported-missing-in-thailand-left-country-in-2025-police-say/",
+   "published_at": "2026-10-24T13:12:18+00:00",
+   "lang": "en",
+   "topics": [
+    "safety"
+   ],
+   "official": false
+  },
+  {
+   "source": "Khaosod English",
+   "title": "Thai anti-graft agency bars staff from bragging about work online",
+   "url": "https://www.khaosodenglish.com/news/2026/10/24/thai-anti-graft-agency-bars-staff-from-bragging-about-work-online/",
+   "published_at": "2026-10-24T10:17:15+00:00",
+   "lang": "en",
+   "topics": [
+    "alcohol"
+   ],
+   "official": false
+  },
+  {
+   "source": "Khaosod English",
+   "title": "2 Philippine air force planes collide during a training flight, killing all 4 pilots",
+   "url": "https://www.khaosodenglish.com/news/international/2026/10/24/2-philippine-air-force-planes-collide-during-a-training-flight-killing-all-4-pilots/",
+   "published_at": "2026-10-24T09:32:06+00:00",
+   "lang": "en",
+   "topics": [
+    "flights"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Thaiger",
+   "title": "Chinese fugitive held in Pattaya, child may lose Thai nationality",
+   "url": "https://thethaiger.com/news/pattaya/chinese-fugitive-held-in-pattaya-and-a-child-may-lose-thai-nationality",
+   "published_at": "2026-10-24T08:00:23+00:00",
+   "lang": "en",
+   "topics": [
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Thaiger",
+   "title": "Thai Lion Air restores Udon Thani to Pattaya flights to four days a week",
+   "url": "https://thethaiger.com/news/world/aviation/thai-lion-air-restores-udon-thani-to-pattaya-flights-to-four-days-a-week",
+   "published_at": "2026-10-24T07:30:52+00:00",
+   "lang": "en",
+   "topics": [
+    "flights",
+    "pattaya"
+   ],
+   "official": false
+  },
   {
    "source": "Nation Thailand",
    "title": "Anutin expects Thai GDP growth to exceed 2.1% in 2026",
@@ -45,6 +145,18 @@
    "lang": "en",
    "topics": [
     "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Phuket News",
+   "title": "Phuket ‘Lak Phra’ processions to mark Buddhist Lent",
+   "url": "https://www.thephuketnews.com/phuket-lak-phra-processions-to-mark-buddhist-lent-101975.php",
+   "published_at": "2026-10-24T02:30:00+00:00",
+   "lang": "en",
+   "topics": [
+    "events",
+    "phuket"
    ],
    "official": false
   },
@@ -666,6 +778,18 @@
    "official": false
   },
   {
+   "source": "The Thaiger",
+   "title": "Pattaya raids target 12 firms in 800m baht nominee land probe",
+   "url": "https://thethaiger.com/news/pattaya/pattaya-raids-target-12-firms-in-800m-baht-nominee-land-probe",
+   "published_at": "2026-10-22T02:44:39+00:00",
+   "lang": "en",
+   "topics": [
+    "safety",
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
    "source": "Nation Thailand",
    "title": "Most eurozone states could face extra spending of at least 3% of GDP by 2040",
    "url": "https://www.nationthailand.com/business/economy/40072579",
@@ -779,6 +903,18 @@
    "official": false
   },
   {
+   "source": "The Thaiger",
+   "title": "Pattaya coffee shop owner left fearing revenge after thief escapes from police",
+   "url": "https://thethaiger.com/news/pattaya/pattaya-woman-hands-thief-to-police-but-suspect-escapes",
+   "published_at": "2026-10-21T08:04:41+00:00",
+   "lang": "en",
+   "topics": [
+    "safety",
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
    "source": "The Pattaya News",
    "title": "Chonburi Police Search 12 Sites in Pattaya Area Over Suspected Nominee Land Holdings Worth Over 800 Million Baht",
    "url": "https://thepattayanews.com/2026/10/21/chonburi-police-search-12-sites-in-pattaya-area-over-suspected-nominee-land-holdings-worth-over-800-million-baht/",
@@ -856,6 +992,18 @@
    "lang": "en",
    "topics": [
     "flights"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Thaiger",
+   "title": "Pattaya motorcyclist killed by train after ignoring railway barrier",
+   "url": "https://thethaiger.com/hot-news/road-deaths/pattaya-motorcyclist-killed-train-railway-barrier",
+   "published_at": "2026-10-21T04:26:24+00:00",
+   "lang": "en",
+   "topics": [
+    "safety",
+    "pattaya"
    ],
    "official": false
   },
@@ -1042,6 +1190,17 @@
    "official": false
   },
   {
+   "source": "The Thaiger",
+   "title": "Two plead guilty in Pattaya Russian siblings murder case",
+   "url": "https://thethaiger.com/news/pattaya/two-plead-guilty-in-pattaya-russian-siblings-murder-case",
+   "published_at": "2026-10-20T10:22:43+00:00",
+   "lang": "en",
+   "topics": [
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
    "source": "Nation Thailand",
    "title": "Thailand fits royal regalia to Suphannahong for barge procession",
    "url": "https://www.nationthailand.com/news/general/40072528",
@@ -1196,18 +1355,6 @@
    "published_at": "2026-10-19T17:00:40+00:00",
    "lang": "en",
    "topics": [
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Pattaya News",
-   "title": "Heavy Rain Floods South Pattaya During Afternoon Storms",
-   "url": "https://thepattayanews.com/2026/10/19/heavy-rain-floods-south-pattaya-during-afternoon-storms/",
-   "published_at": "2026-10-19T16:36:36+00:00",
-   "lang": "en",
-   "topics": [
-    "weather",
     "pattaya"
    ],
    "official": false
@@ -1757,17 +1904,6 @@
    "official": false
   },
   {
-   "source": "Nation Thailand",
-   "title": "Lodon JetX Celebrates 50-Branch Milestone with Bangchak, Targets 300 Branches by 2028",
-   "url": "https://www.nationthailand.com/pr-news/40072373",
-   "published_at": "2026-10-16T09:35:00+00:00",
-   "lang": "en",
-   "topics": [
-    "events"
-   ],
-   "official": false
-  },
-  {
    "source": "The Thaiger",
    "title": "Five African women arrested for visa overstays on Koh Samui",
    "url": "https://thethaiger.com/hot-news/crime/five-african-women-arrested-visa-overstays-koh-samui",
@@ -1776,18 +1912,6 @@
    "topics": [
     "entry_rules",
     "samui"
-   ],
-   "official": false
-  },
-  {
-   "source": "Nation Thailand",
-   "title": "Alleged China study trip fraud leaves students stranded at airport",
-   "url": "https://www.nationthailand.com/news/general/40072372",
-   "published_at": "2026-10-16T09:26:00+00:00",
-   "lang": "en",
-   "topics": [
-    "flights",
-    "safety"
    ],
    "official": false
   },
@@ -1846,17 +1970,6 @@
    "lang": "en",
    "topics": [
     "safety"
-   ],
-   "official": false
-  },
-  {
-   "source": "Nation Thailand",
-   "title": "Thailand issues new airport rules on checked baggage inspections",
-   "url": "https://www.nationthailand.com/news/tourism/40072357",
-   "published_at": "2026-10-16T06:09:00+00:00",
-   "lang": "en",
-   "topics": [
-    "flights"
    ],
    "official": false
   },
@@ -2020,206 +2133,6 @@
     "flights"
    ],
    "official": false
-  },
-  {
-   "source": "TAT Newsroom",
-   "title": "TAT spotlights 2026 Nakhon Phanom Illuminated Boat Procession on the Mekong",
-   "url": "https://www.tatnews.org/2026/10/tat-spotlights-2026-nakhon-phanom-illuminated-boat-procession-on-the-mekong/",
-   "published_at": "2026-10-15T06:30:00+00:00",
-   "lang": "en",
-   "topics": [
-    "events"
-   ],
-   "official": true
-  },
-  {
-   "source": "The Thaiger",
-   "title": "Israeli doctor caught with 300 Thai plants at Tel Aviv airport",
-   "url": "https://thethaiger.com/news/world/israeli-doctor-caught-with-300-thai-plants-at-tel-aviv-airport",
-   "published_at": "2026-10-15T06:16:07+00:00",
-   "lang": "en",
-   "topics": [
-    "flights"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Phuket News",
-   "title": "More than 500 spirit mediums join Bang Neow Shrine procession",
-   "url": "https://www.thephuketnews.com/more-than-500-spirit-mediums-join-bang-neow-shrine-procession-101925.php",
-   "published_at": "2026-10-15T05:27:00+00:00",
-   "lang": "en",
-   "topics": [
-    "events"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Phuket News",
-   "title": "Officials promote EV buses for Vegetarian Festival travel",
-   "url": "https://www.thephuketnews.com/officials-promote-ev-buses-for-vegetarian-festival-travel-101923.php",
-   "published_at": "2026-10-15T04:46:00+00:00",
-   "lang": "en",
-   "topics": [
-    "events"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Phuket News",
-   "title": "‘Bangkok Blueprint’ targets cross-border digital fraud",
-   "url": "https://www.thephuketnews.com/bangkok-blueprint-targets-cross-border-digital-fraud-101922.php",
-   "published_at": "2026-10-15T04:31:00+00:00",
-   "lang": "en",
-   "topics": [
-    "safety",
-    "bangkok"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Thaiger",
-   "title": "Thailand video news | Thailand falls nearly 13 million tourists short of annual target, Netflix sees Thailand as potential global entertainment powerhouse",
-   "url": "https://thethaiger.com/video-podcasts/thailand-video-news-15-10-2026",
-   "published_at": "2026-10-15T04:27:39+00:00",
-   "lang": "en",
-   "topics": [
-    "statistics"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Thaiger",
-   "title": "Thai pilgrims get new flights after Riyadh airport strike",
-   "url": "https://thethaiger.com/news/bangkok/thai-pilgrims-get-new-flights-after-riyadh-airport-strike",
-   "published_at": "2026-10-15T03:10:07+00:00",
-   "lang": "en",
-   "topics": [
-    "flights"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Phuket News",
-   "title": "Thai Airways offers new help after baggage crisis",
-   "url": "https://www.thephuketnews.com/thai-airways-offers-new-help-after-baggage-crisis-101913.php",
-   "published_at": "2026-10-15T03:00:00+00:00",
-   "lang": "en",
-   "topics": [
-    "flights"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Phuket News",
-   "title": "Meth, ketamine, ecstasy seized in Phuket Town raid",
-   "url": "https://www.thephuketnews.com/meth-ketamine-ecstasy-seized-in-phuket-town-raid-101919.php",
-   "published_at": "2026-10-15T02:55:00+00:00",
-   "lang": "en",
-   "topics": [
-    "safety",
-    "phuket"
-   ],
-   "official": false
-  },
-  {
-   "source": "Khaosod English",
-   "title": "Chiang Rai Ministry of Finance fire under investigation",
-   "url": "https://www.khaosodenglish.com/news/2026/10/15/chiang-rai-finance-ministry-centre-fire-under-investigation/",
-   "published_at": "2026-10-15T02:23:56+00:00",
-   "lang": "en",
-   "topics": [
-    "safety"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Phuket News",
-   "title": "Wichit Police probe three wire theft cases after arrest",
-   "url": "https://www.thephuketnews.com/wichit-police-probe-three-wire-theft-cases-after-arrest-101917.php",
-   "published_at": "2026-10-15T02:08:00+00:00",
-   "lang": "en",
-   "topics": [
-    "safety"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Thaiger",
-   "title": "Where to celebrate Halloween in Bangkok 2026",
-   "url": "https://thethaiger.com/guides/best-of/things-to-do/where-to-celebrate-halloween-in-bangkok-2024",
-   "published_at": "2026-10-14T10:05:55+00:00",
-   "lang": "en",
-   "topics": [
-    "events",
-    "bangkok"
-   ],
-   "official": false
-  },
-  {
-   "source": "Khaosod English",
-   "title": "Man in “Udon Police” shirt seen assaulting rescue volunteer was air-con technician, police say",
-   "url": "https://www.khaosodenglish.com/featured/2026/10/14/man-in-udon-police-shirt-seen-assaulting-rescue-volunteer-was-air-con-technician-police-say/",
-   "published_at": "2026-10-14T09:01:42+00:00",
-   "lang": "en",
-   "topics": [
-    "safety"
-   ],
-   "official": false
-  },
-  {
-   "source": "TAT Newsroom",
-   "title": "TAT positions Thailand for high-value tourism at CNN Global Perspectives in Bangkok",
-   "url": "https://www.tatnews.org/2026/10/tat-positions-thailand-for-high-value-tourism-at-cnn-global-perspectives-in-bangkok/",
-   "published_at": "2026-10-14T08:00:00+00:00",
-   "lang": "en",
-   "topics": [
-    "bangkok"
-   ],
-   "official": true
-  },
-  {
-   "source": "Khaosod English",
-   "title": "Thailand is waiting for winter. Here’s how meteorologists know it has arrived",
-   "url": "https://www.khaosodenglish.com/news/2026/10/14/thailand-is-waiting-for-winter-heres-how-meteorologists-know-it-has-arrived/",
-   "published_at": "2026-10-14T07:50:44+00:00",
-   "lang": "en",
-   "topics": [
-    "weather"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Thaiger",
-   "title": "Thailand tourist arrivals reach 23.94 million, target still distant",
-   "url": "https://thethaiger.com/news/national/thailand-is-12-76-million-visitors-short-of-its-36-7-million-arrival-target",
-   "published_at": "2026-10-14T07:28:02+00:00",
-   "lang": "en",
-   "topics": [
-    "statistics"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Thaiger",
-   "title": "Celebrate the magic of Christmas and New Year at Phuket Marriott Resort & Spa, Merlin Beach",
-   "url": "https://thethaiger.com/travel/hotels/phuket-marriott-merlin-beach-christmas-new-year-2026",
-   "published_at": "2026-10-14T07:20:26+00:00",
-   "lang": "en",
-   "topics": [
-    "events",
-    "phuket"
-   ],
-   "official": false
-  },
-  {
-   "source": "TAT Newsroom",
-   "title": "TAT and Tripadvisor partner to support Thailand’s 2027 tourism transformation",
-   "url": "https://www.tatnews.org/2026/10/tat-and-tripadvisor-partner-to-support-thailands-2027-tourism-transformation/",
-   "published_at": "2026-10-14T07:12:02+00:00",
-   "lang": "en",
-   "topics": [],
-   "official": true
   }
  ],
  "sources": [
@@ -2227,14 +2140,14 @@
    "name": "TAT Newsroom",
    "endpoint": "https://www.tatnews.org/wp-json/wp/v2/posts",
    "ok": true,
-   "count": 8,
+   "count": 5,
    "error": null
   },
   {
    "name": "The Pattaya News",
    "endpoint": "https://thepattayanews.com/wp-json/wp/v2/posts",
    "ok": true,
-   "count": 63,
+   "count": 61,
    "error": null
   },
   {
@@ -2255,7 +2168,7 @@
    "name": "The Thaiger",
    "endpoint": "https://thethaiger.com/wp-json/wp/v2/posts",
    "ok": true,
-   "count": 102,
+   "count": 94,
    "error": null
   },
   {
@@ -2276,7 +2189,7 @@
    "name": "Nation Thailand",
    "endpoint": "https://api.nationthailand.com/sitemap/latest",
    "ok": true,
-   "count": 37,
+   "count": 30,
    "error": null
   }
  ],
