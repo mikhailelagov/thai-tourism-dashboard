@@ -1,42 +1,24 @@
 {
- "built_at": "2026-10-30T07:42:34+00:00",
+ "built_at": "2026-10-31T07:28:43+00:00",
  "score_kind": "weather_calendar_model",
  "score_note_ru": "Модель условий из погоды, праздников, цены нефти и курсов валют, а не измерение спроса",
  "stale": false,
- "updated_at": "2026-10-30T07:42:34+00:00",
+ "updated_at": "2026-10-31T07:28:43+00:00",
  "regions": {
   "bangkok": [
    {
-    "iso": "2026-10-30",
-    "tmax": 32,
-    "mm": 5.9,
-    "pop": 82,
+    "iso": "2026-10-31",
+    "tmax": 33,
+    "mm": 7.0,
+    "pop": 84,
     "score": 46,
     "parts": {
-     "weather": 45.4,
+     "weather": 45.1,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -0.1,
-     "fx": 1.1
-    },
-    "event": null,
-    "missing": false,
-    "alcohol_ban": false
-   },
-   {
-    "iso": "2026-10-31",
-    "tmax": 31,
-    "mm": 13.0,
-    "pop": 87,
-    "score": 45,
-    "parts": {
-     "weather": 43.9,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": -0.1,
-     "fx": 1.1
+     "fx": 1.2
     },
     "event": null,
     "missing": false,
@@ -45,16 +27,16 @@
    {
     "iso": "2026-11-01",
     "tmax": 32,
-    "mm": 3.7,
-    "pop": 69,
-    "score": 47,
+    "mm": 1.9,
+    "pop": 63,
+    "score": 48,
     "parts": {
-     "weather": 46.0,
+     "weather": 46.5,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -0.1,
-     "fx": 1.1
+     "fx": 1.2
     },
     "event": null,
     "missing": false,
@@ -63,16 +45,16 @@
    {
     "iso": "2026-11-02",
     "tmax": 32,
-    "mm": 1.5,
-    "pop": 72,
+    "mm": 2.5,
+    "pop": 88,
     "score": 47,
     "parts": {
-     "weather": 46.4,
+     "weather": 45.9,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -0.1,
-     "fx": 1.1
+     "fx": 1.2
     },
     "event": null,
     "missing": false,
@@ -80,63 +62,9 @@
    },
    {
     "iso": "2026-11-03",
-    "tmax": 31,
-    "mm": 3.6,
-    "pop": 69,
-    "score": 47,
-    "parts": {
-     "weather": 46.1,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": -0.1,
-     "fx": 1.1
-    },
-    "event": null,
-    "missing": false,
-    "alcohol_ban": false
-   },
-   {
-    "iso": "2026-11-04",
     "tmax": 30,
-    "mm": 3.3,
-    "pop": 86,
-    "score": 48,
-    "parts": {
-     "weather": 45.8,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 1.5,
-     "fuel": -0.1,
-     "fx": 1.1
-    },
-    "event": null,
-    "missing": false,
-    "alcohol_ban": false
-   },
-   {
-    "iso": "2026-11-05",
-    "tmax": 31,
-    "mm": 7.6,
-    "pop": 92,
-    "score": 46,
-    "parts": {
-     "weather": 44.9,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": -0.1,
-     "fx": 1.1
-    },
-    "event": null,
-    "missing": false,
-    "alcohol_ban": false
-   },
-   {
-    "iso": "2026-11-06",
-    "tmax": 31,
-    "mm": 5.4,
-    "pop": 96,
+    "mm": 8.5,
+    "pop": 67,
     "score": 46,
     "parts": {
      "weather": 45.2,
@@ -144,7 +72,79 @@
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -0.1,
-     "fx": 1.1
+     "fx": 1.2
+    },
+    "event": null,
+    "missing": false,
+    "alcohol_ban": false
+   },
+   {
+    "iso": "2026-11-04",
+    "tmax": 31,
+    "mm": 6.7,
+    "pop": 88,
+    "score": 48,
+    "parts": {
+     "weather": 45.1,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 1.5,
+     "fuel": -0.1,
+     "fx": 1.2
+    },
+    "event": null,
+    "missing": false,
+    "alcohol_ban": false
+   },
+   {
+    "iso": "2026-11-05",
+    "tmax": 30,
+    "mm": 21.5,
+    "pop": 84,
+    "score": 43,
+    "parts": {
+     "weather": 42.3,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": -0.1,
+     "fx": 1.2
+    },
+    "event": null,
+    "missing": false,
+    "alcohol_ban": false
+   },
+   {
+    "iso": "2026-11-06",
+    "tmax": 30,
+    "mm": 6.1,
+    "pop": 84,
+    "score": 46,
+    "parts": {
+     "weather": 45.3,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": -0.1,
+     "fx": 1.2
+    },
+    "event": null,
+    "missing": false,
+    "alcohol_ban": false
+   },
+   {
+    "iso": "2026-11-07",
+    "tmax": 31,
+    "mm": 10.2,
+    "pop": 82,
+    "score": 46,
+    "parts": {
+     "weather": 44.6,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": -0.1,
+     "fx": 1.2
     },
     "event": null,
     "missing": false,
@@ -153,36 +153,18 @@
   ],
   "pattaya": [
    {
-    "iso": "2026-10-30",
-    "tmax": 31,
-    "mm": 5.4,
-    "pop": 88,
-    "score": 26,
-    "parts": {
-     "weather": 25.1,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": -0.1,
-     "fx": 1.1
-    },
-    "event": null,
-    "missing": false,
-    "alcohol_ban": false
-   },
-   {
     "iso": "2026-10-31",
     "tmax": 31,
-    "mm": 6.7,
-    "pop": 98,
-    "score": 25,
+    "mm": 9.6,
+    "pop": 93,
+    "score": 24,
     "parts": {
-     "weather": 24.3,
+     "weather": 23.4,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -0.1,
-     "fx": 1.1
+     "fx": 1.2
     },
     "event": null,
     "missing": false,
@@ -191,8 +173,8 @@
    {
     "iso": "2026-11-01",
     "tmax": 30,
-    "mm": 5.0,
-    "pop": 98,
+    "mm": 4.8,
+    "pop": 100,
     "score": 26,
     "parts": {
      "weather": 24.9,
@@ -200,7 +182,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -0.1,
-     "fx": 1.1
+     "fx": 1.2
     },
     "event": null,
     "missing": false,
@@ -210,15 +192,15 @@
     "iso": "2026-11-02",
     "tmax": 30,
     "mm": 4.6,
-    "pop": 98,
+    "pop": 94,
     "score": 26,
     "parts": {
-     "weather": 25.0,
+     "weather": 25.2,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -0.1,
-     "fx": 1.1
+     "fx": 1.2
     },
     "event": null,
     "missing": false,
@@ -226,17 +208,17 @@
    },
    {
     "iso": "2026-11-03",
-    "tmax": 30,
-    "mm": 10.5,
+    "tmax": 29,
+    "mm": 5.7,
     "pop": 96,
-    "score": 24,
+    "score": 26,
     "parts": {
-     "weather": 23.0,
+     "weather": 24.7,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -0.1,
-     "fx": 1.1
+     "fx": 1.2
     },
     "event": null,
     "missing": false,
@@ -244,17 +226,17 @@
    },
    {
     "iso": "2026-11-04",
-    "tmax": 29,
-    "mm": 15.6,
+    "tmax": 30,
+    "mm": 7.5,
     "pop": 100,
-    "score": 24,
+    "score": 26,
     "parts": {
-     "weather": 21.0,
+     "weather": 23.9,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 1.5,
      "fuel": -0.1,
-     "fx": 1.1
+     "fx": 1.2
     },
     "event": null,
     "missing": false,
@@ -263,16 +245,16 @@
    {
     "iso": "2026-11-05",
     "tmax": 30,
-    "mm": 13.6,
+    "mm": 14.1,
     "pop": 100,
     "score": 23,
     "parts": {
-     "weather": 21.7,
+     "weather": 21.5,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -0.1,
-     "fx": 1.1
+     "fx": 1.2
     },
     "event": null,
     "missing": false,
@@ -280,55 +262,58 @@
    },
    {
     "iso": "2026-11-06",
-    "tmax": 30,
-    "mm": 8.6,
-    "pop": 100,
+    "tmax": 31,
+    "mm": 6.6,
+    "pop": 95,
     "score": 25,
     "parts": {
-     "weather": 23.5,
+     "weather": 24.4,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -0.1,
-     "fx": 1.1
-    },
-    "event": null,
-    "missing": false,
-    "alcohol_ban": false
-   }
-  ],
-  "phuket": [
-   {
-    "iso": "2026-10-30",
-    "tmax": 31,
-    "mm": 2.3,
-    "pop": 65,
-    "score": 39,
-    "parts": {
-     "weather": 38.0,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": -0.1,
-     "fx": 1.1
+     "fx": 1.2
     },
     "event": null,
     "missing": false,
     "alcohol_ban": false
    },
    {
-    "iso": "2026-10-31",
-    "tmax": 29,
-    "mm": 5.1,
-    "pop": 49,
-    "score": 38,
+    "iso": "2026-11-07",
+    "tmax": 31,
+    "mm": 10.6,
+    "pop": 92,
+    "score": 34,
     "parts": {
-     "weather": 37.4,
+     "weather": 23.1,
+     "event": 10.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": -0.1,
+     "fx": 1.2
+    },
+    "event": {
+     "en": "Cruise call: Royal Princess (4,272 pax)",
+     "ru": "Круиз: Royal Princess (4 272 чел.)"
+    },
+    "missing": false,
+    "alcohol_ban": false
+   }
+  ],
+  "phuket": [
+   {
+    "iso": "2026-10-31",
+    "tmax": 31,
+    "mm": 0.8,
+    "pop": 69,
+    "score": 40,
+    "parts": {
+     "weather": 38.6,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -0.1,
-     "fx": 1.1
+     "fx": 1.2
     },
     "event": null,
     "missing": false,
@@ -337,16 +322,16 @@
    {
     "iso": "2026-11-01",
     "tmax": 30,
-    "mm": 1.5,
-    "pop": 57,
-    "score": 40,
+    "mm": 9.7,
+    "pop": 79,
+    "score": 35,
     "parts": {
-     "weather": 38.8,
+     "weather": 33.9,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -0.1,
-     "fx": 1.1
+     "fx": 1.2
     },
     "event": null,
     "missing": false,
@@ -354,17 +339,17 @@
    },
    {
     "iso": "2026-11-02",
-    "tmax": 30,
-    "mm": 4.4,
-    "pop": 73,
-    "score": 38,
+    "tmax": 29,
+    "mm": 6.3,
+    "pop": 84,
+    "score": 36,
     "parts": {
-     "weather": 36.7,
+     "weather": 35.3,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -0.1,
-     "fx": 1.1
+     "fx": 1.2
     },
     "event": null,
     "missing": false,
@@ -372,17 +357,17 @@
    },
    {
     "iso": "2026-11-03",
-    "tmax": 29,
-    "mm": 7.7,
-    "pop": 67,
-    "score": 36,
+    "tmax": 30,
+    "mm": 3.7,
+    "pop": 71,
+    "score": 38,
     "parts": {
-     "weather": 35.4,
+     "weather": 37.1,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -0.1,
-     "fx": 1.1
+     "fx": 1.2
     },
     "event": null,
     "missing": false,
@@ -390,17 +375,17 @@
    },
    {
     "iso": "2026-11-04",
-    "tmax": 29,
-    "mm": 8.0,
-    "pop": 83,
-    "score": 37,
+    "tmax": 30,
+    "mm": 6.8,
+    "pop": 79,
+    "score": 38,
     "parts": {
-     "weather": 34.6,
+     "weather": 35.3,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 1.5,
      "fuel": -0.1,
-     "fx": 1.1
+     "fx": 1.2
     },
     "event": null,
     "missing": false,
@@ -409,16 +394,16 @@
    {
     "iso": "2026-11-05",
     "tmax": 29,
-    "mm": 7.1,
-    "pop": 84,
-    "score": 36,
+    "mm": 12.8,
+    "pop": 80,
+    "score": 34,
     "parts": {
-     "weather": 34.9,
+     "weather": 32.4,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -0.1,
-     "fx": 1.1
+     "fx": 1.2
     },
     "event": null,
     "missing": false,
@@ -427,16 +412,34 @@
    {
     "iso": "2026-11-06",
     "tmax": 30,
-    "mm": 8.6,
-    "pop": 85,
-    "score": 35,
+    "mm": 6.2,
+    "pop": 88,
+    "score": 36,
     "parts": {
-     "weather": 34.2,
+     "weather": 35.2,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -0.1,
-     "fx": 1.1
+     "fx": 1.2
+    },
+    "event": null,
+    "missing": false,
+    "alcohol_ban": false
+   },
+   {
+    "iso": "2026-11-07",
+    "tmax": 29,
+    "mm": 9.0,
+    "pop": 88,
+    "score": 35,
+    "parts": {
+     "weather": 33.9,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": -0.1,
+     "fx": 1.2
     },
     "event": null,
     "missing": false,
@@ -445,36 +448,18 @@
   ],
   "krabi": [
    {
-    "iso": "2026-10-30",
-    "tmax": 32,
-    "mm": 6.5,
-    "pop": 100,
-    "score": 37,
-    "parts": {
-     "weather": 35.8,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": -0.1,
-     "fx": 1.1
-    },
-    "event": null,
-    "missing": false,
-    "alcohol_ban": false
-   },
-   {
     "iso": "2026-10-31",
-    "tmax": 31,
-    "mm": 4.6,
-    "pop": 98,
-    "score": 38,
+    "tmax": 32,
+    "mm": 4.2,
+    "pop": 88,
+    "score": 39,
     "parts": {
-     "weather": 36.9,
+     "weather": 37.6,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -0.1,
-     "fx": 1.1
+     "fx": 1.2
     },
     "event": null,
     "missing": false,
@@ -483,16 +468,16 @@
    {
     "iso": "2026-11-01",
     "tmax": 32,
-    "mm": 2.6,
-    "pop": 96,
-    "score": 39,
+    "mm": 7.9,
+    "pop": 98,
+    "score": 36,
     "parts": {
-     "weather": 38.0,
+     "weather": 35.2,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -0.1,
-     "fx": 1.1
+     "fx": 1.2
     },
     "event": null,
     "missing": false,
@@ -500,17 +485,17 @@
    },
    {
     "iso": "2026-11-02",
-    "tmax": 31,
-    "mm": 12.2,
-    "pop": 100,
-    "score": 34,
+    "tmax": 32,
+    "mm": 8.9,
+    "pop": 97,
+    "score": 36,
     "parts": {
-     "weather": 32.8,
+     "weather": 34.7,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -0.1,
-     "fx": 1.1
+     "fx": 1.2
     },
     "event": null,
     "missing": false,
@@ -518,17 +503,17 @@
    },
    {
     "iso": "2026-11-03",
-    "tmax": 30,
-    "mm": 6.9,
-    "pop": 100,
-    "score": 37,
+    "tmax": 31,
+    "mm": 8.6,
+    "pop": 98,
+    "score": 36,
     "parts": {
-     "weather": 35.6,
+     "weather": 34.8,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -0.1,
-     "fx": 1.1
+     "fx": 1.2
     },
     "event": null,
     "missing": false,
@@ -536,17 +521,17 @@
    },
    {
     "iso": "2026-11-04",
-    "tmax": 30,
-    "mm": 11.1,
-    "pop": 95,
-    "score": 36,
+    "tmax": 31,
+    "mm": 6.3,
+    "pop": 100,
+    "score": 38,
     "parts": {
-     "weather": 33.6,
+     "weather": 35.9,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 1.5,
      "fuel": -0.1,
-     "fx": 1.1
+     "fx": 1.2
     },
     "event": null,
     "missing": false,
@@ -555,16 +540,16 @@
    {
     "iso": "2026-11-05",
     "tmax": 30,
-    "mm": 6.0,
-    "pop": 100,
-    "score": 37,
+    "mm": 7.8,
+    "pop": 98,
+    "score": 36,
     "parts": {
-     "weather": 36.0,
+     "weather": 35.2,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -0.1,
-     "fx": 1.1
+     "fx": 1.2
     },
     "event": null,
     "missing": false,
@@ -573,8 +558,8 @@
    {
     "iso": "2026-11-06",
     "tmax": 31,
-    "mm": 4.8,
-    "pop": 98,
+    "mm": 4.6,
+    "pop": 100,
     "score": 38,
     "parts": {
      "weather": 36.8,
@@ -582,7 +567,25 @@
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -0.1,
-     "fx": 1.1
+     "fx": 1.2
+    },
+    "event": null,
+    "missing": false,
+    "alcohol_ban": false
+   },
+   {
+    "iso": "2026-11-07",
+    "tmax": 31,
+    "mm": 9.8,
+    "pop": 96,
+    "score": 35,
+    "parts": {
+     "weather": 34.3,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": -0.1,
+     "fx": 1.2
     },
     "event": null,
     "missing": false,
@@ -591,36 +594,18 @@
   ],
   "samui": [
    {
-    "iso": "2026-10-30",
-    "tmax": 30,
-    "mm": 8.3,
-    "pop": 100,
-    "score": 37,
-    "parts": {
-     "weather": 36.1,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": -0.1,
-     "fx": 1.1
-    },
-    "event": null,
-    "missing": false,
-    "alcohol_ban": false
-   },
-   {
     "iso": "2026-10-31",
-    "tmax": 29,
-    "mm": 9.4,
-    "pop": 91,
-    "score": 37,
+    "tmax": 30,
+    "mm": 2.8,
+    "pop": 99,
+    "score": 40,
     "parts": {
-     "weather": 35.9,
+     "weather": 38.9,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -0.1,
-     "fx": 1.1
+     "fx": 1.2
     },
     "event": null,
     "missing": false,
@@ -628,17 +613,17 @@
    },
    {
     "iso": "2026-11-01",
-    "tmax": 29,
-    "mm": 3.9,
-    "pop": 94,
-    "score": 40,
+    "tmax": 28,
+    "mm": 6.8,
+    "pop": 84,
+    "score": 39,
     "parts": {
-     "weather": 38.6,
+     "weather": 37.6,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -0.1,
-     "fx": 1.1
+     "fx": 1.2
     },
     "event": null,
     "missing": false,
@@ -647,16 +632,16 @@
    {
     "iso": "2026-11-02",
     "tmax": 29,
-    "mm": 2.1,
-    "pop": 88,
-    "score": 41,
+    "mm": 1.4,
+    "pop": 71,
+    "score": 42,
     "parts": {
-     "weather": 39.8,
+     "weather": 40.9,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -0.1,
-     "fx": 1.1
+     "fx": 1.2
     },
     "event": null,
     "missing": false,
@@ -665,16 +650,16 @@
    {
     "iso": "2026-11-03",
     "tmax": 28,
-    "mm": 3.9,
-    "pop": 82,
+    "mm": 3.4,
+    "pop": 83,
     "score": 40,
     "parts": {
-     "weather": 39.2,
+     "weather": 39.4,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -0.1,
-     "fx": 1.1
+     "fx": 1.2
     },
     "event": null,
     "missing": false,
@@ -682,17 +667,17 @@
    },
    {
     "iso": "2026-11-04",
-    "tmax": 29,
-    "mm": 5.6,
+    "tmax": 28,
+    "mm": 7.1,
     "pop": 92,
     "score": 40,
     "parts": {
-     "weather": 37.8,
+     "weather": 37.1,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 1.5,
      "fuel": -0.1,
-     "fx": 1.1
+     "fx": 1.2
     },
     "event": null,
     "missing": false,
@@ -700,17 +685,17 @@
    },
    {
     "iso": "2026-11-05",
-    "tmax": 28,
-    "mm": 3.0,
-    "pop": 94,
-    "score": 40,
+    "tmax": 29,
+    "mm": 6.7,
+    "pop": 90,
+    "score": 38,
     "parts": {
-     "weather": 39.0,
+     "weather": 37.4,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -0.1,
-     "fx": 1.1
+     "fx": 1.2
     },
     "event": null,
     "missing": false,
@@ -719,16 +704,34 @@
    {
     "iso": "2026-11-06",
     "tmax": 28,
-    "mm": 6.0,
-    "pop": 96,
+    "mm": 6.3,
+    "pop": 95,
     "score": 38,
     "parts": {
-     "weather": 37.4,
+     "weather": 37.3,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -0.1,
-     "fx": 1.1
+     "fx": 1.2
+    },
+    "event": null,
+    "missing": false,
+    "alcohol_ban": false
+   },
+   {
+    "iso": "2026-11-07",
+    "tmax": 28,
+    "mm": 25.4,
+    "pop": 86,
+    "score": 29,
+    "parts": {
+     "weather": 28.1,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": -0.1,
+     "fx": 1.2
     },
     "event": null,
     "missing": false,
@@ -737,36 +740,18 @@
   ],
   "chiangmai": [
    {
-    "iso": "2026-10-30",
-    "tmax": 31,
-    "mm": 0.2,
-    "pop": 39,
-    "score": 38,
-    "parts": {
-     "weather": 36.8,
-     "event": 0.0,
-     "holiday_th": 0.0,
-     "holiday_abroad": 0.0,
-     "fuel": -0.1,
-     "fx": 1.1
-    },
-    "event": null,
-    "missing": false,
-    "alcohol_ban": false
-   },
-   {
     "iso": "2026-10-31",
-    "tmax": 31,
-    "mm": 0.0,
-    "pop": 33,
+    "tmax": 32,
+    "mm": 0.3,
+    "pop": 42,
     "score": 38,
     "parts": {
-     "weather": 37.1,
+     "weather": 36.7,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -0.1,
-     "fx": 1.1
+     "fx": 1.2
     },
     "event": null,
     "missing": false,
@@ -774,17 +759,17 @@
    },
    {
     "iso": "2026-11-01",
-    "tmax": 30,
-    "mm": 4.1,
-    "pop": 17,
-    "score": 37,
+    "tmax": 32,
+    "mm": 0.3,
+    "pop": 32,
+    "score": 38,
     "parts": {
-     "weather": 36.3,
+     "weather": 37.0,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -0.1,
-     "fx": 1.1
+     "fx": 1.2
     },
     "event": null,
     "missing": false,
@@ -793,8 +778,8 @@
    {
     "iso": "2026-11-02",
     "tmax": 31,
-    "mm": 1.5,
-    "pop": 46,
+    "mm": 1.0,
+    "pop": 51,
     "score": 37,
     "parts": {
      "weather": 36.2,
@@ -802,7 +787,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -0.1,
-     "fx": 1.1
+     "fx": 1.2
     },
     "event": null,
     "missing": false,
@@ -811,16 +796,16 @@
    {
     "iso": "2026-11-03",
     "tmax": 30,
-    "mm": 0.9,
-    "pop": 27,
+    "mm": 1.0,
+    "pop": 31,
     "score": 38,
     "parts": {
-     "weather": 37.0,
+     "weather": 36.8,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -0.1,
-     "fx": 1.1
+     "fx": 1.2
     },
     "event": null,
     "missing": false,
@@ -829,8 +814,8 @@
    {
     "iso": "2026-11-04",
     "tmax": 31,
-    "mm": 0.6,
-    "pop": 13,
+    "mm": 0.9,
+    "pop": 10,
     "score": 40,
     "parts": {
      "weather": 37.4,
@@ -838,7 +823,7 @@
      "holiday_th": 0.0,
      "holiday_abroad": 1.5,
      "fuel": -0.1,
-     "fx": 1.1
+     "fx": 1.2
     },
     "event": null,
     "missing": false,
@@ -846,17 +831,17 @@
    },
    {
     "iso": "2026-11-05",
-    "tmax": 32,
-    "mm": 0.6,
-    "pop": 26,
+    "tmax": 33,
+    "mm": 2.0,
+    "pop": 16,
     "score": 38,
     "parts": {
-     "weather": 37.1,
+     "weather": 36.9,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -0.1,
-     "fx": 1.1
+     "fx": 1.2
     },
     "event": null,
     "missing": false,
@@ -865,16 +850,34 @@
    {
     "iso": "2026-11-06",
     "tmax": 30,
-    "mm": 7.2,
-    "pop": 76,
+    "mm": 5.8,
+    "pop": 73,
     "score": 35,
     "parts": {
-     "weather": 33.6,
+     "weather": 34.1,
      "event": 0.0,
      "holiday_th": 0.0,
      "holiday_abroad": 0.0,
      "fuel": -0.1,
-     "fx": 1.1
+     "fx": 1.2
+    },
+    "event": null,
+    "missing": false,
+    "alcohol_ban": false
+   },
+   {
+    "iso": "2026-11-07",
+    "tmax": 29,
+    "mm": 7.8,
+    "pop": 73,
+    "score": 35,
+    "parts": {
+     "weather": 33.5,
+     "event": 0.0,
+     "holiday_th": 0.0,
+     "holiday_abroad": 0.0,
+     "fuel": -0.1,
+     "fx": 1.2
     },
     "event": null,
     "missing": false,
@@ -884,17 +887,17 @@
  },
  "fx": {
   "USD": 1,
-  "AUD": 1.422859,
-  "CNY": 6.676858,
-  "EUR": 0.895934,
-  "GBP": 0.749154,
-  "INR": 95.292116,
-  "KRW": 1338.041489,
-  "MYR": 4.059557,
-  "RUB": 80.572954,
-  "THB": 33.734156
+  "AUD": 1.422347,
+  "CNY": 6.669566,
+  "EUR": 0.895588,
+  "GBP": 0.747088,
+  "INR": 95.073571,
+  "KRW": 1334.506872,
+  "MYR": 4.057099,
+  "RUB": 80.408916,
+  "THB": 33.744351
  },
- "fx_time": "2026-10-30T00:02:31+00:00",
+ "fx_time": "2026-10-31T00:02:31+00:00",
  "fx_source": "ExchangeRate-API (open.er-api.com)",
  "fx_source_url": "https://open.er-api.com/v6/latest/USD",
  "fx_note_ru": "Справочный курс (mid-market), не курс обменника",
@@ -904,77 +907,77 @@
   "brent_source": "FRED DCOILBRENTEU (U.S. EIA, Europe Brent spot FOB)",
   "brent_source_url": "https://fred.stlouisfed.org/series/DCOILBRENTEU",
   "brent_delta": 0.0018,
-  "usdthb": 33.755,
-  "usdthb_date": "2026-10-29",
+  "usdthb": 33.73,
+  "usdthb_date": "2026-10-30",
   "usdthb_source": "ECB euro reference rates (cross via EUR)",
-  "usdthb_delta": -0.0004,
+  "usdthb_delta": -0.0012,
   "purchasing_power": {
    "CNY": {
     "name": "Китай",
     "share": 17.46,
-    "thb": 5.067032,
-    "delta": 0.0079,
-    "date": "2026-10-29",
+    "thb": 5.069962,
+    "delta": 0.0078,
+    "date": "2026-10-30",
     "source": "ECB"
    },
    "MYR": {
     "name": "Малайзия",
     "share": 13.06,
-    "thb": 8.315037,
-    "delta": 0.0098,
-    "date": "2026-10-29",
+    "thb": 8.313955,
+    "delta": 0.0091,
+    "date": "2026-10-30",
     "source": "ECB"
    },
    "RUB": {
     "name": "Россия",
     "share": 4.09,
-    "thb": 0.418316,
-    "delta": 0.0353,
-    "date": "2026-10-30",
+    "thb": 0.418349,
+    "delta": 0.033,
+    "date": "2026-10-31",
     "source": "Bank of Russia"
    },
    "INR": {
     "name": "Индия",
     "share": 8.34,
-    "thb": 0.354309,
-    "delta": 0.0072,
-    "date": "2026-10-29",
+    "thb": 0.355219,
+    "delta": 0.0091,
+    "date": "2026-10-30",
     "source": "ECB"
    },
    "KRW": {
     "name": "Южная Корея",
     "share": 3.55,
-    "thb": 0.025241,
-    "delta": 0.0043,
-    "date": "2026-10-29",
+    "thb": 0.025261,
+    "delta": 0.0042,
+    "date": "2026-10-30",
     "source": "ECB"
    },
    "GBP": {
     "name": "Британия",
     "share": 2.33,
-    "thb": 44.950824,
-    "delta": 0.0063,
-    "date": "2026-10-29",
+    "thb": 45.194291,
+    "delta": 0.0112,
+    "date": "2026-10-30",
     "source": "ECB"
    },
    "EUR": {
     "name": "Еврозона",
     "share": 3.58,
-    "thb": 37.569,
-    "delta": -0.0044,
-    "date": "2026-10-29",
+    "thb": 37.683,
+    "delta": -0.0007,
+    "date": "2026-10-30",
     "source": "ECB"
    },
    "AUD": {
     "name": "Австралия",
     "share": 3.13,
-    "thb": 23.714809,
-    "delta": 0.0097,
-    "date": "2026-10-29",
+    "thb": 23.694039,
+    "delta": 0.0084,
+    "date": "2026-10-30",
     "source": "ECB"
    }
   },
-  "pp_composite": 0.0093,
+  "pp_composite": 0.0096,
   "weights": {
    "kind": "arrivals_share_pct",
    "unit": "% of international arrivals",
@@ -1033,37 +1036,37 @@
    "name": "Open-Meteo forecast API (CC BY 4.0)",
    "url": "https://open-meteo.com/",
    "ok": true,
-   "retrieved_at": "2026-10-30T07:42:34+00:00"
+   "retrieved_at": "2026-10-31T07:28:43+00:00"
   },
   "holidays": {
    "name": "Google Calendar public holiday feeds",
    "url": "https://calendar.google.com/",
    "ok": true,
-   "retrieved_at": "2026-10-30T07:42:34+00:00"
+   "retrieved_at": "2026-10-31T07:28:43+00:00"
   },
   "fx": {
    "name": "ExchangeRate-API (open.er-api.com)",
    "url": "https://open.er-api.com/v6/latest/USD",
    "ok": true,
-   "retrieved_at": "2026-10-30T07:42:34+00:00"
+   "retrieved_at": "2026-10-31T07:28:43+00:00"
   },
   "ecb": {
    "name": "ECB euro reference rates",
    "url": "https://data.ecb.europa.eu/data/datasets/EXR",
    "ok": true,
-   "retrieved_at": "2026-10-30T07:42:34+00:00"
+   "retrieved_at": "2026-10-31T07:28:43+00:00"
   },
   "cbr": {
    "name": "Bank of Russia",
    "url": "https://www.cbr.ru/currency_base/dynamics/",
    "ok": true,
-   "retrieved_at": "2026-10-30T07:42:34+00:00"
+   "retrieved_at": "2026-10-31T07:28:43+00:00"
   },
   "brent": {
    "name": "FRED DCOILBRENTEU (U.S. EIA, Europe Brent spot FOB)",
    "url": "https://fred.stlouisfed.org/series/DCOILBRENTEU",
    "ok": true,
-   "retrieved_at": "2026-10-30T07:42:34+00:00"
+   "retrieved_at": "2026-10-31T07:28:43+00:00"
   }
  },
  "errors": []
