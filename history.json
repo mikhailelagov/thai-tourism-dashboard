@@ -1,28 +1,28 @@
 {
- "built_at": "2026-10-31T07:28:49+00:00",
+ "built_at": "2026-11-01T08:06:44+00:00",
  "window": {
-  "from": "10-31",
-  "to": "11-06",
+  "from": "11-01",
+  "to": "11-07",
   "days": 7,
-  "start_date": "2026-10-31",
-  "end_date": "2026-11-06"
+  "start_date": "2026-11-01",
+  "end_date": "2026-11-07"
  },
  "year_windows": {
   "2025": {
-   "from": "2025-10-31",
-   "to": "2025-11-06"
+   "from": "2025-11-01",
+   "to": "2025-11-07"
   },
   "2024": {
-   "from": "2024-10-31",
-   "to": "2024-11-06"
+   "from": "2024-11-01",
+   "to": "2024-11-07"
   },
   "2023": {
-   "from": "2023-10-31",
-   "to": "2023-11-06"
+   "from": "2023-11-01",
+   "to": "2023-11-07"
   },
   "2022": {
-   "from": "2022-10-31",
-   "to": "2022-11-06"
+   "from": "2022-11-01",
+   "to": "2022-11-07"
   }
  },
  "score_kind": "weather_only_model",
@@ -32,43 +32,43 @@
  "years": {
   "2025": {
    "bangkok": {
-    "avg_score": 44,
-    "mm_total": 101.6,
-    "wet_days": 3,
-    "tmax_avg": 30.6,
+    "avg_score": 45,
+    "mm_total": 67.7,
+    "wet_days": 2,
+    "tmax_avg": 30.3,
     "days_with_data": 7
    },
    "pattaya": {
-    "avg_score": 23,
-    "mm_total": 123.7,
-    "wet_days": 2,
-    "tmax_avg": 29.6,
-    "days_with_data": 7
-   },
-   "phuket": {
-    "avg_score": 34,
-    "mm_total": 71.6,
-    "wet_days": 2,
-    "tmax_avg": 29.2,
-    "days_with_data": 7
-   },
-   "krabi": {
-    "avg_score": 37,
-    "mm_total": 45.7,
+    "avg_score": 25,
+    "mm_total": 75.6,
     "wet_days": 1,
     "tmax_avg": 29.8,
     "days_with_data": 7
    },
+   "phuket": {
+    "avg_score": 35,
+    "mm_total": 55.2,
+    "wet_days": 1,
+    "tmax_avg": 29.2,
+    "days_with_data": 7
+   },
+   "krabi": {
+    "avg_score": 38,
+    "mm_total": 44.4,
+    "wet_days": 1,
+    "tmax_avg": 29.9,
+    "days_with_data": 7
+   },
    "samui": {
     "avg_score": 35,
-    "mm_total": 85.1,
+    "mm_total": 91.4,
     "wet_days": 3,
-    "tmax_avg": 29.5,
+    "tmax_avg": 29.4,
     "days_with_data": 7
    },
    "chiangmai": {
-    "avg_score": 31,
-    "mm_total": 113.3,
+    "avg_score": 32,
+    "mm_total": 110.3,
     "wet_days": 3,
     "tmax_avg": 28.9,
     "days_with_data": 7
@@ -77,132 +77,132 @@
   "2024": {
    "bangkok": {
     "avg_score": 47,
-    "mm_total": 10.7,
+    "mm_total": 9.9,
     "wet_days": 0,
-    "tmax_avg": 31.3,
+    "tmax_avg": 31.2,
     "days_with_data": 7
    },
    "pattaya": {
     "avg_score": 29,
-    "mm_total": 13.0,
+    "mm_total": 13.8,
     "wet_days": 0,
-    "tmax_avg": 30.6,
+    "tmax_avg": 30.8,
     "days_with_data": 7
    },
    "phuket": {
-    "avg_score": 37,
-    "mm_total": 35.9,
+    "avg_score": 36,
+    "mm_total": 40.9,
     "wet_days": 1,
     "tmax_avg": 29.5,
     "days_with_data": 7
    },
    "krabi": {
-    "avg_score": 34,
-    "mm_total": 88.2,
-    "wet_days": 4,
+    "avg_score": 33,
+    "mm_total": 104.7,
+    "wet_days": 5,
     "tmax_avg": 30.6,
     "days_with_data": 7
    },
    "samui": {
-    "avg_score": 34,
-    "mm_total": 105.8,
+    "avg_score": 33,
+    "mm_total": 115.7,
     "wet_days": 4,
-    "tmax_avg": 28.4,
+    "tmax_avg": 28.2,
     "days_with_data": 7
    },
    "chiangmai": {
-    "avg_score": 36,
-    "mm_total": 15.1,
+    "avg_score": 35,
+    "mm_total": 27.5,
     "wet_days": 0,
-    "tmax_avg": 29.2,
+    "tmax_avg": 28.3,
     "days_with_data": 7
    }
   },
   "2023": {
    "bangkok": {
     "avg_score": 46,
-    "mm_total": 29.3,
+    "mm_total": 35.1,
     "wet_days": 1,
-    "tmax_avg": 31.8,
+    "tmax_avg": 32.0,
     "days_with_data": 7
    },
    "pattaya": {
     "avg_score": 25,
-    "mm_total": 49.0,
+    "mm_total": 49.4,
     "wet_days": 0,
-    "tmax_avg": 30.9,
+    "tmax_avg": 30.8,
     "days_with_data": 7
    },
    "phuket": {
-    "avg_score": 36,
-    "mm_total": 47.1,
+    "avg_score": 37,
+    "mm_total": 41.3,
     "wet_days": 0,
-    "tmax_avg": 30.4,
+    "tmax_avg": 30.5,
     "days_with_data": 7
    },
    "krabi": {
-    "avg_score": 36,
-    "mm_total": 50.9,
+    "avg_score": 35,
+    "mm_total": 58.5,
     "wet_days": 1,
-    "tmax_avg": 31.9,
+    "tmax_avg": 31.8,
     "days_with_data": 7
    },
    "samui": {
-    "avg_score": 37,
-    "mm_total": 57.4,
-    "wet_days": 1,
-    "tmax_avg": 28.8,
+    "avg_score": 38,
+    "mm_total": 44.6,
+    "wet_days": 0,
+    "tmax_avg": 29.1,
     "days_with_data": 7
    },
    "chiangmai": {
     "avg_score": 36,
-    "mm_total": 13.8,
+    "mm_total": 13.9,
     "wet_days": 0,
-    "tmax_avg": 29.4,
+    "tmax_avg": 29.8,
     "days_with_data": 7
    }
   },
   "2022": {
    "bangkok": {
     "avg_score": 48,
-    "mm_total": 0.5,
+    "mm_total": 1.4,
     "wet_days": 0,
     "tmax_avg": 32.1,
     "days_with_data": 7
    },
    "pattaya": {
     "avg_score": 29,
-    "mm_total": 6.8,
+    "mm_total": 9.2,
     "wet_days": 0,
-    "tmax_avg": 30.5,
+    "tmax_avg": 30.6,
     "days_with_data": 7
    },
    "phuket": {
-    "avg_score": 33,
-    "mm_total": 87.6,
-    "wet_days": 2,
-    "tmax_avg": 28.2,
+    "avg_score": 32,
+    "mm_total": 96.1,
+    "wet_days": 3,
+    "tmax_avg": 28.1,
     "days_with_data": 7
    },
    "krabi": {
-    "avg_score": 35,
-    "mm_total": 73.2,
-    "wet_days": 3,
-    "tmax_avg": 29.1,
+    "avg_score": 36,
+    "mm_total": 57.9,
+    "wet_days": 2,
+    "tmax_avg": 29.0,
     "days_with_data": 7
    },
    "samui": {
-    "avg_score": 38,
-    "mm_total": 106.0,
+    "avg_score": 37,
+    "mm_total": 117.2,
     "wet_days": 2,
-    "tmax_avg": 27.9,
+    "tmax_avg": 27.8,
     "days_with_data": 7
    },
    "chiangmai": {
     "avg_score": 38,
     "mm_total": 0.0,
     "wet_days": 0,
-    "tmax_avg": 30.1,
+    "tmax_avg": 30.0,
     "days_with_data": 7
    }
   }

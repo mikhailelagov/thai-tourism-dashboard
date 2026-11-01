@@ -1,7 +1,211 @@
 {
- "built_at": "2026-10-31T07:28:59+00:00",
+ "built_at": "2026-11-01T08:06:58+00:00",
  "window_days": 10,
  "items": [
+  {
+   "source": "Khaosod English",
+   "title": "Bueng Kan pub raided, 36 underage customers found, officials say",
+   "url": "https://www.khaosodenglish.com/news/2026/11/01/bueng-kan-pub-raided-36-underage-customers-found-officials-say/",
+   "published_at": "2026-11-01T08:01:47+00:00",
+   "lang": "en",
+   "topics": [
+    "alcohol"
+   ],
+   "official": false
+  },
+  {
+   "source": "Khaosod English",
+   "title": "Anutin joins Bhutan’s Project 108 ceremony as sole foreign leader invitee",
+   "url": "https://www.khaosodenglish.com/politics/2026/11/01/anutin-joins-bhutans-project-108-ceremony-as-sole-foreign-leader-invitee/",
+   "published_at": "2026-11-01T07:35:47+00:00",
+   "lang": "en",
+   "topics": [
+    "events"
+   ],
+   "official": false
+  },
+  {
+   "source": "Khaosod English",
+   "title": "Magnitude 3.9 earthquake shakes Phayao, residents feel tremors",
+   "url": "https://www.khaosodenglish.com/featured/2026/11/01/magnitude-3-9-earthquake-shakes-phayao-residents-feel-tremors/",
+   "published_at": "2026-11-01T06:34:50+00:00",
+   "lang": "en",
+   "topics": [
+    "safety"
+   ],
+   "official": false
+  },
+  {
+   "source": "Khaosod English",
+   "title": "Nursing assistant killed by pickup while helping injured in Chiang Mai",
+   "url": "https://www.khaosodenglish.com/featured/2026/11/01/nursing-assistant-killed-by-pickup-while-helping-injured-in-chiang-mai/",
+   "published_at": "2026-11-01T06:05:43+00:00",
+   "lang": "en",
+   "topics": [
+    "safety",
+    "chiangmai"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Police seize 90 cannabis jellies in Bangkok tourist district",
+   "url": "https://www.nationthailand.com/news/general/40073009",
+   "published_at": "2026-11-01T05:58:00+00:00",
+   "lang": "en",
+   "topics": [
+    "cannabis",
+    "bangkok"
+   ],
+   "official": false
+  },
+  {
+   "source": "Khaosod English",
+   "title": "Anutin shares rainbow photo ahead of Bhutan royal audience",
+   "url": "https://www.khaosodenglish.com/politics/2026/11/01/anutin-shares-rainbow-photo-ahead-of-bhutan-royal-audience/",
+   "published_at": "2026-11-01T05:42:45+00:00",
+   "lang": "en",
+   "topics": [
+    "weather"
+   ],
+   "official": false
+  },
+  {
+   "source": "Khaosod English",
+   "title": "Chinese tourists and Thai restroom attendants clash in Pattaya",
+   "url": "https://www.khaosodenglish.com/news/2026/11/01/chinese-tourists-and-thai-restroom-attendants-clash-in-pattaya/",
+   "published_at": "2026-11-01T04:23:50+00:00",
+   "lang": "en",
+   "topics": [
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Thailand targets THB4 trillion in tourism revenue under new draft plan",
+   "url": "https://www.nationthailand.com/news/tourism/40073002",
+   "published_at": "2026-11-01T03:25:00+00:00",
+   "lang": "en",
+   "topics": [
+    "statistics"
+   ],
+   "official": false
+  },
+  {
+   "source": "Khaosod English",
+   "title": "Thailand warns eight provinces of possible flooding from high tides",
+   "url": "https://www.khaosodenglish.com/featured/2026/11/01/thailand-warns-eight-provinces-of-possible-flooding-from-high-tides/",
+   "published_at": "2026-11-01T02:51:43+00:00",
+   "lang": "en",
+   "topics": [
+    "weather"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Halloween ends but throwaway costumes leave lasting waste",
+   "url": "https://www.nationthailand.com/sustaination/40072999",
+   "published_at": "2026-11-01T02:09:00+00:00",
+   "lang": "en",
+   "topics": [
+    "events"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Thailand backs visa exemption review for two Latin American nations",
+   "url": "https://www.nationthailand.com/news/tourism/40072996",
+   "published_at": "2026-11-01T01:18:00+00:00",
+   "lang": "en",
+   "topics": [
+    "entry_rules"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Pattaya Opens Halloween Festival 2026 on Walking Street to Stimulate Creative Tourism and Local Economy",
+   "url": "https://thepattayanews.com/2026/11/01/pattaya-opens-halloween-festival-2026-on-walking-street-to-stimulate-creative-tourism-and-local-economy/",
+   "published_at": "2026-10-31T20:37:27+00:00",
+   "lang": "en",
+   "topics": [
+    "events",
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Pattaya Opens 10th International Bikini Beach Race with Halloween Theme to Boost Sports Tourism",
+   "url": "https://thepattayanews.com/2026/11/01/pattaya-opens-10th-international-bikini-beach-race-with-halloween-theme-to-boost-sports-tourism/",
+   "published_at": "2026-10-31T18:51:02+00:00",
+   "lang": "en",
+   "topics": [
+    "events",
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Chinese Group and Thai Attendants Brawl at Pattaya Street-Food Market Over Dirty Bathroom and Cleaning Fee; BB Gun Used",
+   "url": "https://thepattayanews.com/2026/11/01/chinese-group-and-thai-attendants-brawl-at-pattaya-street-food-market-over-dirty-bathroom-and-cleaning-fee-bb-gun-used/",
+   "published_at": "2026-10-31T18:13:34+00:00",
+   "lang": "en",
+   "topics": [
+    "safety",
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Region 2 Police Commander Visits Pattaya Police Station to Deliver Operational Policies",
+   "url": "https://thepattayanews.com/2026/10/31/region-2-police-commander-visits-pattaya-police-station-to-deliver-operational-policies/",
+   "published_at": "2026-10-31T14:40:41+00:00",
+   "lang": "en",
+   "topics": [
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Thailand and Russia explore tourism growth beyond beach holidays",
+   "url": "https://www.nationthailand.com/news/tourism/40072985",
+   "published_at": "2026-10-31T09:13:00+00:00",
+   "lang": "en",
+   "topics": [
+    "events"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "France and Germany brace for mass Halloween demonstrations",
+   "url": "https://www.nationthailand.com/news/world/40072984",
+   "published_at": "2026-10-31T08:42:00+00:00",
+   "lang": "en",
+   "topics": [
+    "events"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Bangkok hosts first on-site rehearsals for Queen Sirikit The Queen Mother's royal funeral processions",
+   "url": "https://www.nationthailand.com/thailand/bangkok/40072981",
+   "published_at": "2026-10-31T07:50:00+00:00",
+   "lang": "en",
+   "topics": [
+    "events",
+    "bangkok"
+   ],
+   "official": false
+  },
   {
    "source": "Nation Thailand",
    "title": "SRT introduces direct rail access to Udon Thani International Horticultural Expo 2026",
@@ -38,6 +242,30 @@
    "official": false
   },
   {
+   "source": "The Phuket News",
+   "title": "B50mn drainage plan proposed for flood-hit Kamala",
+   "url": "https://www.thephuketnews.com/b50mn-drainage-plan-proposed-for-flood-hit-kamala-102074.php",
+   "published_at": "2026-10-31T02:30:00+00:00",
+   "lang": "en",
+   "topics": [
+    "weather",
+    "phuket"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Phuket News",
+   "title": "Phuket ‘Lak Phra’ processions go ahead despite downpours",
+   "url": "https://www.thephuketnews.com/phuket-lak-phra-processions-go-ahead-despite-downpours-102064.php",
+   "published_at": "2026-10-31T02:00:00+00:00",
+   "lang": "en",
+   "topics": [
+    "events",
+    "phuket"
+   ],
+   "official": false
+  },
+  {
    "source": "Nation Thailand",
    "title": "SRT opens 2026–27 floating train bookings from 350 baht",
    "url": "https://www.nationthailand.com/news/tourism/40072957",
@@ -62,7 +290,7 @@
   },
   {
    "source": "The Pattaya News",
-   "title": "Young Dutch Man Falls Asleep While Frying Chicken, Filling Pattaya Condo with Smoke and Triggering Midnight Evacuation",
+   "title": "Young German Man Falls Asleep While Frying Chicken, Filling Pattaya Condo with Smoke and Triggering Midnight Evacuation",
    "url": "https://thepattayanews.com/2026/10/31/young-dutch-man-falls-asleep-while-frying-chicken-filling-pattaya-condo-with-smoke-and-triggering-midnight-evacuation/",
    "published_at": "2026-10-30T23:50:25+00:00",
    "lang": "en",
@@ -515,28 +743,6 @@
    "official": false
   },
   {
-   "source": "The Pattaya News",
-   "title": "Pattaya Updates Underground Power and Communications Projects, With Jomtien Work Set to Advance in November",
-   "url": "https://thepattayanews.com/2026/10/29/pattaya-updates-underground-power-and-communications-projects-with-jomtien-work-set-to-advance-in-november/",
-   "published_at": "2026-10-29T13:09:15+00:00",
-   "lang": "en",
-   "topics": [
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Pattaya News",
-   "title": "Pattaya Invites Residents and Businesses to Participate in 2026 Government Transparency Assessment",
-   "url": "https://thepattayanews.com/2026/10/29/pattaya-invites-residents-and-businesses-to-participate-in-2026-government-transparency-assessment/",
-   "published_at": "2026-10-29T13:04:26+00:00",
-   "lang": "en",
-   "topics": [
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
    "source": "Khaosod English",
    "title": "Amnesty chief: Cambodian state ‘probably complicit’ in scam compounds",
    "url": "https://www.khaosodenglish.com/featured/2026/10/29/amnesty-chief-cambodian-state-probably-complicit-in-scam-compounds/",
@@ -544,29 +750,6 @@
    "lang": "en",
    "topics": [
     "safety"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Pattaya News",
-   "title": "Pattaya Partners with GISTDA to Develop Smart City Using Space Technology and Digital Twin Systems",
-   "url": "https://thepattayanews.com/2026/10/29/pattaya-partners-with-gistda-to-develop-smart-city-using-space-technology-and-digital-twin-systems/",
-   "published_at": "2026-10-29T11:39:30+00:00",
-   "lang": "en",
-   "topics": [
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Pattaya News",
-   "title": "Heavy Rain Floods Multiple Pattaya Roads During Afternoon Storms, Small Vehicles Unable to Pass Several Points",
-   "url": "https://thepattayanews.com/2026/10/29/heavy-rain-floods-multiple-pattaya-roads-during-afternoon-storms-small-vehicles-unable-to-pass-several-points/",
-   "published_at": "2026-10-29T10:59:44+00:00",
-   "lang": "en",
-   "topics": [
-    "weather",
-    "pattaya"
    ],
    "official": false
   },
@@ -1856,28 +2039,6 @@
    "official": false
   },
   {
-   "source": "Nation Thailand",
-   "title": "Thai visitor arrivals in Japan rise 2.4% in first nine months of 2026",
-   "url": "https://www.nationthailand.com/business/economy/40072706",
-   "published_at": "2026-10-25T02:14:00+00:00",
-   "lang": "en",
-   "topics": [
-    "statistics"
-   ],
-   "official": false
-  },
-  {
-   "source": "Nation Thailand",
-   "title": "Doi Luang Chiang Dao opens online bookings for 2026–27 treks",
-   "url": "https://www.nationthailand.com/news/tourism/40072703",
-   "published_at": "2026-10-25T01:12:00+00:00",
-   "lang": "en",
-   "topics": [
-    "statistics"
-   ],
-   "official": false
-  },
-  {
    "source": "Khaosod English",
    "title": "Dutch TV host reported missing in Thailand left country in 2025, police say",
    "url": "https://www.khaosodenglish.com/featured/2026/10/24/dutch-tv-host-reported-missing-in-thailand-left-country-in-2025-police-say/",
@@ -1923,17 +2084,6 @@
    "official": false
   },
   {
-   "source": "Nation Thailand",
-   "title": "Anutin expects Thai GDP growth to exceed 2.1% in 2026",
-   "url": "https://www.nationthailand.com/business/economy/40072683",
-   "published_at": "2026-10-24T04:43:00+00:00",
-   "lang": "en",
-   "topics": [
-    "statistics"
-   ],
-   "official": false
-  },
-  {
    "source": "The Thaiger",
    "title": "Bangkok police run a donor heart from Don Mueang to hospital in 19 minutes",
    "url": "https://thethaiger.com/news/bangkok/bangkok-police-run-a-donor-heart-from-don-mueang-to-hospital-in-19-minutes",
@@ -1958,40 +2108,6 @@
    "official": false
   },
   {
-   "source": "Nation Thailand",
-   "title": "French Protests Have No Impact on Thai Tourism as Winter Bookings Jump 30%",
-   "url": "https://www.nationthailand.com/news/tourism/40072675",
-   "published_at": "2026-10-24T02:23:00+00:00",
-   "lang": "en",
-   "topics": [
-    "statistics"
-   ],
-   "official": false
-  },
-  {
-   "source": "Nation Thailand",
-   "title": "Thailand targets five Asian markets and 6.2% growth in ASEAN tourism revenue in fiscal 2027",
-   "url": "https://www.nationthailand.com/news/policy/40072671",
-   "published_at": "2026-10-24T01:09:00+00:00",
-   "lang": "en",
-   "topics": [
-    "statistics"
-   ],
-   "official": false
-  },
-  {
-   "source": "Nation Thailand",
-   "title": "Southern airports brace for Oct 23–26 flood risk in 10 provinces",
-   "url": "https://www.nationthailand.com/news/general/40072670",
-   "published_at": "2026-10-24T00:53:00+00:00",
-   "lang": "en",
-   "topics": [
-    "flights",
-    "weather"
-   ],
-   "official": false
-  },
-  {
    "source": "The Pattaya News",
    "title": "Crowds Queue for Koh Si Chang Ferries During Three-Day Long Weekend in Sri Racha",
    "url": "https://thepattayanews.com/2026/10/23/crowds-queue-for-koh-si-chang-ferries-during-three-day-long-weekend-in-sri-racha/",
@@ -2011,17 +2127,6 @@
    "topics": [
     "entry_rules",
     "samui"
-   ],
-   "official": false
-  },
-  {
-   "source": "Nation Thailand",
-   "title": "‘Oldest friend in Asia’: Thailand and US celebrate ties over a rodeo bull",
-   "url": "https://www.nationthailand.com/life/travel/40072665",
-   "published_at": "2026-10-23T10:45:00+00:00",
-   "lang": "en",
-   "topics": [
-    "events"
    ],
    "official": false
   },
@@ -2184,62 +2289,6 @@
     "flights"
    ],
    "official": false
-  },
-  {
-   "source": "Khaosod English",
-   "title": "Two women scuffle over beach seat in Pattaya; one injured",
-   "url": "https://www.khaosodenglish.com/news/2026/10/22/two-women-scuffle-over-beach-seat-in-pattaya-one-injured/",
-   "published_at": "2026-10-22T08:04:05+00:00",
-   "lang": "en",
-   "topics": [
-    "safety",
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
-   "source": "Khaosod English",
-   "title": "Anutin orders Pattaya motorcycle taxi drivers to return to orange, MP says",
-   "url": "https://www.khaosodenglish.com/news/transpo/2026/10/22/anutin-orders-pattaya-motorcycle-taxi-drivers-to-return-to-orange-mp-says/",
-   "published_at": "2026-10-22T05:50:00+00:00",
-   "lang": "en",
-   "topics": [
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
-   "source": "Khaosod English",
-   "title": "Motorcyclist killed after riding past lowered railway crossing barrier in Pattaya",
-   "url": "https://www.khaosodenglish.com/news/2026/10/21/motorcyclist-killed-after-riding-past-lowered-railway-crossing-barrier-in-pattaya/",
-   "published_at": "2026-10-21T10:46:42+00:00",
-   "lang": "en",
-   "topics": [
-    "safety",
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
-   "source": "Khaosod English",
-   "title": "Customs seize 500,000 baht worth of matcha at Chiang Mai airport",
-   "url": "https://www.khaosodenglish.com/news/2026/10/21/customs-seize-500000-baht-worth-of-matcha-at-chiang-mai-airport/",
-   "published_at": "2026-10-21T10:42:35+00:00",
-   "lang": "en",
-   "topics": [
-    "flights",
-    "chiangmai"
-   ],
-   "official": false
-  },
-  {
-   "source": "TAT Newsroom",
-   "title": "TAT brings Thailand’s high-value tourism strategy to ITB Asia 2026",
-   "url": "https://www.tatnews.org/2026/10/tat-brings-thailands-high-value-tourism-strategy-to-itb-asia-2026/",
-   "published_at": "2026-10-21T10:26:00+00:00",
-   "lang": "en",
-   "topics": [],
-   "official": true
   }
  ],
  "sources": [
@@ -2247,14 +2296,14 @@
    "name": "TAT Newsroom",
    "endpoint": "https://www.tatnews.org/wp-json/wp/v2/posts",
    "ok": true,
-   "count": 12,
+   "count": 11,
    "error": null
   },
   {
    "name": "The Pattaya News",
    "endpoint": "https://thepattayanews.com/wp-json/wp/v2/posts",
    "ok": true,
-   "count": 71,
+   "count": 72,
    "error": null
   },
   {
@@ -2275,14 +2324,14 @@
    "name": "The Thaiger",
    "endpoint": "https://thethaiger.com/wp-json/wp/v2/posts",
    "ok": true,
-   "count": 106,
+   "count": 93,
    "error": null
   },
   {
    "name": "Khaosod English",
    "endpoint": "https://www.khaosodenglish.com/feed/",
    "ok": true,
-   "count": 4,
+   "count": 7,
    "error": null
   },
   {
@@ -2296,7 +2345,7 @@
    "name": "Nation Thailand",
    "endpoint": "https://api.nationthailand.com/sitemap/latest",
    "ok": true,
-   "count": 34,
+   "count": 33,
    "error": null
   }
  ],
