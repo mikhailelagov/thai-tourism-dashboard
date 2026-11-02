@@ -1,7 +1,207 @@
 {
- "built_at": "2026-11-01T08:06:58+00:00",
+ "built_at": "2026-11-02T08:14:56+00:00",
  "window_days": 10,
  "items": [
+  {
+   "source": "TAT Newsroom",
+   "title": "World Travel & Culture Expo 2026 builds global connections for Thailand as ASEAN’s tourism and entertainment hub",
+   "url": "https://www.tatnews.org/2026/11/world-travel-culture-expo-2026-builds-global-connections-for-thailand-as-aseans-tourism-and-entertainment-hub/",
+   "published_at": "2026-11-02T07:30:00+00:00",
+   "lang": "en",
+   "topics": [
+    "events"
+   ],
+   "official": true
+  },
+  {
+   "source": "The Thaiger",
+   "title": "Former boy band singer drives pickup into Chai Nat walking street",
+   "url": "https://thethaiger.com/hot-news/crime/former-singer-drives-pickup-into-chai-nat-walking-street-injuring-3",
+   "published_at": "2026-11-02T07:22:09+00:00",
+   "lang": "en",
+   "topics": [
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Chinese passenger held with 8,900 weight-loss pens at Suvarnabhumi",
+   "url": "https://www.nationthailand.com/news/general/40073007",
+   "published_at": "2026-11-02T06:02:00+00:00",
+   "lang": "en",
+   "topics": [
+    "flights",
+    "bangkok"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Air-Conditioning Contractor Severely Beaten with Bottles on Phatthanakan Road in Pattaya; Attackers Leave Loan Documents",
+   "url": "https://thepattayanews.com/2026/11/02/air-conditioning-contractor-severely-beaten-with-bottles-on-phatthanakan-road-in-pattaya-attackers-leave-loan-documents/",
+   "published_at": "2026-11-02T05:19:05+00:00",
+   "lang": "en",
+   "topics": [
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Electrical Wires Catch Fire Above Pattaya Police Service Booth Near Thepprasit Road Entrance",
+   "url": "https://thepattayanews.com/2026/11/02/electrical-wires-catch-fire-above-pattaya-police-service-booth-near-thepprasit-road-entrance/",
+   "published_at": "2026-11-02T04:23:03+00:00",
+   "lang": "en",
+   "topics": [
+    "safety",
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Thaiger",
+   "title": "Thailand tourism plan targets 4 trillion baht, eyes visa-free expansion",
+   "url": "https://thethaiger.com/news/business/thailand-eyes-more-visa-free-countries-in-tourism-growth-plan",
+   "published_at": "2026-11-02T04:19:08+00:00",
+   "lang": "en",
+   "topics": [
+    "entry_rules"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Udon Thani expo visitors face heat, queues and tram shortages",
+   "url": "https://www.nationthailand.com/news/general/40073004",
+   "published_at": "2026-11-02T03:55:00+00:00",
+   "lang": "en",
+   "topics": [
+    "events",
+    "weather"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Thaiger",
+   "title": "Fake cosplaying delivery rider arrested over slew of Pattaya bag snatches",
+   "url": "https://thethaiger.com/news/pattaya/fake-cosplaying-rider-held-over-slew-of-pattaya-bag-snatches",
+   "published_at": "2026-11-02T03:17:34+00:00",
+   "lang": "en",
+   "topics": [
+    "safety",
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Thaiger",
+   "title": "Suvarnabhumi to shrink duty-free shops for pick-up counters, premium service",
+   "url": "https://thethaiger.com/news/world/aviation/suvarnabhumi-airport-shrink-duty-free-shops",
+   "published_at": "2026-11-02T02:29:29+00:00",
+   "lang": "en",
+   "topics": [
+    "flights",
+    "bangkok"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Pattaya Police Arrest Suspect Linked to Series of Tourist Snatch-and-Run Thefts After CCTV Tracking",
+   "url": "https://thepattayanews.com/2026/11/02/pattaya-police-arrest-suspect-linked-to-series-of-tourist-snatch-and-run-thefts-after-cctv-tracking/",
+   "published_at": "2026-11-01T20:06:34+00:00",
+   "lang": "en",
+   "topics": [
+    "safety",
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Child Beggars Spotted on Pattaya Second Road on Halloween Night; Some Flee When Approached by Reporters",
+   "url": "https://thepattayanews.com/2026/11/02/child-beggars-spotted-on-pattaya-second-road-on-halloween-night-some-flee-when-approached-by-reporters/",
+   "published_at": "2026-11-01T18:39:39+00:00",
+   "lang": "en",
+   "topics": [
+    "events",
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Pattaya International Ladies Club to Hold Annual Charity Christmas Fair on November 15",
+   "url": "https://thepattayanews.com/2026/11/01/pattaya-international-ladies-club-to-hold-annual-charity-christmas-fair-on-november-15/",
+   "published_at": "2026-11-01T16:23:48+00:00",
+   "lang": "en",
+   "topics": [
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Takhian Tia Community Groups Join Annual Kathin Ceremony at Wat Ko Phai in Banglamung",
+   "url": "https://thepattayanews.com/2026/11/01/takhian-tia-community-groups-join-annual-kathin-ceremony-at-wat-ko-phai-in-banglamung/",
+   "published_at": "2026-11-01T13:51:56+00:00",
+   "lang": "en",
+   "topics": [
+    "events",
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "Khaosod English",
+   "title": "Myanmar migrant worker leader assaulted during protest outside UN office",
+   "url": "https://www.khaosodenglish.com/featured/2026/11/01/myanmar-migrant-worker-leader-assaulted-during-protest-outside-un-office/",
+   "published_at": "2026-11-01T10:03:27+00:00",
+   "lang": "en",
+   "topics": [
+    "safety"
+   ],
+   "official": false
+  },
+  {
+   "source": "Khaosod English",
+   "title": "FDA, CIB raid illegal cannabis gummy outlet in Bangkok, seize 90 packs",
+   "url": "https://www.khaosodenglish.com/news/2026/11/01/fda-cib-raid-illegal-cannabis-gummy-outlet-in-bangkok-seize-90-packs/",
+   "published_at": "2026-11-01T09:00:27+00:00",
+   "lang": "en",
+   "topics": [
+    "cannabis",
+    "safety",
+    "bangkok"
+   ],
+   "official": false
+  },
+  {
+   "source": "Khaosod English",
+   "title": "Pickup driver surrenders after nursing assistant killed in Chiang Mai",
+   "url": "https://www.khaosodenglish.com/news/2026/11/01/pickup-driver-surrenders-after-nursing-assistant-killed-in-chiang-mai/",
+   "published_at": "2026-11-01T08:09:16+00:00",
+   "lang": "en",
+   "topics": [
+    "safety",
+    "chiangmai"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Thaiger",
+   "title": "Police raid Bangkok cannabis gummy shop after family hospitalised",
+   "url": "https://thethaiger.com/news/bangkok/bangkok-cannabis-gummy-shop-after-family-hospitalised",
+   "published_at": "2026-11-01T08:06:23+00:00",
+   "lang": "en",
+   "topics": [
+    "cannabis",
+    "safety",
+    "bangkok"
+   ],
+   "official": false
+  },
   {
    "source": "Khaosod English",
    "title": "Bueng Kan pub raided, 36 underage customers found, officials say",
@@ -48,18 +248,6 @@
    "official": false
   },
   {
-   "source": "Nation Thailand",
-   "title": "Police seize 90 cannabis jellies in Bangkok tourist district",
-   "url": "https://www.nationthailand.com/news/general/40073009",
-   "published_at": "2026-11-01T05:58:00+00:00",
-   "lang": "en",
-   "topics": [
-    "cannabis",
-    "bangkok"
-   ],
-   "official": false
-  },
-  {
    "source": "Khaosod English",
    "title": "Anutin shares rainbow photo ahead of Bhutan royal audience",
    "url": "https://www.khaosodenglish.com/politics/2026/11/01/anutin-shares-rainbow-photo-ahead-of-bhutan-royal-audience/",
@@ -93,6 +281,17 @@
    "official": false
   },
   {
+   "source": "The Phuket News",
+   "title": "Sondhi urges crackdown on foreign nominees, ‘grey capital’",
+   "url": "https://www.thephuketnews.com/sondhi-urges-crackdown-on-foreign-nominees-grey-capital-102076.php",
+   "published_at": "2026-11-01T03:06:00+00:00",
+   "lang": "en",
+   "topics": [
+    "safety"
+   ],
+   "official": false
+  },
+  {
    "source": "Khaosod English",
    "title": "Thailand warns eight provinces of possible flooding from high tides",
    "url": "https://www.khaosodenglish.com/featured/2026/11/01/thailand-warns-eight-provinces-of-possible-flooding-from-high-tides/",
@@ -100,6 +299,18 @@
    "lang": "en",
    "topics": [
     "weather"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Phuket News",
+   "title": "Phuket Beach Life festival underway in Patong",
+   "url": "https://www.thephuketnews.com/phuket-beach-life-festival-underway-in-patong-102075.php",
+   "published_at": "2026-11-01T02:51:00+00:00",
+   "lang": "en",
+   "topics": [
+    "events",
+    "phuket"
    ],
    "official": false
   },
@@ -703,39 +914,6 @@
    "title": "Pattaya to Co-Host WGP#1 International Waterjet World Cup and World Series in January 2027",
    "url": "https://thepattayanews.com/2026/10/29/pattaya-to-co-host-wgp1-international-waterjet-world-cup-and-world-series-in-january-2027/",
    "published_at": "2026-10-29T13:27:36+00:00",
-   "lang": "en",
-   "topics": [
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Pattaya News",
-   "title": "Pattaya Explores AI-Powered Central Data System to Modernize Municipal Schools",
-   "url": "https://thepattayanews.com/2026/10/29/pattaya-explores-ai-powered-central-data-system-to-modernize-municipal-schools/",
-   "published_at": "2026-10-29T13:22:20+00:00",
-   "lang": "en",
-   "topics": [
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Pattaya News",
-   "title": "Pattaya Welcomes Delegation to Study Smart City Development and Urban Management",
-   "url": "https://thepattayanews.com/2026/10/29/pattaya-welcomes-delegation-to-study-smart-city-development-and-urban-management/",
-   "published_at": "2026-10-29T13:17:59+00:00",
-   "lang": "en",
-   "topics": [
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Pattaya News",
-   "title": "Pattaya Distributes Uniform Shirts to Traditional Thai Massage Workers on Jomtien Beach",
-   "url": "https://thepattayanews.com/2026/10/29/pattaya-distributes-uniform-shirts-to-traditional-thai-massage-workers-on-jomtien-beach/",
-   "published_at": "2026-10-29T13:13:54+00:00",
    "lang": "en",
    "topics": [
     "pattaya"
@@ -2016,17 +2194,6 @@
    "official": false
   },
   {
-   "source": "Nation Thailand",
-   "title": "Riyadh airport faces fresh Houthi warning ahead of reopening",
-   "url": "https://www.nationthailand.com/news/world/40072715",
-   "published_at": "2026-10-25T05:56:00+00:00",
-   "lang": "en",
-   "topics": [
-    "flights"
-   ],
-   "official": false
-  },
-  {
    "source": "The Phuket News",
    "title": "Phuket to hold motorcycle safety caravan",
    "url": "https://www.thephuketnews.com/phuket-to-hold-motorcycle-safety-caravan-101991.php",
@@ -2129,166 +2296,6 @@
     "samui"
    ],
    "official": false
-  },
-  {
-   "source": "The Thaiger",
-   "title": "Thai Airways cancels Taipei, Kaohsiung flights on Oct 23-24",
-   "url": "https://thethaiger.com/news/world/aviation/thai-airways-cancels-six-taiwan-flights-over-typhoon-champi",
-   "published_at": "2026-10-23T08:03:00+00:00",
-   "lang": "en",
-   "topics": [
-    "flights"
-   ],
-   "official": false
-  },
-  {
-   "source": "Khaosod English",
-   "title": "Koh Phangan revokes Israeli woman’s visa after complaints about behaviour",
-   "url": "https://www.khaosodenglish.com/news/2026/10/23/koh-phangan-revokes-israeli-womans-visa-after-complaints-about-behaviour/",
-   "published_at": "2026-10-23T07:44:52+00:00",
-   "lang": "en",
-   "topics": [
-    "entry_rules",
-    "samui"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Thaiger",
-   "title": "Beer-lured theft suspect caught after court escape left owner afraid",
-   "url": "https://thethaiger.com/news/pattaya/pattaya-suspect-lured-with-beer-caught-after-court-escape",
-   "published_at": "2026-10-23T05:21:02+00:00",
-   "lang": "en",
-   "topics": [
-    "alcohol",
-    "safety"
-   ],
-   "official": false
-  },
-  {
-   "source": "TAT Newsroom",
-   "title": "Amazing Mekong by Amazing Thailand elevates 2026 Nakhon Phanom Illuminated Boat Procession",
-   "url": "https://www.tatnews.org/2026/10/amazing-mekong-by-amazing-thailand-elevates-2026-nakhon-phanom-illuminated-boat-procession/",
-   "published_at": "2026-10-23T03:51:27+00:00",
-   "lang": "en",
-   "topics": [
-    "events"
-   ],
-   "official": true
-  },
-  {
-   "source": "The Thaiger",
-   "title": "State railway seeks billions from CP-backed airport train operator",
-   "url": "https://thethaiger.com/news/business/srt-files-133bn-baht-airport-rail-link-payment-lawsuit",
-   "published_at": "2026-10-23T02:39:04+00:00",
-   "lang": "en",
-   "topics": [
-    "flights"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Phuket News",
-   "title": "Burglar robs Wichit home, abandons stolen pickup in Trang",
-   "url": "https://www.thephuketnews.com/burglar-robs-wichit-home-abandons-stolen-pickup-in-trang-101989.php",
-   "published_at": "2026-10-23T02:36:00+00:00",
-   "lang": "en",
-   "topics": [
-    "safety"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Pattaya News",
-   "title": "Thai Government Postpones “For the Time Being” Introducing Proposed 1,000-Baht Overseas Travel Tax to Protect Tourism Momentum",
-   "url": "https://thepattayanews.com/2026/10/23/thai-government-postpones-for-the-time-being-introducing-proposed-1000-baht-overseas-travel-tax-to-protect-tourism-momentum/",
-   "published_at": "2026-10-22T18:07:52+00:00",
-   "lang": "en",
-   "topics": [
-    "entry_rules"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Pattaya News",
-   "title": "Pattaya Patmakhun Hospital Holds Ceremony Honouring Her Royal Highness Princess Srinagarindra for National Nurses Day 2026",
-   "url": "https://thepattayanews.com/2026/10/23/pattaya-patmakhun-hospital-holds-ceremony-honouring-her-royal-highness-princess-srinagarindra-for-national-nurses-day-2026/",
-   "published_at": "2026-10-22T17:28:24+00:00",
-   "lang": "en",
-   "topics": [
-    "events",
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
-   "source": "Khaosod English",
-   "title": "Thailand delays proposed 1,000-baht overseas travel tax",
-   "url": "https://www.khaosodenglish.com/tourism/2026/10/22/thailand-delays-proposed-1000-baht-overseas-travel-tax/",
-   "published_at": "2026-10-22T12:10:15+00:00",
-   "lang": "en",
-   "topics": [
-    "entry_rules"
-   ],
-   "official": false
-  },
-  {
-   "source": "Khaosod English",
-   "title": "12 injured as tourist boat hits Bangkok pier",
-   "url": "https://www.khaosodenglish.com/news/2026/10/22/12-injured-as-tourist-boat-hits-bangkok-pier/",
-   "published_at": "2026-10-22T11:49:17+00:00",
-   "lang": "en",
-   "topics": [
-    "safety",
-    "bangkok"
-   ],
-   "official": false
-  },
-  {
-   "source": "Khaosod English",
-   "title": "American YouTuber shows CCTV saying he was assaulted and robbed in Pattaya",
-   "url": "https://www.khaosodenglish.com/news/crimecourtscalamity/2026/10/22/american-youtuber-shows-cctv-saying-he-was-assaulted-and-robbed-in-pattaya/",
-   "published_at": "2026-10-22T10:36:29+00:00",
-   "lang": "en",
-   "topics": [
-    "safety",
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Thaiger",
-   "title": "British influencer celebrates 12 years in Thailand with heartfelt tribute",
-   "url": "https://thethaiger.com/thai-life/british-influencer-12-years-thailand-tribute",
-   "published_at": "2026-10-22T10:22:37+00:00",
-   "lang": "en",
-   "topics": [
-    "events"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Pattaya News",
-   "title": "Pattaya to Host Halloween Festival 2026 on Walking Street and Beach on October 31st",
-   "url": "https://thepattayanews.com/2026/10/22/pattaya-to-host-halloween-festival-2026-on-walking-street-and-beach-on-october-31st/",
-   "published_at": "2026-10-22T10:11:40+00:00",
-   "lang": "en",
-   "topics": [
-    "events",
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Thaiger",
-   "title": "Flights into Thailand grow more slowly than those into its neighbours",
-   "url": "https://thethaiger.com/news/business/thailand-inbound-flight-growth-trails-vietnam-malaysia-and-china",
-   "published_at": "2026-10-22T09:52:27+00:00",
-   "lang": "en",
-   "topics": [
-    "flights"
-   ],
-   "official": false
   }
  ],
  "sources": [
@@ -2303,7 +2310,7 @@
    "name": "The Pattaya News",
    "endpoint": "https://thepattayanews.com/wp-json/wp/v2/posts",
    "ok": true,
-   "count": 72,
+   "count": 68,
    "error": null
   },
   {
@@ -2331,21 +2338,21 @@
    "name": "Khaosod English",
    "endpoint": "https://www.khaosodenglish.com/feed/",
    "ok": true,
-   "count": 7,
+   "count": 8,
    "error": null
   },
   {
    "name": "The Phuket News",
    "endpoint": "https://www.thephuketnews.com/rss-xml/news.xml",
    "ok": true,
-   "count": 7,
+   "count": 4,
    "error": null
   },
   {
    "name": "Nation Thailand",
    "endpoint": "https://api.nationthailand.com/sitemap/latest",
    "ok": true,
-   "count": 33,
+   "count": 16,
    "error": null
   }
  ],

@@ -1,189 +1,189 @@
 {
- "built_at": "2026-11-01T08:06:46+00:00",
+ "built_at": "2026-11-02T08:14:48+00:00",
  "arrivals": {
   "source": "MOTS",
   "source_url": "https://www.mots.go.th/news/category/817",
-  "file_url": "https://www.mots.go.th/images/v2022_cf32d908-111e-4269-802d-18807cd65884.xlsx",
-  "published_at": "2026-10-01T03:40:30+00:00",
-  "retrieved_at": "2026-11-01T08:06:46+00:00",
-  "period": "2026-09",
+  "file_url": "https://www.mots.go.th/images/v2022_b33aa4d6-dfa5-4013-8355-2b8101643dcb.xlsx",
+  "published_at": "2026-11-02T07:15:28+00:00",
+  "retrieved_at": "2026-11-02T08:14:48+00:00",
+  "period": "2026-10",
   "status": "preliminary",
   "total": {
-   "value": 2000339,
-   "prev_year": 2235852,
-   "yoy_pct": -10.53
+   "value": 2265000,
+   "prev_year": 2573743,
+   "yoy_pct": -12.0
   },
   "ytd": {
    "from": "2026-01",
-   "to": "2026-09",
-   "value": 23199306,
-   "prev_year": 24115325,
-   "yoy_pct": -3.8
+   "to": "2026-10",
+   "value": 25464306,
+   "prev_year": 26689068,
+   "yoy_pct": -4.59
   },
   "markets": [
    {
     "name": "China",
     "ru": "Китай",
-    "value": 349182,
-    "prev_year": 321309,
-    "yoy_pct": 8.67
+    "value": 308942,
+    "prev_year": 357445,
+    "yoy_pct": -13.57
    },
    {
     "name": "Malaysia",
     "ru": "Малайзия",
-    "value": 261325,
-    "prev_year": 428712,
-    "yoy_pct": -39.04
+    "value": 276157,
+    "prev_year": 378143,
+    "yoy_pct": -26.97
    },
    {
     "name": "India",
     "ru": "Индия",
-    "value": 166849,
-    "prev_year": 207195,
-    "yoy_pct": -19.47
-   },
-   {
-    "name": "Japan",
-    "ru": "Япония",
-    "value": 96460,
-    "prev_year": 91610,
-    "yoy_pct": 5.29
+    "value": 196980,
+    "prev_year": 213858,
+    "yoy_pct": -7.89
    },
    {
     "name": "Russian Federation",
     "ru": "Россия",
-    "value": 81744,
-    "prev_year": 76907,
-    "yoy_pct": 6.29
-   },
-   {
-    "name": "Taiwan",
-    "ru": "Тайвань",
-    "value": 79641,
-    "prev_year": 66878,
-    "yoy_pct": 19.08
-   },
-   {
-    "name": "Korea (Republic of)",
-    "ru": "Южная Корея",
-    "value": 70997,
-    "prev_year": 101672,
-    "yoy_pct": -30.17
-   },
-   {
-    "name": "Singapore",
-    "ru": "Сингапур",
-    "value": 69101,
-    "prev_year": 73522,
-    "yoy_pct": -6.01
-   },
-   {
-    "name": "Australia",
-    "ru": "Австралия",
-    "value": 62513,
-    "prev_year": 60191,
-    "yoy_pct": 3.86
+    "value": 143638,
+    "prev_year": 145764,
+    "yoy_pct": -1.46
    },
    {
     "name": "The United States of America",
     "ru": "США",
-    "value": 56761,
-    "prev_year": 54398,
-    "yoy_pct": 4.34
+    "value": 83525,
+    "prev_year": 83929,
+    "yoy_pct": -0.48
    },
    {
-    "name": "Laos",
-    "ru": "Лаос",
-    "value": 52362,
-    "prev_year": 55279,
-    "yoy_pct": -5.28
+    "name": "Korea (Republic of)",
+    "ru": "Южная Корея",
+    "value": 83419,
+    "prev_year": 136382,
+    "yoy_pct": -38.83
    },
    {
-    "name": "Myanmar",
-    "ru": "Мьянма",
-    "value": 50709,
-    "prev_year": 53325,
-    "yoy_pct": -4.91
+    "name": "Taiwan",
+    "ru": "Тайвань",
+    "value": 80673,
+    "prev_year": 83574,
+    "yoy_pct": -3.47
    },
    {
     "name": "United Kingdom",
     "ru": "Великобритания",
-    "value": 46676,
-    "prev_year": 49031,
-    "yoy_pct": -4.8
-   },
-   {
-    "name": "Israel",
-    "ru": "Израиль",
-    "value": 44797,
-    "prev_year": 45182,
-    "yoy_pct": -0.85
-   },
-   {
-    "name": "Hong Kong (China)",
-    "ru": "Гонконг (Китай)",
-    "value": 43576,
-    "prev_year": 40295,
-    "yoy_pct": 8.14
-   },
-   {
-    "name": "Philippines",
-    "ru": "Филиппины",
-    "value": 42983,
-    "prev_year": 55080,
-    "yoy_pct": -21.96
+    "value": 77227,
+    "prev_year": 78947,
+    "yoy_pct": -2.18
    },
    {
     "name": "Germany",
     "ru": "Германия",
-    "value": 42454,
-    "prev_year": 45952,
-    "yoy_pct": -7.61
+    "value": 71642,
+    "prev_year": 76709,
+    "yoy_pct": -6.61
    },
    {
-    "name": "Vietnam",
-    "ru": "Вьетнам",
-    "value": 37573,
-    "prev_year": 37973,
-    "yoy_pct": -1.05
+    "name": "Australia",
+    "ru": "Австралия",
+    "value": 70409,
+    "prev_year": 70055,
+    "yoy_pct": 0.51
    },
    {
-    "name": "Indonesia",
-    "ru": "Индонезия",
-    "value": 37355,
-    "prev_year": 55300,
-    "yoy_pct": -32.45
+    "name": "Japan",
+    "ru": "Япония",
+    "value": 68923,
+    "prev_year": 73806,
+    "yoy_pct": -6.62
+   },
+   {
+    "name": "Singapore",
+    "ru": "Сингапур",
+    "value": 63554,
+    "prev_year": 77095,
+    "yoy_pct": -17.56
+   },
+   {
+    "name": "Laos",
+    "ru": "Лаос",
+    "value": 63136,
+    "prev_year": 60942,
+    "yoy_pct": 3.6
+   },
+   {
+    "name": "Myanmar",
+    "ru": "Мьянма",
+    "value": 55674,
+    "prev_year": 64152,
+    "yoy_pct": -13.22
+   },
+   {
+    "name": "Philippines",
+    "ru": "Филиппины",
+    "value": 53418,
+    "prev_year": 61299,
+    "yoy_pct": -12.86
    },
    {
     "name": "France",
     "ru": "Франция",
-    "value": 29211,
-    "prev_year": 29166,
-    "yoy_pct": 0.15
+    "value": 51881,
+    "prev_year": 55383,
+    "yoy_pct": -6.32
+   },
+   {
+    "name": "Hong Kong (China)",
+    "ru": "Гонконг (Китай)",
+    "value": 45616,
+    "prev_year": 50513,
+    "yoy_pct": -9.69
+   },
+   {
+    "name": "Vietnam",
+    "ru": "Вьетнам",
+    "value": 45242,
+    "prev_year": 46030,
+    "yoy_pct": -1.71
+   },
+   {
+    "name": "Indonesia",
+    "ru": "Индонезия",
+    "value": 39406,
+    "prev_year": 50086,
+    "yoy_pct": -21.32
+   },
+   {
+    "name": "Israel",
+    "ru": "Израиль",
+    "value": 27442,
+    "prev_year": 34626,
+    "yoy_pct": -20.75
    },
    {
     "name": "Kazakhstan",
     "ru": "Казахстан",
-    "value": 6371,
-    "prev_year": 4929,
-    "yoy_pct": 29.26
+    "value": 14127,
+    "prev_year": 9566,
+    "yoy_pct": 47.68
    },
    {
     "name": "Ukraine",
     "ru": "Украина",
-    "value": 3024,
-    "prev_year": 2964,
-    "yoy_pct": 2.02
+    "value": 4258,
+    "prev_year": 4049,
+    "yoy_pct": 5.16
    }
   ],
-  "sha256": "325e6ef29fa01281301a0cddde1b8683aab4e7f2256fa29d3405fa9e2861478e"
+  "sha256": "b67d846b6dcbfa3294f7c1b35bc35f5277d8cdc58e5f57e531d1204530af35ab"
  },
  "provinces": {
   "source": "MOTS",
   "source_url": "https://www.mots.go.th/news/category/820",
   "file_url": "https://www.mots.go.th/images/v2022_ad5f0d02-7a0f-4036-9373-77b1e974802d.xlsx",
   "published_at": "2026-10-13T08:30:37+00:00",
-  "retrieved_at": "2026-11-01T08:06:46+00:00",
+  "retrieved_at": "2026-11-02T08:14:48+00:00",
   "period": "2026-09",
   "status": "preliminary",
   "sheet": "ก.ย.2569p",
@@ -301,10 +301,10 @@
   "source": "BOT",
   "source_url": "https://app.bot.or.th/BTWS_STAT/statistics/ReportPage.aspx?language=eng&reportID=875",
   "file_url": "https://app.bot.or.th/BTWS_STAT/statistics/DownloadFile.aspx?file=EC_EI_028_S2_ENG_ALL.XLSX",
-  "retrieved_at": "2026-11-01T08:06:46+00:00",
+  "retrieved_at": "2026-11-02T08:14:48+00:00",
   "published_at": "2026-10-31T14:30:00+07:00",
   "latest_period": "2026-09",
-  "rows_written": 170,
+  "rows_written": 0,
   "sha256": "d3a0eb7bbaff1db4033882bd8399affdae1de70319aabbfd5da91f5a743992cb"
  },
  "fx": {
@@ -312,7 +312,7 @@
    "source": "ECB",
    "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
    "data_url": "https://data-api.ecb.europa.eu/service/data/EXR/D.THB+USD+CNY+INR+KRW+MYR+GBP.EUR.SP00.A?lastNObservations=5&format=csvdata",
-   "retrieved_at": "2026-11-01T08:06:46+00:00",
+   "retrieved_at": "2026-11-02T08:14:48+00:00",
    "date": "2026-10-30",
    "thb_per": {
     "USD": 33.7299,
@@ -328,7 +328,7 @@
    "source": "Bank of Russia",
    "source_url": "https://www.cbr.ru/currency_base/daily/",
    "data_url": "https://www.cbr.ru/scripts/XML_daily.asp",
-   "retrieved_at": "2026-11-01T08:06:46+00:00",
+   "retrieved_at": "2026-11-02T08:14:48+00:00",
    "date": "2026-10-31",
    "rub_per_thb": 2.39035
   }
