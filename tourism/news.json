@@ -1,7 +1,250 @@
 {
- "built_at": "2026-11-05T08:28:52+00:00",
+ "built_at": "2026-11-06T08:29:25+00:00",
  "window_days": 10,
  "items": [
+  {
+   "source": "The Thaiger",
+   "title": "Thai woman reports missing luxury items after Vienna-Warsaw flight",
+   "url": "https://thethaiger.com/news/world/aviation/thai-woman-missing-luxury-items-lot-polish-airlines-luggage",
+   "published_at": "2026-11-06T08:04:27+00:00",
+   "lang": "en",
+   "topics": [
+    "flights",
+    "safety"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Thai Airways adds staff and seeks more storage to clear Suvarnabhumi cargo backlog",
+   "url": "https://www.nationthailand.com/news/general/40073183",
+   "published_at": "2026-11-06T07:48:00+00:00",
+   "lang": "en",
+   "topics": [
+    "flights",
+    "bangkok"
+   ],
+   "official": false
+  },
+  {
+   "source": "Khaosod English",
+   "title": "Lured into an online scam network, an African man spent almost a year in Cambodia trying to go home",
+   "url": "https://www.khaosodenglish.com/news/international/2026/11/06/lured-into-an-online-scam-network-an-african-man-spent-almost-a-year-in-cambodia-trying-to-go-home/",
+   "published_at": "2026-11-06T06:47:58+00:00",
+   "lang": "en",
+   "topics": [
+    "safety"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Thaiger",
+   "title": "Foreign tourists flock to Koh Mak in Trat for longer island holidays",
+   "url": "https://thethaiger.com/hot-news/tourism/foreign-tourists-koh-mak-in-trat-longer-island-holidays",
+   "published_at": "2026-11-06T04:41:08+00:00",
+   "lang": "en",
+   "topics": [
+    "events"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Thaiger",
+   "title": "5 things to do in Bangkok this weekend (November 6 to 8)",
+   "url": "https://thethaiger.com/guides/best-of/things-to-do/5-things-to-do-in-bangkok-this-weekend-november-6-to-8",
+   "published_at": "2026-11-06T04:06:19+00:00",
+   "lang": "en",
+   "topics": [
+    "events",
+    "bangkok"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Thaiger",
+   "title": "Pattaya unveils 2.75 billion baht plan to tackle chronic flooding",
+   "url": "https://thethaiger.com/news/pattaya/pattaya-unveils-2-75-billion-baht-plan-to-tackle-flooding",
+   "published_at": "2026-11-06T04:01:07+00:00",
+   "lang": "en",
+   "topics": [
+    "weather",
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Thaiger",
+   "title": "Thai Airways apologises for Suvarnabhumi cargo backlog, promises fixes",
+   "url": "https://thethaiger.com/news/business/thai-cargo-pledges-action-to-clear-warehouse-backlog",
+   "published_at": "2026-11-06T03:06:04+00:00",
+   "lang": "en",
+   "topics": [
+    "flights",
+    "bangkok"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "GULF reports net profit of THB 9,289 million in Q3/2026, up 28% YoY, driven by the energy business and share of profit from AIS",
+   "url": "https://www.nationthailand.com/business/corporate/40073170",
+   "published_at": "2026-11-06T03:02:00+00:00",
+   "lang": "en",
+   "topics": [
+    "statistics"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Royal Barge Procession to air live from 2.30pm with 16 riverside viewing locations",
+   "url": "https://www.nationthailand.com/thailand/bangkok/40073169",
+   "published_at": "2026-11-06T02:44:00+00:00",
+   "lang": "en",
+   "topics": [
+    "events"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Hoax bomb threats disrupt at least 27 passenger flights across Europe",
+   "url": "https://www.nationthailand.com/news/world/40073166",
+   "published_at": "2026-11-06T01:42:00+00:00",
+   "lang": "en",
+   "topics": [
+    "flights"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Chinese arrivals to Thailand could fall 20% in final two months of 2026",
+   "url": "https://www.nationthailand.com/news/tourism/40073165",
+   "published_at": "2026-11-06T01:28:00+00:00",
+   "lang": "en",
+   "topics": [
+    "statistics"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Pattaya Open Basketball 2026 to Feature 5×5 and 3×3 Tournaments with Over 300,000 Baht in Prizes",
+   "url": "https://thepattayanews.com/2026/11/06/pattaya-open-basketball-2026-to-feature-5x5-and-3x3-tournaments-with-over-300000-baht-in-prizes/",
+   "published_at": "2026-11-05T18:53:29+00:00",
+   "lang": "en",
+   "topics": [
+    "events",
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Vietnam welcomes 19.5 million foreign visitors in 10 months",
+   "url": "https://www.nationthailand.com/news/world/40073154",
+   "published_at": "2026-11-05T15:35:00+00:00",
+   "lang": "en",
+   "topics": [
+    "statistics"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Police Find 162 Ball Firecrackers and Speargun in Bedroom of Boy Who Posted Pattaya School Shooting Threat",
+   "url": "https://thepattayanews.com/2026/11/05/police-find-162-ball-firecrackers-and-speargun-in-bedroom-of-boy-who-posted-pattaya-school-shooting-threat/",
+   "published_at": "2026-11-05T14:57:07+00:00",
+   "lang": "en",
+   "topics": [
+    "safety",
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "BMTA to offer free shuttle buses for Bangkok’s Royal Barge Procession",
+   "url": "https://www.nationthailand.com/news/general/40073152",
+   "published_at": "2026-11-05T11:29:00+00:00",
+   "lang": "en",
+   "topics": [
+    "events",
+    "bangkok"
+   ],
+   "official": false
+  },
+  {
+   "source": "TAT Newsroom",
+   "title": "Loi Krathong 2026 lights up Thailand’s rivers and historic cities",
+   "url": "https://www.tatnews.org/2026/11/loi-krathong-2026-lights-up-thailands-rivers-and-historic-cities/",
+   "published_at": "2026-11-05T10:12:02+00:00",
+   "lang": "en",
+   "topics": [
+    "events"
+   ],
+   "official": true
+  },
+  {
+   "source": "The Phuket News",
+   "title": "PHUKET XTRA: VIDEO: Auto Immigration Gates Expand, Eight Arrested In Airport Thefts, Interpol Bust || Nov 5",
+   "url": "https://www.thephuketnews.com/phuket-xtra-video-auto-immigration-gates-expand-eight-arrested-in-airport-thefts-interpol-bust-nov-5-102121.php",
+   "published_at": "2026-11-05T10:11:00+00:00",
+   "lang": "en",
+   "topics": [
+    "flights",
+    "phuket"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Krabi Airport set for direct flights from Europe during high season",
+   "url": "https://www.nationthailand.com/news/tourism/40073144",
+   "published_at": "2026-11-05T09:16:00+00:00",
+   "lang": "en",
+   "topics": [
+    "flights",
+    "krabi"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Thaiger",
+   "title": "AOT meeting targets Thai Airways Cargo delays at Suvarnabhumi Airport",
+   "url": "https://thethaiger.com/news/business/freight-group-calls-for-updates-on-delayed-thai-airways-cargo",
+   "published_at": "2026-11-05T08:40:00+00:00",
+   "lang": "en",
+   "topics": [
+    "flights",
+    "bangkok"
+   ],
+   "official": false
+  },
+  {
+   "source": "Khaosod English",
+   "title": "From Miss Thailand to fraud suspect: Charity scandal rocks Thailand",
+   "url": "https://www.khaosodenglish.com/featured/2026/11/05/from-miss-thailand-to-fraud-suspect-charity-scandal-rocks-thailand/",
+   "published_at": "2026-11-05T08:38:53+00:00",
+   "lang": "en",
+   "topics": [
+    "safety"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Vijit Chao Phraya 2026 brings free fireworks, drone shows and dazzling lights to Bangkok’s riverfront",
+   "url": "https://www.nationthailand.com/news/tourism/40073143",
+   "published_at": "2026-11-05T08:18:00+00:00",
+   "lang": "en",
+   "topics": [
+    "events",
+    "bangkok"
+   ],
+   "official": false
+  },
   {
    "source": "Nation Thailand",
    "title": "Thai Airways cargo backlog persists, prompts talks at Suvarnabhumi",
@@ -61,6 +304,18 @@
    "official": false
   },
   {
+   "source": "The Thaiger",
+   "title": "Pakistani family unaccounted for after Pattaya house fire",
+   "url": "https://thethaiger.com/news/pattaya/pakistani-family-unaccounted-for-pattaya-house-fire",
+   "published_at": "2026-11-05T06:34:55+00:00",
+   "lang": "en",
+   "topics": [
+    "safety",
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
    "source": "Nation Thailand",
    "title": "Bosch Automotive Thailand Celebrates 30 Years of Manufacturing Excellence in Rayong, Strengthening Its Contribution to the Global Automotive Industry",
    "url": "https://www.nationthailand.com/pr-news/pr-news/40073134",
@@ -115,6 +370,18 @@
    "official": false
   },
   {
+   "source": "The Phuket News",
+   "title": "Phuket hotel raids expose licensing failures",
+   "url": "https://www.thephuketnews.com/phuket-hotel-raids-expose-licensing-failures-102118.php",
+   "published_at": "2026-11-05T03:11:00+00:00",
+   "lang": "en",
+   "topics": [
+    "safety",
+    "phuket"
+   ],
+   "official": false
+  },
+  {
    "source": "The Thaiger",
    "title": "Pattaya tourism lags as flight costs jump up to 40%, group warns",
    "url": "https://thethaiger.com/news/pattaya/pattaya-tourism-stalls-as-group-warns-airfares-jump-40",
@@ -123,6 +390,18 @@
    "topics": [
     "flights",
     "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Phuket News",
+   "title": "Eight arrested over Phuket Airport warehouse thefts",
+   "url": "https://www.thephuketnews.com/eight-arrested-over-phuket-airport-warehouse-thefts-102116.php",
+   "published_at": "2026-11-05T01:37:00+00:00",
+   "lang": "en",
+   "topics": [
+    "flights",
+    "phuket"
    ],
    "official": false
   },
@@ -1148,6 +1427,17 @@
    "official": false
   },
   {
+   "source": "The Pattaya News",
+   "title": "Region 2 Police Commander Visits Pattaya Police Station to Deliver Operational Policies",
+   "url": "https://thepattayanews.com/2026/10/31/region-2-police-commander-visits-pattaya-police-station-to-deliver-operational-policies/",
+   "published_at": "2026-10-31T14:40:41+00:00",
+   "lang": "en",
+   "topics": [
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
    "source": "Nation Thailand",
    "title": "Thailand and Russia explore tourism growth beyond beach holidays",
    "url": "https://www.nationthailand.com/news/tourism/40072985",
@@ -1248,6 +1538,18 @@
    "lang": "en",
    "topics": [
     "statistics"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Uzbek Woman Jumps Naked from 8th-Floor Balcony into Pattaya Condo Pool After Argument with Turkish Man, Suffers No Injuries",
+   "url": "https://thepattayanews.com/2026/10/31/uzbek-woman-jumps-naked-from-8th-floor-balcony-into-pattaya-condo-pool-after-argument-with-turkish-man-suffers-no-injuries/",
+   "published_at": "2026-10-31T00:29:30+00:00",
+   "lang": "en",
+   "topics": [
+    "safety",
+    "pattaya"
    ],
    "official": false
   },
@@ -1502,17 +1804,6 @@
    "official": false
   },
   {
-   "source": "Nation Thailand",
-   "title": "Halloween captions and 7 easy costume ideas for 2026",
-   "url": "https://www.nationthailand.com/news/general/40072914",
-   "published_at": "2026-10-30T01:29:00+00:00",
-   "lang": "en",
-   "topics": [
-    "events"
-   ],
-   "official": false
-  },
-  {
    "source": "The Pattaya News",
    "title": "Pattaya Mayor Joins 35th Anniversary Mass Celebrations at Maryvit School Network",
    "url": "https://thepattayanews.com/2026/10/29/pattaya-mayor-joins-35th-anniversary-mass-celebrations-at-maryvit-school-network/",
@@ -1572,18 +1863,6 @@
    "official": false
   },
   {
-   "source": "Nation Thailand",
-   "title": "Suvarnabhumi targets 6pm runway 02R reopening after repairs",
-   "url": "https://www.nationthailand.com/news/general/40072891",
-   "published_at": "2026-10-29T09:50:00+00:00",
-   "lang": "en",
-   "topics": [
-    "flights",
-    "bangkok"
-   ],
-   "official": false
-  },
-  {
    "source": "The Thaiger",
    "title": "Tourism businesses back 450 baht tourist fee, with conditions",
    "url": "https://thethaiger.com/hot-news/tourism/thailand-450-baht-tourist-fee-insurance-industry-debate",
@@ -1606,18 +1885,6 @@
    "official": false
   },
   {
-   "source": "Nation Thailand",
-   "title": "Pinehurst Golf Club & Hotel : A Championship 27-Hole Golf and Lifestyle Destination Near Bangkok",
-   "url": "https://www.nationthailand.com/pr-news/pr-news/40072883",
-   "published_at": "2026-10-29T07:52:00+00:00",
-   "lang": "en",
-   "topics": [
-    "events",
-    "bangkok"
-   ],
-   "official": false
-  },
-  {
    "source": "The Phuket News",
    "title": "Patong landslide blame game as illegal construction comes under scrutiny",
    "url": "https://www.thephuketnews.com/patong-landslide-blame-game-as-illegal-construction-comes-under-scrutiny-102059.php",
@@ -1626,18 +1893,6 @@
    "topics": [
     "weather",
     "phuket"
-   ],
-   "official": false
-  },
-  {
-   "source": "Nation Thailand",
-   "title": "Suvarnabhumi runway subsidence delays five airlines",
-   "url": "https://www.nationthailand.com/news/general/40072874",
-   "published_at": "2026-10-29T06:20:00+00:00",
-   "lang": "en",
-   "topics": [
-    "flights",
-    "bangkok"
    ],
    "official": false
   },
@@ -1723,18 +1978,6 @@
    "official": false
   },
   {
-   "source": "Nation Thailand",
-   "title": "BTS supports Amazing Thailand Marathon Bangkok 2026",
-   "url": "https://www.nationthailand.com/pr-news/pr-news/40072868",
-   "published_at": "2026-10-29T03:32:00+00:00",
-   "lang": "en",
-   "topics": [
-    "events",
-    "bangkok"
-   ],
-   "official": false
-  },
-  {
    "source": "The Thaiger",
    "title": "Thai beauty blogger accuses Suvarnabhumi Airport officer of attempted assault",
    "url": "https://thethaiger.com/news/bangkok/thai-beauty-blogger-accuses-suvarnabhumi-airport-officer-of-attempted-assault",
@@ -1794,17 +2037,6 @@
    "official": false
   },
   {
-   "source": "Nation Thailand",
-   "title": "Thai navy holds second full-dress Royal Barge Procession rehearsal",
-   "url": "https://www.nationthailand.com/news/general/40072849",
-   "published_at": "2026-10-28T11:44:00+00:00",
-   "lang": "en",
-   "topics": [
-    "events"
-   ],
-   "official": false
-  },
-  {
    "source": "The Phuket News",
    "title": "Phuket rain warning extended as Karon floods, Patong roads reopen",
    "url": "https://www.thephuketnews.com/phuket-rain-warning-extended-as-karon-floods-patong-roads-reopen-102046.php",
@@ -1813,17 +2045,6 @@
    "topics": [
     "weather",
     "phuket"
-   ],
-   "official": false
-  },
-  {
-   "source": "Nation Thailand",
-   "title": "Sida khon blessing ceremony held ahead of November 5 opening",
-   "url": "https://www.nationthailand.com/life/art-culture/40072843",
-   "published_at": "2026-10-28T09:48:00+00:00",
-   "lang": "en",
-   "topics": [
-    "events"
    ],
    "official": false
   },
@@ -1968,29 +2189,6 @@
    "official": true
   },
   {
-   "source": "Nation Thailand",
-   "title": "Private sector backs Thailand’s proposed THB450 tourist fee",
-   "url": "https://www.nationthailand.com/news/tourism/40072824",
-   "published_at": "2026-10-28T03:31:00+00:00",
-   "lang": "en",
-   "topics": [
-    "entry_rules"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Phuket News",
-   "title": "Patong flood recovery turns to insurance claims, landslide warnings",
-   "url": "https://www.thephuketnews.com/patong-flood-recovery-turns-to-insurance-claims-landslide-warnings-102031.php",
-   "published_at": "2026-10-28T02:47:00+00:00",
-   "lang": "en",
-   "topics": [
-    "weather",
-    "phuket"
-   ],
-   "official": false
-  },
-  {
    "source": "TAT Newsroom",
    "title": "TAT unveils five tourism product priorities for 2027 at Thailand Nextperience",
    "url": "https://www.tatnews.org/2026/10/tat-unveils-five-tourism-product-priorities-for-2027-at-thailand-nextperience/",
@@ -2008,28 +2206,6 @@
    "topics": [
     "events",
     "pattaya"
-   ],
-   "official": false
-  },
-  {
-   "source": "Nation Thailand",
-   "title": "MedPark Hospital Celebrates Its 6th Anniversary with Free “MedMusic in the Park 2026” Concert at Benchakitti Park",
-   "url": "https://www.nationthailand.com/pr-news/40072820",
-   "published_at": "2026-10-28T02:23:00+00:00",
-   "lang": "en",
-   "topics": [
-    "events"
-   ],
-   "official": false
-  },
-  {
-   "source": "Khaosod English",
-   "title": "The hidden danger lurking in your favourite hotpot ingredient",
-   "url": "https://www.khaosodenglish.com/life/food/2026/10/27/the-hidden-danger-lurking-in-your-favourite-hotpot-ingredient/",
-   "published_at": "2026-10-27T13:03:52+00:00",
-   "lang": "en",
-   "topics": [
-    "safety"
    ],
    "official": false
   },
@@ -2123,182 +2299,6 @@
     "statistics"
    ],
    "official": false
-  },
-  {
-   "source": "The Thaiger",
-   "title": "Khao San Road plans biggest Halloween party, calls for 4am closing",
-   "url": "https://thethaiger.com/news/bangkok/khao-san-road-closes-for-its-biggest-halloween-event-yet",
-   "published_at": "2026-10-27T08:20:46+00:00",
-   "lang": "en",
-   "topics": [
-    "events",
-    "bangkok"
-   ],
-   "official": false
-  },
-  {
-   "source": "Khaosod English",
-   "title": "Cambodia’s int’l tourist arrivals plunge 43.7 pct in Jan.-Sept.",
-   "url": "https://www.khaosodenglish.com/news/asean/2026/10/27/cambodias-intl-tourist-arrivals-plunge-43-7-pct-in-jan-sept/",
-   "published_at": "2026-10-27T08:12:10+00:00",
-   "lang": "en",
-   "topics": [
-    "statistics"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Pattaya News",
-   "title": "Thailand Considers 15-Day Visa-Free Entry for Mexico, Colombia and Other Markets After Processing Delays Leads to Tourism Drop",
-   "url": "https://thepattayanews.com/2026/10/27/thailand-considers-15-day-visa-free-entry-for-mexico-colombia-and-other-markets-after-processing-delays-leads-to-tourism-drop/",
-   "published_at": "2026-10-27T07:51:09+00:00",
-   "lang": "en",
-   "topics": [
-    "entry_rules"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Pattaya News",
-   "title": "75-Year-Old Belgian Man Arrested at Suvarnabhumi Airport Under Pattaya Court Warrant",
-   "url": "https://thepattayanews.com/2026/10/27/75-year-old-belgian-man-arrested-at-suvarnabhumi-airport-under-pattaya-court-warrant/",
-   "published_at": "2026-10-27T06:47:51+00:00",
-   "lang": "en",
-   "topics": [
-    "flights",
-    "pattaya",
-    "bangkok"
-   ],
-   "official": false
-  },
-  {
-   "source": "Khaosod English",
-   "title": "Visa delays cut Latin American arrivals by up to 30%, minister eyes visa-free entry",
-   "url": "https://www.khaosodenglish.com/news/2026/10/27/visa-delays-cut-latin-american-arrivals-by-up-to-30-minister-eyes-visa-free-entry/",
-   "published_at": "2026-10-27T06:36:29+00:00",
-   "lang": "en",
-   "topics": [
-    "entry_rules",
-    "statistics"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Thaiger",
-   "title": "Indian held at Suvarnabhumi Airport with foreign banknotes worth 2.6m baht",
-   "url": "https://thethaiger.com/news/bangkok/indian-held-at-suvarnabhumi-airport-with-2-6-million-baht-in-cash",
-   "published_at": "2026-10-27T04:32:52+00:00",
-   "lang": "en",
-   "topics": [
-    "flights",
-    "bangkok"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Phuket News",
-   "title": "Belavia to launch twice-weekly Phuket flights",
-   "url": "https://www.thephuketnews.com/belavia-to-launch-twice-weekly-phuket-flights-102027.php",
-   "published_at": "2026-10-27T04:25:00+00:00",
-   "lang": "en",
-   "topics": [
-    "flights",
-    "phuket"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Thaiger",
-   "title": "Don Mueang drops hand wand for pat-down body search from November 1",
-   "url": "https://thethaiger.com/news/world/aviation/don-mueang-airport-swaps-hand-held-detector-for-pat-down-search",
-   "published_at": "2026-10-27T04:03:27+00:00",
-   "lang": "en",
-   "topics": [
-    "flights",
-    "bangkok"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Thaiger",
-   "title": "Nok Air suspends 3 southern Thailand routes until Dec 20",
-   "url": "https://thethaiger.com/news/world/aviation/nok-air-suspends-three-southern-routes-fuel-costs",
-   "published_at": "2026-10-27T03:33:28+00:00",
-   "lang": "en",
-   "topics": [
-    "flights"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Thaiger",
-   "title": "Russian man injured after metal bar attack by Phuket pickup truck driver",
-   "url": "https://thethaiger.com/news/phuket/russian-driver-hit-with-metal-bar-in-phuket-road-rage",
-   "published_at": "2026-10-27T03:30:47+00:00",
-   "lang": "en",
-   "topics": [
-    "alcohol",
-    "safety",
-    "phuket"
-   ],
-   "official": false
-  },
-  {
-   "source": "TAT Newsroom",
-   "title": "TAT joins forces with Thai tourism partners to strengthen Italian market at TTG Travel Experience 2026",
-   "url": "https://www.tatnews.org/2026/10/tat-joins-forces-with-thai-tourism-partners-to-strengthen-italian-market-at-ttg-travel-experience-2026/",
-   "published_at": "2026-10-27T02:53:20+00:00",
-   "lang": "en",
-   "topics": [],
-   "official": true
-  },
-  {
-   "source": "The Thaiger",
-   "title": "Singaporean runs from Bangkok airport taxi, falls off expressway",
-   "url": "https://thethaiger.com/news/bangkok/singaporean-runs-from-bangkok-airport-taxi-falls-off-expressway",
-   "published_at": "2026-10-27T02:36:03+00:00",
-   "lang": "en",
-   "topics": [
-    "flights",
-    "bangkok"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Pattaya News",
-   "title": "Pattaya Community Association Hosts Charity Bowling Tournament to Support Vulnerable Families",
-   "url": "https://thepattayanews.com/2026/10/27/pattaya-community-association-hosts-charity-bowling-tournament-to-support-vulnerable-families/",
-   "published_at": "2026-10-26T22:32:10+00:00",
-   "lang": "en",
-   "topics": [
-    "events",
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Thaiger",
-   "title": "Belavia launches direct Minsk-Bangkok flights, Phuket next",
-   "url": "https://thethaiger.com/news/world/aviation/belavia-launches-direct-minsk-bangkok-flights-phuket-next",
-   "published_at": "2026-10-26T10:25:13+00:00",
-   "lang": "en",
-   "topics": [
-    "flights",
-    "phuket",
-    "bangkok"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Pattaya News",
-   "title": "Top National Thailand Stories From the Past Week: Government Postpones “For the Time Being” Introducing Proposed 1,000-Baht Overseas Travel Tax, and More",
-   "url": "https://thepattayanews.com/2026/10/26/top-national-thailand-stories-from-the-past-week-government-postpones-for-the-time-being-introducing-proposed-1000-baht-overseas-travel-tax-and-more/",
-   "published_at": "2026-10-26T08:59:33+00:00",
-   "lang": "en",
-   "topics": [
-    "entry_rules"
-   ],
-   "official": false
   }
  ],
  "sources": [
@@ -2313,7 +2313,7 @@
    "name": "The Pattaya News",
    "endpoint": "https://thepattayanews.com/wp-json/wp/v2/posts",
    "ok": true,
-   "count": 73,
+   "count": 66,
    "error": null
   },
   {
@@ -2334,28 +2334,28 @@
    "name": "The Thaiger",
    "endpoint": "https://thethaiger.com/wp-json/wp/v2/posts",
    "ok": true,
-   "count": 105,
+   "count": 102,
    "error": null
   },
   {
    "name": "Khaosod English",
    "endpoint": "https://www.khaosodenglish.com/feed/",
    "ok": true,
-   "count": 6,
+   "count": 4,
    "error": null
   },
   {
    "name": "The Phuket News",
    "endpoint": "https://www.thephuketnews.com/rss-xml/news.xml",
    "ok": true,
-   "count": 3,
+   "count": 4,
    "error": null
   },
   {
    "name": "Nation Thailand",
    "endpoint": "https://api.nationthailand.com/sitemap/latest",
    "ok": true,
-   "count": 20,
+   "count": 24,
    "error": null
   }
  ],
