@@ -1,7 +1,363 @@
 {
- "built_at": "2026-11-11T08:23:05+00:00",
+ "built_at": "2026-11-12T08:49:25+00:00",
  "window_days": 10,
  "items": [
+  {
+   "source": "Khaosod English",
+   "title": "Koh Samui residents warned of flash floods as heavy rain and high tides raise risks",
+   "url": "https://www.khaosodenglish.com/featured/2026/11/12/koh-samui-residents-warned-of-flash-floods-as-heavy-rain-and-high-tides-raise-risks/",
+   "published_at": "2026-11-12T08:35:57+00:00",
+   "lang": "en",
+   "topics": [
+    "weather",
+    "samui"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Thaiger",
+   "title": "CAAT addresses soaring Chiang Mai flight prices ahead of festival",
+   "url": "https://thethaiger.com/news/world/aviation/chiang-mai-flight-prices-28000-baht-yi-peng",
+   "published_at": "2026-11-12T07:31:47+00:00",
+   "lang": "en",
+   "topics": [
+    "flights",
+    "events",
+    "chiangmai"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Thaiger",
+   "title": "Former police volunteer arrested in Pattaya over drug-planting, extortion",
+   "url": "https://thethaiger.com/news/pattaya/thailand-bans-new-gun-licences-for-one-year-four-exceptions-2",
+   "published_at": "2026-11-12T07:31:27+00:00",
+   "lang": "en",
+   "topics": [
+    "safety",
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "Pattaya City Hall",
+   "title": "นายกเมืองพัทยาร่วมสัมมนาวิชาการ เสริมความเข้มแข็งองค์กรปกครองส่วนท้องถิ่น มุ่งพัฒนาคุณภาพชีวิตประชาชนอย่างยั่งยืน",
+   "url": "https://pattaya.go.th/2026/11/12/%f0%9f%8f%99%ef%b8%8f-%e0%b8%99%e0%b8%b2%e0%b8%a2%e0%b8%81%e0%b9%80%e0%b8%a1%e0%b8%b7%e0%b8%ad%e0%b8%87%e0%b8%9e%e0%b8%b1%e0%b8%97%e0%b8%a2%e0%b8%b2%e0%b8%a3%e0%b9%88%e0%b8%a7%e0%b8%a1%e0%b8%aa/",
+   "published_at": "2026-11-12T07:22:39+00:00",
+   "lang": "th",
+   "topics": [
+    "pattaya"
+   ],
+   "official": true
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Rama III and Memorial Bridge closures announced for Bangkok light festival",
+   "url": "https://www.nationthailand.com/thailand/bangkok/40073414",
+   "published_at": "2026-11-12T06:29:00+00:00",
+   "lang": "en",
+   "topics": [
+    "events",
+    "bangkok"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Bangkok to host heritage festival at three temples and a historic fort",
+   "url": "https://www.nationthailand.com/news/tourism/40073413",
+   "published_at": "2026-11-12T06:25:00+00:00",
+   "lang": "en",
+   "topics": [
+    "events",
+    "bangkok"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Banglamung District Meeting Orders Tighter School Safety Measures After Pattaya Shooting Threat",
+   "url": "https://thepattayanews.com/2026/11/12/banglamung-district-meeting-orders-tighter-school-safety-measures-after-pattaya-shooting-threat/",
+   "published_at": "2026-11-12T06:12:22+00:00",
+   "lang": "en",
+   "topics": [
+    "safety",
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Banglamung Rural Highway Unit and Takhian Tia Municipality Set Up Mobile Truck Weight Checkpoint to Protect Roads",
+   "url": "https://thepattayanews.com/2026/11/12/banglamung-rural-highway-unit-and-takhian-tia-municipality-set-up-mobile-truck-weight-checkpoint-to-protect-roads/",
+   "published_at": "2026-11-12T06:03:39+00:00",
+   "lang": "en",
+   "topics": [
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "Khaosod English",
+   "title": "Experience the magic of ancient Phimai at Thailand’s five-day festival",
+   "url": "https://www.khaosodenglish.com/life/events/2026/11/12/experience-the-magic-of-ancient-phimai-at-thailands-five-day-festival/",
+   "published_at": "2026-11-12T06:01:06+00:00",
+   "lang": "en",
+   "topics": [
+    "events"
+   ],
+   "official": false
+  },
+  {
+   "source": "Pattaya City Hall",
+   "title": "ดูแลถึงบ้าน! เมืองพัทยามอบผ้าอ้อมผู้ป่วยติดเตียง 8 ราย ยกระดับคุณภาพชีวิตประชาชน",
+   "url": "https://pattaya.go.th/2026/11/12/%e0%b8%94%e0%b8%b9%e0%b9%81%e0%b8%a5%e0%b8%96%e0%b8%b6%e0%b8%87%e0%b8%9a%e0%b9%89%e0%b8%b2%e0%b8%99-%e0%b9%80%e0%b8%a1%e0%b8%b7%e0%b8%ad%e0%b8%87%e0%b8%9e%e0%b8%b1%e0%b8%97%e0%b8%a2%e0%b8%b2%e0%b8%a1/",
+   "published_at": "2026-11-12T05:51:23+00:00",
+   "lang": "th",
+   "topics": [
+    "pattaya"
+   ],
+   "official": true
+  },
+  {
+   "source": "Pattaya City Hall",
+   "title": "ปล่อยใจไปกับกลิ่นกาแฟ เคล้าบรรยากาศทะเล! “Chonburi Coffee on the Beach 2026” ชวนเช็กอินริมชายหาดพัทยา 13–15 พ.ย. นี้ จัดเต็มกาแฟดี กิจกรรมเด็ด คอนเสิร์ตฟรี!",
+   "url": "https://pattaya.go.th/2026/11/12/%e2%98%95%f0%9f%8c%8a-%e0%b8%9b%e0%b8%a5%e0%b9%88%e0%b8%ad%e0%b8%a2%e0%b9%83%e0%b8%88%e0%b9%84%e0%b8%9b%e0%b8%81%e0%b8%b1%e0%b8%9a%e0%b8%81%e0%b8%a5%e0%b8%b4%e0%b9%88%e0%b8%99%e0%b8%81%e0%b8%b2/",
+   "published_at": "2026-11-12T05:48:36+00:00",
+   "lang": "th",
+   "topics": [
+    "events",
+    "pattaya"
+   ],
+   "official": true
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Banglamung District Holds Preparatory Meeting for Royal Funeral Sandalwood Flower Ceremony Honoring Her Royal Majesty Queen Sirikit",
+   "url": "https://thepattayanews.com/2026/11/12/banglamung-district-holds-preparatory-meeting-for-royal-funeral-sandalwood-flower-ceremony-honoring-her-royal-majesty-queen-sirikit/",
+   "published_at": "2026-11-12T05:13:47+00:00",
+   "lang": "en",
+   "topics": [
+    "events",
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Nongnooch World Pattaya Reveals 15 Rare Coco de Mer Fruits Yielding 18 Seeds Worth 1.8 Million Baht",
+   "url": "https://thepattayanews.com/2026/11/12/nongnooch-world-pattaya-reveals-15-rare-coco-de-mer-fruits-yielding-18-seeds-worth-1-8-million-baht/",
+   "published_at": "2026-11-12T04:58:40+00:00",
+   "lang": "en",
+   "topics": [
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "Pattaya City Hall",
+   "title": "นายกฯ ปรเมศวร์ ลุยตรวจงานปรับปรุงผิวจราจรซอยเพนียดช้าง เร่งปิดจ๊อบก่อนงานพลุนานาชาติ พร้อมปรับฝาบ่อ-ทำทางลาดเพื่อผู้พิการ (ฉบับที่ 1,180/69 ประจำวันที่ 11 พ.ย.69)",
+   "url": "https://pattaya.go.th/2026/11/12/%f0%9f%91%a8%f0%9f%8f%bb%f0%9f%92%bc%f0%9f%9a%a7%e0%b8%99%e0%b8%b2%e0%b8%a2%e0%b8%81%e0%b8%af-%e0%b8%9b%e0%b8%a3%e0%b9%80%e0%b8%a1%e0%b8%a8%e0%b8%a7%e0%b8%a3%e0%b9%8c-%e0%b8%a5%e0%b8%b8/",
+   "published_at": "2026-11-12T04:43:55+00:00",
+   "lang": "th",
+   "topics": [
+    "events"
+   ],
+   "official": true
+  },
+  {
+   "source": "Khaosod English",
+   "title": "Doi Pui offers misty mountain camping as temperatures drop to 13°C",
+   "url": "https://www.khaosodenglish.com/news/2026/11/12/doi-pui-offers-misty-mountain-camping-as-temperatures-drop-to-13c/",
+   "published_at": "2026-11-12T04:28:51+00:00",
+   "lang": "en",
+   "topics": [
+    "weather"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Thaiger",
+   "title": "Swiss man arrested in Pattaya amid child sexual abuse allegations",
+   "url": "https://thethaiger.com/news/pattaya/swiss-man-arrested-pattaya-child-sexual-abuse-case",
+   "published_at": "2026-11-12T04:09:27+00:00",
+   "lang": "en",
+   "topics": [
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "AOT asks public to avoid lanterns and drones near airports during Loy Krathong",
+   "url": "https://www.nationthailand.com/news/general/40073403",
+   "published_at": "2026-11-12T03:58:00+00:00",
+   "lang": "en",
+   "topics": [
+    "flights",
+    "events"
+   ],
+   "official": false
+  },
+  {
+   "source": "Khaosod English",
+   "title": "Meet Wapi and Khumpa, the mascots of Udon Thani’s World Horticultural Expo",
+   "url": "https://www.khaosodenglish.com/life/2026/11/12/meet-wapi-and-khumpa-the-mascots-of-udon-thanis-world-horticultural-expo/",
+   "published_at": "2026-11-12T03:56:31+00:00",
+   "lang": "en",
+   "topics": [
+    "events"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Thaiger",
+   "title": "CAAT says only 2 from 7 main Thai airlines affected by data breach",
+   "url": "https://thethaiger.com/news/world/aviation/thai-airways-and-bangkok-airways-affected-by-data-leak",
+   "published_at": "2026-11-12T03:10:26+00:00",
+   "lang": "en",
+   "topics": [
+    "flights"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Pattaya Police Arrest 20-Year-Old Russian Man Outside Big C While Withdrawing Cash Linked to Transnational Scam Network",
+   "url": "https://thepattayanews.com/2026/11/12/pattaya-police-arrest-20-year-old-russian-man-outside-big-c-while-withdrawing-cash-linked-to-transnational-scam-network/",
+   "published_at": "2026-11-12T02:04:11+00:00",
+   "lang": "en",
+   "topics": [
+    "safety",
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Pattaya Mayor Inspects Soi Paniad Chang Roadworks, Pushes for Completion Before International Fireworks Festival",
+   "url": "https://thepattayanews.com/2026/11/12/pattaya-mayor-inspects-soi-paniad-chang-roadworks-pushes-for-completion-before-international-fireworks-festival/",
+   "published_at": "2026-11-12T00:12:28+00:00",
+   "lang": "en",
+   "topics": [
+    "events",
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Pattaya fireworks festival returns with free shows and concerts",
+   "url": "https://www.nationthailand.com/news/tourism/40073382",
+   "published_at": "2026-11-11T10:13:00+00:00",
+   "lang": "en",
+   "topics": [
+    "events",
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "Pattaya City Hall",
+   "title": "เมืองพัทยาจับมือมูลนิธิคุณพ่อเรย์ เตรียมจัด “Ray Run Pattaya ปีที่ 2” วิ่งมหากุศลสร้างความเท่าเทียม มอบชีวิตใหม่ให้เด็กและคนพิการ",
+   "url": "https://pattaya.go.th/2026/11/11/%f0%9f%8f%83%f0%9f%8f%bb%e2%99%82%ef%b8%8f%f0%9f%91%a8%f0%9f%8f%bb%f0%9f%a6%bd%e0%b9%80%e0%b8%a1%e0%b8%b7%e0%b8%ad%e0%b8%87%e0%b8%9e%e0%b8%b1%e0%b8%97%e0%b8%a2%e0%b8%b2%e0%b8%88/",
+   "published_at": "2026-11-11T09:57:38+00:00",
+   "lang": "th",
+   "topics": [
+    "pattaya"
+   ],
+   "official": true
+  },
+  {
+   "source": "Pattaya City Hall",
+   "title": "เมืองพัทยาให้การต้อนรับคณะศึกษาดูงาน อบจ.สตูล เรียนรู้การพัฒนาเมืองอัจฉริยะ",
+   "url": "https://pattaya.go.th/2026/11/11/%e0%b9%80%e0%b8%a1%e0%b8%b7%e0%b8%ad%e0%b8%87%e0%b8%9e%e0%b8%b1%e0%b8%97%e0%b8%a2%e0%b8%b2%e0%b9%83%e0%b8%ab%e0%b9%89%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b8%95%e0%b9%89%e0%b8%ad%e0%b8%99%e0%b8%a3-188/",
+   "published_at": "2026-11-11T09:54:39+00:00",
+   "lang": "th",
+   "topics": [
+    "pattaya"
+   ],
+   "official": true
+  },
+  {
+   "source": "Pattaya City Hall",
+   "title": "รวมพลังทุกภาคส่วน! พัทยาเตรียมพร้อมพิธีถวายดอกไม้จันทน์อย่างสมพระเกียรติ",
+   "url": "https://pattaya.go.th/2026/11/11/%e0%b8%a3%e0%b8%a7%e0%b8%a1%e0%b8%9e%e0%b8%a5%e0%b8%b1%e0%b8%87%e0%b8%97%e0%b8%b8%e0%b8%81%e0%b8%a0%e0%b8%b2%e0%b8%84%e0%b8%aa%e0%b9%88%e0%b8%a7%e0%b8%99-%e0%b8%9e%e0%b8%b1%e0%b8%97%e0%b8%a2%e0%b8%b2/",
+   "published_at": "2026-11-11T09:52:00+00:00",
+   "lang": "th",
+   "topics": [
+    "events",
+    "pattaya"
+   ],
+   "official": true
+  },
+  {
+   "source": "Pattaya City Hall",
+   "title": "เมืองพัทยาหารือ MAX Muay Thai ขยายเวทีมวยไทยสู่จีน โปรโมตเสน่ห์ไทยสู่สายตาชาวโลก",
+   "url": "https://pattaya.go.th/2026/11/11/%f0%9f%a5%8a%f0%9f%87%b9%f0%9f%87%ad-%e0%b9%80%e0%b8%a1%e0%b8%b7%e0%b8%ad%e0%b8%87%e0%b8%9e%e0%b8%b1%e0%b8%97%e0%b8%a2%e0%b8%b2%e0%b8%ab%e0%b8%b2%e0%b8%a3%e0%b8%b7%e0%b8%ad-max-muay-thai-%e0%b8%82/",
+   "published_at": "2026-11-11T09:46:11+00:00",
+   "lang": "th",
+   "topics": [
+    "pattaya"
+   ],
+   "official": true
+  },
+  {
+   "source": "Pattaya City Hall",
+   "title": "เมืองพัทยาร่วมประชุมหัวหน้าส่วนราชการอำเภอบางละมุง ขานรับนโยบายรัฐ ยกระดับความปลอดภัยสถานศึกษา-คุมเข้มขยะพิษ",
+   "url": "https://pattaya.go.th/2026/11/11/%f0%9f%8f%ab%f0%9f%9b%a1%ef%b8%8f%e0%b9%80%e0%b8%a1%e0%b8%b7%e0%b8%ad%e0%b8%87%e0%b8%9e%e0%b8%b1%e0%b8%97%e0%b8%a2%e0%b8%b2%e0%b8%a3%e0%b9%88%e0%b8%a7%e0%b8%a1%e0%b8%9b%e0%b8%a3%e0%b8%b0%e0%b8%8a/",
+   "published_at": "2026-11-11T09:45:13+00:00",
+   "lang": "th",
+   "topics": [
+    "safety",
+    "pattaya"
+   ],
+   "official": true
+  },
+  {
+   "source": "Pattaya City Hall",
+   "title": "รองเล็ก นำคณะผู้บริหารเมืองพัทยาลงพื้นที่เยี่ยมอดีต อสม. ส่งกำลังใจ พร้อมเดินหน้านโยบาย “ไม่ทิ้งใครไว้ข้างหลัง”",
+   "url": "https://pattaya.go.th/2026/11/11/%f0%9f%8f%a5%e2%9d%a4%ef%b8%8f-%e0%b8%a3%e0%b8%ad%e0%b8%87%e0%b9%80%e0%b8%a5%e0%b9%87%e0%b8%81-%e0%b8%99%e0%b8%b3%e0%b8%84%e0%b8%93%e0%b8%b0%e0%b8%9c%e0%b8%b9%e0%b9%89%e0%b8%9a%e0%b8%a3%e0%b8%b4/",
+   "published_at": "2026-11-11T09:44:26+00:00",
+   "lang": "th",
+   "topics": [
+    "pattaya"
+   ],
+   "official": true
+  },
+  {
+   "source": "Pattaya City Hall",
+   "title": "เมืองพัทยาต้อนรับ 20 หนุ่มผู้เข้าประกวด Mister Smart Beach Thailand 2026 หารือความร่วมมือส่งเสริมท่องเที่ยว ดัน Soft Power ไทยสู่เวทีสากล(11 พฤศจิกายน 2569)",
+   "url": "https://pattaya.go.th/2026/11/11/%e0%b9%80%e0%b8%a1%e0%b8%b7%e0%b8%ad%e0%b8%87%e0%b8%9e%e0%b8%b1%e0%b8%97%e0%b8%a2%e0%b8%b2%e0%b8%95%e0%b9%89%e0%b8%ad%e0%b8%99%e0%b8%a3%e0%b8%b1%e0%b8%9a-20-%e0%b8%ab%e0%b8%99%e0%b8%b8%e0%b9%88/",
+   "published_at": "2026-11-11T09:43:37+00:00",
+   "lang": "th",
+   "topics": [
+    "pattaya"
+   ],
+   "official": true
+  },
+  {
+   "source": "TAT Newsroom",
+   "title": "Her Majesty the Queen of Thailand opens Global Wellness Summit 2026 in Phuket",
+   "url": "https://www.tatnews.org/2026/11/her-majesty-the-queen-of-thailand-opens-global-wellness-summit-2026-in-phuket/",
+   "published_at": "2026-11-11T08:40:31+00:00",
+   "lang": "en",
+   "topics": [
+    "phuket"
+   ],
+   "official": true
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "TAT targets 5% tourism revenue rise with ‘value over volume’ strategy",
+   "url": "https://www.nationthailand.com/news/tourism/40073373",
+   "published_at": "2026-11-11T08:39:00+00:00",
+   "lang": "en",
+   "topics": [
+    "statistics"
+   ],
+   "official": false
+  },
   {
    "source": "Nation Thailand",
    "title": "TCEB and Korat showcase creative strengths through K-BATTLE 2026",
@@ -92,13 +448,13 @@
    "official": false
   },
   {
-   "source": "Khaosod English",
-   "title": "Fire engulfs RDF waste processing factory in Chachoengsao",
-   "url": "https://www.khaosodenglish.com/featured/2026/11/11/fire-engulfs-rdf-waste-processing-factory-in-chachoengsao/",
-   "published_at": "2026-11-11T02:53:09+00:00",
+   "source": "The Phuket News",
+   "title": "Weedon cannabis shops face nominee checks",
+   "url": "https://www.thephuketnews.com/weedon-cannabis-shops-face-nominee-checks-102169.php",
+   "published_at": "2026-11-11T02:53:00+00:00",
    "lang": "en",
    "topics": [
-    "safety"
+    "cannabis"
    ],
    "official": false
   },
@@ -144,28 +500,6 @@
    "topics": [
     "safety",
     "pattaya"
-   ],
-   "official": false
-  },
-  {
-   "source": "Khaosod English",
-   "title": "Grand Theft Auto VI is almost here. What to know about the characters, music and billions at stake",
-   "url": "https://www.khaosodenglish.com/news/international/2026/11/10/grand-theft-auto-vi-is-almost-here-what-to-know-about-the-characters-music-and-billions-at-stake/",
-   "published_at": "2026-11-10T11:49:50+00:00",
-   "lang": "en",
-   "topics": [
-    "safety"
-   ],
-   "official": false
-  },
-  {
-   "source": "Khaosod English",
-   "title": "Four killed, including 3-year-old boy, in ambulance crash in southern Thailand",
-   "url": "https://www.khaosodenglish.com/news/2026/11/10/four-killed-including-3-year-old-boy-in-ambulance-crash-in-southern-thailand/",
-   "published_at": "2026-11-10T11:29:35+00:00",
-   "lang": "en",
-   "topics": [
-    "safety"
    ],
    "official": false
   },
@@ -423,18 +757,6 @@
    "official": false
   },
   {
-   "source": "The Phuket News",
-   "title": "Phuket Governor hands out relief bags to Patong flood victims",
-   "url": "https://www.thephuketnews.com/phuket-governor-hands-out-relief-bags-to-patong-flood-victims-102155.php",
-   "published_at": "2026-11-10T05:35:00+00:00",
-   "lang": "en",
-   "topics": [
-    "weather",
-    "phuket"
-   ],
-   "official": false
-  },
-  {
    "source": "TAT Newsroom",
    "title": "Chiang Mai ranked safest city in Southeast Asia and 19th worldwide in 2026",
    "url": "https://www.tatnews.org/2026/11/chiang-mai-ranked-safest-city-in-southeast-asia-and-19th-worldwide-in-2026/",
@@ -494,18 +816,6 @@
    "official": false
   },
   {
-   "source": "The Thaiger",
-   "title": "Police raid Pattaya house used as base for 350-million-baht romance scam",
-   "url": "https://thethaiger.com/news/pattaya/pattaya-romance-scam-base-raided-10-foreigners-detained",
-   "published_at": "2026-11-10T04:07:57+00:00",
-   "lang": "en",
-   "topics": [
-    "safety",
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
    "source": "Khaosod English",
    "title": "9 injured after speedboat crashes into fishing boat near Pattaya’s Laem Bali Hai Pier",
    "url": "https://www.khaosodenglish.com/news/crimecourtscalamity/calamity/2026/11/10/9-injured-after-speedboat-crashes-into-fishing-boat-near-pattayas-laem-bali-hai-pier/",
@@ -513,17 +823,6 @@
    "lang": "en",
    "topics": [
     "safety",
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Thaiger",
-   "title": "Pattaya motorcycle taxi rider shines laser at ride-hailing rider",
-   "url": "https://thethaiger.com/news/pattaya/pattaya-motorcycle-taxi-driver-laser-ride-hailing-rider",
-   "published_at": "2026-11-10T03:02:43+00:00",
-   "lang": "en",
-   "topics": [
     "pattaya"
    ],
    "official": false
@@ -1447,18 +1746,6 @@
    "official": false
   },
   {
-   "source": "The Pattaya News",
-   "title": "Police Find 162 Ball Firecrackers and Speargun in Bedroom of Boy Who Posted Pattaya School Shooting Threat",
-   "url": "https://thepattayanews.com/2026/11/05/police-find-162-ball-firecrackers-and-speargun-in-bedroom-of-boy-who-posted-pattaya-school-shooting-threat/",
-   "published_at": "2026-11-05T14:57:07+00:00",
-   "lang": "en",
-   "topics": [
-    "safety",
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
    "source": "Nation Thailand",
    "title": "BMTA to offer free shuttle buses for Bangkok’s Royal Barge Procession",
    "url": "https://www.nationthailand.com/news/general/40073152",
@@ -1577,29 +1864,6 @@
    "official": true
   },
   {
-   "source": "The Pattaya News",
-   "title": "Pattaya City School 3 Temporarily Closes After Line-Group Message Threatens Shooting; About 1,000 Students Sent Home",
-   "url": "https://thepattayanews.com/2026/11/05/pattaya-city-school-3-temporarily-closes-after-line-group-message-threatens-shooting-about-1000-students-sent-home/",
-   "published_at": "2026-11-05T06:58:38+00:00",
-   "lang": "en",
-   "topics": [
-    "safety",
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
-   "source": "Nation Thailand",
-   "title": "Bosch Automotive Thailand Celebrates 30 Years of Manufacturing Excellence in Rayong, Strengthening Its Contribution to the Global Automotive Industry",
-   "url": "https://www.nationthailand.com/pr-news/pr-news/40073134",
-   "published_at": "2026-11-05T05:56:00+00:00",
-   "lang": "en",
-   "topics": [
-    "events"
-   ],
-   "official": false
-  },
-  {
    "source": "TAT Newsroom",
    "title": "TAT presents Thailand Tourism 2030 sustainability vision on Wanderlust Headliner Stage at WTM London",
    "url": "https://www.tatnews.org/2026/11/tat-presents-thailand-tourism-2030-sustainability-vision-on-wanderlust-headliner-stage-at-wtm-london/",
@@ -1629,18 +1893,6 @@
    "lang": "en",
    "topics": [],
    "official": true
-  },
-  {
-   "source": "Nation Thailand",
-   "title": "Bangkok lists 16 Royal Barge Procession viewing points for November 6",
-   "url": "https://www.nationthailand.com/thailand/bangkok/40073128",
-   "published_at": "2026-11-05T03:21:00+00:00",
-   "lang": "en",
-   "topics": [
-    "events",
-    "bangkok"
-   ],
-   "official": false
   },
   {
    "source": "The Thaiger",
@@ -1691,17 +1943,6 @@
    "official": false
   },
   {
-   "source": "Nation Thailand",
-   "title": "Thailand’s tourist arrivals fall 4.59% to 25.46m in 10 months",
-   "url": "https://www.nationthailand.com/news/tourism/40073122",
-   "published_at": "2026-11-05T01:13:00+00:00",
-   "lang": "en",
-   "topics": [
-    "statistics"
-   ],
-   "official": false
-  },
-  {
    "source": "The Pattaya News",
    "title": "Amazing Thailand Grand Diwali Festival 2026 to Light Up Pattaya Beach November 13th–15th",
    "url": "https://thepattayanews.com/2026/11/05/amazing-thailand-grand-diwali-festival-2026-to-light-up-pattaya-beach-november-13th-15th/",
@@ -1709,28 +1950,6 @@
    "lang": "en",
    "topics": [
     "events",
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Pattaya News",
-   "title": "Pattaya to Support International Sailing Competition at Royal Varuna Yacht Club in December",
-   "url": "https://thepattayanews.com/2026/11/05/pattaya-to-support-international-sailing-competition-at-royal-varuna-yacht-club-in-december/",
-   "published_at": "2026-11-04T18:42:02+00:00",
-   "lang": "en",
-   "topics": [
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Pattaya News",
-   "title": "Pattaya Mayor Meets Bali Hai Company Representatives over Alleged Waterfront Condo Encroachment onto Public Land",
-   "url": "https://thepattayanews.com/2026/11/05/pattaya-mayor-meets-bali-hai-company-representatives-over-alleged-waterfront-condo-encroachment-onto-public-land/",
-   "published_at": "2026-11-04T18:27:07+00:00",
-   "lang": "en",
-   "topics": [
     "pattaya"
    ],
    "official": false
@@ -1757,18 +1976,6 @@
    "topics": [
     "flights",
     "phuket"
-   ],
-   "official": false
-  },
-  {
-   "source": "Nation Thailand",
-   "title": "Bangkok prepares Loy Krathong celebrations at five sites, linking three temples and one historic fort",
-   "url": "https://www.nationthailand.com/thailand/bangkok/40073104",
-   "published_at": "2026-11-04T10:25:00+00:00",
-   "lang": "en",
-   "topics": [
-    "events",
-    "bangkok"
    ],
    "official": false
   },
@@ -1806,17 +2013,6 @@
     "pattaya"
    ],
    "official": true
-  },
-  {
-   "source": "Nation Thailand",
-   "title": "Thai Airways flight returns to Shanghai after windscreen crack",
-   "url": "https://www.nationthailand.com/news/general/40073098",
-   "published_at": "2026-11-04T08:59:00+00:00",
-   "lang": "en",
-   "topics": [
-    "flights"
-   ],
-   "official": false
   },
   {
    "source": "Pattaya City Hall",
@@ -1897,17 +2093,6 @@
    "official": true
   },
   {
-   "source": "Pattaya City Hall",
-   "title": "“ปิดตำนานต้นมะขามใหญ่ Walking Street! เมืองพัทยารื้อตอไม้เก่าแก่ หวั่นอันตรายนักท่องเที่ยว เตรียมปลูกต้นใหม่ทดแทน”",
-   "url": "https://pattaya.go.th/2026/11/04/%e0%b8%9b%e0%b8%b4%e0%b8%94%e0%b8%95%e0%b8%b3%e0%b8%99%e0%b8%b2%e0%b8%99%e0%b8%95%e0%b9%89%e0%b8%99%e0%b8%a1%e0%b8%b0%e0%b8%82%e0%b8%b2%e0%b8%a1%e0%b9%83%e0%b8%ab%e0%b8%8d%e0%b9%88-walking-st/",
-   "published_at": "2026-11-04T05:18:46+00:00",
-   "lang": "th",
-   "topics": [
-    "pattaya"
-   ],
-   "official": true
-  },
-  {
    "source": "The Thaiger",
    "title": "Thailand video news | Thailand urges households to prepare emergency kits for 72 hours, Thailand sees tourist arrivals climb as high season approaches",
    "url": "https://thethaiger.com/video-podcasts/thailand-video-news-04-11-2026",
@@ -1939,40 +2124,6 @@
     "bangkok"
    ],
    "official": false
-  },
-  {
-   "source": "Pattaya City Hall",
-   "title": "รายงานคุณภาพอากาศในเขตเมืองพัทยา (บริเวณสวนสาธารณเฉลิมพระเกียรติเขา สทร. 5) ประจำวันที่ 4 พฤศจิกายน 2569 เมื่อเวลา 06.00 น.",
-   "url": "https://pattaya.go.th/2026/11/04/%e0%b8%a3%e0%b8%b2%e0%b8%a2%e0%b8%87%e0%b8%b2%e0%b8%99%e0%b8%84%e0%b8%b8%e0%b8%93%e0%b8%a0%e0%b8%b2%e0%b8%9e%e0%b8%ad%e0%b8%b2%e0%b8%81%e0%b8%b2%e0%b8%a8%e0%b9%83%e0%b8%99%e0%b9%80%e0%b8%82%e0%b8%95-4/",
-   "published_at": "2026-11-04T02:14:51+00:00",
-   "lang": "th",
-   "topics": [
-    "weather",
-    "pattaya"
-   ],
-   "official": true
-  },
-  {
-   "source": "Pattaya City Hall",
-   "title": "เมืองพัทยาพร้อม! จับมือสมาคมมิตรภาพไทย-จีน จัดแบดมินตัน “Pattaya International Badminton Sawasdee Cup 2026” นักกีฬา 30 ประเทศร่วมชิงชัย 27-29 พ.ย.นี้!! (ฉบับที่ 1,150/69 ประจำวันที่ 3 พ.ย.69)",
-   "url": "https://pattaya.go.th/2026/11/04/%f0%9f%8f%b8%e0%b9%80%e0%b8%a1%e0%b8%b7%e0%b8%ad%e0%b8%87%e0%b8%9e%e0%b8%b1%e0%b8%97%e0%b8%a2%e0%b8%b2%e0%b8%9e%e0%b8%a3%e0%b9%89%e0%b8%ad%e0%b8%a1-%e0%b8%88%e0%b8%b1%e0%b8%9a%e0%b8%a1%e0%b8%b7/",
-   "published_at": "2026-11-04T02:00:33+00:00",
-   "lang": "th",
-   "topics": [
-    "pattaya"
-   ],
-   "official": true
-  },
-  {
-   "source": "Pattaya City Hall",
-   "title": "นายกเมืองพัทยา นำทีมศึกษาดูงานโรงกำจัดขยะผลิตพลังงานไฟฟ้า เดินหน้าพัฒนาแนวทางจัดการขยะเพื่อสิ่งแวดล้อม",
-   "url": "https://pattaya.go.th/2026/11/04/%e2%99%bb%ef%b8%8f%f0%9f%8f%ad-%e0%b8%99%e0%b8%b2%e0%b8%a2%e0%b8%81%e0%b9%80%e0%b8%a1%e0%b8%b7%e0%b8%ad%e0%b8%87%e0%b8%9e%e0%b8%b1%e0%b8%97%e0%b8%a2%e0%b8%b2-%e0%b8%99%e0%b8%b3%e0%b8%97%e0%b8%b5/",
-   "published_at": "2026-11-04T01:53:43+00:00",
-   "lang": "th",
-   "topics": [
-    "pattaya"
-   ],
-   "official": true
   },
   {
    "source": "The Phuket News",
@@ -2090,18 +2241,6 @@
    "official": false
   },
   {
-   "source": "Pattaya City Hall",
-   "title": "รายงานคุณภาพอากาศในเขตเมืองพัทยา (บริเวณสวนสาธารณเฉลิมพระเกียรติเขา สทร. 5) ประจำวันที่ 3 พฤศจิกายน 2569 เมื่อเวลา 06.00 น.",
-   "url": "https://pattaya.go.th/2026/11/03/%e2%9b%85%ef%b8%8f%e0%b8%a3%e0%b8%b2%e0%b8%a2%e0%b8%87%e0%b8%b2%e0%b8%99%e0%b8%84%e0%b8%b8%e0%b8%93%e0%b8%a0%e0%b8%b2%e0%b8%9e%e0%b8%ad%e0%b8%b2%e0%b8%81%e0%b8%b2%e0%b8%a8%e0%b9%83%e0%b8%99-62/",
-   "published_at": "2026-11-03T02:33:03+00:00",
-   "lang": "th",
-   "topics": [
-    "weather",
-    "pattaya"
-   ],
-   "official": true
-  },
-  {
    "source": "The Phuket News",
    "title": "PPAO launches Airport–Rawai EV bus service",
    "url": "https://www.thephuketnews.com/ppao-launches-airport-rawai-ev-bus-service-102091.php",
@@ -2157,146 +2296,6 @@
     "bangkok"
    ],
    "official": false
-  },
-  {
-   "source": "Pattaya City Hall",
-   "title": "เมืองพัทยาเดินหน้าแก้ปัญหายาเสพติดอย่างยั่งยืน คุมเข้มบุหรี่ไฟฟ้าในโรงเรียน พร้อมหนุนกองทุนแม่ของแผ่นดินสร้างชุมชนเข้มแข็ง (ฉบับที่ 1,145/69 ประจำวันที่ 2 พ.ย.69)",
-   "url": "https://pattaya.go.th/2026/11/02/%f0%9f%a4%9c%f0%9f%8f%bb%f0%9f%a4%9b%f0%9f%8f%bb%e0%b9%80%e0%b8%a1%e0%b8%b7%e0%b8%ad%e0%b8%87%e0%b8%9e%e0%b8%b1%e0%b8%97%e0%b8%a2%e0%b8%b2%e0%b9%80%e0%b8%94%e0%b8%b4%e0%b8%99%e0%b8%ab%e0%b8%99/",
-   "published_at": "2026-11-02T09:43:06+00:00",
-   "lang": "th",
-   "topics": [
-    "pattaya"
-   ],
-   "official": true
-  },
-  {
-   "source": "Pattaya City Hall",
-   "title": "นายกเมืองพัทยาให้กำลังใจนักกีฬาวินด์เซิร์ฟเยาวชน ก่อนเดินทางแข่งขันระดับนานาชาติ ณ ประเทศเซเนกัล",
-   "url": "https://pattaya.go.th/2026/11/02/%f0%9f%8f%84%e2%99%82%ef%b8%8f%f0%9f%8c%8a-%e0%b8%99%e0%b8%b2%e0%b8%a2%e0%b8%81%e0%b9%80%e0%b8%a1%e0%b8%b7%e0%b8%ad%e0%b8%87%e0%b8%9e%e0%b8%b1%e0%b8%97%e0%b8%a2%e0%b8%b2%e0%b9%83%e0%b8%ab/",
-   "published_at": "2026-11-02T09:29:34+00:00",
-   "lang": "th",
-   "topics": [
-    "pattaya"
-   ],
-   "official": true
-  },
-  {
-   "source": "Pattaya City Hall",
-   "title": "นายกเมืองพัทยาเร่งสะสางปัญหาที่ดินบาลีฮาย-วอเตอร์ฟร้อนท์ ยืนยันรักษาพื้นที่สาธารณะ เดินหน้าประสานกรมที่ดินเร่งหาข้อยุติ (ฉบับที่ 1,144/69 ประจำวันที่ 2 พ.ย.69)",
-   "url": "https://pattaya.go.th/2026/11/02/%f0%9f%9a%a8%e0%b8%99%e0%b8%b2%e0%b8%a2%e0%b8%81%e0%b9%80%e0%b8%a1%e0%b8%b7%e0%b8%ad%e0%b8%87%e0%b8%9e%e0%b8%b1%e0%b8%97%e0%b8%a2%e0%b8%b2%e0%b9%80%e0%b8%a3%e0%b9%88%e0%b8%87%e0%b8%aa%e0%b8%b0/",
-   "published_at": "2026-11-02T09:22:08+00:00",
-   "lang": "th",
-   "topics": [
-    "pattaya"
-   ],
-   "official": true
-  },
-  {
-   "source": "Pattaya City Hall",
-   "title": "พลังแห่งความจงรักภักดี! เมืองพัทยาส่งมอบดอกไม้จันทน์ 10,000 ดอก พร้อม 80 ช่อ",
-   "url": "https://pattaya.go.th/2026/11/02/%e0%b8%9e%e0%b8%a5%e0%b8%b1%e0%b8%87%e0%b9%81%e0%b8%ab%e0%b9%88%e0%b8%87%e0%b8%84%e0%b8%a7%e0%b8%b2%e0%b8%a1%e0%b8%88%e0%b8%87%e0%b8%a3%e0%b8%b1%e0%b8%81%e0%b8%a0%e0%b8%b1%e0%b8%81%e0%b8%94%e0%b8%b5/",
-   "published_at": "2026-11-02T08:44:45+00:00",
-   "lang": "th",
-   "topics": [
-    "events",
-    "pattaya"
-   ],
-   "official": true
-  },
-  {
-   "source": "TAT Newsroom",
-   "title": "World Travel & Culture Expo 2026 builds global connections for Thailand as ASEAN’s tourism and entertainment hub",
-   "url": "https://www.tatnews.org/2026/11/world-travel-culture-expo-2026-builds-global-connections-for-thailand-as-aseans-tourism-and-entertainment-hub/",
-   "published_at": "2026-11-02T07:30:00+00:00",
-   "lang": "en",
-   "topics": [
-    "events"
-   ],
-   "official": true
-  },
-  {
-   "source": "The Thaiger",
-   "title": "Thailand tourism plan targets 4 trillion baht, eyes visa-free expansion",
-   "url": "https://thethaiger.com/news/business/thailand-eyes-more-visa-free-countries-in-tourism-growth-plan",
-   "published_at": "2026-11-02T04:19:08+00:00",
-   "lang": "en",
-   "topics": [
-    "entry_rules"
-   ],
-   "official": false
-  },
-  {
-   "source": "Pattaya City Hall",
-   "title": "พัทยาคึกคัก! จัดงาน Pattaya Halloween Festival เติมสีสันการท่องเที่ยว กระตุ้นเศรษฐกิจท้องถิ่น",
-   "url": "https://pattaya.go.th/2026/11/02/%e0%b8%9e%e0%b8%b1%e0%b8%97%e0%b8%a2%e0%b8%b2%e0%b8%84%e0%b8%b6%e0%b8%81%e0%b8%84%e0%b8%b1%e0%b8%81-%e0%b8%88%e0%b8%b1%e0%b8%94%e0%b8%87%e0%b8%b2%e0%b8%99-pattaya-halloween-festival-%e0%b9%80/",
-   "published_at": "2026-11-02T02:58:53+00:00",
-   "lang": "th",
-   "topics": [
-    "events",
-    "pattaya"
-   ],
-   "official": true
-  },
-  {
-   "source": "Pattaya City Hall",
-   "title": "เมืองพัทยาประชุมเข้มเตรียมจัดเทศกาลแจ๊สนานาชาติ กระตุ้นท่องเที่ยว 6–7 พ.ย.นี้ ฟรี!",
-   "url": "https://pattaya.go.th/2026/11/02/%e0%b9%80%e0%b8%a1%e0%b8%b7%e0%b8%ad%e0%b8%87%e0%b8%9e%e0%b8%b1%e0%b8%97%e0%b8%a2%e0%b8%b2%e0%b8%9b%e0%b8%a3%e0%b8%b0%e0%b8%8a%e0%b8%b8%e0%b8%a1%e0%b9%80%e0%b8%82%e0%b9%89%e0%b8%a1%e0%b9%80%e0%b8%95/",
-   "published_at": "2026-11-02T02:33:22+00:00",
-   "lang": "th",
-   "topics": [
-    "events",
-    "pattaya"
-   ],
-   "official": true
-  },
-  {
-   "source": "The Thaiger",
-   "title": "Suvarnabhumi to shrink duty-free shops for pick-up counters, premium service",
-   "url": "https://thethaiger.com/news/world/aviation/suvarnabhumi-airport-shrink-duty-free-shops",
-   "published_at": "2026-11-02T02:29:29+00:00",
-   "lang": "en",
-   "topics": [
-    "flights",
-    "bangkok"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Pattaya News",
-   "title": "Child Beggars Spotted on Pattaya Second Road on Halloween Night; Some Flee When Approached by Reporters",
-   "url": "https://thepattayanews.com/2026/11/02/child-beggars-spotted-on-pattaya-second-road-on-halloween-night-some-flee-when-approached-by-reporters/",
-   "published_at": "2026-11-01T18:39:39+00:00",
-   "lang": "en",
-   "topics": [
-    "events",
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Pattaya News",
-   "title": "Takhian Tia Community Groups Join Annual Kathin Ceremony at Wat Ko Phai in Banglamung",
-   "url": "https://thepattayanews.com/2026/11/01/takhian-tia-community-groups-join-annual-kathin-ceremony-at-wat-ko-phai-in-banglamung/",
-   "published_at": "2026-11-01T13:51:56+00:00",
-   "lang": "en",
-   "topics": [
-    "events",
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
-   "source": "Khaosod English",
-   "title": "FDA, CIB raid illegal cannabis gummy outlet in Bangkok, seize 90 packs",
-   "url": "https://www.khaosodenglish.com/news/2026/11/01/fda-cib-raid-illegal-cannabis-gummy-outlet-in-bangkok-seize-90-packs/",
-   "published_at": "2026-11-01T09:00:27+00:00",
-   "lang": "en",
-   "topics": [
-    "cannabis",
-    "safety",
-    "bangkok"
-   ],
-   "official": false
   }
  ],
  "sources": [
@@ -2311,14 +2310,14 @@
    "name": "The Pattaya News",
    "endpoint": "https://thepattayanews.com/wp-json/wp/v2/posts",
    "ok": true,
-   "count": 63,
+   "count": 64,
    "error": null
   },
   {
    "name": "Pattaya City Hall",
    "endpoint": "https://pattaya.go.th/wp-json/wp/v2/posts",
    "ok": true,
-   "count": 51,
+   "count": 57,
    "error": null
   },
   {
@@ -2332,14 +2331,14 @@
    "name": "The Thaiger",
    "endpoint": "https://thethaiger.com/wp-json/wp/v2/posts",
    "ok": true,
-   "count": 96,
+   "count": 101,
    "error": null
   },
   {
    "name": "Khaosod English",
    "endpoint": "https://www.khaosodenglish.com/feed/",
    "ok": true,
-   "count": 4,
+   "count": 6,
    "error": null
   },
   {
@@ -2353,7 +2352,7 @@
    "name": "Nation Thailand",
    "endpoint": "https://api.nationthailand.com/sitemap/latest",
    "ok": true,
-   "count": 28,
+   "count": 30,
    "error": null
   }
  ],
