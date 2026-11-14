@@ -2,8 +2,8 @@
  "built_at": "2026-11-13T08:43:52+00:00",
  "score_kind": "weather_calendar_model",
  "score_note_ru": "Модель условий из погоды, праздников, цены нефти и курсов валют, а не измерение спроса",
- "stale": false,
- "updated_at": "2026-11-13T08:43:52+00:00",
+ "stale": true,
+ "updated_at": "2026-11-14T07:59:12+00:00",
  "regions": {
   "bangkok": [
    {
@@ -890,17 +890,17 @@
  },
  "fx": {
   "USD": 1,
-  "AUD": 1.468309,
-  "CNY": 6.685071,
-  "EUR": 0.903491,
-  "GBP": 0.755149,
-  "INR": 94.086126,
-  "KRW": 1334.182801,
-  "MYR": 4.078759,
-  "RUB": 82.849685,
-  "THB": 33.855133
+  "AUD": 1.475083,
+  "CNY": 6.684938,
+  "EUR": 0.905954,
+  "GBP": 0.756419,
+  "INR": 94.289707,
+  "KRW": 1336.179911,
+  "MYR": 4.086467,
+  "RUB": 82.504954,
+  "THB": 33.882849
  },
- "fx_time": "2026-11-13T00:02:31+00:00",
+ "fx_time": "2026-11-14T00:02:31+00:00",
  "fx_source": "ExchangeRate-API (open.er-api.com)",
  "fx_source_url": "https://open.er-api.com/v6/latest/USD",
  "fx_note_ru": "Справочный курс (mid-market), не курс обменника",
@@ -910,77 +910,77 @@
   "brent_source": "FRED DCOILBRENTEU (U.S. EIA, Europe Brent spot FOB)",
   "brent_source_url": "https://fred.stlouisfed.org/series/DCOILBRENTEU",
   "brent_delta": -0.0173,
-  "usdthb": 33.815,
-  "usdthb_date": "2026-11-12",
+  "usdthb": 33.915,
+  "usdthb_date": "2026-11-13",
   "usdthb_source": "ECB euro reference rates (cross via EUR)",
-  "usdthb_delta": 0.0086,
+  "usdthb_delta": 0.0094,
   "purchasing_power": {
    "CNY": {
     "name": "Китай",
     "share": 13.64,
-    "thb": 5.070983,
-    "delta": 0.006,
-    "date": "2026-11-12",
+    "thb": 5.083268,
+    "delta": 0.008,
+    "date": "2026-11-13",
     "source": "ECB"
    },
    "MYR": {
     "name": "Малайзия",
     "share": 12.19,
-    "thb": 8.290924,
-    "delta": 0.0041,
-    "date": "2026-11-12",
+    "thb": 8.297288,
+    "delta": 0.0045,
+    "date": "2026-11-13",
     "source": "ECB"
    },
    "RUB": {
     "name": "Россия",
     "share": 6.34,
-    "thb": 0.407037,
-    "delta": -0.0073,
-    "date": "2026-11-13",
+    "thb": 0.412152,
+    "delta": 0.0043,
+    "date": "2026-11-14",
     "source": "Bank of Russia"
    },
    "INR": {
     "name": "Индия",
     "share": 8.7,
-    "thb": 0.359556,
+    "thb": 0.359868,
     "delta": 0.0128,
-    "date": "2026-11-12",
+    "date": "2026-11-13",
     "source": "ECB"
    },
    "KRW": {
     "name": "Южная Корея",
     "share": 3.68,
-    "thb": 0.025346,
-    "delta": 0.0072,
-    "date": "2026-11-12",
+    "thb": 0.025364,
+    "delta": 0.0073,
+    "date": "2026-11-13",
     "source": "ECB"
    },
    "GBP": {
     "name": "Британия",
     "share": 3.41,
-    "thb": 44.823255,
-    "delta": -0.0026,
-    "date": "2026-11-12",
+    "thb": 44.858124,
+    "delta": -0.0021,
+    "date": "2026-11-13",
     "source": "ECB"
    },
    "EUR": {
     "name": "Еврозона",
     "share": 5.45,
-    "thb": 37.47,
-    "delta": -0.0049,
-    "date": "2026-11-12",
+    "thb": 37.483,
+    "delta": -0.0044,
+    "date": "2026-11-13",
     "source": "ECB"
    },
    "AUD": {
     "name": "Австралия",
     "share": 3.11,
-    "thb": 23.064139,
-    "delta": -0.0177,
-    "date": "2026-11-12",
+    "thb": 23.012647,
+    "delta": -0.0192,
+    "date": "2026-11-13",
     "source": "ECB"
    }
   },
-  "pp_composite": 0.0023,
+  "pp_composite": 0.0042,
   "weights": {
    "kind": "arrivals_share_pct",
    "unit": "% of international arrivals",
@@ -1018,39 +1018,45 @@
   "weather": {
    "name": "Open-Meteo forecast API (CC BY 4.0)",
    "url": "https://open-meteo.com/",
-   "ok": true,
+   "ok": false,
    "retrieved_at": "2026-11-13T08:43:52+00:00"
   },
   "holidays": {
    "name": "Google Calendar public holiday feeds",
    "url": "https://calendar.google.com/",
    "ok": true,
-   "retrieved_at": "2026-11-13T08:43:52+00:00"
+   "retrieved_at": "2026-11-14T07:59:12+00:00"
   },
   "fx": {
    "name": "ExchangeRate-API (open.er-api.com)",
    "url": "https://open.er-api.com/v6/latest/USD",
    "ok": true,
-   "retrieved_at": "2026-11-13T08:43:52+00:00"
+   "retrieved_at": "2026-11-14T07:59:12+00:00"
   },
   "ecb": {
    "name": "ECB euro reference rates",
    "url": "https://data.ecb.europa.eu/data/datasets/EXR",
    "ok": true,
-   "retrieved_at": "2026-11-13T08:43:52+00:00"
+   "retrieved_at": "2026-11-14T07:59:12+00:00"
   },
   "cbr": {
    "name": "Bank of Russia",
    "url": "https://www.cbr.ru/currency_base/dynamics/",
    "ok": true,
-   "retrieved_at": "2026-11-13T08:43:52+00:00"
+   "retrieved_at": "2026-11-14T07:59:12+00:00"
   },
   "brent": {
    "name": "FRED DCOILBRENTEU (U.S. EIA, Europe Brent spot FOB)",
    "url": "https://fred.stlouisfed.org/series/DCOILBRENTEU",
    "ok": true,
-   "retrieved_at": "2026-11-13T08:43:52+00:00"
+   "retrieved_at": "2026-11-14T07:59:12+00:00"
   }
  },
- "errors": []
+ "errors": [
+  {
+   "source": "weather",
+   "at": "2026-11-14T07:59:12+00:00",
+   "error": "https://api.open-meteo.com/v1/forecast: _ssl.c:1063: The handshake operation timed out"
+  }
+ ]
 }

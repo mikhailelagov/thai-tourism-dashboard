@@ -1,8 +1,8 @@
-# Утренняя сводка по Таиланду — 13.11.2026
-Составлено 13.11.2026 15:44, Asia/Bangkok.
+# Утренняя сводка по Таиланду — 14.11.2026
+Составлено 14.11.2026 15:02, Asia/Bangkok.
 
 ## Камеры за последние 24 часа
-Окно: 12.11.2026 15:44 — 13.11.2026 15:44, Бангкок. Учитываются только проверенные кадры; отсутствие замера не равно нулю.
+Окно: 13.11.2026 15:02 — 14.11.2026 15:02, Бангкок. Учитываются только проверенные кадры; отсутствие замера не равно нулю.
 
 | Направление | Покрытие проверенными кадрами | Последний проверенный кадр | Состояние камер |
 |---|---|---|---|
@@ -13,19 +13,19 @@
 Число людей в отдельном кадре не показывает количество туристов в городе. Прогноз численности и проценты изменения не рассчитываются: нужна сопоставимая история проверенных камер.
 
 ## Погода: сегодня и следующие два дня
-Период 13.11–15.11. [Open-Meteo](https://open-meteo.com/): сбор данных 13.11.2026 15:43, Бангкок; время выпуска модели в файле не сохранено.
+Период 14.11–16.11. [Open-Meteo](https://open-meteo.com/): сбор данных 13.11.2026 15:43, Бангкок; время выпуска модели в файле не сохранено.
 
-- **Паттайя:** 13.11: дождь может мешать прогулкам; нужен вариант под крышей, до 30 °C; 14.11: дождь может мешать прогулкам; нужен вариант под крышей, до 30 °C; 15.11: дождь может мешать прогулкам; нужен вариант под крышей, до 30 °C.
-- **Пхукет:** 13.11: дождь может мешать прогулкам; нужен вариант под крышей, до 28 °C; 14.11: возможны дожди; планировать укрытие, до 30 °C; 15.11: дождь может мешать прогулкам; нужен вариант под крышей, до 30 °C.
-- **Бангкок:** 13.11: возможны дожди; планировать укрытие, до 31 °C; 14.11: дождь может мешать прогулкам; нужен вариант под крышей, до 32 °C; 15.11: дождь может мешать прогулкам; нужен вариант под крышей, до 32 °C.
-- **Краби:** 13.11: дождь может мешать прогулкам; нужен вариант под крышей, до 29 °C; 14.11: дождь может мешать прогулкам; нужен вариант под крышей, до 31 °C; 15.11: дождь может мешать прогулкам; нужен вариант под крышей, до 31 °C.
-- **Самуи:** 13.11: дождь может мешать прогулкам; нужен вариант под крышей, до 27 °C; 14.11: дождь может мешать прогулкам; нужен вариант под крышей, до 28 °C; 15.11: дождь может мешать прогулкам; нужен вариант под крышей, до 28 °C.
-- **Чиангмай:** 13.11: возможны дожди; планировать укрытие, до 28 °C; 14.11: осадки мало ограничивают прогулки, до 29 °C; 15.11: осадки мало ограничивают прогулки, до 29 °C.
+- **Паттайя:** 14.11: дождь может мешать прогулкам; нужен вариант под крышей, до 30 °C; 15.11: дождь может мешать прогулкам; нужен вариант под крышей, до 30 °C; 16.11: дождь может мешать прогулкам; нужен вариант под крышей, до 30 °C.
+- **Пхукет:** 14.11: возможны дожди; планировать укрытие, до 30 °C; 15.11: дождь может мешать прогулкам; нужен вариант под крышей, до 30 °C; 16.11: возможны дожди; планировать укрытие, до 30 °C.
+- **Бангкок:** 14.11: дождь может мешать прогулкам; нужен вариант под крышей, до 32 °C; 15.11: дождь может мешать прогулкам; нужен вариант под крышей, до 32 °C; 16.11: дождь может мешать прогулкам; нужен вариант под крышей, до 31 °C.
+- **Краби:** 14.11: дождь может мешать прогулкам; нужен вариант под крышей, до 31 °C; 15.11: дождь может мешать прогулкам; нужен вариант под крышей, до 31 °C; 16.11: дождь может мешать прогулкам; нужен вариант под крышей, до 31 °C.
+- **Самуи:** 14.11: дождь может мешать прогулкам; нужен вариант под крышей, до 28 °C; 15.11: дождь может мешать прогулкам; нужен вариант под крышей, до 28 °C; 16.11: дождь может мешать прогулкам; нужен вариант под крышей, до 30 °C.
+- **Чиангмай:** 14.11: осадки мало ограничивают прогулки, до 29 °C; 15.11: осадки мало ограничивают прогулки, до 29 °C; 16.11: осадки мало ограничивают прогулки, до 30 °C.
 
 Это условия для активности на улице, а не прогноз туристического спроса.
 
 ## Прибытия иностранцев (MOTS)
-[MOTS](https://www.mots.go.th/news/category/817), [файл XLSX](https://www.mots.go.th/images/v2022_b33aa4d6-dfa5-4013-8355-2b8101643dcb.xlsx): период октябрь 2026 (2026-10), предварительные данные; опубликовано 02.11.2026 14:15 (Бангкок), 11 дн. назад; задержка публикации 2 дн.; от конца периода до отчёта 13 дн. Получено 13.11.2026 15:44 (Бангкок).
+[MOTS](https://www.mots.go.th/news/category/817), [файл XLSX](https://www.mots.go.th/images/v2022_b33aa4d6-dfa5-4013-8355-2b8101643dcb.xlsx): период октябрь 2026 (2026-10), предварительные данные; опубликовано 02.11.2026 14:15 (Бангкок), 12 дн. назад; задержка публикации 2 дн.; от конца периода до отчёта 14 дн. Получено 14.11.2026 15:01 (Бангкок).
 
 - **Октябрь 2026: 2 265 000** прибытий, −12% г/г (2025: 2 573 743).
 - **С начала года (01–10.2026): 25 464 306**, −4,6% г/г (2025: 26 689 068).
@@ -47,7 +47,7 @@
 Прибытия — въезды иностранцев в Таиланд в целом, а не в Паттайю; один человек может въехать несколько раз.
 
 ## Провинции (MOTS)
-[MOTS](https://www.mots.go.th/news/category/820), [файл XLSX](https://www.mots.go.th/images/v2022_ad5f0d02-7a0f-4036-9373-77b1e974802d.xlsx): период сентябрь 2026 (2026-09), предварительные данные; опубликовано 13.10.2026 15:30 (Бангкок), 31 дн. назад; задержка публикации 13 дн.; от конца периода до отчёта 44 дн. Получено 13.11.2026 15:44 (Бангкок).
+[MOTS](https://www.mots.go.th/news/category/820), [файл XLSX](https://www.mots.go.th/images/v2022_ad5f0d02-7a0f-4036-9373-77b1e974802d.xlsx): период сентябрь 2026 (2026-09), предварительные данные; опубликовано 13.10.2026 15:30 (Бангкок), 32 дн. назад; задержка публикации 13 дн.; от конца периода до отчёта 45 дн. Получено 14.11.2026 15:01 (Бангкок).
 
 | Провинция | Загрузка отелей | Иностранные посещения | Доход от посетителей |
 |---|---|---|---|
@@ -62,49 +62,49 @@
 Провинция шире курорта; посещения провинций нельзя складывать и сравнивать с прибытиями в страну. Посещения и доход — оценки MOTS по данным размещения, а не кассовые данные.
 
 ## Опубликованная статистика отелей
-Последняя проверка [BOT](https://app.bot.or.th/BTWS_STAT/statistics/ReportPage.aspx?language=eng&reportID=875): 13.11.2026 15:44 (Бангкок); последний период в отчёте: 2026-09.
+Последняя проверка [BOT](https://app.bot.or.th/BTWS_STAT/statistics/ReportPage.aspx?language=eng&reportID=875): 14.11.2026 15:01 (Бангкок); последний период в отчёте: 2026-09.
 Месячные данные BOT/MOTS; это опубликованные наблюдения, а не оценка сегодняшнего дня.
 
-- **Фактическая загрузка отелей — Центральный регион, включая Бангкок: 65,89%**, период 2026-09; [BOT](https://app.bot.or.th/BTWS_STAT/statistics/ReportPage.aspx?language=eng&reportID=875), отметка публикации/обновления 31.10.2026 14:30 (Бангкок); задержка публикации 31 дн., от конца периода до отчёта 44 дн.; предварительные данные.
-- **Фактическая загрузка отелей — Северный регион: 58,23%**, период 2026-09; [BOT](https://app.bot.or.th/BTWS_STAT/statistics/ReportPage.aspx?language=eng&reportID=875), отметка публикации/обновления 31.10.2026 14:30 (Бангкок); задержка публикации 31 дн., от конца периода до отчёта 44 дн.; предварительные данные.
-- **Фактическая загрузка отелей — Южный регион: 68,01%**, период 2026-09; [BOT](https://app.bot.or.th/BTWS_STAT/statistics/ReportPage.aspx?language=eng&reportID=875), отметка публикации/обновления 31.10.2026 14:30 (Бангкок); задержка публикации 31 дн., от конца периода до отчёта 44 дн.; предварительные данные.
-- **Фактическая загрузка отелей — Весь Таиланд: 65,05%**, период 2026-09; [BOT](https://app.bot.or.th/BTWS_STAT/statistics/ReportPage.aspx?language=eng&reportID=875), отметка публикации/обновления 31.10.2026 14:30 (Бангкок); задержка публикации 31 дн., от конца периода до отчёта 44 дн.; предварительные данные.
-- **Предварительное бронирование на 3 месяца — Центральный регион, включая Бангкок: 20,45%**, период 2026-09; [BOT](https://app.bot.or.th/BTWS_STAT/statistics/ReportPage.aspx?language=eng&reportID=875), отметка публикации/обновления 31.10.2026 14:30 (Бангкок); задержка публикации 31 дн., от конца периода до отчёта 44 дн.; предварительные данные.
-- **Предварительное бронирование на 3 месяца — Северный регион: 11,26%**, период 2026-09; [BOT](https://app.bot.or.th/BTWS_STAT/statistics/ReportPage.aspx?language=eng&reportID=875), отметка публикации/обновления 31.10.2026 14:30 (Бангкок); задержка публикации 31 дн., от конца периода до отчёта 44 дн.; предварительные данные.
-- **Предварительное бронирование на 3 месяца — Южный регион: 21,08%**, период 2026-09; [BOT](https://app.bot.or.th/BTWS_STAT/statistics/ReportPage.aspx?language=eng&reportID=875), отметка публикации/обновления 31.10.2026 14:30 (Бангкок); задержка публикации 31 дн., от конца периода до отчёта 44 дн.; предварительные данные.
-- **Предварительное бронирование на 3 месяца — Весь Таиланд: 16,36%**, период 2026-09; [BOT](https://app.bot.or.th/BTWS_STAT/statistics/ReportPage.aspx?language=eng&reportID=875), отметка публикации/обновления 31.10.2026 14:30 (Бангкок); задержка публикации 31 дн., от конца периода до отчёта 44 дн.; предварительные данные.
+- **Фактическая загрузка отелей — Центральный регион, включая Бангкок: 65,89%**, период 2026-09; [BOT](https://app.bot.or.th/BTWS_STAT/statistics/ReportPage.aspx?language=eng&reportID=875), отметка публикации/обновления 31.10.2026 14:30 (Бангкок); задержка публикации 31 дн., от конца периода до отчёта 45 дн.; предварительные данные.
+- **Фактическая загрузка отелей — Северный регион: 58,23%**, период 2026-09; [BOT](https://app.bot.or.th/BTWS_STAT/statistics/ReportPage.aspx?language=eng&reportID=875), отметка публикации/обновления 31.10.2026 14:30 (Бангкок); задержка публикации 31 дн., от конца периода до отчёта 45 дн.; предварительные данные.
+- **Фактическая загрузка отелей — Южный регион: 68,01%**, период 2026-09; [BOT](https://app.bot.or.th/BTWS_STAT/statistics/ReportPage.aspx?language=eng&reportID=875), отметка публикации/обновления 31.10.2026 14:30 (Бангкок); задержка публикации 31 дн., от конца периода до отчёта 45 дн.; предварительные данные.
+- **Фактическая загрузка отелей — Весь Таиланд: 65,05%**, период 2026-09; [BOT](https://app.bot.or.th/BTWS_STAT/statistics/ReportPage.aspx?language=eng&reportID=875), отметка публикации/обновления 31.10.2026 14:30 (Бангкок); задержка публикации 31 дн., от конца периода до отчёта 45 дн.; предварительные данные.
+- **Предварительное бронирование на 3 месяца — Центральный регион, включая Бангкок: 20,45%**, период 2026-09; [BOT](https://app.bot.or.th/BTWS_STAT/statistics/ReportPage.aspx?language=eng&reportID=875), отметка публикации/обновления 31.10.2026 14:30 (Бангкок); задержка публикации 31 дн., от конца периода до отчёта 45 дн.; предварительные данные.
+- **Предварительное бронирование на 3 месяца — Северный регион: 11,26%**, период 2026-09; [BOT](https://app.bot.or.th/BTWS_STAT/statistics/ReportPage.aspx?language=eng&reportID=875), отметка публикации/обновления 31.10.2026 14:30 (Бангкок); задержка публикации 31 дн., от конца периода до отчёта 45 дн.; предварительные данные.
+- **Предварительное бронирование на 3 месяца — Южный регион: 21,08%**, период 2026-09; [BOT](https://app.bot.or.th/BTWS_STAT/statistics/ReportPage.aspx?language=eng&reportID=875), отметка публикации/обновления 31.10.2026 14:30 (Бангкок); задержка публикации 31 дн., от конца периода до отчёта 45 дн.; предварительные данные.
+- **Предварительное бронирование на 3 месяца — Весь Таиланд: 16,36%**, период 2026-09; [BOT](https://app.bot.or.th/BTWS_STAT/statistics/ReportPage.aspx?language=eng&reportID=875), отметка публикации/обновления 31.10.2026 14:30 (Бангкок); задержка публикации 31 дн., от конца периода до отчёта 45 дн.; предварительные данные.
 
 Широкие регионы статистики нельзя приравнивать к отдельным городам: «Юг» не означает отдельно Пхукет, Самуи или Краби; «Север» — отдельно Чиангмай; «Центр» — отдельно Паттайю или Бангкок. Бронирование на 3 месяца — показатель опубликованного периода, не обещанная будущая загрузка.
 
 ## Новости за 7 дней
-Окно: 06.11.2026 15:44 — 13.11.2026 15:44, Бангкок. Сбор новостей: 13.11.2026 15:44.
+Окно: 07.11.2026 15:02 — 14.11.2026 15:02, Бангкок. Сбор новостей: 14.11.2026 15:01.
 
 **Каннабис**
 - [PHUKET XTRA: VIDEO: Pickup Flips After Blowout, Cannabis Network Crackdown, Dead Starfish Wash Ashore // Nov 12](https://www.thephuketnews.com/phuket-xtra-video-pickup-flips-after-blowout-cannabis-network-crackdown-dead-starfish-wash-ashore-nov-12-102194.php) — The Phuket News, 12.11.2026
 - [Weedon cannabis shops face nominee checks](https://www.thephuketnews.com/weedon-cannabis-shops-face-nominee-checks-102169.php) — The Phuket News, 11.11.2026
 
 **Въезд и визы**
+- [Thai tourist arrivals in China surge 1,220% following visa-free travel](https://www.khaosodenglish.com/tourism/2026/11/13/thai-tourist-arrivals-in-china-surge-1220-following-visa-free-travel/) — Khaosod English, 13.11.2026
 - [Flying to Thailand? A $13 tourist entry fee could be coming in 2027](https://www.khaosodenglish.com/featured/2026/11/11/flying-to-thailand-a-13-tourist-entry-fee-could-be-coming-in-2027/) — Khaosod English, 11.11.2026
 - [Russian woman arrested in Phuket over 2,379 day visa overstay](https://thethaiger.com/news/phuket/russian-woman-held-in-phuket-after-six-year-overstay) — The Thaiger, 11.11.2026
-- [Thailand’s 450-baht tourist fee could be delayed until mid-2027](https://thethaiger.com/hot-news/tourism/thailands-450-baht-tourist-fee-could-be-delayed-until-mid-2027) — The Thaiger, 11.11.2026
 
 **Авиасообщение**
-- [Chiang Mai Airport gears up for Yi Peng Festival with 35,000 passengers expected daily](https://www.khaosodenglish.com/tourism/2026/11/13/chiang-mai-airport-gears-up-for-yi-peng-festival-with-35000-passengers-expected-daily/) — Khaosod English, 13.11.2026
-- [AirAsia parent posts THB3.85bn nine-month loss as Thai Airways profit falls](https://www.nationthailand.com/business/corporate/40073446) — Nation Thailand, 13.11.2026
-- [Hackers strike Thailand as airlines and banks’ Data are targeted / The Next Move EP.39](https://www.nationthailand.com/vdo/the-next-move/40073426) — Nation Thailand, 12.11.2026
+- [US flights resume after nationwide FAA ground stop, but travel chaos could last for days.](https://www.khaosodenglish.com/news/transpo/2026/11/14/us-flights-resume-after-nationwide-faa-ground-stop-but-travel-chaos-could-last-for-days/) — Khaosod English, 14.11.2026
+- [Phiphat Orders Aviation System Checks in Thailand Following US Air Traffic Outage](https://www.nationthailand.com/news/general/40073501) — Nation Thailand, 14.11.2026
+- [US flight disruption persists after nationwide ground stop ends](https://www.nationthailand.com/news/world/40073497) — Nation Thailand, 14.11.2026
 
 **Статистика**
+- [Pattaya Night Spots Quieter Than Usual, Mayor Says Tourist Numbers Slightly Down But Says Global Economic Conditions Are Main Factor](https://thepattayanews.com/2026/11/14/pattaya-night-spots-quieter-than-usual-mayor-says-tourist-numbers-slightly-down-but-says-global-economic-conditions-are-main-factor/) — The Pattaya News, 14.11.2026
 - [Foreign booking sites face Thai airfare caps after Chiang Mai fare spike](https://thethaiger.com/news/chiang-mai/chiang-mai-flight-fare-spike-at-yi-peng-booking-site-caps-sought) — The Thaiger, 13.11.2026
 - [TAT targets 5% tourism revenue rise with ‘value over volume’ strategy](https://www.nationthailand.com/news/tourism/40073373) — Nation Thailand, 11.11.2026
-- [Pattaya Mayor Proposes Adding Local Hotel Bookings to Potential Digital Tourism Platform](https://thepattayanews.com/2026/11/10/pattaya-mayor-proposes-adding-local-hotel-bookings-to-potential-digital-tourism-platform/) — The Pattaya News, 10.11.2026
 
 **Алкоголь**
 - [PHUKET XTRA: VIDEO: Teens Confess To Fatal Attack Over B2,000, Phuket Nightlife Venues Raided // Nov 10](https://www.thephuketnews.com/phuket-xtra-video-teens-confess-to-fatal-attack-over-b2-000-phuket-nightlife-venues-raided-nov-10-102166.php) — The Phuket News, 10.11.2026
 
-Показано 12 из 153 новостей по темам; заголовки — как у источника, без проверки фактов.
+Показано 12 из 152 новостей по темам; заголовки — как у источника, без проверки фактов.
 
 ## Курсы
-- [ЕЦБ](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html), справочные курсы на 12.11.2026 (пересчёт через евро): 1 USD = 33,81 THB; 1 EUR = 37,47 THB; 1 CNY = 5,07 THB; 1 INR = 0,3596 THB; 100 KRW = 2,53 THB; 1 MYR = 8,29 THB; 1 GBP = 44,82 THB.
-- [Банк России](https://www.cbr.ru/currency_base/daily/), официальный курс на 13.11.2026: 1 THB = 2,4568 RUB (1 RUB = 0,407 THB).
+- [ЕЦБ](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html), справочные курсы на 13.11.2026 (пересчёт через евро): 1 USD = 33,92 THB; 1 EUR = 37,48 THB; 1 CNY = 5,08 THB; 1 INR = 0,3599 THB; 100 KRW = 2,54 THB; 1 MYR = 8,3 THB; 1 GBP = 44,86 THB.
+- [Банк России](https://www.cbr.ru/currency_base/daily/), официальный курс на 14.11.2026: 1 THB = 2,4263 RUB (1 RUB = 0,4122 THB).
 
 Это официальные справочные курсы, а не котировки обменников.
