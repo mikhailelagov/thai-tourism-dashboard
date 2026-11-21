@@ -1,7 +1,160 @@
 {
- "built_at": "2026-11-20T09:09:43+00:00",
+ "built_at": "2026-11-21T08:44:48+00:00",
  "window_days": 10,
  "items": [
+  {
+   "source": "The Thaiger",
+   "title": "Chiang Rai river pollution zone planned as hotel bookings fall below half",
+   "url": "https://thethaiger.com/news/northern-thailand/chiang-rai-river-pollution-zone-planned-as-hotel-bookings-fall-below-half",
+   "published_at": "2026-11-21T08:00:29+00:00",
+   "lang": "en",
+   "topics": [
+    "statistics"
+   ],
+   "official": false
+  },
+  {
+   "source": "Khaosod English",
+   "title": "Thailand suspends 105 cannabis licences, revokes 24 in nationwide inspections",
+   "url": "https://www.khaosodenglish.com/news/2026/11/21/thailand-suspends-105-cannabis-licences-revokes-24-in-nationwide-inspections/",
+   "published_at": "2026-11-21T06:45:44+00:00",
+   "lang": "en",
+   "topics": [
+    "cannabis"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Thailand revoked 24 cannabis shop licences and suspended 105 during fiscal 2026",
+   "url": "https://www.nationthailand.com/news/general/40073763",
+   "published_at": "2026-11-21T05:51:00+00:00",
+   "lang": "en",
+   "topics": [
+    "cannabis"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Deputy Interior Minister Leads Raid on Unlicensed Nightclub in Bangkok; Over 130 Positive Drug Tests, Gun Found",
+   "url": "https://thepattayanews.com/2026/11/21/deputy-interior-minister-leads-raid-on-unlicensed-nightclub-in-bangkok-over-130-positive-drug-tests-gun-found/",
+   "published_at": "2026-11-21T05:13:40+00:00",
+   "lang": "en",
+   "topics": [
+    "alcohol",
+    "safety",
+    "bangkok"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Thaiger",
+   "title": "Daily Bangkok to London flights among 87 airlines’ Thai slot requests",
+   "url": "https://thethaiger.com/news/world/aviation/daily-bangkok-to-london-flights-among-87-airlines-thai-slot-requests",
+   "published_at": "2026-11-21T05:00:52+00:00",
+   "lang": "en",
+   "topics": [
+    "flights",
+    "bangkok"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Motorcycle Couple Collides with U-Turning 18-Wheeler on Highway 331 Near Pattaya; Rider Dies, Passenger Critical",
+   "url": "https://thepattayanews.com/2026/11/21/motorcycle-couple-collides-with-u-turning-18-wheeler-on-highway-331-near-pattaya-rider-dies-passenger-critical/",
+   "published_at": "2026-11-21T03:38:48+00:00",
+   "lang": "en",
+   "topics": [
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Thaiger",
+   "title": "Bangkok’s Song Wat Road hosts Loy Krathong drones and river fireworks",
+   "url": "https://thethaiger.com/news/bangkok/bangkoks-song-wat-road-hosts-loy-krathong-drones-and-river-fireworks",
+   "published_at": "2026-11-21T03:00:19+00:00",
+   "lang": "en",
+   "topics": [
+    "events",
+    "bangkok"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Thailand moves to register four travel sites by New Year to enforce airfare caps",
+   "url": "https://www.nationthailand.com/news/general/40073747",
+   "published_at": "2026-11-21T00:00:00+00:00",
+   "lang": "en",
+   "topics": [
+    "events"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Thaiger",
+   "title": "BRISA Patong: what to know before the November 25 booking",
+   "url": "https://thethaiger.com/property/brisa-patong-what-to-know-before-the-november-25-booking",
+   "published_at": "2026-11-20T12:30:00+00:00",
+   "lang": "en",
+   "topics": [
+    "statistics",
+    "phuket"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Thailand orders tighter Loy Krathong safety checks at hotels and entertainment venues",
+   "url": "https://www.nationthailand.com/news/general/40073736",
+   "published_at": "2026-11-20T10:13:00+00:00",
+   "lang": "en",
+   "topics": [
+    "events",
+    "alcohol",
+    "safety"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Thaiger",
+   "title": "Taiwanese man held for scam operation after argument with Pattaya neighbour",
+   "url": "https://thethaiger.com/news/pattaya/taiwanese-man-held-for-scam-operation-after-argument-with-pattaya-neighbour",
+   "published_at": "2026-11-20T09:41:09+00:00",
+   "lang": "en",
+   "topics": [
+    "safety",
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Pattaya Reviews Tourism and Social Concerns Following US Navy Ship Visit",
+   "url": "https://thepattayanews.com/2026/11/20/pattaya-reviews-tourism-and-social-concerns-following-us-navy-ship-visit/",
+   "published_at": "2026-11-20T09:29:52+00:00",
+   "lang": "en",
+   "topics": [
+    "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Pattaya News",
+   "title": "Pattaya and Tourist Police Discuss AI-Assisted CCTV Security Ahead of International Fireworks Festival",
+   "url": "https://thepattayanews.com/2026/11/20/pattaya-and-tourist-police-discuss-ai-assisted-cctv-security-ahead-of-international-fireworks-festival/",
+   "published_at": "2026-11-20T09:13:41+00:00",
+   "lang": "en",
+   "topics": [
+    "events",
+    "safety",
+    "pattaya"
+   ],
+   "official": false
+  },
   {
    "source": "The Pattaya News",
    "title": "Giant Christmas-Themed Jolly Bears Coming to Pattaya Beach for Festive Season",
@@ -33,6 +186,30 @@
    "topics": [
     "events",
     "pattaya"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Phuket News",
+   "title": "PHUKET XTRA: VIDEO: Deadly Patong Blaze Probe Shifts To Electrical Wiring, Thalang Balcony Gun Arrest || Nov 20",
+   "url": "https://www.thephuketnews.com/phuket-xtra-video-deadly-patong-blaze-probe-shifts-to-electrical-wiring-thalang-balcony-gun-arrest-nov-20-102277.php",
+   "published_at": "2026-11-20T08:57:00+00:00",
+   "lang": "en",
+   "topics": [
+    "safety",
+    "phuket"
+   ],
+   "official": false
+  },
+  {
+   "source": "Nation Thailand",
+   "title": "Bangkok’s Song Wat to host Loy Krathong with 300 drones and 12,000 fireworks",
+   "url": "https://www.nationthailand.com/life/art-culture/40073731",
+   "published_at": "2026-11-20T08:53:00+00:00",
+   "lang": "en",
+   "topics": [
+    "events",
+    "bangkok"
    ],
    "official": false
   },
@@ -172,6 +349,17 @@
    "official": false
   },
   {
+   "source": "The Phuket News",
+   "title": "UAE man dies in motorcycle crash on Kathu curve",
+   "url": "https://www.thephuketnews.com/uae-man-dies-in-motorcycle-crash-on-kathu-curve-102274.php",
+   "published_at": "2026-11-20T04:50:00+00:00",
+   "lang": "en",
+   "topics": [
+    "safety"
+   ],
+   "official": false
+  },
+  {
    "source": "Pattaya City Hall",
    "title": "2 วันเต็ม! พัทยาเนรมิตตรอกโรงยาเป็นพื้นที่สร้างสรรค์ ชวนดูหนัง ฟังเสวนา ชมศิลปะ ฟรี! 4-5 ธ.ค.นี้",
    "url": "https://pattaya.go.th/2026/11/20/2-%e0%b8%a7%e0%b8%b1%e0%b8%99%e0%b9%80%e0%b8%95%e0%b9%87%e0%b8%a1-%e0%b8%9e%e0%b8%b1%e0%b8%97%e0%b8%a2%e0%b8%b2%e0%b9%80%e0%b8%99%e0%b8%a3%e0%b8%a1%e0%b8%b4%e0%b8%95%e0%b8%95%e0%b8%a3%e0%b8%ad/",
@@ -181,6 +369,18 @@
     "pattaya"
    ],
    "official": true
+  },
+  {
+   "source": "The Phuket News",
+   "title": "Phuket tourism outlook event examines markets for 2026-27",
+   "url": "https://www.thephuketnews.com/phuket-tourism-outlook-event-examines-markets-for-2026-27-102272.php",
+   "published_at": "2026-11-20T04:41:00+00:00",
+   "lang": "en",
+   "topics": [
+    "events",
+    "phuket"
+   ],
+   "official": false
   },
   {
    "source": "The Thaiger",
@@ -215,6 +415,29 @@
    "topics": [
     "events",
     "bangkok"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Phuket News",
+   "title": "Floods expose waste pollution in ‘garbage dump’ region",
+   "url": "https://www.thephuketnews.com/floods-expose-waste-pollution-in-garbage-dump-region-102268.php",
+   "published_at": "2026-11-20T03:00:00+00:00",
+   "lang": "en",
+   "topics": [
+    "weather"
+   ],
+   "official": false
+  },
+  {
+   "source": "The Phuket News",
+   "title": "Patong fire probe focuses on electrical wiring",
+   "url": "https://www.thephuketnews.com/patong-fire-probe-focuses-on-electrical-wiring-102273.php",
+   "published_at": "2026-11-20T02:57:00+00:00",
+   "lang": "en",
+   "topics": [
+    "safety",
+    "phuket"
    ],
    "official": false
   },
@@ -482,17 +705,6 @@
    "official": false
   },
   {
-   "source": "The Thaiger",
-   "title": "Turkish tourist loses 75,000 baht while meeting Pattaya transwoman",
-   "url": "https://thethaiger.com/news/pattaya/pattaya-transwoman-steals-75000-baht-from-turkish-man",
-   "published_at": "2026-11-19T03:36:57+00:00",
-   "lang": "en",
-   "topics": [
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
    "source": "The Pattaya News",
    "title": "Pattaya Motorcycle Owner Tracks Three Suspected Thieves, Imposes Beach Exercise Punishment Instead of Prosecution",
    "url": "https://thepattayanews.com/2026/11/19/pattaya-motorcycle-owner-tracks-three-suspected-thieves-imposes-beach-exercise-punishment-instead-of-prosecution/",
@@ -520,18 +732,6 @@
    "title": "Pattaya police arrest suspect over alleged 74,000 baht theft from Turkish tourist",
    "url": "https://www.khaosodenglish.com/news/crimecourtscalamity/crime-crime/2026/11/19/pattaya-police-arrest-suspect-over-alleged-74000-baht-theft-from-turkish-tourist/",
    "published_at": "2026-11-19T03:15:26+00:00",
-   "lang": "en",
-   "topics": [
-    "safety",
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Thaiger",
-   "title": "Pattaya man makes 3 motorcycle thieves crawl on beach as punishment",
-   "url": "https://thethaiger.com/news/pattaya/pattaya-man-makes-3-motorcycle-thieves-crawl-on-beach-as-punishment",
-   "published_at": "2026-11-19T02:59:46+00:00",
    "lang": "en",
    "topics": [
     "safety",
@@ -770,17 +970,6 @@
    "official": false
   },
   {
-   "source": "The Phuket News",
-   "title": "Fire breaks out at Thalang workers’ camp",
-   "url": "https://www.thephuketnews.com/fire-breaks-out-at-thalang-workers-camp-102248.php",
-   "published_at": "2026-11-18T04:39:00+00:00",
-   "lang": "en",
-   "topics": [
-    "safety"
-   ],
-   "official": false
-  },
-  {
    "source": "The Thaiger",
    "title": "Customers dispute Thai Airways claim of cargo backlog clearance",
    "url": "https://thethaiger.com/news/world/aviation/thai-airways-faces-complaint-over-clear-cargo-backlog-claim",
@@ -800,18 +989,6 @@
    "topics": [
     "alcohol",
     "safety"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Phuket News",
-   "title": "Patong fire victims returned home for funerals",
-   "url": "https://www.thephuketnews.com/patong-fire-victims-returned-home-for-funerals-102247.php",
-   "published_at": "2026-11-18T04:09:00+00:00",
-   "lang": "en",
-   "topics": [
-    "safety",
-    "phuket"
    ],
    "official": false
   },
@@ -1511,29 +1688,6 @@
    "official": false
   },
   {
-   "source": "The Pattaya News",
-   "title": "Are You Aware That The Pattaya News is Available on YouTube?",
-   "url": "https://thepattayanews.com/2026/11/15/are-you-aware-that-the-pattaya-news-is-available-on-youtube/",
-   "published_at": "2026-11-14T19:04:20+00:00",
-   "lang": "en",
-   "topics": [
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Pattaya News",
-   "title": "Royal Thai Immigration Mobile Unit Rescues Chinese Student from Ransom Threat in Pattaya Within 30 Minutes",
-   "url": "https://thepattayanews.com/2026/11/14/royal-thai-immigration-mobile-unit-rescues-chinese-student-from-ransom-threat-in-pattaya-within-30-minutes/",
-   "published_at": "2026-11-14T15:01:20+00:00",
-   "lang": "en",
-   "topics": [
-    "safety",
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
    "source": "Pattaya City Hall",
    "title": "นายกเบียร์ร่วมเปิดไฟต้นคริสต์มาส The Grand Harmonic Light-up Christmas Tree สร้างสีสันเทศกาลแห่งความสุข ต้อนรับนักท่องเที่ยวช่วงปลายปี",
    "url": "https://pattaya.go.th/2026/11/14/%f0%9f%8e%84%e2%9c%a8-%e0%b8%99%e0%b8%b2%e0%b8%a2%e0%b8%81%e0%b9%80%e0%b8%9a%e0%b8%b5%e0%b8%a2%e0%b8%a3%e0%b9%8c%e0%b8%a3%e0%b9%88%e0%b8%a7%e0%b8%a1%e0%b9%80%e0%b8%9b%e0%b8%b4%e0%b8%94%e0%b9%84/",
@@ -1631,18 +1785,6 @@
    "lang": "en",
    "topics": [
     "flights"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Pattaya News",
-   "title": "Two Teens, One Adult Die in Head-On Motorcycle Collision in Soi Khao Talo in Pattaya Overnight",
-   "url": "https://thepattayanews.com/2026/11/14/two-teens-one-adult-die-in-head-on-motorcycle-collision-in-soi-khao-talo-in-pattaya-overnight/",
-   "published_at": "2026-11-14T02:21:56+00:00",
-   "lang": "en",
-   "topics": [
-    "safety",
-    "pattaya"
    ],
    "official": false
   },
@@ -1900,17 +2042,6 @@
    "official": false
   },
   {
-   "source": "The Pattaya News",
-   "title": "Chonburi Coffee on the Beach 2026 Brings Free Coffee Tastings, Workshops, and Live Music to Central Pattaya Beach This Weekend!",
-   "url": "https://thepattayanews.com/2026/11/13/chonburi-coffee-on-the-beach-2026-brings-free-coffee-tastings-workshops-and-live-music-to-central-pattaya-beach-this-weekend/",
-   "published_at": "2026-11-12T23:27:17+00:00",
-   "lang": "en",
-   "topics": [
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
    "source": "Nation Thailand",
    "title": "London exhibition examines Japanese coming-of-age fashion culture",
    "url": "https://www.nationthailand.com/news/world/40073435",
@@ -2114,18 +2245,6 @@
    "official": true
   },
   {
-   "source": "Nation Thailand",
-   "title": "AOT asks public to avoid lanterns and drones near airports during Loy Krathong",
-   "url": "https://www.nationthailand.com/news/general/40073403",
-   "published_at": "2026-11-12T03:58:00+00:00",
-   "lang": "en",
-   "topics": [
-    "flights",
-    "events"
-   ],
-   "official": false
-  },
-  {
    "source": "Khaosod English",
    "title": "Meet Wapi and Khumpa, the mascots of Udon Thani’s World Horticultural Expo",
    "url": "https://www.khaosodenglish.com/life/2026/11/12/meet-wapi-and-khumpa-the-mascots-of-udon-thanis-world-horticultural-expo/",
@@ -2171,18 +2290,6 @@
    "official": false
   },
   {
-   "source": "Nation Thailand",
-   "title": "Pattaya fireworks festival returns with free shows and concerts",
-   "url": "https://www.nationthailand.com/news/tourism/40073382",
-   "published_at": "2026-11-11T10:13:00+00:00",
-   "lang": "en",
-   "topics": [
-    "events",
-    "pattaya"
-   ],
-   "official": false
-  },
-  {
    "source": "Pattaya City Hall",
    "title": "รวมพลังทุกภาคส่วน! พัทยาเตรียมพร้อมพิธีถวายดอกไม้จันทน์อย่างสมพระเกียรติ",
    "url": "https://pattaya.go.th/2026/11/11/%e0%b8%a3%e0%b8%a7%e0%b8%a1%e0%b8%9e%e0%b8%a5%e0%b8%b1%e0%b8%87%e0%b8%97%e0%b8%b8%e0%b8%81%e0%b8%a0%e0%b8%b2%e0%b8%84%e0%b8%aa%e0%b9%88%e0%b8%a7%e0%b8%99-%e0%b8%9e%e0%b8%b1%e0%b8%97%e0%b8%a2%e0%b8%b2/",
@@ -2193,109 +2300,6 @@
     "pattaya"
    ],
    "official": true
-  },
-  {
-   "source": "TAT Newsroom",
-   "title": "Her Majesty the Queen of Thailand opens Global Wellness Summit 2026 in Phuket",
-   "url": "https://www.tatnews.org/2026/11/her-majesty-the-queen-of-thailand-opens-global-wellness-summit-2026-in-phuket/",
-   "published_at": "2026-11-11T08:40:31+00:00",
-   "lang": "en",
-   "topics": [
-    "phuket"
-   ],
-   "official": true
-  },
-  {
-   "source": "Nation Thailand",
-   "title": "TAT targets 5% tourism revenue rise with ‘value over volume’ strategy",
-   "url": "https://www.nationthailand.com/news/tourism/40073373",
-   "published_at": "2026-11-11T08:39:00+00:00",
-   "lang": "en",
-   "topics": [
-    "statistics"
-   ],
-   "official": false
-  },
-  {
-   "source": "Nation Thailand",
-   "title": "TCEB and Korat showcase creative strengths through K-BATTLE 2026",
-   "url": "https://www.nationthailand.com/pr-news/40073368",
-   "published_at": "2026-11-11T07:16:00+00:00",
-   "lang": "en",
-   "topics": [
-    "events"
-   ],
-   "official": false
-  },
-  {
-   "source": "Khaosod English",
-   "title": "Flying to Thailand? A $13 tourist entry fee could be coming in 2027",
-   "url": "https://www.khaosodenglish.com/featured/2026/11/11/flying-to-thailand-a-13-tourist-entry-fee-could-be-coming-in-2027/",
-   "published_at": "2026-11-11T07:10:57+00:00",
-   "lang": "en",
-   "topics": [
-    "entry_rules"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Thaiger",
-   "title": "Russian woman arrested in Phuket over 2,379 day visa overstay",
-   "url": "https://thethaiger.com/news/phuket/russian-woman-held-in-phuket-after-six-year-overstay",
-   "published_at": "2026-11-11T06:58:55+00:00",
-   "lang": "en",
-   "topics": [
-    "entry_rules",
-    "phuket"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Thaiger",
-   "title": "Thailand’s 450-baht tourist fee could be delayed until mid-2027",
-   "url": "https://thethaiger.com/hot-news/tourism/thailands-450-baht-tourist-fee-could-be-delayed-until-mid-2027",
-   "published_at": "2026-11-11T03:16:03+00:00",
-   "lang": "en",
-   "topics": [
-    "entry_rules"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Phuket News",
-   "title": "Weedon cannabis shops face nominee checks",
-   "url": "https://www.thephuketnews.com/weedon-cannabis-shops-face-nominee-checks-102169.php",
-   "published_at": "2026-11-11T02:53:00+00:00",
-   "lang": "en",
-   "topics": [
-    "cannabis"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Phuket News",
-   "title": "PHUKET XTRA: VIDEO: Teens Confess To Fatal Attack Over B2,000, Phuket Nightlife Venues Raided || Nov 10",
-   "url": "https://www.thephuketnews.com/phuket-xtra-video-teens-confess-to-fatal-attack-over-b2-000-phuket-nightlife-venues-raided-nov-10-102166.php",
-   "published_at": "2026-11-10T11:28:00+00:00",
-   "lang": "en",
-   "topics": [
-    "alcohol",
-    "safety",
-    "phuket"
-   ],
-   "official": false
-  },
-  {
-   "source": "The Thaiger",
-   "title": "Thai Airways faces complaints after Munich-Bangkok flight operated without running water",
-   "url": "https://thethaiger.com/news/world/aviation/thai-airways-passengers-report-no-running-water-in-lavatory",
-   "published_at": "2026-11-10T09:58:37+00:00",
-   "lang": "en",
-   "topics": [
-    "flights",
-    "bangkok"
-   ],
-   "official": false
   }
  ],
  "sources": [
@@ -2303,21 +2307,21 @@
    "name": "TAT Newsroom",
    "endpoint": "https://www.tatnews.org/wp-json/wp/v2/posts",
    "ok": true,
-   "count": 7,
+   "count": 6,
    "error": null
   },
   {
    "name": "The Pattaya News",
    "endpoint": "https://thepattayanews.com/wp-json/wp/v2/posts",
    "ok": true,
-   "count": 61,
+   "count": 60,
    "error": null
   },
   {
    "name": "Pattaya City Hall",
    "endpoint": "https://pattaya.go.th/wp-json/wp/v2/posts",
    "ok": true,
-   "count": 58,
+   "count": 56,
    "error": null
   },
   {
@@ -2331,30 +2335,32 @@
    "name": "The Thaiger",
    "endpoint": "https://thethaiger.com/wp-json/wp/v2/posts",
    "ok": true,
-   "count": 103,
+   "count": 102,
    "error": null
   },
   {
    "name": "Khaosod English",
    "endpoint": "https://www.khaosodenglish.com/feed/",
    "ok": true,
-   "count": 6,
-   "error": null
+   "count": 1,
+   "error": "partial, page 2: timeout"
   },
   {
    "name": "The Phuket News",
    "endpoint": "https://www.thephuketnews.com/rss-xml/news.xml",
    "ok": true,
-   "count": 3,
+   "count": 5,
    "error": null
   },
   {
    "name": "Nation Thailand",
    "endpoint": "https://api.nationthailand.com/sitemap/latest",
    "ok": true,
-   "count": 21,
+   "count": 24,
    "error": null
   }
  ],
- "errors": []
+ "errors": [
+  "Khaosod English: partial, page 2: timeout"
+ ]
 }
